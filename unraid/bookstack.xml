@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<Container version="2">
+    <Name>bookstack</Name>
+    <Repository>ghcr.io/linuxserver/bookstack</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/bookstack</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-bookstack/issues/new/choose</Support>
+    <Project>https://github.com/BookStackApp/BookStack</Project>
+    <Overview>[Bookstack](https://github.com/BookStackApp/BookStack) is a free and open source Wiki designed for creating beautiful documentation. Feautring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease.
+
+Powered by SQL and including a Markdown editor for those who prefer it, BookStack is geared towards making documentation more of a pleasure than a chore.
+
+For more information on BookStack visit their website and check it out: https://www.bookstackapp.com</Overview>
+    <WebUI>http://[IP]:[PORT:80]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/bookstack.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Config Name="WebUI" Target="80" Default="6875" Mode="tcp" Description="will map the container's port 80 to port 6875 on the host" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="this will store any uploaded data on the docker host" Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="APP_URL" Target="APP_URL" Default="" Description="for specifying the IP:port or URL your application will be accessed on (ie. `http://192.168.1.1:6875` or `https://bookstack.mydomain.com`" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="DB_HOST" Target="DB_HOST" Default="<yourdbhost>" Description="for specifying the database host" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="DB_USER" Target="DB_USER" Default="<yourdbuser>" Description="for specifying the database user" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="DB_PASS" Target="DB_PASS" Default="<yourdbpass>" Description="for specifying the database password" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="DB_DATABASE" Target="DB_DATABASE" Default="bookstackapp" Description="for specifying the database to be used" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
