@@ -1,4 +1,5 @@
-wireguard
 docker-compose
 ffmpeg
 fleet
+openssh-server
+wireguard
