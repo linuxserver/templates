@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<Container version="2">
+    <Name>unifi-controller</Name>
+    <Repository>ghcr.io/linuxserver/unifi-controller</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/unifi-controller</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-unifi-controller/issues/new/choose</Support>
+    <Project>https://www.ubnt.com/enterprise/#unifi</Project>
+    <Overview>The [Unifi-controller](https://www.ubnt.com/enterprise/#unifi) Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.</Overview>
+    <WebUI>https://[IP]:[PORT:8443]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/unifi-controller.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-controller-icon.png</Icon>
+    <Config Name="WebUI" Target="3478" Default="3478" Mode="udp" Description="Unifi STUN port" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 10001" Target="10001" Default="10001" Mode="udp" Description="Required for AP discovery" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 8080" Target="8080" Default="8080" Mode="tcp" Description="Required for device communication" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 8443" Target="8443" Default="8443" Mode="tcp" Description="Unifi web admin port" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 1900" Target="1900" Default="1900" Mode="udp" Description="Required for `Make controller discoverable on L2 network` option" Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Port: 8843" Target="8843" Default="8843" Mode="tcp" Description="Unifi guest portal HTTPS redirect port" Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Port: 8880" Target="8880" Default="8880" Mode="tcp" Description="Unifi guest portal HTTP redirect port" Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Port: 6789" Target="6789" Default="6789" Mode="tcp" Description="For mobile throughput test" Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Port: 5514" Target="5514" Default="5514" Mode="tcp" Description="Remote syslog port" Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="All Unifi data stored here" Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="MEM_LIMIT" Target="MEM_LIMIT" Default="1024M" Description="Optionally change the Java memory limit (-Xmx) (default is 1024M)." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
