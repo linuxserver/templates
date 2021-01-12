@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<Container version="2">
+    <Name>netbootxyz</Name>
+    <Repository>ghcr.io/linuxserver/netbootxyz</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/netbootxyz</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-netbootxyz/issues/new/choose</Support>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Web application for full self hosting</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>tftp</Tag>
+        <TagDescription>TFTP server only with NETBOOT.XYZ boot files</TagDescription>
+    </Branch>
+    <Project>https://netboot.xyz</Project>
+    <Overview>[Netbootxyz](https://netboot.xyz) is a way to PXE boot various operating system installers or utilities from one place within the BIOS without the need of having to go retrieve the media to run the tool. iPXE is used to provide a user friendly menu from within the BIOS that lets you easily choose the operating system you want along with any specific types of versions or bootable flags.</Overview>
+    <WebUI>http://[IP]:[PORT:3000]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/netbootxyz.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Web configuration interface." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 69" Target="69" Default="69" Mode="udp" Description="TFTP Port." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 80" Target="80" Default="8080" Mode="tcp" Description="NGINX server for hosting assets." Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Storage for boot menu files and web application config" Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /assets" Target="/assets" Default="" Mode="rw" Description="Storage for NETBOOT.XYZ bootable assets (live CDs and other files)" Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="MENU_VERSION" Target="MENU_VERSION" Default="1.9.9" Description="Specify a specific version of boot files you want to use from NETBOOT.XYZ (unset pulls latest)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PORT_RANGE" Target="PORT_RANGE" Default="30000:30010" Description="Specify the port range tftp will use for data transfers [(see Wikipedia)](https://en.wikipedia.org/wiki/Trivial_File_Transfer_Protocol#Details)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
