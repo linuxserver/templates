@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<Container version="2">
+    <Name>plex</Name>
+    <Repository>ghcr.io/linuxserver/plex</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/plex</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>host</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-plex/issues/new/choose</Support>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Stable releases with Focal baseimage</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>bionic</Tag>
+        <TagDescription>Stable releases with Bionic baseimage</TagDescription>
+    </Branch>
+    <Project>https://plex.tv</Project>
+    <Overview>[Plex](https://plex.tv) organizes video, music and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone Plex Media Server. has always been a top priority. Straightforward design and bulk actions mean getting things done faster.</Overview>
+    <WebUI>http://[IP]:[PORT:32400]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/plex.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/plex-icon.png</Icon>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Plex library location. *This can grow very large, 50gb+ is likely for a large collection.*" Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /tv" Target="/tv" Default="" Mode="rw" Description="Media goes here. Add as many as needed e.g. `/movies`, `/tv`, etc." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /movies" Target="/movies" Default="" Mode="rw" Description="Media goes here. Add as many as needed e.g. `/movies`, `/tv`, etc." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="VERSION" Target="VERSION" Default="docker" Description="Set whether to update plex or not - see Application Setup section." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="UMASK_SET" Target="UMASK_SET" Default="022" Description="control permissions of files and directories created by Plex" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PLEX_CLAIM" Target="PLEX_CLAIM" Default="" Description="Optionally you can obtain a claim token from https://plex.tv/claim and input here. Keep in mind that the claim tokens expire within 4 minutes." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
