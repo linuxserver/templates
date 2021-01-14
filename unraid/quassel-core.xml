@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<Container version="2">
+    <Name>quassel-core</Name>
+    <Repository>ghcr.io/linuxserver/quassel-core</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/quassel-core</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-quassel-core/issues/new/choose</Support>
+    <Project>http://quassel-irc.org/</Project>
+    <Overview>[Quassel-core](http://quassel-irc.org/) is a modern, cross-platform, distributed IRC client, meaning that one (or multiple) client(s) can attach to and detach from a central core.
+
+This container handles the IRC connection (quasselcore) and requires a desktop client (quasselclient) to be used and configured. It is designed to be always on and will keep your identity present in IRC even when your clients cannot be online. Backlog (history) is downloaded by your client upon reconnection allowing infinite scrollback through time.</Overview>
+    <WebUI>http://[IP]:[PORT:4242]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/quassel-core.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/quassel-core-icon.png</Icon>
+    <Config Name="WebUI" Target="4242" Default="4242" Mode="tcp" Description="The port quassel-core listens for connections on." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 10113" Target="10113" Default="113" Mode="tcp" Description="Optional Ident Port" Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Database and quassel-core configuration storage." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="RUN_OPTS" Target="RUN_OPTS" Default="--config-from-environment" Description="Custom CLI options for Quassel" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
