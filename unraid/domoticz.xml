@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<Container version="2">
+    <Name>domoticz</Name>
+    <Repository>ghcr.io/linuxserver/domoticz</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/domoticz</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-domoticz/issues/new/choose</Support>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Current latest stable.</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>stable</Tag>
+        <TagDescription>Old stable version. Please change to latest branch for stable releases.</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>stable-4.9700</Tag>
+        <TagDescription>Old stable version. Will not be updated anymore!</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>stable-3.815</Tag>
+        <TagDescription>Old stable version. Will not be updated anymore!</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>stable-3.5877</Tag>
+        <TagDescription>Old stable version. Will not be updated anymore!</TagDescription>
+    </Branch>
+    <Project>https://www.domoticz.com</Project>
+    <Overview>[Domoticz](https://www.domoticz.com) is a Home Automation System that lets you monitor and configure various devices like: Lights, Switches, various sensors/meters like Temperature, Rain, Wind, UV, Electra, Gas, Water and much more. Notifications/Alerts can be sent to any mobile device.</Overview>
+    <WebUI>http://[IP]:[PORT:8080]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/domoticz.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 6144" Target="6144" Default="6144" Mode="tcp" Description="Domoticz communication port." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 1443" Target="1443" Default="1443" Mode="tcp" Description="Domoticz communication port." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where Domoticz stores config files and data." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="WEBROOT" Target="WEBROOT" Default="domoticz" Description="Sets webroot to domoticz for usage with subfolder reverse proxy. Not needed unless reverse proxying." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>    <Config Name="<path to device>" Default="<path to device>" Description="For passing through USB devices." Type="Device" Display="always" Required="true" Mask="false"/>
+
+</Container>
