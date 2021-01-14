@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<Container version="2">
+    <Name>duckdns</Name>
+    <Repository>ghcr.io/linuxserver/duckdns</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/duckdns</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-duckdns/issues/new/choose</Support>
+    <Project>https://duckdns.org/</Project>
+    <Overview>[Duckdns](https://duckdns.org/) is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.</Overview>
+    <WebUI>http://[IP]:[PORT:]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/duckdns.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Used in conjunction with logging to file." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="SUBDOMAINS" Target="SUBDOMAINS" Default="subdomain1,subdomain2" Description="multiple subdomains allowed, comma separated, no spaces" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="TOKEN" Target="TOKEN" Default="token" Description="DuckDNS token" Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="LOG_FILE" Target="LOG_FILE" Default="false" Description="Set to `true` to log to file (also need to map /config)." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
