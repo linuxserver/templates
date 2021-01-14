@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<Container version="2">
+    <Name>grocy</Name>
+    <Repository>ghcr.io/linuxserver/grocy</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/grocy</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-grocy/issues/new/choose</Support>
+    <Project>https://github.com/grocy/grocy</Project>
+    <Overview>[Grocy](https://github.com/grocy/grocy) is an ERP system for your kitchen! Cut down on food waste, and manage your chores with this brilliant utulity.
+
+Keep track of your purchaes, how much food you are wasting, what chores need doing and what batteries need charging with this proudly Open Source tool
+
+For more information on grocy visit their website and check it out: https://grocy.info</Overview>
+    <WebUI>http://[IP]:[PORT:80]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/grocy.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/grocy-icon.png</Icon>
+    <Config Name="WebUI" Target="80" Default="9283" Mode="tcp" Description="will map the container's port 80 to port 9283 on the host" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="this will store any uploaded data on the docker host" Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
