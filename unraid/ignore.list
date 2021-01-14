@@ -1,5 +1,7 @@
 docker-compose
 ffmpeg
 fleet
+guacd
+nano
 openssh-server
 wireguard
