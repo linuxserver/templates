@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<Container version="2">
+    <Name>mysql-workbench</Name>
+    <Repository>ghcr.io/linuxserver/mysql-workbench</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/mysql-workbench</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-mysql-workbench/issues/new/choose</Support>
+    <Project>https://www.mysql.com/products/workbench/</Project>
+    <Overview>[MySQL Workbench](https://www.mysql.com/products/workbench/) is a unified visual tool for database architects, developers, and DBAs. MySQL Workbench provides data modeling, SQL development, and comprehensive administration tools for server configuration, user administration, backup, and much more.</Overview>
+    <ExtraParams>--cap-add=IPC_LOCK</ExtraParams>
+    <WebUI>http://[IP]:[PORT:3000]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mysql-workbench.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mysql-workbench-icon.png</Icon>
+    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Mysql Workbench desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Users home directory in the container, stores program settings." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
