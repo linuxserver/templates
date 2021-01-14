@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<Container version="2">
+    <Name>nano</Name>
+    <Repository>ghcr.io/linuxserver/nano</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/nano</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-nano/issues/new/choose</Support>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Stable Nano releases</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>beta</Tag>
+        <TagDescription>Beta Nano releases</TagDescription>
+    </Branch>
+    <Project>https://nano.org/</Project>
+    <Overview>[Nano](https://nano.org/) is a digital payment protocol designed to be accessible and lightweight, with a focus on removing inefficiencies present in other cryptocurrencies. With ultrafast transactions and zero fees on a secure, green and decentralized network, this makes Nano ideal for everyday transactions.</Overview>
+    <WebUI>http://[IP]:[PORT:80]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nano.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Config Name="WebUI" Target="8075" Default="8075" Mode="tcp" Description="Nano communication port" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 3000" Target="3000" Default="7076" Mode="tcp" Description="RPC interface filtered through a proxy" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 3001" Target="3001" Default="7077" Mode="tcp" Description="Https RPC interface filtered through a proxy" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Main storage for config and blockchain" Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="PEER_HOST" Target="PEER_HOST" Default="localhost" Description="Default peer host (can be overidden with an array by command line options)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="LIVE_GENESIS_PUB" Target="LIVE_GENESIS_PUB" Default="GENESIS_PUBLIC" Description="Genesis block public key" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="LIVE_GENESIS_ACCOUNT" Target="LIVE_GENESIS_ACCOUNT" Default="nano_xxxxxx" Description="Genesis block account" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="LIVE_GENESIS_WORK" Target="LIVE_GENESIS_WORK" Default="WORK_FOR_BLOCK" Description="Genesis block proof of work" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="LIVE_GENESIS_SIG" Target="LIVE_GENESIS_SIG" Default="BLOCK_SIGNATURE" Description="Genesis block signature" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="CLI_OPTIONS" Target="CLI_OPTIONS" Default="--config node.enable_voting=true" Description="Node run command cli args" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="LMDB_BOOTSTRAP_URL" Target="LMDB_BOOTSTRAP_URL" Default="http://example.com/Nano_64_version_20.7z" Description="HTTP/HTTPS endpoint to download a 7z file with the data.ldb to bootstrap to this node" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
