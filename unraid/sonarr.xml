@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<Container version="2">
+    <Name>sonarr</Name>
+    <Repository>ghcr.io/linuxserver/sonarr</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/sonarr</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-sonarr/issues/new/choose</Support>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Stable releases from Sonarr (currently v2)</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>develop</Tag>
+        <TagDescription>Development releases from Sonarr (currently v2)</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>preview</Tag>
+        <TagDescription>Preview releases from Sonarr (currently v3)</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>5.14</Tag>
+        <TagDescription>Stable Sonarr releases, but run on Mono 5.14</TagDescription>
+    </Branch>
+    <Project>https://sonarr.tv/</Project>
+    <Overview>[Sonarr](https://sonarr.tv/) (formerly NZBdrone) is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.</Overview>
+    <WebUI>http://[IP]:[PORT:8989]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sonarr.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sonarr-icon.png</Icon>
+    <Config Name="WebUI" Target="8989" Default="8989" Mode="tcp" Description="The port for the Sonarr webinterface" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Database and sonarr configs" Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /tv" Target="/tv" Default="" Mode="rw" Description="Location of TV library on disk (See note in Application setup)" Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Location of download managers output directory (See note in Application setup)" Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="UMASK_SET" Target="UMASK_SET" Default="022" Description="control permissions of files and directories created by Sonarr" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
