@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<Container version="2">
+    <Name>tvheadend</Name>
+    <Repository>ghcr.io/linuxserver/tvheadend</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/tvheadend</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-tvheadend/issues/new/choose</Support>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Current latest release.</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>release-4.2</Tag>
+        <TagDescription>Latest release from 4.2 branch.</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>stable-4.2.1</Tag>
+        <TagDescription>Old stable version. Will not be updated anymore!</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>stable-4.0.9</Tag>
+        <TagDescription>Old stable version. Will not be updated anymore!</TagDescription>
+    </Branch>
+    <Project>https://www.tvheadend.org/</Project>
+    <Overview>[Tvheadend](https://www.tvheadend.org/) works as a proxy server: is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SAT>IP and HDHomeRun as input sources.
+Tvheadend offers the HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SAT>IP streaming.
+Multiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV DVB extensions, XMLTV, PyXML).</Overview>
+    <WebUI>http://[IP]:[PORT:9981]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/tvheadend.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Config Name="WebUI" Target="9981" Default="9981" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 9982" Target="9982" Default="9982" Mode="tcp" Description="HTSP server port." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where TVHeadend show store it's config files." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /recordings" Target="/recordings" Default="" Mode="rw" Description="Where you want the PVR to store recordings." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="RUN_OPTS" Target="RUN_OPTS" Default="<run options here>" Description="Optionally specify additional arguments to be passed. See Additional runtime parameters." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>    <Config Name="/dev/dri" Default="/dev/dri" Description="Only needed if you want to use your AMD/Intel GPU for hardware accelerated video encoding (vaapi)." Type="Device" Display="always" Required="true" Mask="false"/>
+    <Config Name="/dev/dvb" Default="/dev/dvb" Description="Only needed if you want to pass through a DVB card to the container. If you use IPTV or HDHomeRun you can leave it out." Type="Device" Display="always" Required="true" Mask="false"/>
+
+</Container>
