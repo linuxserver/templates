@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<Container version="2">
+    <Name>emby</Name>
+    <Repository>ghcr.io/linuxserver/emby</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/emby</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-emby/issues/new/choose</Support>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Stable emby releases</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>beta</Tag>
+        <TagDescription>Beta emby releases</TagDescription>
+    </Branch>
+    <Project>https://emby.media/</Project>
+    <Overview>[Emby](https://emby.media/) organizes video, music, live TV, and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone emby Media Server.</Overview>
+    <WebUI>http://[IP]:[PORT:8096]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/emby.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Config Name="WebUI" Target="8096" Default="8096" Mode="tcp" Description="Http webUI." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 8920" Target="8920" Default="8920" Mode="tcp" Description="Https webUI (you need to setup your own certificate)." Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Emby data storage location. *This can grow very large, 50gb+ is likely for a large collection.*" Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /data/tvshows" Target="/data/tvshows" Default="" Mode="rw" Description="Media goes here. Add as many as needed e.g. `/data/movies`, `/data/tv`, etc." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /data/movies" Target="/data/movies" Default="" Mode="rw" Description="Media goes here. Add as many as needed e.g. `/data/movies`, `/data/tv`, etc." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /transcode" Target="/transcode" Default="" Mode="rw" Description="Path for transcoding folder, *optional*." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Path: /opt/vc/lib" Target="/opt/vc/lib" Default="" Mode="rw" Description="Path for Raspberry Pi OpenMAX libs *optional*." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="UMASK_SET" Target="UMASK_SET" Default="<022>" Description="for umask setting of Emby, default if left unset is 022." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>    <Config Name="/dev/dri" Default="/dev/dri" Description="Only needed if you want to use your Intel or AMD GPU for hardware accelerated video encoding (vaapi)." Type="Device" Display="always" Required="true" Mask="false"/>
+    <Config Name="/dev/vchiq" Default="/dev/vchiq" Description="Only needed if you want to use your Raspberry Pi OpenMax video encoding (Bellagio)." Type="Device" Display="always" Required="true" Mask="false"/>
+    <Config Name="/dev/video10" Default="/dev/video10" Description="Only needed if you want to use your Raspberry Pi V4L2 video encoding." Type="Device" Display="always" Required="true" Mask="false"/>
+    <Config Name="/dev/video11" Default="/dev/video11" Description="Only needed if you want to use your Raspberry Pi V4L2 video encoding." Type="Device" Display="always" Required="true" Mask="false"/>
+    <Config Name="/dev/video12" Default="/dev/video12" Description="Only needed if you want to use your Raspberry Pi V4L2 video encoding." Type="Device" Display="always" Required="true" Mask="false"/>
+
+</Container>
