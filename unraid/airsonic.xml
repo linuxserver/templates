@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<Container version="2">
+    <Name>airsonic</Name>
+    <Repository>ghcr.io/linuxserver/airsonic</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/airsonic</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-airsonic/issues/new/choose</Support>
+    <Project>https://github.com/airsonic/airsonic</Project>
+    <Overview>[Airsonic](https://github.com/airsonic/airsonic) is a free, web-based media streamer, providing ubiquitious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.</Overview>
+    <WebUI>http://[IP]:[PORT:4040]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/airsonic.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Config Name="WebUI" Target="4040" Default="4040" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Configuration file location." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /music" Target="/music" Default="" Mode="rw" Description="Location of music." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /playlists" Target="/playlists" Default="" Mode="rw" Description="Location for playlists to be saved to." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /podcasts" Target="/podcasts" Default="" Mode="rw" Description="Location of podcasts." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /media" Target="/media" Default="" Mode="rw" Description="Location of other media." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="CONTEXT_PATH" Target="CONTEXT_PATH" Default="<URL_BASE>" Description="For setting url-base in reverse proxy setups." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="JAVA_OPTS" Target="JAVA_OPTS" Default="<options>" Description="For passing additional java options." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>    <Config Name="/dev/snd" Default="/dev/snd" Description="Only needed to pass your host sound device to Airsonic's Java jukebox player." Type="Device" Display="always" Required="true" Mask="false"/>
+
+</Container>
