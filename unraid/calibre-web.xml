@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<Container version="2">
+    <Name>calibre-web</Name>
+    <Repository>ghcr.io/linuxserver/calibre-web</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/calibre-web</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-calibre-web/issues/new/choose</Support>
+    <Project>https://github.com/janeczku/calibre-web</Project>
+    <Overview>[Calibre-web](https://github.com/janeczku/calibre-web) is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.   It is also possible to integrate google drive and edit metadata and your calibre library through the app itself.
+
+This software is a fork of library and licensed under the GPL v3 License.</Overview>
+    <WebUI>http://[IP]:[PORT:8083]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/calibre-web.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/calibre-web-icon.png</Icon>
+    <Config Name="WebUI" Target="8083" Default="8083" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where calibre-web stores the internal database and config." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /books" Target="/books" Default="" Mode="rw" Description="Where your preexisting calibre database is locate." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="DOCKER_MODS" Target="DOCKER_MODS" Default="linuxserver/calibre-web:calibre" Description="#optional & **x86-64 only** Adds the ability to perform ebook conversion" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
