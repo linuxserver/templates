@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<Container version="2">
+    <Name>sabnzbd</Name>
+    <Repository>ghcr.io/linuxserver/sabnzbd</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/sabnzbd</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-sabnzbd/issues/new/choose</Support>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Stable SABnzbd releases</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>unstable</Tag>
+        <TagDescription>Pre-releases from their GitHub</TagDescription>
+    </Branch>
+    <Project>http://sabnzbd.org/</Project>
+    <Overview>[Sabnzbd](http://sabnzbd.org/) makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.</Overview>
+    <WebUI>http://[IP]:[PORT:8080]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sabnzbd.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sabnzbd-icon.png</Icon>
+    <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="HTTP port for the WebUI." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 9090" Target="9090" Default="9090" Mode="tcp" Description="HTTPS port for the WebUI." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Local path for sabnzbd config files." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Local path for finished downloads." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /incomplete-downloads" Target="/incomplete-downloads" Default="" Mode="rw" Description="Local path for incomplete-downloads." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
