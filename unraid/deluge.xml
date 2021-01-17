@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<Container version="2">
+    <Name>deluge</Name>
+    <Repository>ghcr.io/linuxserver/deluge</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/deluge</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>host</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-deluge/issues/new/choose</Support>
+    <Project>http://deluge-torrent.org/</Project>
+    <Overview>[Deluge](http://deluge-torrent.org/) is a lightweight, Free Software, cross-platform BitTorrent client.
+
+* Full Encryption
+* WebUI
+* Plugin System
+* Much more...</Overview>
+    <WebUI>http://[IP]:[PORT:8112]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/deluge.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/deluge-icon.png</Icon>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="deluge configs" Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="torrent download directory" Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="UMASK_SET" Target="UMASK_SET" Default="022" Description="for umask setting of deluge, default if left unset is 022" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="DELUGE_LOGLEVEL" Target="DELUGE_LOGLEVEL" Default="error" Description="set the loglevel output when running Deluge, default is info for deluged and warning for delgued-web" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
