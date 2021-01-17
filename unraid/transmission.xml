@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<Container version="2">
+    <Name>transmission</Name>
+    <Repository>ghcr.io/linuxserver/transmission</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/transmission</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-transmission/issues/new/choose</Support>
+    <Project>https://www.transmissionbt.com/</Project>
+    <Overview>[Transmission](https://www.transmissionbt.com/) is designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, µTP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more.</Overview>
+    <WebUI>http://[IP]:[PORT:9091]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/transmission.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/transmission-icon.png</Icon>
+    <Config Name="WebUI" Target="9091" Default="9091" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 51413" Target="51413" Default="51413" Mode="tcp" Description="Torrent Port TCP" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 51413" Target="51413" Default="51413" Mode="udp" Description="Torrent Port UDP" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where transmission should store config files and logs." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Local path for downloads." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /watch" Target="/watch" Default="" Mode="rw" Description="Watch folder for torrent files." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="TRANSMISSION_WEB_HOME" Target="TRANSMISSION_WEB_HOME" Default="/combustion-release/" Description="Specify an alternative UI options are `/combustion-release/`, `/transmission-web-control/`, and `/kettu/` ." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="USER" Target="USER" Default="username" Description="Specify an optional username for the interface" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PASS" Target="PASS" Default="password" Description="Specify an optional password for the interface" Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
