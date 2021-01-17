@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<Container version="2">
+    <Name>daapd</Name>
+    <Repository>ghcr.io/linuxserver/daapd</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/daapd</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>host</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-daapd/issues/new/choose</Support>
+    <Project>https://ejurgensen.github.io/forked-daapd/</Project>
+    <Overview>[Daapd](https://ejurgensen.github.io/forked-daapd/) (iTunes) media server with support for AirPlay devices, Apple Remote (and compatibles), Chromecast, MPD and internet radio.</Overview>
+    <WebUI>http://[IP]:[PORT:3689]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/daapd.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where daapd server stores its config and dbase files." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /music" Target="/music" Default="" Mode="rw" Description="Map to your music folder." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
