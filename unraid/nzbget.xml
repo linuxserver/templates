@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<Container version="2">
+    <Name>nzbget</Name>
+    <Repository>ghcr.io/linuxserver/nzbget</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/nzbget</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-nzbget/issues/new/choose</Support>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Stable nzbget releases</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>testing</Tag>
+        <TagDescription>nzbget pre-releases</TagDescription>
+    </Branch>
+    <Project>http://nzbget.net/</Project>
+    <Overview>[Nzbget](http://nzbget.net/) is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources.</Overview>
+    <WebUI>http://[IP]:[PORT:6789]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nzbget.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nzbget-icon.png</Icon>
+    <Config Name="WebUI" Target="6789" Default="6789" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="NZBGet App data." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Location of downloads on disk." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
