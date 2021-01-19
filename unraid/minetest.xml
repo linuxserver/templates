@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<Container version="2">
+    <Name>minetest</Name>
+    <Repository>ghcr.io/linuxserver/minetest</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/minetest</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-minetest/issues/new/choose</Support>
+    <Project>http://www.minetest.net/</Project>
+    <Overview>[Minetest](http://www.minetest.net/) (server) is a near-infinite-world block sandbox game and a game engine, inspired by InfiniMiner, Minecraft, and the like.</Overview>
+    <WebUI>http://[IP]:[PORT:80]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/minetest.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/minetest-icon.png</Icon>
+    <Config Name="WebUI" Target="30000" Default="30000" Mode="udp" Description="Port Minetest listens on." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /config/.minetest" Target="/config/.minetest" Default="" Mode="rw" Description="Where minetest stores config files and maps etc." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="CLI_ARGS" Target="CLI_ARGS" Default=""--gameid minetest"" Description="Optionally specify any [CLI variables](https://wiki.minetest.net/Command_line) you want to launch the app with" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
