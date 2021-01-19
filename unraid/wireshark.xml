@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<Container version="2">
+    <Name>wireshark</Name>
+    <Repository>ghcr.io/linuxserver/wireshark</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/wireshark</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>host</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-wireshark/issues/new/choose</Support>
+    <Project>https://www.wireshark.org/</Project>
+    <Overview>[Wireshark](https://www.wireshark.org/) is the world’s foremost and widely-used network protocol analyzer. It lets you see what’s happening on your network at a microscopic level and is the de facto (and often de jure) standard across many commercial and non-profit enterprises, government agencies, and educational institutions. Wireshark development thrives thanks to the volunteer contributions of networking experts around the globe and is the continuation of a project started by Gerald Combs in 1998.</Overview>
+    <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
+    <WebUI>http://[IP]:[PORT:3000]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/wireshark.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/wireshark-icon.png</Icon>
+    <Config Name="Port: 3000" Target="3000" Default="3000" Mode="tcp" Description="WireShark desktop gui, only use this if you are not using host mode and sniffing Docker network traffic." Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Users home directory in the container, stores program settings and potentially dump files." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
