@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<Container version="2">
+    <Name>quassel-web</Name>
+    <Repository>ghcr.io/linuxserver/quassel-web</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/quassel-web</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-quassel-web/issues/new/choose</Support>
+    <Project>https://github.com/magne4000/quassel-webserver</Project>
+    <Overview>[Quassel-web](https://github.com/magne4000/quassel-webserver) is a web client for Quassel.  Note that a Quassel-Core instance is required, we have a container available [here.](https://hub.docker.com/r/linuxserver/quassel-core/)</Overview>
+    <WebUI>https://[IP]:[PORT:64443]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/quassel-web.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/quassel-web-icon.png</Icon>
+    <Config Name="WebUI" Target="64080" Default="64080" Mode="tcp" Description="will map the container's port 64080 to port 64080 on the host" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="this will store config on the docker host" Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="QUASSEL_CORE" Target="QUASSEL_CORE" Default="192.168.1.10" Description="specify the URL or IP address of your Quassel Core instance" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="QUASSEL_PORT" Target="QUASSEL_PORT" Default="4242" Description="specify the port of your Quassel Core instance" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="URL_BASE" Target="URL_BASE" Default="/quassel" Description="Specify a url-base in reverse proxy setups ie. `/quassel`" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
