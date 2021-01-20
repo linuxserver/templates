@@ -27,7 +27,6 @@
     <Config Name="Path: /tv" Target="/tv" Default="" Mode="rw" Description="Media goes here. Add as many as needed e.g. `/movies`, `/tv`, etc." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /movies" Target="/movies" Default="" Mode="rw" Description="Media goes here. Add as many as needed e.g. `/movies`, `/tv`, etc." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="VERSION" Target="VERSION" Default="docker" Description="Set whether to update plex or not - see Application Setup section." Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="UMASK_SET" Target="UMASK_SET" Default="022" Description="control permissions of files and directories created by Plex" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PLEX_CLAIM" Target="PLEX_CLAIM" Default="" Description="Optionally you can obtain a claim token from https://plex.tv/claim and input here. Keep in mind that the claim tokens expire within 4 minutes." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
