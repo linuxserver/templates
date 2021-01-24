@@ -17,7 +17,7 @@
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
     <Config Name="WebUI" Target="8000" Default="8000" Mode="tcp" Description="will map the container's port 8000 to port 8000 on the host" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="database and healthchecks config directory volume mapping" Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="SITE_ROOT" Target="SITE_ROOT" Default="<SITE_ROOT>" Description="The site's top-level URL (e.g., https://healthchecks.example.com)" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="SITE_ROOT" Target="SITE_ROOT" Default="<SITE_ROOT>" Description="The site's top-level URL and the port it listens to if differrent than 80 or 443 (e.g., https://healthchecks.example.com:8000)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="SITE_NAME" Target="SITE_NAME" Default="<SITE_NAME>" Description="The site's name (e.g., "Example Corp HealthChecks")" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DEFAULT_FROM_EMAIL" Target="DEFAULT_FROM_EMAIL" Default="<DEFAULT_FROM_EMAIL>" Description="From email for alerts" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="EMAIL_HOST" Target="EMAIL_HOST" Default="<EMAIL_HOST>" Description="SMTP host" Type="Variable" Display="always" Required="true" Mask="false"/>
