@@ -15,6 +15,10 @@
         <TagDescription>Stable Lidarr releases.</TagDescription>
     </Branch>
     <Branch>
+        <Tag>develop</Tag>
+        <TagDescription>Develop Lidarr Releases.</TagDescription>
+    </Branch>
+    <Branch>
         <Tag>nightly</Tag>
         <TagDescription>Nightly Lidarr Releases.</TagDescription>
     </Branch>
