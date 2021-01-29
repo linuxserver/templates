@@ -11,7 +11,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-sickgear/issues/new/choose</Support>
     <Project>https://github.com/sickgear/sickgear</Project>
-    <Overview>[SickGear](https://github.com/sickgear/sickgear) provides management of TV shows and/or Anime, it detects new episodes, links downloader apps, and more.. 
+    <Overview>[SickGear](https://github.com/sickgear/sickgear) provides management of TV shows and/or Anime, it detects new episodes, links downloader apps, and more..
 
 For more information on SickGear visit their website and check it out: https://github.com/SickGear/SickGear</Overview>
     <WebUI>http://[IP]:[PORT:8081]</WebUI>
