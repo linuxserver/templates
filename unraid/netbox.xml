@@ -19,13 +19,14 @@
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="config directory volume mapping" Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="SUPERUSER_EMAIL" Target="SUPERUSER_EMAIL" Default="<SUPERUSER_EMAIL>" Description="Username for admin account" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="SUPERUSER_PASSWORD" Target="SUPERUSER_PASSWORD" Default="<SUPERUSER_PASSWORD>" Description="Password for admin account" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="ALLOWED_HOST" Target="ALLOWED_HOST" Default="<ALLOWED_HOST>" Description="The hostname you will use to access the app (i.e., netbox.example.com" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="ALLOWED_HOST" Target="ALLOWED_HOST" Default="<ALLOWED_HOST>" Description="The hostname you will use to access the app (i.e., netbox.example.com)" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="BASE_PATH" Target="BASE_PATH" Default="<BASE_PATH>" Description="The path you will use to access the app (i.e., /netbox, optional, default: none)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_NAME" Target="DB_NAME" Default="<DB_NAME>" Description="Databaes name (optional, default: netbox)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_USER" Target="DB_USER" Default="<DB_USER>" Description="Database user" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="<DB_PASSWORD>" Description="Database password" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="DB_HOST" Target="DB_HOST" Default="<DB_HOST>" Description="Database post (optional, default: postgres" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="DB_HOST" Target="DB_HOST" Default="<DB_HOST>" Description="Database post (optional, default: postgres)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_PORT" Target="DB_PORT" Default="<DB_PORT>" Description="Database port (optional)" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="REDIS_HOST" Target="REDIS_HOST" Default="<REDIS_HOST>" Description="Redis host (optional, default: redis" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="REDIS_HOST" Target="REDIS_HOST" Default="<REDIS_HOST>" Description="Redis host (optional, default: redis)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="REDIS_PORT" Target="REDIS_PORT" Default="<REDIS_PORT>" Description="Redis port number (optional, default: 6379)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="REDIS_PASSWORD" Target="REDIS_PASSWORD" Default="<REDIS_PASSWORD>" Description="Redis password (optional, default: none)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
