@@ -24,7 +24,7 @@
     <Config Name="DB_NAME" Target="DB_NAME" Default="<DB_NAME>" Description="Database name (optional, default: netbox)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_USER" Target="DB_USER" Default="<DB_USER>" Description="Database user" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="<DB_PASSWORD>" Description="Database password" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="DB_HOST" Target="DB_HOST" Default="<DB_HOST>" Description="Database post (optional, default: postgres)" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="DB_HOST" Target="DB_HOST" Default="<DB_HOST>" Description="Database host (optional, default: postgres)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_PORT" Target="DB_PORT" Default="<DB_PORT>" Description="Database port (optional)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="REDIS_HOST" Target="REDIS_HOST" Default="<REDIS_HOST>" Description="Redis host (optional, default: redis)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="REDIS_PORT" Target="REDIS_PORT" Default="<REDIS_PORT>" Description="Redis port number (optional, default: 6379)" Type="Variable" Display="always" Required="true" Mask="false"/>
