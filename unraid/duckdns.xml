@@ -10,8 +10,9 @@
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-duckdns/issues/new/choose</Support>
+    <Shell>bash</Shell>
     <Project>https://duckdns.org/</Project>
-    <Overview>[Duckdns](https://duckdns.org/) is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.</Overview>
+    <Overview>[Duckdns](https://duckdns.org/) is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn&#39;t require reactivation or forum posts to maintain its existence.</Overview>
     <WebUI>http://[IP]:[PORT:]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/duckdns.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
@@ -19,6 +20,7 @@
     <Config Name="SUBDOMAINS" Target="SUBDOMAINS" Default="subdomain1,subdomain2" Description="multiple subdomains allowed, comma separated, no spaces" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="TOKEN" Target="TOKEN" Default="token" Description="DuckDNS token" Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="LOG_FILE" Target="LOG_FILE" Default="false" Description="Set to `true` to log to file (also need to map /config)." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>
