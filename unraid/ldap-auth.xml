@@ -10,6 +10,7 @@
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-ldap-auth/issues/new/choose</Support>
+    <Shell>bash</Shell>
     <Project>https://github.com/nginxinc/nginx-ldap-auth</Project>
     <Overview>[Ldap-auth](https://github.com/nginxinc/nginx-ldap-auth) software is for authenticating users who request protected resources from servers proxied by nginx. It includes a daemon (ldap-auth) that communicates with an authentication server, and a webserver daemon that generates an authentication cookie based on the user’s credentials. The daemons are written in Python for use with a Lightweight Directory Access Protocol (LDAP) authentication server (OpenLDAP or Microsoft Windows Active Directory 2003 and 2012).</Overview>
     <WebUI>http://[IP]:[PORT:9000]</WebUI>
@@ -20,6 +21,7 @@
     <Config Name="FERNETKEY" Target="FERNETKEY" Default="" Description="Optionally define a custom fernet key, has to be base64-encoded 32-byte (only needed if container is frequently recreated, or if using multi-node setups, invalidating previous authentications)" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="CERTFILE" Target="CERTFILE" Default="" Description="Point this to a certificate file to enable HTTP over SSL (HTTPS) for the ldap auth daemon" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="KEYFILE" Target="KEYFILE" Default="" Description="Point this to the private key file, matching the certificate file referred to in CERTFILE" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>
