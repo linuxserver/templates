@@ -10,6 +10,7 @@
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-pylon/issues/new/choose</Support>
+    <Shell>bash</Shell>
     <Project>https://github.com/pylonide/pylon</Project>
     <Overview>[Pylon](https://github.com/pylonide/pylon) is a web based integrated development environment built with Node.js as a backend and with a supercharged JavaScript/HTML5 frontend, licensed under GPL version 3. This project originates from Cloud9 v2 project.</Overview>
     <WebUI>http://[IP]:[PORT:3131]</WebUI>
@@ -20,6 +21,7 @@
     <Config Name="GITURL" Target="GITURL" Default="https://github.com/linuxserver/docker-pylon.git" Description="Specify a git repo to checkout on first startup" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PYUSER" Target="PYUSER" Default="myuser" Description="Specify a basic auth user." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PYPASS" Target="PYPASS" Default="mypass" Description="Specify a basic auth password." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>
