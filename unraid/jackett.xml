@@ -10,6 +10,7 @@
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-jackett/issues/new/choose</Support>
+    <Shell>bash</Shell>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable Jackett Releases</TagDescription>
@@ -19,15 +20,16 @@
         <TagDescription>Latest Jackett Releases</TagDescription>
     </Branch>
     <Project>https://github.com/Jackett/Jackett</Project>
-    <Overview>[Jackett](https://github.com/Jackett/Jackett) works as a proxy server: it translates queries from apps (Sonarr, SickRage, CouchPotato, Mylar, etc) into tracker-site-specific http queries, parses the html response, then sends results back to the requesting software. This allows for getting recent uploads (like RSS) and performing searches. Jackett is a single repository of maintained indexer scraping & translation logic - removing the burden from other apps.</Overview>
+    <Overview>[Jackett](https://github.com/Jackett/Jackett) works as a proxy server: it translates queries from apps (Sonarr, SickRage, CouchPotato, Mylar, etc) into tracker-site-specific http queries, parses the html response, then sends results back to the requesting software. This allows for getting recent uploads (like RSS) and performing searches. Jackett is a single repository of maintained indexer scraping &amp; translation logic - removing the burden from other apps.</Overview>
     <WebUI>http://[IP]:[PORT:9117]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/jackett.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
     <Config Name="WebUI" Target="9117" Default="9117" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where Jackett should store its config file." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where Jackett should store its config file." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Path to torrent blackhole." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="AUTO_UPDATE" Target="AUTO_UPDATE" Default="true" Description="Allow Jackett to update inside of the container (currently recommended by Jackett and enabled by default)" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="RUN_OPTS" Target="RUN_OPTS" Default="<run options here>" Description="Optionally specify additional arguments to be passed." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="RUN_OPTS" Target="RUN_OPTS" Default="&lt;run options here&gt;" Description="Optionally specify additional arguments to be passed." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>
