@@ -10,17 +10,19 @@
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-mstream/issues/new/choose</Support>
+    <Shell>bash</Shell>
     <Project>https://mstream.io/</Project>
     <Overview>[mstream](https://mstream.io/) is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere.  There are mobile apps available for both Android and iPhone.</Overview>
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mstream.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mstream-icon.png</Icon>
     <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="The port for the mStream webinterface" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="mStream config" Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="mStream config" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /music" Target="/music" Default="" Mode="rw" Description="Music location" Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="USER" Target="USER" Default="admin" Description="Set username to login" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="PASSWORD" Target="PASSWORD" Default="password" Description="Set password for user" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="USE_JSON" Target="USE_JSON" Default="true/false" Description="Run mStream using the config specified at `/config/config.json`, note this will mean user/password is defined in `config.json`" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>
