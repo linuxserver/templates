@@ -11,6 +11,14 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-pyload/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Stable releases from Pyload</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>ng</Tag>
+        <TagDescription>Development releases from Pyload-ng (currently alpha)</TagDescription>
+    </Branch>
     <Project>https://pyload.net/</Project>
     <Overview>[Pyload](https://pyload.net/) is a Free and Open Source download manager written in Python and designed to be extremely lightweight, easily extensible and fully manageable via web.</Overview>
     <WebUI>http://[IP]:[PORT:8000]</WebUI>
