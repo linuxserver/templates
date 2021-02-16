@@ -10,6 +10,7 @@
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-rutorrent/issues/new/choose</Support>
+    <Shell>bash</Shell>
     <Project>https://github.com/Novik/ruTorrent</Project>
     <Overview>[Rutorrent](https://github.com/Novik/ruTorrent) is a popular rtorrent client with a webui for ease of use.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
@@ -19,8 +20,9 @@
     <Config Name="Port: 5000" Target="5000" Default="5000" Mode="tcp" Description="scgi port" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 51413" Target="51413" Default="51413" Mode="tcp" Description="Bit-torrent port" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 6881" Target="6881" Default="6881" Mode="udp" Description="Bit-torrent port" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="where ruTorrent should store it's config files" Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="where ruTorrent should store it&#39;s config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="path to your downloads folder" Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>
