@@ -10,6 +10,7 @@
     <Network>host</Network>
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-plex/issues/new/choose</Support>
+    <Shell>bash</Shell>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable releases with Focal baseimage</TagDescription>
@@ -23,11 +24,12 @@
     <WebUI>http://[IP]:[PORT:32400]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/plex.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/plex-icon.png</Icon>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Plex library location. *This can grow very large, 50gb+ is likely for a large collection.*" Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Plex library location. *This can grow very large, 50gb+ is likely for a large collection.*" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /tv" Target="/tv" Default="" Mode="rw" Description="Media goes here. Add as many as needed e.g. `/movies`, `/tv`, etc." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /movies" Target="/movies" Default="" Mode="rw" Description="Media goes here. Add as many as needed e.g. `/movies`, `/tv`, etc." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="VERSION" Target="VERSION" Default="docker" Description="Set whether to update plex or not - see Application Setup section." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="PLEX_CLAIM" Target="PLEX_CLAIM" Default="" Description="Optionally you can obtain a claim token from https://plex.tv/claim and input here. Keep in mind that the claim tokens expire within 4 minutes." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>
