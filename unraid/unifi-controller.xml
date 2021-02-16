@@ -10,6 +10,7 @@
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-unifi-controller/issues/new/choose</Support>
+    <Shell>bash</Shell>
     <Project>https://www.ubnt.com/enterprise/#unifi</Project>
     <Overview>The [Unifi-controller](https://www.ubnt.com/enterprise/#unifi) Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.</Overview>
     <WebUI>https://[IP]:[PORT:8443]</WebUI>
@@ -24,8 +25,9 @@
     <Config Name="Port: 8880" Target="8880" Default="8880" Mode="tcp" Description="Unifi guest portal HTTP redirect port" Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Port: 6789" Target="6789" Default="6789" Mode="tcp" Description="For mobile throughput test" Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Port: 5514" Target="5514" Default="5514" Mode="tcp" Description="Remote syslog port" Type="Port" Display="always" Required="false" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="All Unifi data stored here" Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="All Unifi data stored here" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="MEM_LIMIT" Target="MEM_LIMIT" Default="1024M" Description="Optionally change the Java memory limit (-Xmx) (default is 1024M)." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>
