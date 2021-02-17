@@ -10,6 +10,7 @@
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-cloud9/issues/new/choose</Support>
+    <Shell>bash</Shell>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Docker and Compose environment pre-installed</TagDescription>
@@ -41,6 +42,7 @@
     <Config Name="GITURL" Target="GITURL" Default="https://github.com/linuxserver/docker-cloud9.git" Description="Specify a git repo to checkout on first startup" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="USERNAME" Target="USERNAME" Default="" Description="Optionally specify a username for http auth" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PASSWORD" Target="PASSWORD" Default="" Description="Optionally specify a password for http auth (if USERNAME and PASSWORD are not set, there will be no http auth)" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>
