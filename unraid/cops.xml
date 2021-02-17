@@ -10,6 +10,7 @@
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-cops/issues/new/choose</Support>
+    <Shell>bash</Shell>
     <Project>http://blog.slucas.fr/en/oss/calibre-opds-php-server</Project>
     <Overview>[Cops](http://blog.slucas.fr/en/oss/calibre-opds-php-server) by Sébastien Lucas, stands for Calibre OPDS (and HTML) Php Server.
 
@@ -17,16 +18,16 @@ COPS links to your Calibre library database and allows downloading and emailing 
 
 Changes in your Calibre library are reflected immediately in your COPS pages.
 
-See : [COPS's home](http://blog.slucas.fr/en/oss/calibre-opds-php-server) for more details.
+See : [COPS&#39;s home](http://blog.slucas.fr/en/oss/calibre-opds-php-server) for more details.
 
-Don't forget to check the [Wiki](https://github.com/seblucas/cops/wiki).
+Don&#39;t forget to check the [Wiki](https://github.com/seblucas/cops/wiki).
 
-## Why? (taken from the author's site)
+## Why? (taken from the author&#39;s site)
 
 In my opinion Calibre is a marvelous tool but is too big and has too much
 dependencies to be used for its content server.
 
-That's the main reason why I coded this OPDS server. I needed a simple
+That&#39;s the main reason why I coded this OPDS server. I needed a simple
 tool to be installed on a small server (Seagate Dockstar in my case).
 
 I initially thought of Calibre2OPDS but as it generate static file no
@@ -34,21 +35,22 @@ search was possible.
 
 Later I added an simple HTML catalog that should be usable on my Kobo.
 
-So COPS's main advantages are :
+So COPS&#39;s main advantages are :
  * No need for many dependencies.
  * No need for a lot of CPU or RAM.
  * Not much code.
  * Search is available.
- * With Dropbox / owncloud it's very easy to have an up to date OPDS server.
+ * With Dropbox / owncloud it&#39;s very easy to have an up to date OPDS server.
  * It was fun to code.
 
-If you want to use the OPDS feed don't forget to specify feed.php at the end of your URL.</Overview>
+If you want to use the OPDS feed don&#39;t forget to specify feed.php at the end of your URL.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/cops.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cops-icon.png</Icon>
     <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="COPS Application Data." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="COPS Application Data." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /books" Target="/books" Default="" Mode="rw" Description="Calibre metadata.db location." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>
