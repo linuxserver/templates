@@ -10,6 +10,7 @@
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-openvpn-as/issues/new/choose</Support>
+    <Shell>bash</Shell>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable releases based on ubuntu bionic</TagDescription>
@@ -27,8 +28,9 @@
     <Config Name="WebUI" Target="943" Default="943" Mode="tcp" Description="Admin GUI port." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 9443" Target="9443" Default="9443" Mode="tcp" Description="TCP port." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 1194" Target="1194" Default="1194" Mode="udp" Description="UDP port." Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where openvpn-as should store configuration files." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="INTERFACE" Target="INTERFACE" Default="eth0" Description="With bridge networking, leave it as eth0 (or don't include at all), if host or macvlan, set it to your host's network interface, found by running `ifconfig`" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where openvpn-as should store configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="INTERFACE" Target="INTERFACE" Default="eth0" Description="With bridge networking, leave it as eth0 (or don&#39;t include at all), if host or macvlan, set it to your host&#39;s network interface, found by running `ifconfig`" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>
