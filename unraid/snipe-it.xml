@@ -10,19 +10,21 @@
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-snipe-it/issues/new/choose</Support>
+    <Shell>bash</Shell>
     <Project>https://github.com/snipe/snipe-it</Project>
     <Overview>[Snipe-it](https://github.com/snipe/snipe-it) makes asset management easy. It was built by people solving real-world IT and asset management problems, and a solid UX has always been a top priority. Straightforward design and bulk actions mean getting things done faster.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/snipe-it.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/snipe-it-icon.png</Icon>
     <Config Name="WebUI" Target="80" Default="8080" Mode="tcp" Description="Snipe-IT Web UI" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains your config files and data storage for Snipe-IT" Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="APP_URL" Target="APP_URL" Default="<hostname or ip>" Description="Hostname or IP and port if applicable IE <ip or hostname>:8080" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="MYSQL_PORT_3306_TCP_ADDR" Target="MYSQL_PORT_3306_TCP_ADDR" Default="<mysql host>" Description="Mysql hostname or IP to use" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="MYSQL_PORT_3306_TCP_PORT" Target="MYSQL_PORT_3306_TCP_PORT" Default="<mysql port>" Description="Mysql port to use" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="MYSQL_DATABASE" Target="MYSQL_DATABASE" Default="<mysql database>" Description="Mysql database to use" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="MYSQL_USER" Target="MYSQL_USER" Default="<mysql pass>" Description="Mysql user to use" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains your config files and data storage for Snipe-IT" Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="APP_URL" Target="APP_URL" Default="&lt;hostname or ip&gt;" Description="Hostname or IP and port if applicable IE &lt;ip or hostname&gt;:8080" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="MYSQL_PORT_3306_TCP_ADDR" Target="MYSQL_PORT_3306_TCP_ADDR" Default="&lt;mysql host&gt;" Description="Mysql hostname or IP to use" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="MYSQL_PORT_3306_TCP_PORT" Target="MYSQL_PORT_3306_TCP_PORT" Default="&lt;mysql port&gt;" Description="Mysql port to use" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="MYSQL_DATABASE" Target="MYSQL_DATABASE" Default="&lt;mysql database&gt;" Description="Mysql database to use" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="MYSQL_USER" Target="MYSQL_USER" Default="&lt;mysql pass&gt;" Description="Mysql user to use" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="MYSQL_PASSWORD" Target="MYSQL_PASSWORD" Default="changeme" Description="Mysql password to use" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>
