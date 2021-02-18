@@ -10,6 +10,7 @@
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-headphones/issues/new/choose</Support>
+    <Shell>bash</Shell>
     <Project>https://github.com/rembo10/headphones</Project>
     <Overview>[Headphones](https://github.com/rembo10/headphones) is an automated music downloader for NZB and Torrent, written in Python. It supports SABnzbd, NZBget, Transmission, µTorrent and Blackhole.</Overview>
     <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
@@ -17,9 +18,10 @@
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/headphones.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/headphones-icon.png</Icon>
     <Config Name="WebUI" Target="8181" Default="8181" Mode="tcp" Description="Application WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Configuration files." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="ISOs." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /music" Target="/music" Default="" Mode="rw" Description="Your music directory." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>
