@@ -13,19 +13,19 @@
     <Shell>bash</Shell>
     <Branch>
         <Tag>latest</Tag>
-        <TagDescription>Stable releases from Sonarr (currently v2)</TagDescription>
+        <TagDescription>Stable releases from Sonarr (currently v3)</TagDescription>
     </Branch>
     <Branch>
         <Tag>develop</Tag>
-        <TagDescription>Development releases from Sonarr (currently v2)</TagDescription>
+        <TagDescription>Development releases from Sonarr (currently v3)</TagDescription>
     </Branch>
     <Branch>
         <Tag>preview</Tag>
-        <TagDescription>Preview releases from Sonarr (currently v3)</TagDescription>
+        <TagDescription>DEPRECATED - Preview releases from Sonarr (currently v3)</TagDescription>
     </Branch>
     <Branch>
         <Tag>5.14</Tag>
-        <TagDescription>Stable Sonarr releases, but run on Mono 5.14</TagDescription>
+        <TagDescription>DEPRECATED - Stable Sonarr releases, but run on Mono 5.14</TagDescription>
     </Branch>
     <Project>https://sonarr.tv/</Project>
     <Overview>[Sonarr](https://sonarr.tv/) (formerly NZBdrone) is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.</Overview>
