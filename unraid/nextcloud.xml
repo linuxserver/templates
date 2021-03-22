@@ -11,6 +11,14 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-nextcloud/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Stable Nextcloud releases (currently php7)</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>php8</Tag>
+        <TagDescription>Experimental php8 based Nextcloud releases</TagDescription>
+    </Branch>
     <Project>https://nextcloud.com/</Project>
     <Overview>[Nextcloud](https://nextcloud.com/) gives you access to all your files wherever you are.
 
