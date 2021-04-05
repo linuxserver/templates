@@ -59,6 +59,10 @@
         <Tag>icewm-bionic</Tag>
         <TagDescription>IceWM Bionic</TagDescription>
     </Branch>
+    <Branch>
+        <Tag>alpine</Tag>
+        <TagDescription>XFCE Alpine</TagDescription>
+    </Branch>
     <Project>http://xrdp.org/</Project>
     <Overview>[Rdesktop](http://xrdp.org/) - Ubuntu based containers containing full desktop environments in officially supported flavors accessible via RDP.</Overview>
     <WebUI>http://[IP]:[PORT:3389]</WebUI>
