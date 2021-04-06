@@ -11,6 +11,14 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-overseerr/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Stable releases from GitHub</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>develop</Tag>
+        <TagDescription>Development releases from commits in upstream develop branch</TagDescription>
+    </Branch>
     <Project>https://overseerr.dev/</Project>
     <Overview>[Overseerr](https://overseerr.dev/) is a free and open source software application for managing requests for your media library.</Overview>
     <WebUI>http://[IP]:[PORT:5055]</WebUI>
