@@ -15,11 +15,10 @@
     <Overview>[BOINC](https://boinc.berkeley.edu/) is a platform for high-throughput computing on a large scale (thousands or millions of computers). It can be used for volunteer computing (using consumer devices) or grid computing (using organizational resources). It supports virtualized, parallel, and GPU-based applications.</Overview>
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/boinc.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/boinc-icon.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
     <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="Boinc desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where BOINC should store its database and config." Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="GUAC_USER" Target="GUAC_USER" Default="abc" Description="Username for the BOINC desktop gui." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="GUAC_PASS" Target="GUAC_PASS" Default="900150983cd24fb0d6963f7d28e17f72" Description="Password&#39;s md5 hash for the BOINC desktop gui." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PASSWORD" Target="PASSWORD" Default="" Description="Optionally set a password for the gui." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
