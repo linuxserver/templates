@@ -15,13 +15,11 @@
     <Overview>[Calibre](https://calibre-ebook.com/) is a powerful and easy to use e-book manager. Users say it’s outstanding and a must-have. It’ll allow you to do nearly everything and it takes things a step beyond normal e-book software. It’s also completely free and open source and great for both casual users and computer experts.</Overview>
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/calibre.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/calibre-icon.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
     <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="Calibre desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 8081" Target="8081" Default="8081" Mode="tcp" Description="Calibre webserver gui." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where calibre should store its database and library." Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="GUAC_USER" Target="GUAC_USER" Default="abc" Description="Username for the calibre desktop gui." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="GUAC_PASS" Target="GUAC_PASS" Default="900150983cd24fb0d6963f7d28e17f72" Description="Password&#39;s md5 hash for the calibre desktop gui." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="UMASK_SET" Target="UMASK_SET" Default="022" Description="for umask setting of Calibre, default if left unset is 022." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PASSWORD" Target="PASSWORD" Default="" Description="Optionally set a password for the gui." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="CLI_ARGS" Target="CLI_ARGS" Default="" Description="Optionally pass cli start arguments to calibre." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
