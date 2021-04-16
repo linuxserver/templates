@@ -18,17 +18,17 @@
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
     <Config Name="WebUI" Target="8000" Default="8000" Mode="tcp" Description="will map the container&#39;s port 8000 to port 8000 on the host" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="database and healthchecks config directory volume mapping" Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="SITE_ROOT" Target="SITE_ROOT" Default="&lt;SITE_ROOT&gt;" Description="The site&#39;s top-level URL and the port it listens to if differrent than 80 or 443 (e.g., https://healthchecks.example.com:8000)" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="SITE_NAME" Target="SITE_NAME" Default="&lt;SITE_NAME&gt;" Description="The site&#39;s name (e.g., &#34;Example Corp HealthChecks&#34;)" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="DEFAULT_FROM_EMAIL" Target="DEFAULT_FROM_EMAIL" Default="&lt;DEFAULT_FROM_EMAIL&gt;" Description="From email for alerts" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="EMAIL_HOST" Target="EMAIL_HOST" Default="&lt;EMAIL_HOST&gt;" Description="SMTP host" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="EMAIL_PORT" Target="EMAIL_PORT" Default="&lt;EMAIL_PORT&gt;" Description="SMTP port" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="EMAIL_HOST_USER" Target="EMAIL_HOST_USER" Default="&lt;EMAIL_HOST_USER&gt;" Description="SMTP user" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="EMAIL_HOST_PASSWORD" Target="EMAIL_HOST_PASSWORD" Default="&lt;EMAIL_HOST_PASSWORD&gt;" Description="SMTP password" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="EMAIL_USE_TLS" Target="EMAIL_USE_TLS" Default="&lt;True or False&gt;" Description="Use TLS for SMTP (`True` or `False`)" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="ALLOWED_HOSTS" Target="ALLOWED_HOSTS" Default="&lt;ALLOWED_HOSTS&gt;" Description="array of valid hostnames for the server `[&#34;test.com&#34;,&#34;test2.com&#34;]` or `&#34;*&#34;`" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="SUPERUSER_EMAIL" Target="SUPERUSER_EMAIL" Default="&lt;SUPERUSER_EMAIL&gt;" Description="Superuser email" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="SUPERUSER_PASSWORD" Target="SUPERUSER_PASSWORD" Default="&lt;SUPERUSER_PASSWORD&gt;" Description="Superuser password" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="SITE_ROOT" Target="SITE_ROOT" Default="SITE_ROOT" Description="The site&#39;s top-level URL and the port it listens to if differrent than 80 or 443 (e.g., https://healthchecks.example.com:8000)" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="SITE_NAME" Target="SITE_NAME" Default="SITE_NAME" Description="The site&#39;s name (e.g., &#34;Example Corp HealthChecks&#34;)" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="DEFAULT_FROM_EMAIL" Target="DEFAULT_FROM_EMAIL" Default="DEFAULT_FROM_EMAIL" Description="From email for alerts" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="EMAIL_HOST" Target="EMAIL_HOST" Default="EMAIL_HOST" Description="SMTP host" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="EMAIL_PORT" Target="EMAIL_PORT" Default="EMAIL_PORT" Description="SMTP port" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="EMAIL_HOST_USER" Target="EMAIL_HOST_USER" Default="EMAIL_HOST_USER" Description="SMTP user" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="EMAIL_HOST_PASSWORD" Target="EMAIL_HOST_PASSWORD" Default="EMAIL_HOST_PASSWORD" Description="SMTP password" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="EMAIL_USE_TLS" Target="EMAIL_USE_TLS" Default="True or False" Description="Use TLS for SMTP (`True` or `False`)" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="ALLOWED_HOSTS" Target="ALLOWED_HOSTS" Default="ALLOWED_HOSTS" Description="array of valid hostnames for the server `[&#34;test.com&#34;,&#34;test2.com&#34;]` or `&#34;*&#34;`" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="SUPERUSER_EMAIL" Target="SUPERUSER_EMAIL" Default="SUPERUSER_EMAIL" Description="Superuser email" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="SUPERUSER_PASSWORD" Target="SUPERUSER_PASSWORD" Default="SUPERUSER_PASSWORD" Description="Superuser password" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="REGENERATE_SETTINGS" Target="REGENERATE_SETTINGS" Default="True/False" Description="Defaults to False. Set to true to always override the `local_settings.py` file with values from environment variables. Do not set to True if you have made manual modifications to this file." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
