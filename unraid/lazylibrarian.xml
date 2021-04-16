@@ -15,7 +15,7 @@
     <Overview>[Lazylibrarian](https://lazylibrarian.gitlab.io/) is a program to follow authors and grab metadata for all your digital reading needs. It uses a combination of Goodreads Librarything and optionally GoogleBooks as sources for author info and book info.  This container is based on the DobyTang fork.</Overview>
     <WebUI>http://[IP]:[PORT:5299]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/lazylibrarian.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/lazylibrarian-icon.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
     <Config Name="WebUI" Target="5299" Default="5299" Mode="tcp" Description="The port for the LazyLibrarian webinterface" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="LazyLibrarian config" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Download location" Type="Path" Display="always" Required="true" Mask="false"/>
