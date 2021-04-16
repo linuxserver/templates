@@ -15,7 +15,7 @@
     <Overview>[Photoshow](https://github.com/thibaud-rohmer/PhotoShow) is gallery software at its easiest, it doesn&#39;t even require a database.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/photoshow.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/photoshow-icon.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
     <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Stores config and logs for nginx base." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /Pictures" Target="/Pictures" Default="" Mode="ro" Description="Your local folder of photos you wish to share." Type="Path" Display="always" Required="true" Mask="false"/>
