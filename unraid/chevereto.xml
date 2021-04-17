@@ -15,7 +15,7 @@
     <Overview>[Chevereto](https://github.com/Chevereto/Chevereto-Free) is an image hosting software that allows you to create a beautiful and full-featured image hosting website on your own server. It&#39;s your hosting and your rules, so say goodbye to closures and restrictions.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/chevereto.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/chevereto-logo.png</Icon>
     <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="http gui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 443" Target="443" Default="443" Mode="tcp" Description="https gui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="config directory volume mapping" Type="Path" Display="advanced" Required="true" Mask="false"/>
