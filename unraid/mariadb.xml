@@ -23,7 +23,7 @@
     <Overview>[Mariadb](https://mariadb.org/) is one of the most popular database servers. Made by the original developers of MySQL.</Overview>
     <WebUI>http://[IP]:[PORT:3306]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mariadb.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mariadb-icon.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mariadb-logo.png</Icon>
     <Config Name="WebUI" Target="3306" Default="3306" Mode="tcp" Description="Mariadb listens on this port." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains the db itself and all assorted settings." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="MYSQL_ROOT_PASSWORD" Target="MYSQL_ROOT_PASSWORD" Default="ROOT_ACCESS_PASSWORD" Description="Set this to root password for installation (minimum 4 characters)." Type="Variable" Display="always" Required="true" Mask="false"/>
