@@ -15,7 +15,7 @@
     <Overview>[Calibre](https://calibre-ebook.com/) is a powerful and easy to use e-book manager. Users say it’s outstanding and a must-have. It’ll allow you to do nearly everything and it takes things a step beyond normal e-book software. It’s also completely free and open source and great for both casual users and computer experts.</Overview>
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/calibre.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/calibre-logo.png</Icon>
     <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="Calibre desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 8081" Target="8081" Default="8081" Mode="tcp" Description="Calibre webserver gui." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where calibre should store its database and library." Type="Path" Display="advanced" Required="true" Mask="false"/>
