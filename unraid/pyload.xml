@@ -23,7 +23,7 @@
     <Overview>[Pyload](https://pyload.net/) is a Free and Open Source download manager written in Python and designed to be extremely lightweight, easily extensible and fully manageable via web.</Overview>
     <WebUI>http://[IP]:[PORT:8000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/pyload.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pyload-icon.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pyload-logo.png</Icon>
     <Config Name="WebUI" Target="8000" Default="8000" Mode="tcp" Description="Allows HTTP access to the application" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 7227" Target="7227" Default="7227" Mode="tcp" Description="pyLoad control port" Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="pyLoad Configuration and files database" Type="Path" Display="advanced" Required="true" Mask="false"/>
