@@ -67,7 +67,7 @@
     <Overview>[Rdesktop](http://xrdp.org/) - Ubuntu based containers containing full desktop environments in officially supported flavors accessible via RDP.</Overview>
     <WebUI>http://[IP]:[PORT:3389]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/rdesktop.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/rdesktop-logo.png</Icon>
     <Config Name="WebUI" Target="3389" Default="3389" Mode="tcp" Description="RDP access port" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /var/run/docker.sock" Target="/var/run/docker.sock" Default="" Mode="rw" Description="Docker Socket on the system, if you want to use Docker in the container" Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="abc users home directory" Type="Path" Display="always" Required="false" Mask="false"/>
