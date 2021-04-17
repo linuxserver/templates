@@ -15,7 +15,7 @@
     <Overview>[Ldap-auth](https://github.com/nginxinc/nginx-ldap-auth) software is for authenticating users who request protected resources from servers proxied by nginx. It includes a daemon (ldap-auth) that communicates with an authentication server, and a webserver daemon that generates an authentication cookie based on the user’s credentials. The daemons are written in Python for use with a Lightweight Directory Access Protocol (LDAP) authentication server (OpenLDAP or Microsoft Windows Active Directory 2003 and 2012).</Overview>
     <WebUI>http://[IP]:[PORT:9000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/ldap-auth.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ldap-auth-logo.png</Icon>
     <Config Name="WebUI" Target="8888" Default="8888" Mode="tcp" Description="the port for ldap auth daemon" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 9000" Target="9000" Default="9000" Mode="tcp" Description="the port for ldap login page" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="FERNETKEY" Target="FERNETKEY" Default="" Description="Optionally define a custom fernet key, has to be base64-encoded 32-byte (only needed if container is frequently recreated, or if using multi-node setups, invalidating previous authentications)" Type="Variable" Display="always" Required="false" Mask="false"/>
