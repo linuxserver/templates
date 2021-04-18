@@ -29,7 +29,7 @@
 - You&#39;re no longer running excess instances of Chrome.</Overview>
     <WebUI>http://[IP]:[PORT:8443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/code-server.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/code-server-logo.png</Icon>
     <Config Name="WebUI" Target="8443" Default="8443" Mode="tcp" Description="web gui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PASSWORD" Target="PASSWORD" Default="password" Description="Optional web gui password, if `PASSWORD` or `HASHED_PASSWORD` is not provided, there will be no auth." Type="Variable" Display="always" Required="false" Mask="false"/>
