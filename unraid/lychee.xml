@@ -19,7 +19,7 @@
 Please note that the upgrade process resets ALL password-protected albums. Any albums that were made public with a password will need to be re-secured.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/lychee.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/lychee-logo.png</Icon>
     <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="http gui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /pictures" Target="/pictures" Default="" Mode="rw" Description="Where lychee will store uploaded data." Type="Path" Display="always" Required="true" Mask="false"/>
