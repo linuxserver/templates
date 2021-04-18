@@ -17,7 +17,7 @@
 This container handles the IRC connection (quasselcore) and requires a desktop client (quasselclient) to be used and configured. It is designed to be always on and will keep your identity present in IRC even when your clients cannot be online. Backlog (history) is downloaded by your client upon reconnection allowing infinite scrollback through time.</Overview>
     <WebUI>http://[IP]:[PORT:4242]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/quassel-core.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/quassel-core-icon.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/quassel-core-logo.png</Icon>
     <Config Name="WebUI" Target="4242" Default="4242" Mode="tcp" Description="The port quassel-core listens for connections on." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 10113" Target="10113" Default="113" Mode="tcp" Description="Optional Ident Port" Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Database and quassel-core configuration storage." Type="Path" Display="advanced" Required="true" Mask="false"/>
