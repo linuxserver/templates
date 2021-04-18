@@ -16,7 +16,7 @@
 
 ### UPGRADE WARNING
 
-Please note that the upgrade process resets ALL password-protected albums. Any albums that were made public with a password will need to be re-secured.</Overview>
+Please note that the v4 upgrade process resets ALL password-protected albums. Any albums that were made public with a password will need to be re-secured.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/lychee.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/lychee-logo.png</Icon>
