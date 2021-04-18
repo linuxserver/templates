@@ -15,7 +15,7 @@
     <Overview>[mstream](https://mstream.io/) is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere.  There are mobile apps available for both Android and iPhone.</Overview>
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mstream.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mstream-icon.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mstream-logo.png</Icon>
     <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="The port for the mStream webinterface" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="mStream config" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /music" Target="/music" Default="" Mode="rw" Description="Music location" Type="Path" Display="always" Required="true" Mask="false"/>
