@@ -23,7 +23,7 @@
     <Overview>The [Qbittorrent](https://www.qbittorrent.org/) project aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.</Overview>
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/qbittorrent.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/qbittorrent-icon.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/qbittorrent-logo.png</Icon>
     <Config Name="WebUI" Target="6881" Default="6881" Mode="tcp" Description="tcp connection port" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 6881" Target="6881" Default="6881" Mode="udp" Description="udp connection port" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 8080" Target="8080" Default="8080" Mode="tcp" Description="http gui" Type="Port" Display="always" Required="true" Mask="false"/>
