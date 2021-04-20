@@ -16,7 +16,7 @@
 No Flash, No Java, No Websocket, No Bullshit.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/librespeed.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/librespeed-icon.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/librespeed-logo.png</Icon>
     <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="web gui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PASSWORD" Target="PASSWORD" Default="PASSWORD" Description="Set the password for the results database." Type="Variable" Display="always" Required="true" Mask="false"/>
