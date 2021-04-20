@@ -23,7 +23,7 @@
     <Overview>[Mylar3](https://github.com/mylar3/mylar3) is an automated Comic Book downloader (cbr/cbz) for use with NZB and torrents written in python. It supports SABnzbd, NZBGET, and many torrent clients in addition to DDL.</Overview>
     <WebUI>http://[IP]:[PORT:8090]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mylar3.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mylar3-logo.png</Icon>
     <Config Name="WebUI" Target="8090" Default="8090" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where mylar should store config files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /comics" Target="/comics" Default="" Mode="rw" Description="Map to your comics folder." Type="Path" Display="always" Required="true" Mask="false"/>
