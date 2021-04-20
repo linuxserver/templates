@@ -31,7 +31,7 @@
     <Overview>[Sonarr](https://sonarr.tv/) (formerly NZBdrone) is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.</Overview>
     <WebUI>http://[IP]:[PORT:8989]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sonarr.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sonarr-icon.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sonarr-logo.png</Icon>
     <Config Name="WebUI" Target="8989" Default="8989" Mode="tcp" Description="The port for the Sonarr webinterface" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Database and sonarr configs" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /tv" Target="/tv" Default="" Mode="rw" Description="Location of TV library on disk (See note in Application setup)" Type="Path" Display="always" Required="true" Mask="false"/>
