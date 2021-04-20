@@ -27,7 +27,7 @@ Allow your users to post issues against their requests so you know there is a pr
 Even automatically send them weekly newsletters of new content that has been added to your Plex server!</Overview>
     <WebUI>http://[IP]:[PORT:3579]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/ombi.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ombi-logo.png</Icon>
     <Config Name="WebUI" Target="3579" Default="3579" Mode="tcp" Description="web gui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="BASE_URL" Target="BASE_URL" Default="/ombi" Description="Subfolder can optionally be defined as an env variable for reverse proxies. Keep in mind that once this value is defined, the gui setting for base url no longer works. To use the gui setting, remove this env variable." Type="Variable" Display="always" Required="false" Mask="false"/>
