@@ -15,7 +15,7 @@
     <Overview>The [Unifi-controller](https://www.ubnt.com/enterprise/#unifi) Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.</Overview>
     <WebUI>https://[IP]:[PORT:8443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/unifi-controller.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-controller-icon.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-controller-logo.png</Icon>
     <Config Name="WebUI" Target="3478" Default="3478" Mode="udp" Description="Unifi STUN port" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 10001" Target="10001" Default="10001" Mode="udp" Description="Required for AP discovery" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 8080" Target="8080" Default="8080" Mode="tcp" Description="Required for device communication" Type="Port" Display="always" Required="true" Mask="false"/>
