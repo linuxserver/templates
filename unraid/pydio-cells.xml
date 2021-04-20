@@ -16,7 +16,7 @@
     <ExtraParams>pydio-cells --cap-add=NET_ADMIN</ExtraParams>
     <WebUI>https://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/pydio-cells.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pydio-cells-icon.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
     <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="Http port" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 33060" Target="33060" Default="33060" Mode="tcp" Description="gRPC port (required for CellsSync)." Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="All the config files reside here." Type="Path" Display="advanced" Required="true" Mask="false"/>
