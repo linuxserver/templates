@@ -15,7 +15,7 @@
     <Overview>[Syncthing](https://syncthing.net) replaces proprietary sync and cloud services with something open, trustworthy and decentralized. Your data is your data alone and you deserve to choose where it is stored, if it is shared with some third party and how it&#39;s transmitted over the Internet.</Overview>
     <WebUI>http://[IP]:[PORT:8384]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/syncthing.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/syncthing-icon.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/syncthing-logo.png</Icon>
     <Config Name="WebUI" Target="8384" Default="8384" Mode="tcp" Description="Application WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 22000" Target="22000" Default="22000" Mode="tcp" Description="Listening port" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 21027" Target="21027" Default="21027" Mode="udp" Description="Protocol discovery" Type="Port" Display="always" Required="true" Mask="false"/>
