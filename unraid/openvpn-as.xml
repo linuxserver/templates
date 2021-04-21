@@ -24,7 +24,7 @@
     <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
     <WebUI>https://[IP]:[PORT:943]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/openvpn-as.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/openvpn-as-icon.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/openvpn-as-logo.png</Icon>
     <Config Name="WebUI" Target="943" Default="943" Mode="tcp" Description="Admin GUI port." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 9443" Target="9443" Default="9443" Mode="tcp" Description="TCP port." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 1194" Target="1194" Default="1194" Mode="udp" Description="UDP port." Type="Port" Display="always" Required="true" Mask="false"/>
