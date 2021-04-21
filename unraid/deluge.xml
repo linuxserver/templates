@@ -20,7 +20,7 @@
 * Much more...</Overview>
     <WebUI>http://[IP]:[PORT:8112]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/deluge.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/deluge-icon.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/deluge-logo.png</Icon>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="deluge configs" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="torrent download directory" Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="DELUGE_LOGLEVEL" Target="DELUGE_LOGLEVEL" Default="error" Description="set the loglevel output when running Deluge, default is info for deluged and warning for delgued-web" Type="Variable" Display="always" Required="false" Mask="false"/>
