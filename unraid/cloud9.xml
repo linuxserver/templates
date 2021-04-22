@@ -35,7 +35,7 @@
     <Overview>[Cloud9](https://github.com/c9/core) Cloud9 is a complete web based IDE with terminal access. This container is for running their core SDK locally and developing plugins.</Overview>
     <WebUI>http://[IP]:[PORT:8000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/cloud9.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cloud9-logo.png</Icon>
     <Config Name="WebUI" Target="8000" Default="8000" Mode="tcp" Description="The port for the Cloud9 web interface" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /code" Target="/code" Default="" Mode="rw" Description="Optionally if you want to mount up a local folder of code instead of checking out" Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="Path: /var/run/docker.sock" Target="/var/run/docker.sock" Default="" Mode="rw" Description="Needed if you plan to use Docker or compose commands" Type="Path" Display="always" Required="false" Mask="false"/>
