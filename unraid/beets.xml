@@ -23,7 +23,7 @@
     <Overview>[Beets](http://beets.io/) is a music library manager and not, for the most part, a music player. It does include a simple player plugin and an experimental Web-based player, but it generally leaves actual sound-reproduction to specialized tools.</Overview>
     <WebUI>http://[IP]:[PORT:8337]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/beets.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/beets-icon.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/beets-logo.png</Icon>
     <Config Name="WebUI" Target="8337" Default="8337" Mode="tcp" Description="Application WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /music" Target="/music" Default="" Mode="rw" Description="Music library" Type="Path" Display="always" Required="true" Mask="false"/>
