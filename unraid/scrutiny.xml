@@ -12,11 +12,11 @@
     <Support>https://github.com/linuxserver/docker-scrutiny/issues/new/choose</Support>
     <Shell>bash</Shell>
     <Project>https://github.com/AnalogJ/scrutiny</Project>
-    <Overview>[Scrutiny](https://github.com/AnalogJ/scrutiny) WebUI for smartd S.M.A.R.T monitoring. Scrutiny is a Hard Drive Health Dashboard &amp; Monitoring solution, merging manufacturer provided S.M.A.R.T metrics with real-world failure rates from Backblaze.</Overview>
+    <Overview>[Scrutiny](https://github.com/AnalogJ/scrutiny) WebUI for smartd S.M.A.R.T monitoring. Scrutiny is a Hard Drive Health Dashboard and Monitoring solution, merging manufacturer provided S.M.A.R.T metrics with real-world failure rates from Backblaze.</Overview>
     <ExtraParams>--cap-add=SYS_RAWIO</ExtraParams>
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/scrutiny.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/scrutiny-icon.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/scrutiny-logo.png</Icon>
     <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="Port for scrutiny&#39;s web interface and API." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where config is stored." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /run/udev" Target="/run/udev" Default="" Mode="ro" Description="Provides necessary metadata to Scrutiny." Type="Path" Display="always" Required="true" Mask="false"/>
