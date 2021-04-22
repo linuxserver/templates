@@ -15,7 +15,7 @@
     <Overview>[Quassel-web](https://github.com/magne4000/quassel-webserver) is a web client for Quassel.  Note that a Quassel-Core instance is required, we have a container available [here.](https://hub.docker.com/r/linuxserver/quassel-core/)</Overview>
     <WebUI>https://[IP]:[PORT:64443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/quassel-web.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/quassel-web-icon.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/quassel-web-logo.png</Icon>
     <Config Name="WebUI" Target="64080" Default="64080" Mode="tcp" Description="will map the container&#39;s port 64080 to port 64080 on the host" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="this will store config on the docker host" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="QUASSEL_CORE" Target="QUASSEL_CORE" Default="192.168.1.10" Description="specify the URL or IP address of your Quassel Core instance" Type="Variable" Display="always" Required="true" Mask="false"/>
