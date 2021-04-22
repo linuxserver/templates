@@ -15,7 +15,7 @@
     <Overview>[Sickchill](https://github.com/SickChill/SickChill) is an Automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.</Overview>
     <WebUI>http://[IP]:[PORT:8081]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sickchill.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sickchill-icon.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sickchill-logo.png</Icon>
     <Config Name="WebUI" Target="8081" Default="8081" Mode="tcp" Description="will map the container&#39;s port 8081 to port 8081 on the host" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="this will store config on the docker host" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="this will store any downloaded data on the docker host" Type="Path" Display="always" Required="true" Mask="false"/>
