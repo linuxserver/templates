@@ -23,7 +23,7 @@
     <Overview>[Booksonic](http://booksonic.org) is a server and an app for streaming your audiobooks to any pc or android phone. Most of the functionality is also availiable on other platforms that have apps for subsonic.</Overview>
     <WebUI>http://[IP]:[PORT:4040]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/booksonic.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/booksonic-logo.png</Icon>
     <Config Name="WebUI" Target="4040" Default="4040" Mode="tcp" Description="Application WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /audiobooks" Target="/audiobooks" Default="" Mode="rw" Description="Audiobooks." Type="Path" Display="always" Required="true" Mask="false"/>
