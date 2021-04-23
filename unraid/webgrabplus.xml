@@ -15,7 +15,7 @@
     <Overview>[Webgrabplus](http://www.webgrabplus.com) is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/webgrabplus.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webgrabplus-logo.png</Icon>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where webgrabplus should store it&#39;s config files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="Where webgrabplus should store it&#39;s data files." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
