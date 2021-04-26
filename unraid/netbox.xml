@@ -18,8 +18,8 @@
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/netbox-logo.png</Icon>
     <Config Name="WebUI" Target="8000" Default="8000" Mode="tcp" Description="will map the container&#39;s port 8000 to port 8000 on the host" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="config directory volume mapping" Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="SUPERUSER_EMAIL" Target="SUPERUSER_EMAIL" Default="SUPERUSER_EMAIL" Description="Username for admin account" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="SUPERUSER_PASSWORD" Target="SUPERUSER_PASSWORD" Default="SUPERUSER_PASSWORD" Description="Password for admin account" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="SUPERUSER_EMAIL" Target="SUPERUSER_EMAIL" Default="SUPERUSER_EMAIL" Description="Email address for `admin` account" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="SUPERUSER_PASSWORD" Target="SUPERUSER_PASSWORD" Default="SUPERUSER_PASSWORD" Description="Password for `admin` account" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="ALLOWED_HOST" Target="ALLOWED_HOST" Default="ALLOWED_HOST" Description="The hostname you will use to access the app (i.e., netbox.example.com)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="BASE_PATH" Target="BASE_PATH" Default="BASE_PATH" Description="The path you will use to access the app (i.e., /netbox, optional, default: none)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_NAME" Target="DB_NAME" Default="DB_NAME" Description="Database name (optional, default: netbox)" Type="Variable" Display="always" Required="true" Mask="false"/>
