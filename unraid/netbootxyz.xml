@@ -31,6 +31,7 @@
     <Config Name="Path: /assets" Target="/assets" Default="" Mode="rw" Description="Storage for NETBOOT.XYZ bootable assets (live CDs and other files)" Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="MENU_VERSION" Target="MENU_VERSION" Default="1.9.9" Description="Specify a specific version of boot files you want to use from NETBOOT.XYZ (unset pulls latest)" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PORT_RANGE" Target="PORT_RANGE" Default="30000:30010" Description="Specify the port range tftp will use for data transfers [(see Wikipedia)](https://en.wikipedia.org/wiki/Trivial_File_Transfer_Protocol#Details)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="SUBFOLDER" Target="SUBFOLDER" Default="/" Description="Specify a sobfolder if running this behind a reverse proxy (IE /proxy/)" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
