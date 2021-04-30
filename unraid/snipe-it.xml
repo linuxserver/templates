@@ -18,7 +18,7 @@
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/snipe-it-logo.png</Icon>
     <Config Name="WebUI" Target="80" Default="8080" Mode="tcp" Description="Snipe-IT Web UI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains your config files and data storage for Snipe-IT" Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="APP_URL" Target="APP_URL" Default="hostname or ip" Description="Hostname or IP and port if applicable IE ip or hostname:8080" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="NGINX_APP_URL" Target="NGINX_APP_URL" Default="hostname or ip" Description="Hostname or IP and port if applicable IE ip or hostname:8080" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="MYSQL_PORT_3306_TCP_ADDR" Target="MYSQL_PORT_3306_TCP_ADDR" Default="mysql host" Description="Mysql hostname or IP to use" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="MYSQL_PORT_3306_TCP_PORT" Target="MYSQL_PORT_3306_TCP_PORT" Default="mysql port" Description="Mysql port to use" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="MYSQL_DATABASE" Target="MYSQL_DATABASE" Default="mysql database" Description="Mysql database to use" Type="Variable" Display="always" Required="true" Mask="false"/>
