@@ -17,7 +17,8 @@
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/syncthing.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/syncthing-logo.png</Icon>
     <Config Name="WebUI" Target="8384" Default="8384" Mode="tcp" Description="Application WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Port: 22000" Target="22000" Default="22000" Mode="tcp" Description="Listening port" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 22000" Target="22000" Default="22000" Mode="tcp" Description="Listening port (TCP)" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 22000" Target="22000" Default="22000" Mode="udp" Description="Listening port (UDP)" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 21027" Target="21027" Default="21027" Mode="udp" Description="Protocol discovery" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /data1" Target="/data1" Default="" Mode="rw" Description="Data1" Type="Path" Display="always" Required="true" Mask="false"/>
