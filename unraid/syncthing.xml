@@ -13,7 +13,6 @@
     <Shell>bash</Shell>
     <Project>https://syncthing.net</Project>
     <Overview>[Syncthing](https://syncthing.net) replaces proprietary sync and cloud services with something open, trustworthy and decentralized. Your data is your data alone and you deserve to choose where it is stored, if it is shared with some third party and how it&#39;s transmitted over the Internet.</Overview>
-    <ExtraParams>--sysctl=net.core.rmem_max=2097152</ExtraParams>
     <WebUI>http://[IP]:[PORT:8384]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/syncthing.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/syncthing-logo.png</Icon>
