@@ -12,7 +12,7 @@
     <Support>https://github.com/linuxserver/docker-xbackbone/issues/new/choose</Support>
     <Shell>bash</Shell>
     <Project>https://github.com/SergiX44/XBackBone</Project>
-    <Overview>[Xbackbone](https://github.com/SergiX44/XBackBone) is an image hosting software that allows you to create a beautiful and full-featured image hosting website on your own server. It&#39;s your hosting and your rules, so say goodbye to closures and restrictions.</Overview>
+    <Overview>[Xbackbone](https://github.com/SergiX44/XBackBone) is a simple, self-hosted, lightweight PHP file manager that support the instant sharing tool ShareX and *NIX systems. It supports uploading and displaying images, GIF, video, code, formatted text, and file downloading and uploading. Also have a web UI with multi user management, past uploads history and search support.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/xbackbone.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
