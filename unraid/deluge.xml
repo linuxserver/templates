@@ -23,7 +23,7 @@
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/deluge-logo.png</Icon>
     <Config Name="WebUI" Target="8112" Default="8112" Mode="tcp" Description="Port for webui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 6881" Target="6881" Default="6881" Mode="tcp" Description="Inbound torrent traffic (See App Setup)" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Port: 6881" Target="6881" Default="6881/udp" Mode="udp" Description="Inbound torrent traffic (See App Setup)" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 6881" Target="6881" Default="6881" Mode="udp" Description="Inbound torrent traffic (See App Setup)" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="deluge configs" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="torrent download directory" Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="DELUGE_LOGLEVEL" Target="DELUGE_LOGLEVEL" Default="error" Description="set the loglevel output when running Deluge, default is info for deluged and warning for delgued-web" Type="Variable" Display="always" Required="false" Mask="false"/>
