@@ -17,7 +17,7 @@
     </Branch>
     <Branch>
         <Tag>bionic</Tag>
-        <TagDescription>Stable Jellyfin releases - Bionic baseimage</TagDescription>
+        <TagDescription>DEPRECATED, no longer updated - Stable Jellyfin releases - Bionic baseimage</TagDescription>
     </Branch>
     <Branch>
         <Tag>nightly</Tag>
