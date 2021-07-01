@@ -13,6 +13,7 @@
     <Shell>bash</Shell>
     <Project>https://www.syslog-ng.com/products/open-source-log-management/</Project>
     <Overview>[syslog-ng](https://www.syslog-ng.com/products/open-source-log-management/) allows you to flexibly collect, parse, classify, rewrite and correlate logs from across your infrastructure and store or route them to log analysis tools.</Overview>
+    <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/syslog-ng.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/syslog-ng-logo.png</Icon>
     <Config Name="WebUI" Target="5514" Default="514" Mode="tcp" Description="Syslog UDP" Type="Port" Display="always" Required="true" Mask="false"/>
