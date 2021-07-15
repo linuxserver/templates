@@ -1,9 +1,10 @@
+booksonic
 docker-compose
 ffmpeg
 fleet
 guacd
 nano
 openssh-server
-wireguard
 openvpn-as
-booksonic
+tester
+wireguard
