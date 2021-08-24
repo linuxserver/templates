@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-minisatip/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>minisatip</Name>
     <Repository>ghcr.io/linuxserver/minisatip</Repository>
@@ -11,16 +12,71 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-minisatip/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-minisatip#application-setup</GitHub>
     <Project>https://github.com/catalinii/minisatip</Project>
-    <Overview>[Minisatip](https://github.com/catalinii/minisatip) is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards.</Overview>
+    <Overview>Minisatip(https://github.com/catalinii/minisatip) is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards.</Overview>
     <WebUI>http://[IP]:[PORT:8875]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/minisatip.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/minisatip-logo.png</Icon>
+    <Date>2021-01-23</Date>
+    <Changes>
+### 2021-01-23
+- Rebasing to alpine 3.13.
+
+### 2020-06-01
+- Rebasing to alpine 3.12.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-02-22
+- Rebasing to alpine 3.9.
+
+### 2019-02-20
+- Fix run options.
+
+### 2019-02-11
+- Add pipeline logic and multi arch.
+
+### 2018-08-28
+- Rebase to Alpine 3.8.
+
+### 2017-12-13
+- Rebase to Alpine 3.7.
+
+### 2017-05-28
+- Rebase to Alpine 3.6.
+
+### 2017-02-08
+- Rebase to Alpine 3.5 and only compile libs in dvb-apps.
+
+### 2016-10-14
+- Add version layer information.
+
+### 2016-09-18
+- Add support for Common Interface.
+
+### 2016-09-11
+- Add layer badges to README.
+
+### 2016-08-28
+- Add badges to README.
+
+### 2016-08-15
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="8875" Default="8875" Mode="tcp" Description="Status Page WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 554" Target="554" Default="554" Mode="tcp" Description="RTSP Port" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 1900" Target="1900" Default="1900" Mode="udp" Description="App Discovery" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Configuration files and minisatip data" Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="RUN_OPTS" Target="RUN_OPTS" Default="parameter" Description="Specify specific run params for minisatip" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="RUN_OPTS" Target="RUN_OPTS" Default="parameter" Description="Specify specific run params for minisatip" Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
