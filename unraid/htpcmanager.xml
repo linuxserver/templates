@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-htpcmanager/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>htpcmanager</Name>
     <Repository>ghcr.io/linuxserver/htpcmanager</Repository>
@@ -11,11 +12,75 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-htpcmanager/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-htpcmanager#application-setup</GitHub>
     <Project>https://github.com/HTPC-Manager/HTPC-Manager</Project>
-    <Overview>[Htpcmanager](https://github.com/HTPC-Manager/HTPC-Manager) is a front end for many htpc related applications.</Overview>
+    <Overview>Htpcmanager(https://github.com/HTPC-Manager/HTPC-Manager) is a front end for many htpc related applications.</Overview>
     <WebUI>http://[IP]:[PORT:8085]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/htpcmanager.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/htpcmanager-logo.png</Icon>
+    <Date>2021-04-08</Date>
+    <Changes>
+### 2021-04-08
+- Fix build.
+
+### 2021-02-10
+- Rebasing to alpine 3.13.
+
+### 2020-10-26
+- Rebase to alpine 3.12, python3, change upstream project
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-02-22
+- Rebasing to alpine 3.9.
+
+### 2019-01-16
+- Add pipeline logic and multi arch.
+
+### 2018-08-17
+- Rebase to alpine 3.8.
+
+### 2017-12-12
+- Rebase to alpine 3.7.
+
+### 2017-07-20
+- Internal git pull instead of at runtime.
+
+### 2017-05-25
+- Rebase to alpine 3.6.
+
+### 2017-02-07
+- Rebase to alpine 3.5.
+
+### 2016-10-14
+- Add version layer information.
+
+### 2016-09-26
+- Add back cherrypy after removal from baseimage.
+
+### 2016-09-10
+- Add layer badges to README.
+
+### 2016-08-28
+- Add badges to README.
+
+### 2016-08-08
+- Rebase to alpine linux.
+
+### 2015-01-14
+- Remove hardcoded loglevel from the run command, set in webui
+
+### 2015-09-19
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="8085" Default="8085" Mode="tcp" Description="Application WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
