@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-duckdns/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>duckdns</Name>
     <Repository>ghcr.io/linuxserver/duckdns</Repository>
@@ -11,15 +12,70 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-duckdns/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-duckdns#application-setup</GitHub>
     <Project>https://duckdns.org/</Project>
-    <Overview>[Duckdns](https://duckdns.org/) is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn&#39;t require reactivation or forum posts to maintain its existence.</Overview>
+    <Overview>Duckdns(https://duckdns.org/) is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn&#39;t require reactivation or forum posts to maintain its existence.</Overview>
     <WebUI>http://[IP]:[PORT:]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/duckdns.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/duckdns-logo.png</Icon>
+    <Date>2021-05-03</Date>
+    <Changes>
+### 2021-05-03
+- Re-adjust cron timings to prevent peak times, update code formatting.
+
+### 2021-01-23
+- Rebasing to alpine 3.13.
+
+### 2020-06-01
+- Rebasing to alpine 3.12.
+
+### 2020-04-13
+- Add donation links for DuckDNS.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-09-24
+- Fix perms on github and remove chmod that can stall the container.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-02-22
+- Rebasing to alpine 3.9.
+
+### 2019-02-08
+- Update readme with optional parameters.
+
+### 2018-12-10
+- Fix docker compose example.
+
+### 2018-10-15
+- Multi-arch image.
+
+### 2018-08-22
+- Rebase to alpine 3.8.
+
+### 2017-12-08
+- Rebase to alpine 3.7.
+
+### 2017-05-28
+- Rebase to alpine 3.6.
+
+### 2017-02-09
+- Rebase to alpine 3.5.
+
+### 2016-11-17
+- Initial release.
+
+    </Changes>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Used in conjunction with logging to file." Type="Path" Display="always" Required="false" Mask="false"/>
-    <Config Name="SUBDOMAINS" Target="SUBDOMAINS" Default="subdomain1,subdomain2" Description="multiple subdomains allowed, comma separated, no spaces" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="SUBDOMAINS" Target="SUBDOMAINS" Default="subdomain1,subdomain2" Description="multiple subdomains allowed, comma separated, no spaces" Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="TOKEN" Target="TOKEN" Default="token" Description="DuckDNS token" Type="Variable" Display="always" Required="true" Mask="true"/>
-    <Config Name="LOG_FILE" Target="LOG_FILE" Default="false" Description="Set to `true` to log to file (also need to map /config)." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="LOG_FILE" Target="LOG_FILE" Default="false" Description="Set to `true` to log to file (also need to map /config)." Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
