@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-syncthing/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>syncthing</Name>
     <Repository>ghcr.io/linuxserver/syncthing</Repository>
@@ -11,11 +12,96 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-syncthing/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-syncthing#application-setup</GitHub>
     <Project>https://syncthing.net</Project>
-    <Overview>[Syncthing](https://syncthing.net) replaces proprietary sync and cloud services with something open, trustworthy and decentralized. Your data is your data alone and you deserve to choose where it is stored, if it is shared with some third party and how it&#39;s transmitted over the Internet.</Overview>
+    <Overview>Syncthing(https://syncthing.net) replaces proprietary sync and cloud services with something open, trustworthy and decentralized. Your data is your data alone and you deserve to choose where it is stored, if it is shared with some third party and how it&#39;s transmitted over the Internet.</Overview>
     <WebUI>http://[IP]:[PORT:8384]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/syncthing.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/syncthing-logo.png</Icon>
+    <Date>2021-05-12</Date>
+    <Changes>
+### 2021-05-12
+- Remove sysctl parameter again
+
+### 2021-05-03
+- Raise maximum UDP buffer size.
+
+### 2021-05-03
+- Add port mapping for 22000/udp.
+
+### 2021-01-29
+- Deprecate `UMASK_SET` in favor of UMASK in baseimage, see above for more information.
+
+### 2021-01-23
+- Rebasing to alpine 3.13.
+
+### 2020-09-15
+- Use go from alpine edge repo to compile. Remove duplicate UMASK env var. Add hostname setting.
+
+### 2020-06-01
+- Rebasing to alpine 3.12.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-03-05
+- Update Build process for v1.1.0 release.
+
+### 2019-02-22
+- Rebasing to alpine 3.9.
+
+### 2019-01-16
+- Add pipeline logic and multi arch.
+
+### 2018-07-30
+- Rebase to alpine 3.8 and use buildstage.
+
+### 2017-12-13
+- Rebase to alpine 3.7.
+
+### 2017-10-25
+- Add env for manual setting of umask.
+
+### 2017-07-29
+- Simplify build structure as symlinks failing on  0.14.32
+
+### 2017-05-28
+- Rebase to alpine 3.6.
+
+### 2017-02-08
+- Rebase to alpine 3.5.
+
+### 2016-11-01
+- Switch to compiling latest version from git source.
+
+### 2016-10-14
+- Add version layer information.
+
+### 2016-09-30
+- Fix umask.
+
+### 2016-09-09
+- Add layer badges to README.
+
+### 2016-08-28
+- Add badges to README.
+
+### 2016-08-11
+- Rebase to alpine linux.
+
+### 2015-12-18
+- Initial testing / release (IronicBadger)
+
+### 2015-09-24
+- Inital dev complete (Lonix)
+
+    </Changes>
     <Config Name="WebUI" Target="8384" Default="8384" Mode="tcp" Description="Application WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 22000" Target="22000" Default="22000" Mode="tcp" Description="Listening port (TCP)" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 22000" Target="22000" Default="22000" Mode="udp" Description="Listening port (UDP)" Type="Port" Display="always" Required="true" Mask="false"/>
