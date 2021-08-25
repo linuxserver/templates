@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-lazylibrarian/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>lazylibrarian</Name>
     <Repository>ghcr.io/linuxserver/lazylibrarian</Repository>
@@ -11,16 +12,86 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-lazylibrarian/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-lazylibrarian#application-setup</GitHub>
     <Project>https://lazylibrarian.gitlab.io/</Project>
-    <Overview>[Lazylibrarian](https://lazylibrarian.gitlab.io/) is a program to follow authors and grab metadata for all your digital reading needs. It uses a combination of Goodreads Librarything and optionally GoogleBooks as sources for author info and book info.  This container is based on the DobyTang fork.</Overview>
+    <Overview>Lazylibrarian(https://lazylibrarian.gitlab.io/) is a program to follow authors and grab metadata for all your digital reading needs. It uses a combination of Goodreads Librarything and optionally GoogleBooks as sources for author info and book info.  This container is based on the DobyTang fork.</Overview>
     <WebUI>http://[IP]:[PORT:5299]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/lazylibrarian.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/lazylibrarian-logo.png</Icon>
+    <Date>2021-05-22</Date>
+    <Changes>
+### 2021-05-22
+- Make the paths clearer to the user, remove optional volume.
+
+### 2021-05-17
+- Add linuxserver wheel index.
+
+### 2019-10-23
+- Changed gitlab download link.
+
+### 2019-10-23
+- Add python module Pillow.
+
+### 2019-07-31
+- Add pyopenssl, remove git dependency during build time.
+
+### 2019-07-09
+- Rebase to Ubuntu Bionic, enables Calibre docker mod.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-03-05
+- Added apprise python package.
+
+### 2019-02-22
+- Rebasing to alpine 3.9.
+
+### 2018-12-10
+- Moved to Pipeline Building
+
+### 2018-08-16
+- Rebase to alpine 3.8
+
+### 2018-01-05
+- Deprecate cpu_core routine lack of scaling
+
+### 2017-12-12
+- Rebase to alpine 3.7
+
+### 2017-07-21
+- Internal git pull instead of at runtime
+
+### 2017-05-25
+- Rebase to alpine 3.6
+
+### 2017-02-07
+- Rebase to alpine 3.5
+
+### 2017-01-30
+- Compile libunrar.so to allow reading of .cbr format files
+
+### 2017-01-12
+- Add ghostscript package, allows magazine covers to be created etc
+
+### 2016-10-14
+- Add version layer information
+
+### 2016-10-03
+- Fix non-persistent settings and make log folder
+
+### 2016-09-28
+- Inital Release
+
+    </Changes>
     <Config Name="WebUI" Target="5299" Default="5299" Mode="tcp" Description="The port for the LazyLibrarian webinterface" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="LazyLibrarian config" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Download location" Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /books" Target="/books" Default="" Mode="rw" Description="Books location" Type="Path" Display="always" Required="false" Mask="false"/>
-    <Config Name="DOCKER_MODS" Target="DOCKER_MODS" Default="linuxserver/calibre-web:calibre|linuxserver/mods:lazylibrarian-ffmpeg" Description="Allows additional functionality to be added, e.g. the Calibredb import program (optional, more info below)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="DOCKER_MODS" Target="DOCKER_MODS" Default="linuxserver/calibre-web:calibre|linuxserver/mods:lazylibrarian-ffmpeg" Description="Allows additional functionality to be added, e.g. the Calibredb import program (optional, more info below)" Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
