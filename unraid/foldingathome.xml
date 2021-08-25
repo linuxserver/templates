@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-foldingathome/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>foldingathome</Name>
     <Repository>ghcr.io/linuxserver/foldingathome</Repository>
@@ -11,11 +12,24 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-foldingathome/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-foldingathome#application-setup</GitHub>
     <Project>https://foldingathome.org/</Project>
-    <Overview>[Folding@home](https://foldingathome.org/) is a distributed computing project for simulating protein dynamics, including the process of protein folding and the movements of proteins implicated in a variety of diseases. It brings together citizen scientists who volunteer to run simulations of protein dynamics on their personal computers. Insights from this data are helping scientists to better understand biology, and providing new opportunities for developing therapeutics.</Overview>
+    <Overview>Folding@home(https://foldingathome.org/) is a distributed computing project for simulating protein dynamics, including the process of protein folding and the movements of proteins implicated in a variety of diseases. It brings together citizen scientists who volunteer to run simulations of protein dynamics on their personal computers. Insights from this data are helping scientists to better understand biology, and providing new opportunities for developing therapeutics.</Overview>
     <WebUI>http://[IP]:[PORT:7396]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/foldingathome.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/foldingathome-logo.png</Icon>
+    <Date>2021-01-09</Date>
+    <Changes>
+### 2021-01-09
+- Add nvidia.icd.
+
+### 2020-04-14
+- Add Folding@home donation links.
+
+### 2020-03-20
+- Initial release.
+
+    </Changes>
     <Config Name="WebUI" Target="7396" Default="7396" Mode="tcp" Description="Folding@home web gui." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 36330" Target="36330" Default="36330" Mode="tcp" Description="Optional port for connecting remotely via FAHControl app (no password)." Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where Folding@home should store its database and config." Type="Path" Display="advanced" Required="true" Mask="false"/>
