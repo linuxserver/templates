@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-jackett/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>jackett</Name>
     <Repository>ghcr.io/linuxserver/jackett</Repository>
@@ -11,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-jackett/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-jackett#application-setup</GitHub>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable Jackett Releases</TagDescription>
@@ -20,15 +22,66 @@
         <TagDescription>Latest Jackett Releases</TagDescription>
     </Branch>
     <Project>https://github.com/Jackett/Jackett</Project>
-    <Overview>[Jackett](https://github.com/Jackett/Jackett) works as a proxy server: it translates queries from apps (Sonarr, SickRage, CouchPotato, Mylar, etc) into tracker-site-specific http queries, parses the html response, then sends results back to the requesting software. This allows for getting recent uploads (like RSS) and performing searches. Jackett is a single repository of maintained indexer scraping and translation logic - removing the burden from other apps.</Overview>
+    <Overview>Jackett(https://github.com/Jackett/Jackett) works as a proxy server: it translates queries from apps (Sonarr, SickRage, CouchPotato, Mylar, etc) into tracker-site-specific http queries, parses the html response, then sends results back to the requesting software. This allows for getting recent uploads (like RSS) and performing searches. Jackett is a single repository of maintained indexer scraping and translation logic - removing the burden from other apps.</Overview>
     <WebUI>http://[IP]:[PORT:9117]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/jackett.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/jackett-logo.png</Icon>
+    <Date>2020-05-24</Date>
+    <Changes>
+### 2020-05-24
+- Allow user to optionally enable auto updates.
+
+### 2019-12-31
+- Remove agressive startup chowning.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-03-10
+- Switch to net-core builds of jackett, not dependant on mono and smaller images.
+
+### 2019-02-11
+- Add pipeline logic and multi arch.
+
+### 2018-06-11
+- Ensure root ownership of Jackett files.
+
+### 2017-12-13
+- Fix continuation lines.
+
+### 2017-04-17
+- Switch to using inhouse mono baseimage, ubuntu xenial based.
+
+### 2017-02-09
+- Rebase to alpine 3.5.
+
+### 2016-10-29
+- Call python2 from edge main to satisfy new mono dependency.
+
+### 2016-10-14
+- Add version layer information.
+
+### 2016-09-22
+- Remove autoupdate, tidy up Dockerfile.
+
+### 2016-09-10
+- Add layer badges to README.
+
+### 2016-08-28
+- Add badges to README.
+
+### 2016-08-06
+- Rebase to alpine linux for smaller image.
+
+### 2016-01-25
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="9117" Default="9117" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where Jackett should store its config file." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Path to torrent blackhole." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="AUTO_UPDATE" Target="AUTO_UPDATE" Default="true" Description="Allow Jackett to update inside of the container (currently recommended by Jackett and enabled by default)" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="RUN_OPTS" Target="RUN_OPTS" Default="run options here" Description="Optionally specify additional arguments to be passed." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="AUTO_UPDATE" Target="AUTO_UPDATE" Default="true" Description="Allow Jackett to update inside of the container (currently recommended by Jackett and enabled by default)" Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="RUN_OPTS" Target="RUN_OPTS" Default="run options here" Description="Optionally specify additional arguments to be passed." Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
