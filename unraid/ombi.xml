@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-ombi/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>ombi</Name>
     <Repository>ghcr.io/linuxserver/ombi</Repository>
@@ -11,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-ombi/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-ombi#application-setup</GitHub>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable Ombi releases</TagDescription>
@@ -20,7 +22,7 @@
         <TagDescription>Releases from the `develop` branch of Ombi</TagDescription>
     </Branch>
     <Project>https://ombi.io</Project>
-    <Overview>[Ombi](https://ombi.io) allows you to host your own Plex Request and user management system.
+    <Overview>Ombi(https://ombi.io) allows you to host your own Plex Request and user management system.
 If you are sharing your Plex server with other users, allow them to request new content using an easy to manage interface!
 Manage all your requests for Movies and TV with ease, leave notes for the user and get notification when a user requests something.
 Allow your users to post issues against their requests so you know there is a problem with the audio etc.
@@ -28,9 +30,51 @@ Even automatically send them weekly newsletters of new content that has been add
     <WebUI>http://[IP]:[PORT:3579]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/ombi.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ombi-logo.png</Icon>
+    <Date>2021-04-26</Date>
+    <Changes>
+### 2021-04-26
+- Update tarball name, allow for v4 builds in stable.
+
+### 2021-01-18
+- Update upstream repo. Deprecate `v4-preview` tag, which is merged to `development` tag upstream.
+
+### 2020-04-14
+- Add Ombi donate links.
+
+### 2019-05-10
+- Added an optional env variable for base url setting.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-02-22
+- Clarify info on tags and development builds.
+
+### 2019-01-25
+- Add info on tags and development builds.
+
+### 2019-01-09
+- Switch to multi-arch builds and add aarch64 image.
+
+### 2018-03-11
+- Add HOME env to Dockerfile.
+
+### 2018-03-05
+- Switch to Ombi v3 stable based on .net core.
+
+### 2018-01-26
+- Fix continuation lines.
+
+### 2017-04-16
+- Switch to using inhouse mono baseimage.
+
+### 2017-02-17
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="3579" Default="3579" Mode="tcp" Description="web gui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="BASE_URL" Target="BASE_URL" Default="/ombi" Description="Subfolder can optionally be defined as an env variable for reverse proxies. Keep in mind that once this value is defined, the gui setting for base url no longer works. To use the gui setting, remove this env variable." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="BASE_URL" Target="BASE_URL" Default="/ombi" Description="Subfolder can optionally be defined as an env variable for reverse proxies. Keep in mind that once this value is defined, the gui setting for base url no longer works. To use the gui setting, remove this env variable." Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
