@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-synclounge/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>synclounge</Name>
     <Repository>ghcr.io/linuxserver/synclounge</Repository>
@@ -11,15 +12,40 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-synclounge/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-synclounge#application-setup</GitHub>
     <Project>https://github.com/samcm/synclounge</Project>
-    <Overview>[Synclounge](https://github.com/samcm/synclounge) is a third party tool that allows you to watch Plex in sync with your friends/family, wherever you are.</Overview>
+    <Overview>Synclounge(https://github.com/samcm/synclounge) is a third party tool that allows you to watch Plex in sync with your friends/family, wherever you are.</Overview>
     <WebUI>http://[IP]:[PORT:8088]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/synclounge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/synclounge-logo.png</Icon>
+    <Date>2021-02-12</Date>
+    <Changes>
+### 2021-02-12
+- Fix optional dependency builds in aarch64 image.
+
+### 2021-02-12
+- Rebasing to alpine 3.13.
+
+### 2020-10-28
+- Update to v4. Env vars `EXTERNAL_URL`, `EXTERNAL_SERVER_PORT` and `AUTOJOIN_PASSWORD` are deprecated and no longer have any effect. Env vars `AUTOJOIN_ENABLED` and `AUTOJOIN_ROOM` are still working but will be removed in the future in favor of synclounge&#39;s built-in var `autojoin__room`. If you are reverse proxying, do not forget to update your proxy settings (here(https://github.com/linuxserver/reverse-proxy-confs/blob/master/synclounge.subdomain.conf.sample) and here(https://github.com/linuxserver/reverse-proxy-confs/blob/master/synclounge.subfolder.conf.sample)) as the server port and addresses are changed.
+
+### 2020-10-11
+- Pin builds to upstream commit `6aecc9bd` while evaluating the breaking changes upstream.
+
+### 2020-09-27
+- Updating the external repo endpoint.
+
+### 2020-06-01
+- Rebasing to alpine 3.12.
+
+### 2020-05-11
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="8088" Default="8088" Mode="tcp" Description="Web app and server port" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="AUTH_LIST" Target="AUTH_LIST" Default="plexuser1,plexuser2,email1,machineid1" Description="If set, only the users defined here and the users of the plex servers defined here will be able to access the server. Use e-mails, plex usernames and/or plex server machine ids, comma separated, no spaces." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="AUTOJOIN_ENABLED" Target="AUTOJOIN_ENABLED" Default="false" Description="DEPRECATED - (Still works but will be removed in the future in favor of the built-in var `autojoin__room`) - Set to `true` to let users autojoin the server and a room (specified by the `AUTOJOIN_ROOM` var)." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="AUTOJOIN_ROOM" Target="AUTOJOIN_ROOM" Default="roomname" Description="DEPRECATED - (Still works but will be removed in the future in favor of the built-in var `autojoin__room`) - Set the room name for auto joining (requires `AUTOJOIN_ENABLED` set to `true`)." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="AUTH_LIST" Target="AUTH_LIST" Default="plexuser1,plexuser2,email1,machineid1" Description="If set, only the users defined here and the users of the plex servers defined here will be able to access the server. Use e-mails, plex usernames and/or plex server machine ids, comma separated, no spaces." Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="AUTOJOIN_ENABLED" Target="AUTOJOIN_ENABLED" Default="false" Description="DEPRECATED - (Still works but will be removed in the future in favor of the built-in var `autojoin__room`) - Set to `true` to let users autojoin the server and a room (specified by the `AUTOJOIN_ROOM` var)." Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="AUTOJOIN_ROOM" Target="AUTOJOIN_ROOM" Default="roomname" Description="DEPRECATED - (Still works but will be removed in the future in favor of the built-in var `autojoin__room`) - Set the room name for auto joining (requires `AUTOJOIN_ENABLED` set to `true`)." Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
