@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-davos/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>davos</Name>
     <Repository>ghcr.io/linuxserver/davos</Repository>
@@ -11,11 +12,39 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-davos/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-davos#application-setup</GitHub>
     <Project>https://github.com/linuxserver/davos</Project>
-    <Overview>[Davos](https://github.com/linuxserver/davos) is an FTP automation tool that periodically scans given host locations for new files. It can be configured for various purposes, including listening for specific files to appear in the host location, ready for it to download and then move, if required. It also supports completion notifications as well as downstream API calls, to further the workflow.</Overview>
+    <Overview>Davos(https://github.com/linuxserver/davos) is an FTP automation tool that periodically scans given host locations for new files. It can be configured for various purposes, including listening for specific files to appear in the host location, ready for it to download and then move, if required. It also supports completion notifications as well as downstream API calls, to further the workflow.</Overview>
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/davos.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/davos-logo.png</Icon>
+    <Date>2020-06-01</Date>
+    <Changes>
+### 2020-06-01
+- Rebasing to alpine 3.12.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-03-22
+- Updating runtime deps due to change in OpenJRE.
+
+### 2019-03-08
+- Updating build environment to pass proper build flags and use gradle wrapper.
+
+### 2019-02-22
+- Rebasing to alpine 3.9.
+
+### 2016-11-18
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="This is the default port that davos runs under" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="davos&#39;s config location. This is where it stores its database file and logs." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /download" Target="/download" Default="" Mode="rw" Description="davos&#39;s file download location" Type="Path" Display="always" Required="true" Mask="false"/>
