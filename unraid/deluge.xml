@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-deluge/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>deluge</Name>
     <Repository>ghcr.io/linuxserver/deluge</Repository>
@@ -11,8 +12,9 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-deluge/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-deluge#application-setup</GitHub>
     <Project>http://deluge-torrent.org/</Project>
-    <Overview>[Deluge](http://deluge-torrent.org/) is a lightweight, Free Software, cross-platform BitTorrent client.
+    <Overview>Deluge(http://deluge-torrent.org/) is a lightweight, Free Software, cross-platform BitTorrent client.
 
 * Full Encryption
 * WebUI
@@ -21,12 +23,96 @@
     <WebUI>http://[IP]:[PORT:8112]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/deluge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/deluge-logo.png</Icon>
+    <Date>2021-06-07</Date>
+    <Changes>
+### 2021-06-07
+- Remove host networking from readme examples
+
+### 2021-01-23
+- Deprecate `UMASK_SET` in favor of UMASK in baseimage, see above for more information.
+
+### 2019-05-09
+- Add python3 requests and future modules.
+
+### 2019-08-24
+- Add ability to set LogLevel for Deluge.
+
+### 2019-06-09
+- Update to 2.x using deluge ppa.
+
+### 2019-05-02
+- Install full version of 7zip.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2018-11-15
+- Add deluge-console.
+
+### 2018-11-11
+- Rebase to Ubuntu Bionic, add pipeline multiarch logic.
+
+### 2018-04-09
+- update to libressl2.7-libssl.
+
+### 2018-03-29
+- Rebase to alpine edge.
+
+### 2017-12-07
+- Rebase to alpine 3.7.
+
+### 2017-11-20
+- Change libressl2.6-libssl repo.
+
+### 2017-07-01
+- Add curl package.
+
+### 2017-05-26
+- Rebase to alpine 3.6.
+
+### 2017-04-29
+- Add variable for user defined umask.
+
+### 2017-04-28
+- update to libressl2.5-libssl.
+
+### 2016-12-28
+- Rebase to alpine 3.5 baseimage.
+
+### 2016-11-17
+- Rebase to edge baseimage.
+
+### 2016-10-13
+- Switch to libressl as openssl deprecated from alpine linux and deluge dependency no longer installs
+
+### 2016-09-30
+- Fix umask.
+
+### 2016-09-09
+- Add layer badges to README.
+
+### 2016-08-30
+- Use pip packages for some critical dependencies.
+
+### 2016-08-28
+- Add badges to README.
+
+### 2016-08-15
+- Rebase to alpine linux.
+
+### 2015-11-09
+- Add unrar and unzip
+
+### 2015-10-15
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="8112" Default="8112" Mode="tcp" Description="Port for webui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 6881" Target="6881" Default="6881" Mode="tcp" Description="Inbound torrent traffic (See App Setup)" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 6881" Target="6881" Default="6881" Mode="udp" Description="Inbound torrent traffic (See App Setup)" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="deluge configs" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="torrent download directory" Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="DELUGE_LOGLEVEL" Target="DELUGE_LOGLEVEL" Default="error" Description="set the loglevel output when running Deluge, default is info for deluged and warning for delgued-web" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="DELUGE_LOGLEVEL" Target="DELUGE_LOGLEVEL" Default="error" Description="set the loglevel output when running Deluge, default is info for deluged and warning for delgued-web" Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
