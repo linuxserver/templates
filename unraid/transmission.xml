@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-transmission/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>transmission</Name>
     <Repository>ghcr.io/linuxserver/transmission</Repository>
@@ -11,22 +12,128 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-transmission/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-transmission#application-setup</GitHub>
     <Project>https://www.transmissionbt.com/</Project>
-    <Overview>[Transmission](https://www.transmissionbt.com/) is designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, µTP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more.</Overview>
+    <Overview>Transmission(https://www.transmissionbt.com/) is designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, µTP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more.</Overview>
     <WebUI>http://[IP]:[PORT:9091]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/transmission.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/transmission-logo.png</Icon>
+    <Date>2021-07-09</Date>
+    <Changes>
+### 2021-07-09
+- Wait for the transmission-daemon termination after a caught sigterm
+
+### 2021-03-06
+- Add Flood for Transmission as a UI option
+
+### 2021-01-23
+- Rebasing to alpine 3.13.
+
+### 2020-11-02
+- Add ca-certificates package to allow connecting to https trackers.
+
+### 2020-06-02
+- Rebase to alpine 3.12, update to transmission 3.0, remove python2, add python3.
+
+### 2020-05-11
+- Remove unnecessary chmod (remnant of previous change).
+
+### 2020-04-28
+- Use transmission-remote to update blocklist.
+
+### 2020-03-30
+- Internalize blocklist-update.sh.
+
+### 2020-03-29
+- Update auth info in readme.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-10-04
+- Update package label.
+
+### 2019-08-21
+- Add optional user/pass environment variables, fix transmission shut down if user/pass are set.
+
+### 2019-07-19
+- Send SIGTERM in blocklist update to properly close pid.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-02-22
+- Rebase to Alpine 3.9, add themes to baseimage, add python and findutils.
+
+### 2019-02-22
+- Catch term and clean exit.
+
+### 2019-02-07
+- Add pipeline logic and multi arch.
+
+### 2018-08-15
+- Rebase to alpine linux 3.8.
+
+### 2018-02-12
+- Pull transmission from edge repo.
+
+### 2018-01-10
+- Rebase to alpine linux 3.7.
+
+### 2017-07-25
+- Add rsync package.
+
+### 2017-05-27
+- Rebase to alpine linux 3.6.
+
+### 2017-02-06
+- Rebase to alpine linux 3.5.
+
+### 2017-01-15
+- Add p7zip, tar , unrar and unzip packages.
+
+### 2016-10-16
+- Blocklist autoupdate with optional authentication.
+
+### 2016-10-14
+- Add version layer informationE.
+
+### 2016-09-23
+- Add information about securing the webui to README.
+
+### 2016-09-21
+- Add curl package.
+
+### 2016-09-09
+- Add layer badges to README.
+
+### 2016-08-28
+- Add badges to README.
+
+### 2016-08-09
+- Rebase to alpine linux.
+
+### 2015-12-06
+- Separate mapping for watch folder.
+
+### 2015-11-16
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="9091" Default="9091" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 51413" Target="51413" Default="51413" Mode="tcp" Description="Torrent Port TCP" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 51413" Target="51413" Default="51413" Mode="udp" Description="Torrent Port UDP" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where transmission should store config files and logs." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Local path for downloads." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /watch" Target="/watch" Default="" Mode="rw" Description="Watch folder for torrent files." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="TRANSMISSION_WEB_HOME" Target="TRANSMISSION_WEB_HOME" Default="/combustion-release/" Description="Specify an alternative UI options are [`/combustion-release/`](https://github.com/Secretmapper/combustion), [`/transmission-web-control/`](https://github.com/ronggang/transmission-web-control), [`/kettu/`](https://github.com/endor/kettu) and [`/flood-for-transmission/`](https://github.com/johman10/flood-for-transmission)." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="USER" Target="USER" Default="username" Description="Specify an optional username for the interface" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="TRANSMISSION_WEB_HOME" Target="TRANSMISSION_WEB_HOME" Default="/combustion-release/" Description="Specify an alternative UI options are `/combustion-release/`(https://github.com/Secretmapper/combustion), `/transmission-web-control/`(https://github.com/ronggang/transmission-web-control), `/kettu/`(https://github.com/endor/kettu) and `/flood-for-transmission/`(https://github.com/johman10/flood-for-transmission)." Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="USER" Target="USER" Default="username" Description="Specify an optional username for the interface" Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PASS" Target="PASS" Default="password" Description="Specify an optional password for the interface" Type="Variable" Display="always" Required="false" Mask="true"/>
-    <Config Name="WHITELIST" Target="WHITELIST" Default="iplist" Description="Specify an optional list of comma separated ip whitelist. Fill rpc-whitelist setting." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="HOST_WHITELIST" Target="HOST_WHITELIST" Default="dnsnane list" Description="Specify an optional list of comma separated dns name whitelist. Fill rpc-host-whitelist setting." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="WHITELIST" Target="WHITELIST" Default="iplist" Description="Specify an optional list of comma separated ip whitelist. Fill rpc-whitelist setting." Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="HOST_WHITELIST" Target="HOST_WHITELIST" Default="dnsnane list" Description="Specify an optional list of comma separated dns name whitelist. Fill rpc-host-whitelist setting." Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
