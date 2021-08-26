@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-snipe-it/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>snipe-it</Name>
     <Repository>ghcr.io/linuxserver/snipe-it</Repository>
@@ -11,19 +12,59 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-snipe-it/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-snipe-it#application-setup</GitHub>
     <Project>https://github.com/snipe/snipe-it</Project>
-    <Overview>[Snipe-it](https://github.com/snipe/snipe-it) makes asset management easy. It was built by people solving real-world IT and asset management problems, and a solid UX has always been a top priority. Straightforward design and bulk actions mean getting things done faster.</Overview>
+    <Overview>Snipe-it(https://github.com/snipe/snipe-it) makes asset management easy. It was built by people solving real-world IT and asset management problems, and a solid UX has always been a top priority. Straightforward design and bulk actions mean getting things done faster.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/snipe-it.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/snipe-it-logo.png</Icon>
+    <Date>2021-06-29</Date>
+    <Changes>
+### 2021-06-29
+- Rebasing to alpine 3.14.
+
+### 2021-04-30
+- Rebasing to alpine 3.13, add artisan migrate on spinup.
+
+### 2020-06-01
+- Rebasing to alpine 3.12.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-04-10
+- Add php deps for V4.7.0, ensure framework directories are available at build time.
+
+### 2019-04-10
+- Fix permissions for new bootstrap cache directory.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-02-22
+- Rebasing to alpine 3.9.
+
+### 2018-10-31
+- Rebasing to alpine 3.8
+
+### 2018-08-05
+- Migration to live build server.
+
+### 2018-06-13
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="80" Default="8080" Mode="tcp" Description="Snipe-IT Web UI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains your config files and data storage for Snipe-IT" Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="NGINX_APP_URL" Target="NGINX_APP_URL" Default="hostname or ip" Description="Hostname or IP and port if applicable IE ip or hostname:8080" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="MYSQL_PORT_3306_TCP_ADDR" Target="MYSQL_PORT_3306_TCP_ADDR" Default="mysql host" Description="Mysql hostname or IP to use" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="MYSQL_PORT_3306_TCP_PORT" Target="MYSQL_PORT_3306_TCP_PORT" Default="mysql port" Description="Mysql port to use" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="MYSQL_DATABASE" Target="MYSQL_DATABASE" Default="mysql database" Description="Mysql database to use" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="MYSQL_USER" Target="MYSQL_USER" Default="mysql pass" Description="Mysql user to use" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="MYSQL_PASSWORD" Target="MYSQL_PASSWORD" Default="changeme" Description="Mysql password to use" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="NGINX_APP_URL" Target="NGINX_APP_URL" Default="hostname or ip" Description="Hostname or IP and port if applicable IE ip or hostname:8080" Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="MYSQL_PORT_3306_TCP_ADDR" Target="MYSQL_PORT_3306_TCP_ADDR" Default="mysql host" Description="Mysql hostname or IP to use" Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="MYSQL_PORT_3306_TCP_PORT" Target="MYSQL_PORT_3306_TCP_PORT" Default="mysql port" Description="Mysql port to use" Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="MYSQL_DATABASE" Target="MYSQL_DATABASE" Default="mysql database" Description="Mysql database to use" Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="MYSQL_USER" Target="MYSQL_USER" Default="mysql pass" Description="Mysql user to use" Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="MYSQL_PASSWORD" Target="MYSQL_PASSWORD" Default="changeme" Description="Mysql password to use" Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
