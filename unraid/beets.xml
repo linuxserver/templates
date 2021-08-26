@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-beets/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>beets</Name>
     <Repository>ghcr.io/linuxserver/beets</Repository>
@@ -11,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-beets/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-beets#application-setup</GitHub>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable Beets Releases</TagDescription>
@@ -20,10 +22,97 @@
         <TagDescription>Built against head of Beets git, generally considered unstable but a likely choice for power users of the application.</TagDescription>
     </Branch>
     <Project>http://beets.io/</Project>
-    <Overview>[Beets](http://beets.io/) is a music library manager and not, for the most part, a music player. It does include a simple player plugin and an experimental Web-based player, but it generally leaves actual sound-reproduction to specialized tools.</Overview>
+    <Overview>Beets(http://beets.io/) is a music library manager and not, for the most part, a music player. It does include a simple player plugin and an experimental Web-based player, but it generally leaves actual sound-reproduction to specialized tools.</Overview>
     <WebUI>http://[IP]:[PORT:8337]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/beets.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/beets-logo.png</Icon>
+    <Date>2019-12-19</Date>
+    <Changes>
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-05-12
+- Add flac and mp3val binaries required for badfiles plugin.
+
+### 2019-04-12
+- Rebase to Alpine 3.9.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-03-11
+- Swap copyartifacts for extrafiles, update endpoints with nightly tag.
+
+### 2019-03-01
+- Switch to python3.
+
+### 2019-02-07
+- Add fftw-dev build dependency for chromaprint.
+
+### 2019-01-28
+- Add pipeline logic and multi arch.
+
+### 2018-08-15
+- Rebase to alpine 3.8, use alpine repo version of pylast.
+
+### 2018-08-12
+- Add requests pip package.
+
+### 2018-03-04
+- Upgrade mp3gain to 1.6.1.
+
+### 2018-01-02
+- Deprecate cpu_core routine lack of scaling.
+
+### 2017-12-27
+- Add beautifulsoup4 pip package.
+
+### 2017-12-06
+- Rebase to alpine linux 3.7.
+
+### 2017-05-25
+- Rebase to alpine linux 3.6.
+
+### 2017-02-06
+- Rebase to alpine linux 3.5.
+
+### 2017-01-16
+- Add packages required for replaygain.
+
+### 2016-12-24
+- Add beets-copyartifacts(https://github.com/sbarakat/beets-copyartifacts) plugin.
+
+### 2016-12-07
+- Edit cmake options for chromaprint, should now build and install fpcalc, add gstreamer lib
+
+### 2016-10-14
+- Add version layer information.
+
+### 2016-10-01
+- Add nano and editor variable to allow editing of the config from the container command line.
+
+### 2016-09-30
+- Fix umask.
+
+### 2016-09-24
+- Rebase to alpine linux.
+
+### 2016-09-10
+- Add layer badges to README.
+
+### 2016-01-05
+- Change ffpmeg repository, other version crashes container
+
+### 2015-11-06
+- Initial Release
+
+### 2015-11-29
+- Take out term setting, causing issues with key entry for some users
+
+    </Changes>
     <Config Name="WebUI" Target="8337" Default="8337" Mode="tcp" Description="Application WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /music" Target="/music" Default="" Mode="rw" Description="Music library" Type="Path" Display="always" Required="true" Mask="false"/>
