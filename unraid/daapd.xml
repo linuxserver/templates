@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-daapd/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>daapd</Name>
     <Repository>ghcr.io/linuxserver/daapd</Repository>
@@ -11,11 +12,87 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-daapd/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-daapd#application-setup</GitHub>
     <Project>https://owntone.github.io/owntone-server/</Project>
-    <Overview>[Daapd](https://owntone.github.io/owntone-server/) (iTunes) media server with support for AirPlay devices, Apple Remote (and compatibles), Chromecast, MPD and internet radio.</Overview>
+    <Overview>Daapd(https://owntone.github.io/owntone-server/) (iTunes) media server with support for AirPlay devices, Apple Remote (and compatibles), Chromecast, MPD and internet radio.</Overview>
     <WebUI>http://[IP]:[PORT:3689]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/daapd.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Date>2021-07-10</Date>
+    <Changes>
+### 2021-07-10
+- Change of paths to work with the new package name, OwnTone.
+
+### 2021-04-02
+- Update upstream repo, again.
+
+### 2021-03-30
+- Update upstream repo.
+
+### 2020-10-06
+- Enabled Spotify on Alpine 3.12 for X86_64 and ARMv7.
+
+### 2020-06-01
+- Rebasing to alpine 3.12.
+
+### 2020-01-16
+- Rebase to alpine linux 3.11 and build antlr3c from source.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-01-14
+- Add pipeline logic and multi arch.
+
+### 2018-08-20
+- Rebase to alpine linux 3.8.
+
+### 2018-06-09
+- Use buildstage and update dependencies.
+
+### 2018-03-05
+- Use updated configure ac and disable avcodecsend to hopefully mitigate crashes with V26.
+
+### 2018-02-25
+- Query version before pull and build latest release.
+
+### 2018-01-03
+- Deprecate cpu_core routine lack of scaling.
+
+### 2017-12-07
+- Rebase to alpine linux 3.7.
+
+### 2017-12-03
+- Bump to 25.0, cpu core counting routine for faster builds, linting fixes.
+
+### 2017-05-26
+- Rebase to alpine linux 3.6.
+
+### 2017-02-06
+- Rebase to alpine linux 3.5.
+
+### 2017-01-10
+- Bump to 24.2.
+
+### 2016-10-14
+- Add version layer information.
+
+### 2016-09-17
+- Rebase to alpine linux, remove redundant spotify support, move to main repository.
+
+### 2016-02-28
+- Add chromecast support, bump dependency versions.
+
+### 2016-01-04
+- Disable ipv6 by default because in v23.4 it doesn&#39;t work in unraid with it set.
+
+### 2015-12-17
+- Add in spotify support.
+
+### 2015-11-25
+- Initial Release.
+
+    </Changes>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where daapd server stores its config and dbase files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /music" Target="/music" Default="" Mode="rw" Description="Map to your music folder." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
