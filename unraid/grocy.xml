@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-grocy/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>grocy</Name>
     <Repository>ghcr.io/linuxserver/grocy</Repository>
@@ -11,8 +12,9 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-grocy/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-grocy#application-setup</GitHub>
     <Project>https://github.com/grocy/grocy</Project>
-    <Overview>[Grocy](https://github.com/grocy/grocy) is an ERP system for your kitchen! Cut down on food waste, and manage your chores with this brilliant utility.
+    <Overview>Grocy(https://github.com/grocy/grocy) is an ERP system for your kitchen! Cut down on food waste, and manage your chores with this brilliant utility.
 
 Keep track of your purchases, how much food you are wasting, what chores need doing and what batteries need charging with this proudly Open Source tool
 
@@ -20,6 +22,51 @@ For more information on grocy visit their website and check it out: https://groc
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/grocy.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/grocy-logo.png</Icon>
+    <Date>2021-08-22</Date>
+    <Changes>
+### 2021-08-22
+- Rebase to Alpine 3.14 and PHP 8.
+
+### 2021-07-25
+- Add &#39;int&#39;,&#39;json&#39; and &#39;zlib&#39; PHP extensions.
+
+### 2021-05-10
+- Reduce image size.
+
+### 2021-04-08
+- Update docs to reflect jenkins builder changes.
+
+### 2021-02-17
+- Rebasing to alpine 3.13.
+
+### 2021-01-26
+- Add &#39;ldap&#39; PHP extension.
+
+### 2020-12-22
+- Add &#39;ctype&#39; PHP extension.
+
+### 2020-06-01
+- Rebasing to alpine 3.12.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-09-22
+- Add &#39;gd&#39; PHP extension.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-02-22
+- Rebasing to alpine 3.9.
+
+### 2018-12-27
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="80" Default="9283" Mode="tcp" Description="will map the container&#39;s port 80 to port 9283 on the host" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="this will store any uploaded data on the docker host" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
