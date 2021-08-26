@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-phpmyadmin/blob/main/readme-vars.yml -->
 <Container version="2">
     <Name>phpmyadmin</Name>
     <Repository>ghcr.io/linuxserver/phpmyadmin</Repository>
@@ -11,15 +12,22 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-phpmyadmin/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-phpmyadmin#application-setup</GitHub>
     <Project>https://github.com/phpmyadmin/phpmyadmin/</Project>
-    <Overview>[Phpmyadmin](https://github.com/phpmyadmin/phpmyadmin/) is a free software tool written in PHP, intended to handle the administration of MySQL over the Web. phpMyAdmin supports a wide range of operations on MySQL and MariaDB.</Overview>
+    <Overview>Phpmyadmin(https://github.com/phpmyadmin/phpmyadmin/) is a free software tool written in PHP, intended to handle the administration of MySQL over the Web. phpMyAdmin supports a wide range of operations on MySQL and MariaDB.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/phpmyadmin.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/phpmyadmin-logo.png</Icon>
+    <Date>2021-06-14</Date>
+    <Changes>
+### 2021-06-14
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="Port for web frontend" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="PMA_ARBITRARY" Target="PMA_ARBITRARY" Default="1" Description="Set to `1` to allow you to connect to any server. Setting to `0` will only allow you to connect to specified hosts (See Application Setup)" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="PMA_ABSOLUTE_URI" Target="PMA_ABSOLUTE_URI" Default="https://phpmyadmin.example.com" Description="Set the URL you will use to access the web frontend" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PMA_ARBITRARY" Target="PMA_ARBITRARY" Default="1" Description="Set to `1` to allow you to connect to any server. Setting to `0` will only allow you to connect to specified hosts (See Application Setup)" Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="PMA_ABSOLUTE_URI" Target="PMA_ABSOLUTE_URI" Default="https://phpmyadmin.example.com" Description="Set the URL you will use to access the web frontend" Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
