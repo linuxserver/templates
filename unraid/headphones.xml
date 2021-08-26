@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-headphones/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>headphones</Name>
     <Repository>ghcr.io/linuxserver/headphones</Repository>
@@ -11,12 +12,79 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-headphones/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-headphones</GitHub>
     <Project>https://github.com/rembo10/headphones</Project>
-    <Overview>[Headphones](https://github.com/rembo10/headphones) is an automated music downloader for NZB and Torrent, written in Python. It supports SABnzbd, NZBget, Transmission, µTorrent and Blackhole.</Overview>
+    <Overview>Headphones(https://github.com/rembo10/headphones) is an automated music downloader for NZB and Torrent, written in Python. It supports SABnzbd, NZBget, Transmission, µTorrent and Blackhole.</Overview>
     <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
     <WebUI>http://[IP]:[PORT:8181]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/headphones.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/headphones-logo.png</Icon>
+    <Date>2019-12-19</Date>
+    <Changes>
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-05-09
+- Add default UTC timezone if user does not set it.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-02-22
+- Rebasing to alpine 3.9.
+
+### 2019-01-16
+- Add pipeline logic and multi arch.
+
+### 2018-08-18
+- Rebase to alpine 3.8.
+
+### 2018-04-03
+- Remove forced port and update README.
+
+### 2018-01-05
+- Deprecate cpu_core routine lack of scaling.
+
+### 2017-12-12
+- Rebase to alpine 3.7.
+
+### 2017-07-20
+- Internal git pull instead of at runtime.
+
+### 2017-07-12
+- Add inspect commands to README, move to jenkins build and push.
+
+### 2017-05-28
+- Add flac package to handle FLAC based .cue.
+
+### 2017-05-25
+- Rebase to alpine 3.6.
+
+### 2017-05-03
+- Reduce layer, replace broken source for shntool.
+
+### 2017-02-07
+- Rebase to alpine 3.5.
+
+### 2016-12-23
+- Fix capitalisation in README.
+
+### 2016-09-09
+- Add layer badges to README.
+
+### 2016-08-27
+- Add badges to README, compile shntool.
+
+### 2016-08-08
+- Rebase to alpine linux.
+
+### 2015-07-18
+- Inital Release
+
+    </Changes>
     <Config Name="WebUI" Target="8181" Default="8181" Mode="tcp" Description="Application WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="ISOs." Type="Path" Display="always" Required="true" Mask="false"/>
