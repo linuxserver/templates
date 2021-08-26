@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-sickchill/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>sickchill</Name>
     <Repository>ghcr.io/linuxserver/sickchill</Repository>
@@ -11,11 +12,48 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-sickchill/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-sickchill#application-setup</GitHub>
     <Project>https://github.com/SickChill/SickChill</Project>
-    <Overview>[Sickchill](https://github.com/SickChill/SickChill) is an Automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.</Overview>
+    <Overview>Sickchill(https://github.com/SickChill/SickChill) is an Automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.</Overview>
     <WebUI>http://[IP]:[PORT:8081]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sickchill.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sickchill-logo.png</Icon>
+    <Date>2021-05-14</Date>
+    <Changes>
+### 2021-05-14
+- Add linuxserver wheel index.
+
+### 2021-02-12
+- Rebasing to alpine 3.13. Add python certifi.
+
+### 2020-09-17
+- Update dependencies.
+
+### 2020-09-06
+- Switch to python3, install pip package.
+
+### 2020-04-22
+- Switch to git clone and using git tags for versioning.
+
+### 2020-01-09
+- Remove creating data volumes, fix build args for armhf and aarch64.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-04-17
+- Adding Nodejs dependancy.
+
+### 2019-03-31
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2018-10-10
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="8081" Default="8081" Mode="tcp" Description="will map the container&#39;s port 8081 to port 8081 on the host" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="this will store config on the docker host" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="this will store any downloaded data on the docker host" Type="Path" Display="always" Required="true" Mask="false"/>
