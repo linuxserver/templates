@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-digikam/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>digikam</Name>
     <Repository>ghcr.io/linuxserver/digikam</Repository>
@@ -11,11 +12,21 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-digikam/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-digikam#application-setup</GitHub>
     <Project>https://www.digikam.org/</Project>
-    <Overview>[digiKam](https://www.digikam.org/): Professional Photo Management with the Power of Open Source</Overview>
+    <Overview>digiKam(https://www.digikam.org/): Professional Photo Management with the Power of Open Source</Overview>
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/digikam.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/digikam-logo.png</Icon>
+    <Date>2020-05-20</Date>
+    <Changes>
+### 2020-05-20
+- Initial release.
+
+### 2021-03-27
+- Download link fixed.
+
+    </Changes>
     <Config Name="Port: 3000" Target="3000" Default="3000" Mode="tcp" Description="digiKam desktop gui" Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Users home directory in the container, stores database." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
