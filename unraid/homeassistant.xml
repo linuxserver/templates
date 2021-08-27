@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-homeassistant/blob/main/readme-vars.yml -->
 <Container version="2">
     <Name>homeassistant</Name>
     <Repository>ghcr.io/linuxserver/homeassistant</Repository>
@@ -11,11 +12,33 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-homeassistant/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-homeassistant#application-setup</GitHub>
     <Project>https://www.home-assistant.io/</Project>
-    <Overview>[Homeassistant](https://www.home-assistant.io/) is open source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts. Perfect to run on a Raspberry Pi or a local server.</Overview>
+    <Overview>Homeassistant(https://www.home-assistant.io/) is open source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts. Perfect to run on a Raspberry Pi or a local server.</Overview>
     <WebUI>http://[IP]:[PORT:8123]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/homeassistant.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/homeassistant-logo.png</Icon>
+    <Date>2021-08-09</Date>
+    <Changes>
+### 2021-08-09
+- Fixed broken build caused by missing dependency.
+
+### 2021-07-01
+- Remove HACS dependencies as it caused a crash in Home-assistant.
+
+### 2021-02-25
+- Add python dependencies from homeassistant base image.
+
+### 2021-02-07
+- Fix building from the wrong requirement file. Add ssh client and external DB libs.
+
+### 2021-02-06
+- Add iputils so ping works as non root user.
+
+### 2021-01-30
+- Initial Release.
+
+    </Changes>
     <Config Name="Port: 8123" Target="8123" Default="8123" Mode="tcp" Description="Application WebUI, only use this if you are not using host mode." Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Home Assistant config storage path." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
