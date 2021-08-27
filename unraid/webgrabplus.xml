@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-webgrabplus/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>webgrabplus</Name>
     <Repository>ghcr.io/linuxserver/webgrabplus</Repository>
@@ -11,11 +12,69 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-webgrabplus/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-webgrabplus#application-setup</GitHub>
     <Project>http://www.webgrabplus.com</Project>
-    <Overview>[Webgrabplus](http://www.webgrabplus.com) is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.</Overview>
+    <Overview>Webgrabplus(http://www.webgrabplus.com) is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/webgrabplus.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webgrabplus-logo.png</Icon>
+    <Date>2021-08-05</Date>
+    <Changes>
+### 2021-08-05
+- Update to version 3.2.1 beta.
+
+### 2021-06-05
+- Added mono-devel dependency.
+
+### 2021-06-04
+- Update to version 3.1.8 beta.
+
+### 2021-03-22
+- Update to version 3.1.7 beta.
+
+### 2021-03-07
+- Update to version 3.1.6 beta.
+
+### 2021-01-29
+- Update external version number to show as 3.1.5.
+
+### 2021-01-24
+- Update to version 3.1.5 beta.
+
+### 2020-12-22
+- Update to version 3.1.4 beta.
+
+### 2020-10-12
+- Fix version number in jenkinsfile.
+
+### 2020-10-12
+- Update to version 3.1.1 beta.
+
+### 2020-06-22
+- Add mono webrequest library.
+
+### 2020-06-18
+- Update to v3.1.0.
+
+### 2020-03-29
+- Update to v3.0.0. Changed to use wg3-cron file.
+
+### 2019-05-28
+- Update to v2.1.0 and beta v2.1.9, rebase to bionic.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-03-21
+- Update to beta 2.1.7.
+
+### 2019-02-19
+- Add pipeline logic and multi arch.
+
+### 2018-01-18
+- Initial Release.
+
+    </Changes>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where webgrabplus should store it&#39;s config files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="Where webgrabplus should store it&#39;s data files." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
