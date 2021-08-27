@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-duplicati/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>duplicati</Name>
     <Repository>ghcr.io/linuxserver/duplicati</Repository>
@@ -11,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-duplicati/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-duplicati#application-setup</GitHub>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Beta releases of Duplicati</TagDescription>
@@ -20,15 +22,48 @@
         <TagDescription>Canary releases of Duplicati</TagDescription>
     </Branch>
     <Project>https://www.duplicati.com/</Project>
-    <Overview>[Duplicati](https://www.duplicati.com/) works with standard protocols like FTP, SSH, WebDAV as well as popular services like Microsoft OneDrive, Amazon Cloud Drive and S3, Google Drive, box.com, Mega, hubiC and many others.</Overview>
+    <Overview>Duplicati(https://www.duplicati.com/) works with standard protocols like FTP, SSH, WebDAV as well as popular services like Microsoft OneDrive, Amazon Cloud Drive and S3, Google Drive, box.com, Mega, hubiC and many others.</Overview>
     <WebUI>http://[IP]:[PORT:8200]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/duplicati.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/duplicati-logo.png</Icon>
+    <Date>2019-08-01</Date>
+    <Changes>
+### 2019-08-01
+- Rebase to Linuxserver LTS mono version.
+
+### 2019-07-16
+- Allow for additional command line arguments in an environment variable.
+
+### 2019-06-28
+- Rebase to bionic.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-02-28
+- Allow access from all hostnames, clarify info on image tags.
+
+### 2019-01-13
+- Use jq instead of awk in dockerfiles.
+
+### 2019-01-11
+- Multi-arch image.
+
+### 2017-12-09
+- Fix continuation lines.
+
+### 2017-08-31
+- Build only beta or release versions (thanks deasmi).
+
+### 2017-04-24
+- Initial release.
+
+    </Changes>
     <Config Name="WebUI" Target="8200" Default="8200" Mode="tcp" Description="http gui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /backups" Target="/backups" Default="" Mode="rw" Description="Path to store local backups." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /source" Target="/source" Default="" Mode="rw" Description="Path to source for files to backup." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="CLI_ARGS" Target="CLI_ARGS" Default="" Description="Optionally specify any [CLI variables](https://duplicati.readthedocs.io/en/latest/07-other-command-line-utilities/) you want to launch the app with" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="CLI_ARGS" Target="CLI_ARGS" Default="" Description="Optionally specify any CLI variables(https://duplicati.readthedocs.io/en/latest/07-other-command-line-utilities/) you want to launch the app with" Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
