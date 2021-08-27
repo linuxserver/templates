@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-snapdrop/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>snapdrop</Name>
     <Repository>ghcr.io/linuxserver/snapdrop</Repository>
@@ -11,11 +12,21 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-snapdrop/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-snapdrop#application-setup</GitHub>
     <Project>https://github.com/RobinLinus/snapdrop</Project>
-    <Overview>[Snapdrop](https://github.com/RobinLinus/snapdrop) A local file sharing in your browser. Inspired by Apple&#39;s Airdrop.</Overview>
+    <Overview>Snapdrop(https://github.com/RobinLinus/snapdrop) A local file sharing in your browser. Inspired by Apple&#39;s Airdrop.</Overview>
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/snapdrop.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/snapdrop-logo.png</Icon>
+    <Date>2021-08-09</Date>
+    <Changes>
+### 2021-08-09
+- Rebase to Alpine 3.14. Add real_ip block to nginx default site config.
+
+### 2020-09-15
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="http gui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 443" Target="443" Default="443" Mode="tcp" Description="https gui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent configs and logs." Type="Path" Display="advanced" Required="true" Mask="false"/>
