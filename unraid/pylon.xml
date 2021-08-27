@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-pylon/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>pylon</Name>
     <Repository>ghcr.io/linuxserver/pylon</Repository>
@@ -11,16 +12,29 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-pylon/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-pylon#application-setup</GitHub>
     <Project>https://github.com/pylonide/pylon</Project>
-    <Overview>[Pylon](https://github.com/pylonide/pylon) is a web based integrated development environment built with Node.js as a backend and with a supercharged JavaScript/HTML5 frontend, licensed under GPL version 3. This project originates from Cloud9 v2 project.</Overview>
+    <Overview>Pylon(https://github.com/pylonide/pylon) is a web based integrated development environment built with Node.js as a backend and with a supercharged JavaScript/HTML5 frontend, licensed under GPL version 3. This project originates from Cloud9 v2 project.</Overview>
     <WebUI>http://[IP]:[PORT:3131]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/pylon.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Date>2020-06-02</Date>
+    <Changes>
+### 2020-06-02
+- Rebasing to alpine 3.12.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-09-19
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="3131" Default="3131" Mode="tcp" Description="The port for the Pylon web interface" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /code" Target="/code" Default="" Mode="rw" Description="Optionally if you want the bind mount your own code and have changes survive container upgrades." Type="Path" Display="always" Required="false" Mask="false"/>
-    <Config Name="GITURL" Target="GITURL" Default="https://github.com/linuxserver/docker-pylon.git" Description="Specify a git repo to checkout on first startup" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="PYUSER" Target="PYUSER" Default="myuser" Description="Specify a basic auth user." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="PYPASS" Target="PYPASS" Default="mypass" Description="Specify a basic auth password." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="GITURL" Target="GITURL" Default="https://github.com/linuxserver/docker-pylon.git" Description="Specify a git repo to checkout on first startup" Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="PYUSER" Target="PYUSER" Default="myuser" Description="Specify a basic auth user." Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="PYPASS" Target="PYPASS" Default="mypass" Description="Specify a basic auth password." Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
