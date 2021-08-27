@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-syslog-ng/blob/main/readme-vars.yml -->
 <Container version="2">
     <Name>syslog-ng</Name>
     <Repository>ghcr.io/linuxserver/syslog-ng</Repository>
@@ -11,11 +12,21 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-syslog-ng/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-syslog-ng#application-setup</GitHub>
     <Project>https://www.syslog-ng.com/products/open-source-log-management/</Project>
-    <Overview>[syslog-ng](https://www.syslog-ng.com/products/open-source-log-management/) allows you to flexibly collect, parse, classify, rewrite and correlate logs from across your infrastructure and store or route them to log analysis tools.</Overview>
+    <Overview>syslog-ng(https://www.syslog-ng.com/products/open-source-log-management/) allows you to flexibly collect, parse, classify, rewrite and correlate logs from across your infrastructure and store or route them to log analysis tools.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/syslog-ng.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/syslog-ng-logo.png</Icon>
+    <Date>2021-07-01</Date>
+    <Changes>
+### 2021-07-01
+- Rebase to Alpine 3.14.
+
+### 2021-05-26
+- Initial release.
+
+    </Changes>
     <Config Name="WebUI" Target="5514" Default="514" Mode="udp" Description="Syslog UDP" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 6601" Target="6601" Default="601" Mode="tcp" Description="Syslog TCP" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 6514" Target="6514" Default="6514" Mode="tcp" Description="Syslog TLS" Type="Port" Display="always" Required="true" Mask="false"/>
