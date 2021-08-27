@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-lychee/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>lychee</Name>
     <Repository>ghcr.io/linuxserver/lychee</Repository>
@@ -11,8 +12,9 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-lychee/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-lychee#application-setup</GitHub>
     <Project>https://lycheeorg.github.io/</Project>
-    <Overview>[Lychee](https://lycheeorg.github.io/) is a free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.&#34;
+    <Overview>Lychee(https://lycheeorg.github.io/) is a free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.&#34;
 
 ### UPGRADE WARNING
 
@@ -20,13 +22,67 @@ Please note that the v4 upgrade process resets ALL password-protected albums. An
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/lychee.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/lychee-logo.png</Icon>
+    <Date>2021-05-13</Date>
+    <Changes>
+### 2021-05-13
+- Make readme clearer.
+
+### 2021-04-18
+- Add php-intl for v4.3.
+
+### 2021-01-31
+- Add jpegoptim.
+
+### 2021-01-15
+- Rebase to alpine 3.13, add php7-ctype.
+
+### 2020-07-10
+- Upgrade to Lychee v4 and rebased to alpine 3.12.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-10-23
+- Increase fastcgi timeouts (existing users need to manually update).
+
+### 2019-09-19
+- Update project website url.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-05-05
+- Rebase to alpine 3.9, use new armv7 image format.
+
+### 2018-01-21
+- Added ffmpeg for video thumbnail creation, switched to installing zip release instead of source tarball, created small thumbnails folder, switched to dynamic readme.
+
+### 2019-01-14
+- Adding pipeline logic and multi arch..
+
+### 2018-09-04
+- Rebase to alpine 3.8, switch to LycheeOrg repository.
+
+### 2018-01-08
+- Rebase to alpine 3.7.
+
+### 2017-05-25
+- Rebase to alpine 3.6.
+
+### 2017-05-03
+- Use repo pinning to better solve dependencies, use repo version of php7-imagick.
+
+### 2017-02-12
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="http gui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /pictures" Target="/pictures" Default="" Mode="rw" Description="Where lychee will store uploaded data." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="DB_HOST" Target="DB_HOST" Default="mariadb" Description="for specifying the database host" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="DB_USERNAME" Target="DB_USERNAME" Default="lychee" Description="for specifying the database user" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="dbpassword" Description="for specifying the database password" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="DB_DATABASE" Target="DB_DATABASE" Default="lychee" Description="for specifying the database to be used" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="DB_HOST" Target="DB_HOST" Default="mariadb" Description="for specifying the database host" Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="DB_USERNAME" Target="DB_USERNAME" Default="lychee" Description="for specifying the database user" Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="dbpassword" Description="for specifying the database password" Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="DB_DATABASE" Target="DB_DATABASE" Default="lychee" Description="for specifying the database to be used" Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
