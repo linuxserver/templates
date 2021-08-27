@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-minetest/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>minetest</Name>
     <Repository>ghcr.io/linuxserver/minetest</Repository>
@@ -11,14 +12,78 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-minetest/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-minetest#application-setup</GitHub>
     <Project>http://www.minetest.net/</Project>
-    <Overview>[Minetest](http://www.minetest.net/) (server) is a near-infinite-world block sandbox game and a game engine, inspired by InfiniMiner, Minecraft, and the like.</Overview>
+    <Overview>Minetest(http://www.minetest.net/) (server) is a near-infinite-world block sandbox game and a game engine, inspired by InfiniMiner, Minecraft, and the like.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/minetest.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/minetest-logo.png</Icon>
+    <Date>2020-06-02</Date>
+    <Changes>
+### 2020-06-02
+- Rebasing to alpine 3.12.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-07-12
+- Bugfix to support multiple CLI variables.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-06-03
+- Adding custom cli vars to options.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-03-04
+- Rebase to alpine 3.9 to compile 5.0.0 minetest with new build args.
+
+### 2019-01-14
+- Add pipeline logic and multi arch.
+
+### 2018-08-08
+- Rebase to alpine 3.8, build from latest release tag instead of master.
+
+### 2018-01-03
+- Deprecate cpu_core routine lack of scaling.
+
+### 2017-12-08
+- Rebase to alpine 3.7.
+
+### 2017-11-30
+- Use cpu core counting routine to speed up build time.
+
+### 2017-05-26
+- Rebase to alpine 3.6.
+
+### 2017-02-14
+- Rebase to alpine 3.5.
+
+### 2016-11-25
+- Rebase to alpine linux, move to main repo.
+
+### 2016-02-27
+- Bump to latest version.
+
+### 2016-02-19
+- Change port to UDP, thanks to slashopt for pointing this out.
+
+### 2016-02-15
+- Make minetest app a service.
+
+### 2016-02-01
+- Add lua-socket dependency.
+
+### 2015-11-06
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="30000" Default="30000" Mode="udp" Description="Port Minetest listens on." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /config/.minetest" Target="/config/.minetest" Default="" Mode="rw" Description="Where minetest stores config files and maps etc." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="CLI_ARGS" Target="CLI_ARGS" Default="&#34;--gameid minetest&#34;" Description="Optionally specify any [CLI variables](https://wiki.minetest.net/Command_line) you want to launch the app with" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="CLI_ARGS" Target="CLI_ARGS" Default="&#34;--gameid minetest&#34;" Description="Optionally specify any CLI variables(https://wiki.minetest.net/Command_line) you want to launch the app with" Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
