@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-sabnzbd/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>sabnzbd</Name>
     <Repository>ghcr.io/linuxserver/sabnzbd</Repository>
@@ -11,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-sabnzbd/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-sabnzbd#application-setup</GitHub>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable SABnzbd releases</TagDescription>
@@ -20,10 +22,82 @@
         <TagDescription>Pre-releases from their GitHub</TagDescription>
     </Branch>
     <Project>http://sabnzbd.org/</Project>
-    <Overview>[Sabnzbd](http://sabnzbd.org/) makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.</Overview>
+    <Overview>Sabnzbd(http://sabnzbd.org/) makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.</Overview>
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sabnzbd.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sabnzbd-logo.png</Icon>
+    <Date>2021-08-08</Date>
+    <Changes>
+### 2021-08-08
+- Bump to focal, dont enforce binding to ipv4 port 8080
+
+### 2021-07-24
+- Add python3-setuptools.
+
+### 2021-05-14
+- Use linuxserver.io wheel index for pip packages.
+
+### 2021-02-12
+- Clean up rust/cargo and pip cache.
+
+### 2020-08-17
+- Run from source with python3 instead of ppa, remove python2 completely, symlink `python` to `python3`.
+
+### 2020-01-02
+- Add python3 on top of python2 to image during transition.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-02-25
+- Rebase to Bionic, add python deps for scripts.
+
+### 2019-01-26
+- Add pipeline logic and multi arch.
+
+### 2017-12-13
+- Fix continuation lines.
+
+### 2017-07-12
+- Add inspect commands to README, move to jenkins build and push.
+
+### 2017-04-10
+- Bump to 2.0 Release.
+
+### 2017-02-25
+- Switch to nobetas repo for master/latest branch and add unstable branch.
+
+### 2017-02-08
+- Add pythonioenconding=utf8 as env.
+
+### 2016-09-15
+- Compile par2 multicore as per latest info sabnzbd git readme(https://github.com/sabnzbd/sabnzbd#resolving-dependencies).
+
+### 2016-09-11
+- Bump to release of 1.10.
+
+### 2016-09-09
+- Rebase back to xenial, issues with alpine version of python and 1.10 branch of sab.
+
+### 2016-08-28
+- Rebase to alpine, using git version of sab.
+
+### 2016-03-17
+- Bump to install 1.0 final at startup.
+
+### 2016-03-14
+- Refresh image to pick up latest RC.
+
+### 2015-01-23
+- Refresh image.
+
+### 2015-12-14
+- Refresh image to pick up latest beta.
+
+### 2015-08-21
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="HTTP port for the WebUI." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 9090" Target="9090" Default="9090" Mode="tcp" Description="HTTPS port for the WebUI." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Local path for sabnzbd config files." Type="Path" Display="advanced" Required="true" Mask="false"/>
