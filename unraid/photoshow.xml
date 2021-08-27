@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-photoshow/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>photoshow</Name>
     <Repository>ghcr.io/linuxserver/photoshow</Repository>
@@ -11,11 +12,69 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-photoshow/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-photoshow#application-setup</GitHub>
     <Project>https://github.com/thibaud-rohmer/PhotoShow</Project>
-    <Overview>[Photoshow](https://github.com/thibaud-rohmer/PhotoShow) is gallery software at its easiest, it doesn&#39;t even require a database.</Overview>
+    <Overview>Photoshow(https://github.com/thibaud-rohmer/PhotoShow) is gallery software at its easiest, it doesn&#39;t even require a database.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/photoshow.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/photoshow-logo.png</Icon>
+    <Date>2021-01-23</Date>
+    <Changes>
+### 2021-01-23
+- Rebasing to alpine 3.13.
+
+### 2020-06-01
+- Rebasing to alpine 3.12.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-09-23
+- Adding PHP-Exif for image metadata and processing.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-02-22
+- Rebasing to alpine 3.9.
+
+### 2019-01-16
+- Add pipeline logic and multi arch.
+
+### 2018-09-05
+- Rebase to alpine 3.8.
+
+### 2018-01-07
+- Rebase to alpine 3.7.
+
+### 2017-05-25
+- Rebase to alpine 3.6.
+
+### 2017-05-03
+- Use repo pinning to better solve dependencies, use repo version of php7-imagick.
+
+### 2017-02-14
+- Rebase to alpine 3.5.
+
+### 2016-10-14
+- Add version layer information.
+
+### 2016-09-30
+- Rebase to alpine linux.
+
+### 2016-09-11
+- Add layer badges to README.
+
+### 2015-08-21
+- Use patched keybaord js from fork of photoshow.
+
+### 2015-08-21
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Stores config and logs for nginx base." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /Pictures" Target="/Pictures" Default="" Mode="ro" Description="Your local folder of photos you wish to share." Type="Path" Display="always" Required="true" Mask="false"/>
