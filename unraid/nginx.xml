@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-nginx/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>nginx</Name>
     <Repository>ghcr.io/linuxserver/nginx</Repository>
@@ -11,11 +12,144 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-nginx/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-nginx#application-setup</GitHub>
     <Project>https://nginx.org/</Project>
-    <Overview>[Nginx](https://nginx.org/) is a simple webserver with php support. The config files reside in `/config` for easy user customization.</Overview>
+    <Overview>Nginx(https://nginx.org/) is a simple webserver with php support. The config files reside in `/config` for easy user customization.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nginx.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nginx-logo.png</Icon>
+    <Date>2021-07-01</Date>
+    <Changes>
+### 2021-07-01
+- Rebasing to alpine 3.14.
+
+### 2021-06-24
+- Update default nginx conf folder.
+
+### 2021-04-12
+- Add php7-gmp and php7-pecl-mailparse.
+
+### 2021-02-13
+- Remove php7-pecl-imagick (it now installs the full imagemagick with too much crud). Users can install it via this docker mod(https://github.com/linuxserver/docker-mods/tree/swag-imagemagick).
+
+### 2021-02-09
+- Rebasing to alpine 3.13. Add nginx mods brotli and dav-ext. Remove nginx mods lua and lua-upstream (due to regression over the last couple of years).
+
+### 2020-09-08
+- Add php7-xsl.
+
+### 2020-06-01
+- Rebasing to alpine 3.12.
+
+### 2020-04-18
+- Fix unwanted shutdown of the container.
+
+### 2020-03-11
+- Add php7-sodium.
+
+### 2020-02-18
+- Add geoip2, suppress lua warning.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-12-18
+- Add php7-imap and php7-pecl-apcu.
+
+### 2019-11-13
+- Add php7-pdo_odbc.
+
+### 2019-10-24
+- Add php7-pecl-imagick.
+
+### 2019-08-06
+- Add php7-bcmath, ph7-pear, php7-xmlrpc and php7-ftp.
+
+### 2019-08-02
+- Add php7-ldap.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-05-08
+- Remove default.conf when nginx is upgraded in downstream image.
+
+### 2019-04-30
+- Add php-redis.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-03-02
+- Add php intl and posix modules.
+
+### 2019-02-28
+- Add php7-opcache, remove memcached service due to issues on aarch64 (let us know if you need to enable it).
+
+### 2019-02-22
+- Rebasing to alpine 3.9.
+
+### 2018-11-18
+- Attempt to upgrade packages during build.
+
+### 2018-09-28
+- Multi-arch image.
+
+### 2018-08-17
+- Rebase to alpine 3.8, inherit nginx.conf from nginx baseimage.
+
+### 2018-05-11
+- Add php pgsql support.
+
+### 2018-04-19
+- Bind memcached to localhost only, add php7-sqlite3.
+
+### 2018-01-05
+- Rebase to alpine 3.7.
+
+### 2017-11-08
+- Add php7 soap module.
+
+### 2017-10-31
+- Add php7 exif and xmlreader modules.
+
+### 2017-09-30
+- Copy additional root files into image.
+
+### 2017-09-24
+- Add memcached service.
+
+### 2017-08-31
+- Add php7-phar.
+
+### 2017-07-14
+- Enable modules dynamically in nginx.conf.
+
+### 2017-06-22
+- Add various nginx modules and enable all modules in the default nginx.conf.
+
+### 2017-06-05
+- Add php7-bz2.
+
+### 2017-05-25
+- Rebase to alpine 3.6.
+
+### 2017-04-18
+- Add php7-sockets.
+
+### 2017-02-27
+- Rebase to alpine 3.5, update to nginx 1.10.2 and php7.
+
+### 2016-10-14
+- Add version layer information.
+
+### 2016-09-10
+- Add badges to README.
+
+### 2015-12-05
+- Intial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="http" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 443" Target="443" Default="443" Mode="tcp" Description="https" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains your www content and all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
