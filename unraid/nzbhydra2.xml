@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-nzbhydra2/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>nzbhydra2</Name>
     <Repository>ghcr.io/linuxserver/nzbhydra2</Repository>
@@ -11,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-nzbhydra2/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-nzbhydra2#application-setup</GitHub>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable releases</TagDescription>
@@ -20,12 +22,45 @@
         <TagDescription>Prereleases from their GitHub</TagDescription>
     </Branch>
     <Project>https://github.com/theotherp/nzbhydra2</Project>
-    <Overview>[Nzbhydra2](https://github.com/theotherp/nzbhydra2) is a meta search application for NZB indexers, the &#34;spiritual successor&#34; to NZBmegasearcH, and an evolution of the original application [NZBHydra](https://github.com/theotherp/nzbhydra).
+    <Overview>Nzbhydra2(https://github.com/theotherp/nzbhydra2) is a meta search application for NZB indexers, the &#34;spiritual successor&#34; to NZBmegasearcH, and an evolution of the original application NZBHydra(https://github.com/theotherp/nzbhydra).
 
 It provides easy access to a number of raw and newznab based indexers. The application NZBHydra 2 is replacing NZBHydra 1 and supports migrating from V1. Be wary that there may be some compatibility issues for those migrating from V1 to V2, so ensure you back up your old configuration before moving over to the new version. **NOTE:** The last version that supports migration is `linuxserver/nzbhydra2:v2.10.2-ls49`</Overview>
     <WebUI>http://[IP]:[PORT:5076]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nzbhydra2.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nzbhydra2-logo.png</Icon>
+    <Date>2020-05-01</Date>
+    <Changes>
+### 2020-05-01
+- Reorganize container, Relocate app to /app/nzbhydra2/bin, Create /app/nzbhydra2/package_info, Use nzbhydra2wrapperPy3.py from zip.
+
+### 2020-04-14
+- Correct Name, Hydra2 - NZBHydra2.
+
+### 2020-01-08
+- Switch to python3.
+
+### 2020-01-05
+- Add dev tag for prereleases.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-02-11
+- Add pipeline logic and multi arch.
+
+### 2018-08-18
+- Bump java version to 10, (bionic currently refers to it as version 11).
+
+### 2018-08-10
+- Rebase to ubuntu bionic.
+
+### 2018-04-15
+- Change to port 5076 in the Dockerfile.
+
+### 2018-01-11
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="5076" Default="5076" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where nzbhydra2 should store config files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="NZB download folder." Type="Path" Display="always" Required="true" Mask="false"/>
