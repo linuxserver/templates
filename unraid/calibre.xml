@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-calibre/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>calibre</Name>
     <Repository>ghcr.io/linuxserver/calibre</Repository>
@@ -11,16 +12,62 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-calibre/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-calibre#application-setup</GitHub>
     <Project>https://calibre-ebook.com/</Project>
-    <Overview>[Calibre](https://calibre-ebook.com/) is a powerful and easy to use e-book manager. Users say it’s outstanding and a must-have. It’ll allow you to do nearly everything and it takes things a step beyond normal e-book software. It’s also completely free and open source and great for both casual users and computer experts.</Overview>
+    <Overview>Calibre(https://calibre-ebook.com/) is a powerful and easy to use e-book manager. Users say it’s outstanding and a must-have. It’ll allow you to do nearly everything and it takes things a step beyond normal e-book software. It’s also completely free and open source and great for both casual users and computer experts.</Overview>
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/calibre.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/calibre-logo.png</Icon>
+    <Date>2021-04-20</Date>
+    <Changes>
+### 2021-04-20
+- Fix the HOME folder.
+
+### 2021-04-19
+- Add libnss3 back in. Make sure Calibre can access environment variables.
+
+### 2021-04-18
+- Start calibre on container start rather than gui connect.
+
+### 2021-04-15
+- Rebase to rdesktop-web baseimage. Deprecate `GUAC_USER` and `GUAC_PASS` env vars. Existing users can set the new var `PASSWORD` for the user `abc`.
+
+### 2020-09-25
+- Switch to python3, add various new dependencies for calibre 5.0.
+
+### 2019-05-10
+- Add new env var `CLI_ARGS` to pass start arguments to calibre.
+
+### 2019-03-18
+- Let Calibre access environment variables, add optional umask setting.
+
+### 2019-10-23
+- Remove reccomended deps and zenity for character compatibility.
+
+### 2019-10-18
+- Add python-xdg.
+
+### 2019-10-08
+- Add fonts-wqy-microhei ttf-wqy-zenhei fcitx-rime dependency to resolve issue with Chinese encoding.
+
+### 2019-10-04
+- Add libxkbcommon-x11-0 dependency to resolve issue with Calibre 4.
+
+### 2019-08-08
+- Add zenity for international character support in dialog boxes.
+
+### 2019-07-12
+- Download binary from calibre website instead of github.
+
+### 2019-04-29
+- Initial release.
+
+    </Changes>
     <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="Calibre desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 8081" Target="8081" Default="8081" Mode="tcp" Description="Calibre webserver gui." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where calibre should store its database and library." Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="PASSWORD" Target="PASSWORD" Default="" Description="Optionally set a password for the gui." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="CLI_ARGS" Target="CLI_ARGS" Default="" Description="Optionally pass cli start arguments to calibre." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PASSWORD" Target="PASSWORD" Default="" Description="Optionally set a password for the gui." Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="CLI_ARGS" Target="CLI_ARGS" Default="" Description="Optionally pass cli start arguments to calibre." Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
