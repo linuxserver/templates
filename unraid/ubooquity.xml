@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-ubooquity/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>ubooquity</Name>
     <Repository>ghcr.io/linuxserver/ubooquity</Repository>
@@ -11,18 +12,70 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-ubooquity/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-ubooquity#application-setup</GitHub>
     <Project>https://vaemendis.net/ubooquity/</Project>
-    <Overview>[Ubooquity](https://vaemendis.net/ubooquity/) is a free, lightweight and easy-to-use home server for your comics and ebooks. Use it to access your files from anywhere, with a tablet, an e-reader, a phone or a computer.</Overview>
+    <Overview>Ubooquity(https://vaemendis.net/ubooquity/) is a free, lightweight and easy-to-use home server for your comics and ebooks. Use it to access your files from anywhere, with a tablet, an e-reader, a phone or a computer.</Overview>
     <WebUI>http://[IP]:[PORT:2203]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/ubooquity.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ubooquity-logo.png</Icon>
+    <Date>2021-01-23</Date>
+    <Changes>
+### 2021-01-23
+- Rebasing to alpine 3.13.
+
+### 2020-06-01
+- Rebasing to alpine 3.12.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-02-22
+- Rebasing to alpine 3.9.
+
+### 2019-01-28
+- Add pipeline logic and multi arch.
+
+### 2018-10-15
+- Upgrade to Ubooquity 2.1.2.
+
+### 2018-08-23
+- Rebase to alpine 3.8.
+
+### 2017-12-09
+- Rebase to alpine 3.7.
+
+### 2017-10-07
+- Upgrade to Ubooquity 2.1.1.
+
+### 2017-07-16
+- Upgrade to Ubooquity 2.1.0, see setting up application section for important info for existing v1.x users.
+
+### 2017-05-26
+- Rebase to alpine 3.6.
+
+### 2017-04-08
+- Switch to java from 3.5 repo, fixes login crashes.
+
+### 2017-02-06
+- Rebase to alpine 3.5.
+
+### 2016-12-06
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="2202" Default="2202" Mode="tcp" Description="The library port." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 2203" Target="2203" Default="2203" Mode="tcp" Description="The admin port." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Config files and database for ubooquity." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /books" Target="/books" Default="" Mode="rw" Description="Location of books." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /comics" Target="/comics" Default="" Mode="rw" Description="Location of comics." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /files" Target="/files" Default="" Mode="rw" Description="Location of raw files." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="MAXMEM" Target="MAXMEM" Default="maxmem" Description="To set the maximum memory. ( ex: set &#39;1024&#39; for 1GB )" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="MAXMEM" Target="MAXMEM" Default="maxmem" Description="To set the maximum memory. ( ex: set &#39;1024&#39; for 1GB )" Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
