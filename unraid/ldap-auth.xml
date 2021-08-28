@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-ldap-auth/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>ldap-auth</Name>
     <Repository>ghcr.io/linuxserver/ldap-auth</Repository>
@@ -11,16 +12,74 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-ldap-auth/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-ldap-auth#application-setup</GitHub>
     <Project>https://github.com/nginxinc/nginx-ldap-auth</Project>
-    <Overview>[Ldap-auth](https://github.com/nginxinc/nginx-ldap-auth) software is for authenticating users who request protected resources from servers proxied by nginx. It includes a daemon (ldap-auth) that communicates with an authentication server, and a webserver daemon that generates an authentication cookie based on the user’s credentials. The daemons are written in Python for use with a Lightweight Directory Access Protocol (LDAP) authentication server (OpenLDAP or Microsoft Windows Active Directory 2003 and 2012).</Overview>
+    <Overview>Ldap-auth(https://github.com/nginxinc/nginx-ldap-auth) software is for authenticating users who request protected resources from servers proxied by nginx. It includes a daemon (ldap-auth) that communicates with an authentication server, and a webserver daemon that generates an authentication cookie based on the user’s credentials. The daemons are written in Python for use with a Lightweight Directory Access Protocol (LDAP) authentication server (OpenLDAP or Microsoft Windows Active Directory 2003 and 2012).</Overview>
     <WebUI>http://[IP]:[PORT:9000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/ldap-auth.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ldap-auth-logo.png</Icon>
+    <Date>2021-05-14</Date>
+    <Changes>
+### 2021-05-14
+- Add linuxserver wheel index.
+
+### 2021-02-12
+- Clean up cargo/rust cache.
+
+### 2021-02-10
+- Rebasing to alpine 3.13.
+
+### 2020-09-08
+- Set form action correctly.
+
+### 2020-07-30
+- Fix bug related to unset optional `CERTFILE` and `KEYFILE` vars.
+
+### 2020-07-27
+- Add support for HTTP over SSL (HTTPS).
+
+### 2020-07-21
+- Add support for optional user defined fernet key.
+
+### 2020-06-02
+- Rebasing to alpine 3.12, serve login page at `/ldaplogin` as well as `/login`, to prevent clashes with reverese proxied apps.
+
+### 2020-05-17
+- Add support for self-signed CA certs.
+
+### 2020-02-20
+- Switch to python3.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-07-01
+- Fall back to base64 encoding when basic http auth is used.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-02-22
+- Rebasing to alpine 3.9.
+
+### 2018-09-18
+- Update pip
+
+### 2018-09-14
+- Add TZ parameter, remove unnecessary PUID/PGID params
+
+### 2018-08-11
+- Initial release.
+
+    </Changes>
     <Config Name="WebUI" Target="8888" Default="8888" Mode="tcp" Description="the port for ldap auth daemon" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 9000" Target="9000" Default="9000" Mode="tcp" Description="the port for ldap login page" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="FERNETKEY" Target="FERNETKEY" Default="" Description="Optionally define a custom fernet key, has to be base64-encoded 32-byte (only needed if container is frequently recreated, or if using multi-node setups, invalidating previous authentications)" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="CERTFILE" Target="CERTFILE" Default="" Description="Point this to a certificate file to enable HTTP over SSL (HTTPS) for the ldap auth daemon" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="KEYFILE" Target="KEYFILE" Default="" Description="Point this to the private key file, matching the certificate file referred to in CERTFILE" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="FERNETKEY" Target="FERNETKEY" Default="" Description="Optionally define a custom fernet key, has to be base64-encoded 32-byte (only needed if container is frequently recreated, or if using multi-node setups, invalidating previous authentications)" Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="CERTFILE" Target="CERTFILE" Default="" Description="Point this to a certificate file to enable HTTP over SSL (HTTPS) for the ldap auth daemon" Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="KEYFILE" Target="KEYFILE" Default="" Description="Point this to the private key file, matching the certificate file referred to in CERTFILE" Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
