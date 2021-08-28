@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-sickgear/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>sickgear</Name>
     <Repository>ghcr.io/linuxserver/sickgear</Repository>
@@ -11,13 +12,47 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-sickgear/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-sickgear#application-setup</GitHub>
     <Project>https://github.com/sickgear/sickgear</Project>
-    <Overview>[SickGear](https://github.com/sickgear/sickgear) provides management of TV shows and/or Anime, it detects new episodes, links downloader apps, and more..
+    <Overview>SickGear(https://github.com/sickgear/sickgear) provides management of TV shows and/or Anime, it detects new episodes, links downloader apps, and more..
 
 For more information on SickGear visit their website and check it out: https://github.com/SickGear/SickGear</Overview>
     <WebUI>http://[IP]:[PORT:8081]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sickgear.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sickgear-logo.png</Icon>
+    <Date>2021-01-31</Date>
+    <Changes>
+### 2021-01-31
+- Add unrar.
+
+### 2021-01-29
+- Deprecate `UMASK_SET` in favor of UMASK in baseimage, see above for more information.
+
+### 2021-01-23
+- Rebasing to alpine 3.13.
+
+### 2020-06-03
+- Rebasing to alpine 3.12, switch to python3.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-02-22
+- Rebasing to alpine 3.9.
+
+### 2018-11-07
+- Pipeline prep
+
+### 2018-07-07
+- Initial draft release
+
+    </Changes>
     <Config Name="WebUI" Target="8081" Default="8081" Mode="tcp" Description="will map the container&#39;s port 8081 to port 8081 on the host" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="this will store any uploaded data on the docker host" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /tv" Target="/tv" Default="" Mode="rw" Description="where you store your tv shows" Type="Path" Display="always" Required="true" Mask="false"/>
