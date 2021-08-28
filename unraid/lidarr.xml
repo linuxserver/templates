@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-lidarr/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>lidarr</Name>
     <Repository>ghcr.io/linuxserver/lidarr</Repository>
@@ -11,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-lidarr/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-lidarr#application-setup</GitHub>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable Lidarr releases.</TagDescription>
@@ -24,10 +26,61 @@
         <TagDescription>Nightly Lidarr Releases.</TagDescription>
     </Branch>
     <Project>https://github.com/lidarr/Lidarr</Project>
-    <Overview>[Lidarr](https://github.com/lidarr/Lidarr) is a music collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new tracks from your favorite artists and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.</Overview>
+    <Overview>Lidarr(https://github.com/lidarr/Lidarr) is a music collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new tracks from your favorite artists and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.</Overview>
     <WebUI>http://[IP]:[PORT:8686]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/lidarr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/lidarr-logo.png</Icon>
+    <Date>2021-08-01</Date>
+    <Changes>
+### 2021-08-01
+- Add libchromaprint-tools.
+
+### 2021-07-11
+- Make the paths clearer to the user.
+
+### 2021-04-18
+- Switch `latest` tag to net core.
+
+### 2021-01-25
+- Publish `develop` tag.
+
+### 2021-01-20
+- Deprecate `UMASK_SET` in favor of UMASK in baseimage, see above for more information.
+
+### 2020-04-18
+- Removed /downloads and /music volumes from Dockerfiles.
+
+### 2020-04-05
+- Move app to /app.
+
+### 2019-08-01
+- Rebase to Linuxserver LTS mono version.
+
+### 2019-06-13
+- Add env variable for setting umask.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-03-08
+- Rebase to Bionic, use proposed endpoint for libchromaprint.
+
+### 2019-01-26
+- Add pipeline logic and multi arch.
+
+### 2018-04-22
+- Switch to beta builds.
+
+### 2018-03-17
+- Add ENV XDG_CONFIG_HOME=&#34;/config/xdg&#34; to Dockerfile for signalr fix.
+
+### 2018-02-27
+- Use json to query for new version.
+
+### 2018-02-23
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="8686" Default="8686" Mode="tcp" Description="Application WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Configuration files for Lidarr." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /music" Target="/music" Default="" Mode="rw" Description="Music files (See note in Application setup)." Type="Path" Display="always" Required="false" Mask="false"/>
