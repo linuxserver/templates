@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-ipfs/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>ipfs</Name>
     <Repository>ghcr.io/linuxserver/ipfs</Repository>
@@ -11,11 +12,24 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-ipfs/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-ipfs#application-setup</GitHub>
     <Project>https://ipfs.io/</Project>
-    <Overview>[Ipfs](https://ipfs.io/) - A peer-to-peer hypermedia protocol designed to make the web faster, safer, and more open.</Overview>
+    <Overview>Ipfs(https://ipfs.io/) - A peer-to-peer hypermedia protocol designed to make the web faster, safer, and more open.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/ipfs.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ipfs-logo.png</Icon>
+    <Date>2021-04-01</Date>
+    <Changes>
+### 2021-04-01
+- Add migration bins to image to support upgrades.
+
+### 2020-02-24
+- Rebase to Alpine 3.13.
+
+### 2019-07-09
+- Initial version.
+
+    </Changes>
     <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="The port for the IPFS web UI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 4001" Target="4001" Default="4001" Mode="tcp" Description="Peering port, this is the only port you should expose to the internet" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 5001" Target="5001" Default="5001" Mode="tcp" Description="API port, the clientside webUI needs to be able to talk to this from whatever machine your web browser is on" Type="Port" Display="always" Required="true" Mask="false"/>
