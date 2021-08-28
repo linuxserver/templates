@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-rdesktop/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>rdesktop</Name>
     <Repository>ghcr.io/linuxserver/rdesktop</Repository>
@@ -11,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-rdesktop/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-rdesktop#application-setup</GitHub>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>XFCE Focal</TagDescription>
@@ -64,10 +66,25 @@
         <TagDescription>XFCE Alpine</TagDescription>
     </Branch>
     <Project>http://xrdp.org/</Project>
-    <Overview>[Rdesktop](http://xrdp.org/) - Ubuntu based containers containing full desktop environments in officially supported flavors accessible via RDP.</Overview>
+    <Overview>Rdesktop(http://xrdp.org/) - Ubuntu based containers containing full desktop environments in officially supported flavors accessible via RDP.</Overview>
     <WebUI>http://[IP]:[PORT:3389]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/rdesktop.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/rdesktop-logo.png</Icon>
+    <Date>2021-05-05</Date>
+    <Changes>
+### 2021-05-05
+- Reduce default packages to their flavor specific basics.
+
+### 2021-04-05
+- Add Alpine flavor.
+
+### 2020-04-06
+- Start PulseAudio in images to support audio
+
+### 2020-02-28
+- Initial Releases
+
+    </Changes>
     <Config Name="WebUI" Target="3389" Default="3389" Mode="tcp" Description="RDP access port" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /var/run/docker.sock" Target="/var/run/docker.sock" Default="" Mode="rw" Description="Docker Socket on the system, if you want to use Docker in the container" Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="abc users home directory" Type="Path" Display="always" Required="false" Mask="false"/>
