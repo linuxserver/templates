@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-chevereto/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>chevereto</Name>
     <Repository>ghcr.io/linuxserver/chevereto</Repository>
@@ -11,11 +12,21 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-chevereto/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-chevereto#application-setup</GitHub>
     <Project>https://github.com/Chevereto/Chevereto-Free</Project>
-    <Overview>[Chevereto](https://github.com/Chevereto/Chevereto-Free) is an image hosting software that allows you to create a beautiful and full-featured image hosting website on your own server. It&#39;s your hosting and your rules, so say goodbye to closures and restrictions.</Overview>
+    <Overview>Chevereto(https://github.com/Chevereto/Chevereto-Free) is an image hosting software that allows you to create a beautiful and full-featured image hosting website on your own server. It&#39;s your hosting and your rules, so say goodbye to closures and restrictions.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/chevereto.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/chevereto-logo.png</Icon>
+    <Date>2021-07-22</Date>
+    <Changes>
+### 2021-07-22
+- Rebase to Alpine 3.14.
+
+### 2020-08-28
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="http gui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 443" Target="443" Default="443" Mode="tcp" Description="https gui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="config directory volume mapping" Type="Path" Display="advanced" Required="true" Mask="false"/>
