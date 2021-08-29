@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-nextcloud/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>nextcloud</Name>
     <Repository>ghcr.io/linuxserver/nextcloud</Repository>
@@ -11,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-nextcloud/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-nextcloud#application-setup</GitHub>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable Nextcloud releases (currently php7)</TagDescription>
@@ -20,12 +22,120 @@
         <TagDescription>Experimental php8 based Nextcloud releases</TagDescription>
     </Branch>
     <Project>https://nextcloud.com/</Project>
-    <Overview>[Nextcloud](https://nextcloud.com/) gives you access to all your files wherever you are.
+    <Overview>Nextcloud(https://nextcloud.com/) gives you access to all your files wherever you are.
 
 Where are your photos and documents? With Nextcloud you pick a server of your choice, at home, in a data center or at a provider. And that is where your files will be. Nextcloud runs on that server, protecting your data and giving you access from your desktop or mobile devices. Through Nextcloud you also access, sync and share your existing data on that FTP drive at the office, a Dropbox or a NAS you have at home.</Overview>
     <WebUI>https://[IP]:[PORT:443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nextcloud.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nextcloud-logo.png</Icon>
+    <Date>2021-03-21</Date>
+    <Changes>
+### 2021-03-21
+- Publish `php8` tag for testing.
+
+### 2021-02-25
+- Nginx default site config updated for v21 (existing users should delete `/config/nginx/site-confs/default` and restart the container).
+
+### 2021-01-21
+- Fix php iconv (was breaking the mail addon). If installed, attempt to remove broken CODE Server app during startup.
+
+### 2021-01-20
+- Increase php fcgi timeout to prevent 504 Gateway timeout errors (existing users should delete `/config/nginx/site-confs/default` and restart the container).
+
+### 2021-01-16
+- Rebasing to alpine 3.13. Users with issues on 32-bit arm, see this article(https://docs.linuxserver.io/faq#my-host-is-incompatible-with-images-based-on-ubuntu-focal-and-alpine-3-13).
+
+### 2020-08-12
+- Various updates to default site config, including added support for webfinger (existing users should delete `/config/nginx/site-confs/default` and restart the container).
+
+### 2020-06-03
+- Rebasing to alpine 3.12
+
+### 2020-06-03
+- Add php7-bcmath and php7-fileinfo
+
+### 2020-05-31
+- Add aliases for occ and updater.phar
+
+### 2020-03-31
+- Allow crontab to be user customized, fix logrotate.
+
+### 2020-01-17
+- Updated php.ini defaults and site config, including an optional HSTS directive (existing users should delete `/config/nginx/site-confs/default` and restart the container).
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-11-18
+- Nginx default site config updated for v17 (existing users should delete `/config/nginx/site-confs/default` and restart the container).
+
+### 2019-10-28
+- Change cronjob to run every 5 minutes.
+
+### 2019-10-24
+- Nginx default site config updated due to CVE-2019-11043 (existing users should delete `/config/nginx/site-confs/default` and restart the container).
+
+### 2019-07-14
+- Download nextcloud during build time.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-02-27
+- Updating base nginx config to sync up with v15 requirements.
+
+### 2019-02-22
+- Rebasing to alpine 3.9.
+
+### 2019-01-28
+- Add pipeline logic and multi arch.
+
+### 2019-01-25
+- Add php7-phar for occ upgrades.
+
+### 2018-09-05
+- Rebase to alpine 3.8.
+
+### 2018-06-11
+- Use latest rather than specific version for initial install.
+
+### 2018-04-26
+- Bump default install to 13.0.1.
+
+### 2018-02-06
+- Bump default install to 13.0.0.
+
+### 2018-01-26
+- Rebase to alpine 3.7, bump default install to 12.0.5.
+
+### 2017-12-12
+- Bump default install to 12.0.4, fix continuation lines.
+
+### 2017-10-15
+- Sed php.ini for opcache requirements in newer nextcloud versions.
+
+### 2017-09-20
+- Bump default install to 12.0.3.
+
+### 2017-08-19
+- Bump default install to 12.0.2.
+
+### 2017-05-25
+- Rebase to alpine 3.6.
+
+### 2017-05-22
+- Update to nextcloud 12.0, adding required dependecies and note about commenting out SAMEORIGIN; line.
+
+### 2017-05-03
+- Use community repo of memcache.
+
+### 2017-03-07
+- Release into main repository and upgrade to php7 and Alpine 3.5.
+
+    </Changes>
     <Config Name="WebUI" Target="443" Default="443" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Nextcloud configs." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="Your personal data." Type="Path" Display="always" Required="true" Mask="false"/>
