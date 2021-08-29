@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-smokeping/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>smokeping</Name>
     <Repository>ghcr.io/linuxserver/smokeping</Repository>
@@ -11,11 +12,90 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-smokeping/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-smokeping#application-setup</GitHub>
     <Project>https://oss.oetiker.ch/smokeping/</Project>
-    <Overview>[Smokeping](https://oss.oetiker.ch/smokeping/) keeps track of your network latency. For a full example of what this application is capable of visit [UCDavis](http://smokeping.ucdavis.edu/cgi-bin/smokeping.fcgi).</Overview>
+    <Overview>Smokeping(https://oss.oetiker.ch/smokeping/) keeps track of your network latency. For a full example of what this application is capable of visit UCDavis(http://smokeping.ucdavis.edu/cgi-bin/smokeping.fcgi).</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/smokeping.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/smokeping-logo.png</Icon>
+    <Date>2021-01-23</Date>
+    <Changes>
+### 2021-01-23
+- Rebasing to alpine 3.13.
+
+### 2020-06-01
+- Rebasing to alpine 3.12.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-02-22
+- Rebasing to alpine 3.9.
+
+### 2018-11-14
+- Allow access without /smokeping in URL.
+
+### 2018-04-28
+- Rebase to alpine 3.8.
+
+### 2018-04-09
+- Add bc package.
+
+### 2018-04-08
+- Add tccping script and tcptraceroute package (thanks rcarmo).
+
+### 2017-12-13
+- Expose httpd_conf to /config.
+
+### 2017-12-13
+- Rebase to alpine 3.7.
+
+### 2017-07-24
+- Add :unraid tag for hosts without ipv6.
+
+### 2017-07-12
+- Add inspect commands to README, move to jenkins build and push.
+
+### 2017-05-28
+- Rebase to alpine 3.6.
+
+### 2017-05-07
+- Expose smokeping.conf in /config/site-confs to allow user customisations
+
+### 2017-04-12
+- Fix cropper.js path, thanks nibbledeez.
+
+### 2017-02-09
+- Rebase to alpine 3.5.
+
+### 2016-10-17
+- Add ttf-dejavu package as per LT forum(http://lime-technology.com/forum/index.php?topic=43602.msg507875#msg507875).
+
+### 2016-09-10
+- Add layer badges to README.
+
+### 2016-09-05
+- Add curl package.
+
+### 2016-08-28
+- Add badges to README.
+
+### 2016-07-25
+- Rebase to alpine linux.
+
+### 2016-07-23
+- Fix apt script confusion.
+
+### 2015-06-29
+- This is the first release, it is mostly stable, but may contain minor defects. (thus a beta tag)
+
+    </Changes>
     <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="Allows HTTP access to the internal webserver." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Configure the `Targets` file here" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="Storage location for db and application data (graphs etc)" Type="Path" Display="always" Required="true" Mask="false"/>
