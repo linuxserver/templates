@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-mstream/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>mstream</Name>
     <Repository>ghcr.io/linuxserver/mstream</Repository>
@@ -11,11 +12,33 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-mstream/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-mstream#application-setup</GitHub>
     <Project>https://mstream.io/</Project>
-    <Overview>[mstream](https://mstream.io/) is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere.  There are mobile apps available for both Android and iPhone.</Overview>
+    <Overview>mstream(https://mstream.io/) is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere.  There are mobile apps available for both Android and iPhone.</Overview>
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mstream.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mstream-logo.png</Icon>
+    <Date>2021-05-17</Date>
+    <Changes>
+### 2021-05-17
+- Deprecating the env vars `USER`, `PASSWORD` and `USE_JSON` as mStream v5 requires the use of `config.json`.
+
+### 2021-01-23
+- Rebasing to alpine 3.13.
+
+### 2020-06-01
+- Rebasing to alpine 3.12.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-05-18
+- Inital Release
+
+    </Changes>
     <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="The port for the mStream webinterface" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="mStream config" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /music" Target="/music" Default="" Mode="rw" Description="Music location" Type="Path" Display="always" Required="true" Mask="false"/>
