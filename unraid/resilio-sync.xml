@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-resilio-sync/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>resilio-sync</Name>
     <Repository>ghcr.io/linuxserver/resilio-sync</Repository>
@@ -11,11 +12,51 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-resilio-sync/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-resilio-sync#application-setup</GitHub>
     <Project>https://www.resilio.com/individuals/</Project>
-    <Overview>[Resilio-sync](https://www.resilio.com/individuals/) (formerly BitTorrent Sync) uses the BitTorrent protocol to sync files and folders between all of your devices. There are both free and paid versions, this container supports both. There is an official sync image but we created this one as it supports user mapping to simplify permissions for volumes.</Overview>
+    <Overview>Resilio-sync(https://www.resilio.com/individuals/) (formerly BitTorrent Sync) uses the BitTorrent protocol to sync files and folders between all of your devices. There are both free and paid versions, this container supports both. There is an official sync image but we created this one as it supports user mapping to simplify permissions for volumes.</Overview>
     <WebUI>http://[IP]:[PORT:8888]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/resilio-sync.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/resilio-sync-logo.png</Icon>
+    <Date>2021-01-20</Date>
+    <Changes>
+### 2021-01-20
+- Deprecate `UMASK_SET` in favor of UMASK in baseimage, see above for more information.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-02-11
+- Rebase to bionic, add pipeline logic and multi arch.
+
+### 2018-02-05
+- Add downloads volume mount.
+
+### 2018-01-28
+- Add /sync to dir whitelist.
+
+### 2018-01-26
+- Use variable for arch to bring in line with armhf arch repo.
+
+### 2017-12-15
+- Fix continuation lines.
+
+### 2017-06-02
+- Rebase to ubuntu xenial, alpine linux no longer works with resilio.
+
+### 2017-05-22
+- Add variable for user defined umask.
+
+### 2017-05-14
+- Use fixed version instead of latest, while 2.5.0 is broken on non glibc (alpine).
+
+### 2017-02-08
+- Rebase to alpine 3.5.
+
+### 2016-11-02
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="8888" Default="8888" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 55555" Target="55555" Default="55555" Mode="tcp" Description="Sync Port." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where resilio-sync should store its config file." Type="Path" Display="advanced" Required="true" Mask="false"/>
