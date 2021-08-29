@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-webtop/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>webtop</Name>
     <Repository>ghcr.io/linuxserver/webtop</Repository>
@@ -11,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-webtop/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-webtop#application-setup</GitHub>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>XFCE Alpine</TagDescription>
@@ -60,14 +62,20 @@
         <TagDescription>IceWM Ubuntu</TagDescription>
     </Branch>
     <Project>https://github.com/linuxserver/docker-webtop</Project>
-    <Overview>[Webtop](https://github.com/linuxserver/docker-webtop) - Alpine and Ubuntu based containers containing full desktop environments in officially supported flavors accessible via any modern web browser.</Overview>
+    <Overview>Webtop(https://github.com/linuxserver/docker-webtop) - Alpine and Ubuntu based containers containing full desktop environments in officially supported flavors accessible via any modern web browser.</Overview>
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/webtop.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png</Icon>
+    <Date>2021-04-20</Date>
+    <Changes>
+### 2021-04-20
+- Initial release.
+
+    </Changes>
     <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Web Desktop GUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="abc users home directory" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /var/run/docker.sock" Target="/var/run/docker.sock" Default="" Mode="rw" Description="Docker Socket on the system, if you want to use Docker in the container" Type="Path" Display="always" Required="false" Mask="false"/>
-    <Config Name="SUBFOLDER" Target="SUBFOLDER" Default="/" Description="Specify a subfolder to use with reverse proxies, IE `/subfolder/`" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="SUBFOLDER" Target="SUBFOLDER" Default="/" Description="Specify a subfolder to use with reverse proxies, IE `/subfolder/`" Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
