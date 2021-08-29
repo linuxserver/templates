@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-emby/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>emby</Name>
     <Repository>ghcr.io/linuxserver/emby</Repository>
@@ -11,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-emby/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-emby#application-setup</GitHub>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable emby releases</TagDescription>
@@ -20,10 +22,52 @@
         <TagDescription>Beta emby releases</TagDescription>
     </Branch>
     <Project>https://emby.media/</Project>
-    <Overview>[Emby](https://emby.media/) organizes video, music, live TV, and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone emby Media Server.</Overview>
+    <Overview>Emby(https://emby.media/) organizes video, music, live TV, and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone emby Media Server.</Overview>
     <WebUI>http://[IP]:[PORT:8096]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/emby.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/emby-logo.png</Icon>
+    <Date>2021-05-19</Date>
+    <Changes>
+### 2021-05-19
+- Structural changes upstream.
+
+### 2021-01-17
+- Deprecate `UMASK_SET` in favor of UMASK in baseimage, see above for more information. Remove no longer used mapping for /transcode.
+
+### 2020-12-21
+- Rebase to Focal, see here(https://docs.linuxserver.io/faq#my-host-is-incompatible-with-images-based-on-ubuntu-focal) for troubleshooting armhf.
+
+### 2020-11-03
+- Fix issue with missing samba folder.
+
+### 2020-11-13
+- Fix issue with samba and ffmpeg.
+
+### 2020-07-03
+- Add support for amd vaapi hw transcode.
+
+### 2020-02-29
+- Add v4l2 support on Raspberry Pi.
+
+### 2020-02-26
+- Add openmax support on Raspberry Pi.
+
+### 2020-02-15
+- Allow restarting emby from the gui (also allows for auto restarts after addon updates).
+
+### 2019-10-02
+- Improve permission fixing for render and dvb devices.
+
+### 2019-08-13
+- Add umask environment variable.
+
+### 2019-06-24
+- Fix typos in readme.
+
+### 2019-05-30
+- Initial release.
+
+    </Changes>
     <Config Name="WebUI" Target="8096" Default="8096" Mode="tcp" Description="Http webUI." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 8920" Target="8920" Default="8920" Mode="tcp" Description="Https webUI (you need to setup your own certificate)." Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Emby data storage location. *This can grow very large, 50gb+ is likely for a large collection.*" Type="Path" Display="advanced" Required="true" Mask="false"/>
