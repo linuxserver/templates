@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-medusa/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>medusa</Name>
     <Repository>ghcr.io/linuxserver/medusa</Repository>
@@ -11,11 +12,63 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-medusa/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-medusa#application-setup</GitHub>
     <Project>https://pymedusa.com/</Project>
-    <Overview>[Medusa](https://pymedusa.com/) is an automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.</Overview>
+    <Overview>Medusa(https://pymedusa.com/) is an automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.</Overview>
     <WebUI>http://[IP]:[PORT:8081]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/medusa.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/medusa-logo.png</Icon>
+    <Date>2020-06-01</Date>
+    <Changes>
+### 2020-06-01
+- Rebasing to alpine 3.12.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-09-22
+- Switch to python3.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-02-22
+- Rebasing to alpine 3.9.
+
+### 2019-01-14
+- Adding multi arch and pipeline logic
+
+### 2018-08-16
+- Rebase to alpine 3.8
+
+### 2017-12-08
+- Rebase to alpine 3.7
+
+### 2017-11-29
+- Add py-gdbm for subtitles support
+
+### 2017-10-26
+- Mediainfo moved from testing to community repo
+
+### 2017-10-10
+- Use repo version of mediainfo to shorten build time
+
+### 2017-08-05
+- Internal git pull instead of at runtime
+
+### 2017-05-25
+- Rebase to alpine 3.6
+
+### 2017-02-07
+- Rebase to alpine 3.5
+
+### 2017-01-02
+- Initial Release
+
+    </Changes>
     <Config Name="WebUI" Target="8081" Default="8081" Mode="tcp" Description="The port for the Medusa webui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Medusa config" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Download location" Type="Path" Display="always" Required="true" Mask="false"/>
