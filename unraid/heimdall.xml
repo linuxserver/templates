@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-heimdall/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>heimdall</Name>
     <Repository>ghcr.io/linuxserver/heimdall</Repository>
@@ -11,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-heimdall/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-heimdall#application-setup</GitHub>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable Heimdall releases.</TagDescription>
@@ -20,12 +22,87 @@
         <TagDescription>Latest commit from the github master branch.</TagDescription>
     </Branch>
     <Project>https://heimdall.site</Project>
-    <Overview>[Heimdall](https://heimdall.site) is a way to organise all those links to your most used web sites and web applications in a simple way.
+    <Overview>Heimdall(https://heimdall.site) is a way to organise all those links to your most used web sites and web applications in a simple way.
 Simplicity is the key to Heimdall.
 Why not use it as your browser start page? It even has the ability to include a search bar using either Google, Bing or DuckDuckGo.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/heimdall.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/heimdall-logo.png</Icon>
+    <Date>2021-02-10</Date>
+    <Changes>
+### 2021-02-10
+- Revert to alpine 3.12 as php 7.4 broke laravel.
+
+### 2021-02-10
+- Rebasing to alpine 3.13.
+
+### 2020-08-17
+- Add php7-curl.
+
+### 2020-06-01
+- Rebasing to alpine 3.12.
+
+### 2020-01-17
+- Use nginx from baseimage.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-07-16
+- Save laravel.log to /config/log/heimdall.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-04-01
+- Fix permission detect logic.
+
+### 2019-03-26
+- Install Heimdall during container start to prevent delayed start due to overlayfs bug with recursive chown.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-03-15
+- Clarify docker image tags in readme.
+
+### 2019-02-22
+- Rebasing to alpine 3.9.
+
+### 2018-01-16
+- Generate random app key in .env for new installs.
+
+### 2018-11-20
+- Upgrade baseimage packages during build.
+
+### 2018-11-04
+- Add php7-zip.
+
+### 2018-10-31
+- Add queue service.
+
+### 2018-10-17
+- Symlink avatars folder.
+
+### 2018-10-16
+- Updated fastcgi_params for user login support.
+
+### 2018-10-07
+- Symlink `.env` rather than copy. It now resides under `/config/www`
+
+### 2018-09-30
+- Multi-arch image. Move `.env` to `/config`.
+
+### 2018-09-05
+- Rebase to alpine linux 3.8.
+
+### 2018-03-06
+- Use password protection if htpasswd is set. Existing users can delete their default site config at /config/nginx/site-confs/default and restart the container, a new default site config with htpasswd support will be created in its place
+
+### 2018-02-12
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="http gui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 443" Target="443" Default="443" Mode="tcp" Description="https gui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
