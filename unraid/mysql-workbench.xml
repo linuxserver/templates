@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-mysql-workbench/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>mysql-workbench</Name>
     <Repository>ghcr.io/linuxserver/mysql-workbench</Repository>
@@ -11,12 +12,25 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-mysql-workbench/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-mysql-workbench#application-setup</GitHub>
     <Project>https://www.mysql.com/products/workbench/</Project>
-    <Overview>[MySQL Workbench](https://www.mysql.com/products/workbench/) is a unified visual tool for database architects, developers, and DBAs. MySQL Workbench provides data modeling, SQL development, and comprehensive administration tools for server configuration, user administration, backup, and much more.</Overview>
+    <Overview>MySQL Workbench(https://www.mysql.com/products/workbench/) is a unified visual tool for database architects, developers, and DBAs. MySQL Workbench provides data modeling, SQL development, and comprehensive administration tools for server configuration, user administration, backup, and much more.</Overview>
     <ExtraParams>--cap-add=IPC_LOCK</ExtraParams>
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mysql-workbench.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mysql-workbench-logo.png</Icon>
+    <Date>2021-04-20</Date>
+    <Changes>
+### 2021-04-20
+- Rebase on focal.
+
+### 2021-01-18
+- Update libpython dependency.
+
+### 2020-03-26
+- Initial release.
+
+    </Changes>
     <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Mysql Workbench desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Users home directory in the container, stores program settings." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
