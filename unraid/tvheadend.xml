@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-tvheadend/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>tvheadend</Name>
     <Repository>ghcr.io/linuxserver/tvheadend</Repository>
@@ -11,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-tvheadend/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-tvheadend#application-setup</GitHub>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Current latest release.</TagDescription>
@@ -28,17 +30,140 @@
         <TagDescription>Old stable version. Will not be updated anymore!</TagDescription>
     </Branch>
     <Project>https://www.tvheadend.org/</Project>
-    <Overview>[Tvheadend](https://www.tvheadend.org/) works as a proxy server: is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SATIP and HDHomeRun as input sources.
+    <Overview>Tvheadend(https://www.tvheadend.org/) works as a proxy server: is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SATIP and HDHomeRun as input sources.
 Tvheadend offers the HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SATIP streaming.
 Multiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV DVB extensions, XMLTV, PyXML).</Overview>
     <WebUI>http://[IP]:[PORT:9981]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/tvheadend.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/tvheadend-logo.png</Icon>
+    <Date>2021-05-11</Date>
+    <Changes>
+### 2021-05-11
+- Added Intel iHD driver support.
+
+### 2020-06-02
+- Update to Alpine 3.12.
+
+### 2019-12-27
+- Add requests and perl-json-xs package.
+
+### 2019-12-27
+- Update to Alpine 3.11.
+
+### 2019-10-02
+- Improve permission fixing on render and dvb devices.
+
+### 2019-08-18
+- Add AMD drivers.
+
+### 2019-08-02
+- Attempt to automatically fix permissions on /dev/dri and /dev/dvb.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-03-27
+- Rebase to Alpine 3.9, fix init logic to only chown once.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-03-01
+- Bump xmltv to 0.6.1.
+
+### 2019-02-28
+- add perl-lwp-useragent-determined.
+
+### 2019-02-17
+- Bump xmltv to 5.70, ensure version tagging works by cloning tvheadend.
+
+### 2019-02-14
+- Add picons path to config.
+
+### 2019-01-15
+- Add pipeline logic and multi arch.
+
+### 2018-09-12
+- Rebase to alpine 3.8 and use buildstage type build.
+
+### 2018-04-21
+- Add JSON::XS Perl package for grab_tv_huro.
+
+### 2018-03-24
+- Add dvbcsa package.
+
+### 2018-03-04
+- Use sourceforge master rather than mirror for xmltv.
+
+### 2018-02-22
+- Add lost libva-intel-driver.
+
+### 2018-02-21
+- Fix wrong version of iconv used.
+
+### 2018-02-18
+- Add vaapi support, some cleanup and dropping of deprecated options.
+
+### 2018-01-04
+- Deprecate cpu_core routine lack of scaling.
+
+### 2017-12-11
+- Rebase to alpine 3.7, linting fixes.
+
+### 2017-09-02
+- Add codec dependencies.
+
+### 2017-07-13
+- Increase uniformity across all archs.
+
+### 2017-07-08
+- Update README with full path for comskip.
+
+### 2017-07-02
+- Move to one branch for all 4.2 releases.
+
+### 2017-05-27
+- Rebase to alpine 3.6.
+
+### 2017-05-01
+- Update to tvheadend 4.2.1 stable.
+
+### 2017-04-18
+- Use repo version of gnu-libiconv rather than compiling.
+
+### 2017-04-09
+- Chain cpanm installs in one block and use --installdeps.
+
+### 2017-02-09
+- Perl changes, add picons file to gitignore and update XMLTV to 0.5.69.
+
+### 2017-02-07
+- Add variable to add additional runtime paramters.
+
+### 2017-02-05
+- Update to alpine 3.5 and change dvb-apps to only compile needed libs.
+
+### 2016-11-14
+- Add picons from picons.xyz to /picons folder and add info to README.
+
+### 2016-09-22
+- Fix broken tv_grab_wg, libs for xmltv and update README.
+
+### 2016-09-18
+- Update XMLTV to 0.5.68 and update README.
+
+### 2016-09-10
+- Add layer badges to README.
+
+### 2016-09-05
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="9981" Default="9981" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 9982" Target="9982" Default="9982" Mode="tcp" Description="HTSP server port." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where TVHeadend show store it&#39;s config files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /recordings" Target="/recordings" Default="" Mode="rw" Description="Where you want the PVR to store recordings." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="RUN_OPTS" Target="RUN_OPTS" Default="run options here" Description="Optionally specify additional arguments to be passed. See Additional runtime parameters." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="RUN_OPTS" Target="RUN_OPTS" Default="run options here" Description="Optionally specify additional arguments to be passed. See Additional runtime parameters." Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
