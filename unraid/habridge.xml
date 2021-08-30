@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-habridge/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>habridge</Name>
     <Repository>ghcr.io/linuxserver/habridge</Repository>
@@ -11,21 +12,55 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-habridge/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-habridge#application-setup</GitHub>
     <Project>http://bwssystems.com/#/habridge</Project>
-    <Overview>[Habridge](http://bwssystems.com/#/habridge) emulates Philips Hue API to other home automation gateways such as an Amazon Echo/Dot Gen 1 (gen 2 has issues discovering ha-bridge) or other systems that support Philips Hue. The Bridge handles basic commands such as &#34;On&#34;, &#34;Off&#34; and &#34;brightness&#34; commands of the hue protocol. This bridge can control most devices that have a distinct API.
+    <Overview>Habridge(http://bwssystems.com/#/habridge) emulates Philips Hue API to other home automation gateways such as an Amazon Echo/Dot Gen 1 (gen 2 has issues discovering ha-bridge) or other systems that support Philips Hue. The Bridge handles basic commands such as &#34;On&#34;, &#34;Off&#34; and &#34;brightness&#34; commands of the hue protocol. This bridge can control most devices that have a distinct API.
 
 In the cases of systems that require authorization and/or have APIs that cannot be handled in the current method, a module may need to be built. The Harmony Hub is such a module and so is the Nest module. The Bridge has helpers to build devices for the gateway for the Logitech Harmony Hub, Vera, Vera Lite or Vera Edge, Nest, Somfy Tahoma, Home Assistant, Domoticz, MQTT, HAL, Fibaro, HomeWizard, LIFX, OpenHAB, FHEM, Broadlink and the ability to proxy all of your real Hue bridges behind this bridge.
 
 This bridge was built to help put the Internet of Things together.
 
-For more information about how to use this software have a look at their Wiki [https://github.com/bwssytems/ha-bridge/wiki](https://github.com/bwssytems/ha-bridge/wiki)</Overview>
+For more information about how to use this software have a look at their Wiki https://github.com/bwssytems/ha-bridge/wiki(https://github.com/bwssytems/ha-bridge/wiki)</Overview>
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/habridge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/habridge-logo.png</Icon>
+    <Date>2021-01-23</Date>
+    <Changes>
+### 2021-01-23
+- Rebasing to alpine 3.13.
+
+### 2020-06-01
+- Rebasing to alpine 3.12.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-02-22
+- Rebasing to alpine 3.9.
+
+### 2019-02-11
+- Add pipeline logic and multi arch.
+
+### 2018-08-28
+- Rebase to alpine 3.8.
+
+### 2018-04-12
+- Add workaround to bind to port 80 if needed.
+
+### 2018-04-08
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 50000" Target="50000" Default="50000" Mode="tcp" Description="HABridge communication port." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where HABridge stores config files and data." Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="SEC_KEY" Target="SEC_KEY" Default="Your Key To Encrypt Security Data" Description="Key used to secure communication." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="SEC_KEY" Target="SEC_KEY" Default="Your Key To Encrypt Security Data" Description="Key used to secure communication." Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
