@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-radarr/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>radarr</Name>
     <Repository>ghcr.io/linuxserver/radarr</Repository>
@@ -11,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-radarr/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-radarr#application-setup</GitHub>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable Radarr releases</TagDescription>
@@ -24,10 +26,61 @@
         <TagDescription>Radarr releases from their nightly branch</TagDescription>
     </Branch>
     <Project>https://github.com/Radarr/Radarr</Project>
-    <Overview>[Radarr](https://github.com/Radarr/Radarr) - A fork of Sonarr to work with movies à la Couchpotato.</Overview>
+    <Overview>Radarr(https://github.com/Radarr/Radarr) - A fork of Sonarr to work with movies à la Couchpotato.</Overview>
     <WebUI>http://[IP]:[PORT:7878]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/radarr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/radarr-logo.png</Icon>
+    <Date>2021-05-08</Date>
+    <Changes>
+### 2021-05-08
+- Make the paths clearer to the user
+
+### 2021-01-17
+- Deprecate `UMASK_SET` in favor of UMASK in baseimage, see above for more information.
+
+### 2020-30-11
+- Publish `develop` tag.
+
+### 2020-28-11
+- Switch to v3 .NET CORE builds (no more mono, `5.14` tag is deprecated). Rebase to Focal (for issues on arm32v7, see here(https://docs.linuxserver.io/faq#my-host-is-incompatible-with-images-based-on-ubuntu-focal)).
+
+### 2020-04-05
+- Move app to /app.
+
+### 2019-08-01
+- Rebase to Linuxserver LTS mono version.
+
+### 2019-06-13
+- Add env variable for setting umask.
+
+### 2019-05-10
+- Rebase to Bionic.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2018-09-09
+- Add pipeline build process.
+
+### 2018-02-24
+- Add nightly branch.
+
+### 2018-02-06
+- Radarr repo changed owner.
+
+### 2017-12-15
+- Fix continuation lines.
+
+### 2017-04-17
+- Switch to using inhouse mono baseimage, adds python also.
+
+### 2017-04-13
+- Switch to official mono repository.
+
+### 2017-01-10
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="7878" Default="7878" Mode="tcp" Description="The port for the Radarr webinterface" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Database and Radarr configs" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /movies" Target="/movies" Default="" Mode="rw" Description="Location of Movie library on disk (See note in Application setup)" Type="Path" Display="always" Required="false" Mask="false"/>
