@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-couchpotato/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>couchpotato</Name>
     <Repository>ghcr.io/linuxserver/couchpotato</Repository>
@@ -11,11 +12,84 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-couchpotato/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-couchpotato#application-setup</GitHub>
     <Project>https://couchpota.to/</Project>
-    <Overview>[Couchpotato](https://couchpota.to/) is an automatic NZB and torrent downloader. You can keep a `movies I want` list and it will search for NZBs/torrents of these movies every X hours. Once a movie is found, it will send it to SABnzbd or download the torrent to a specified directory.</Overview>
+    <Overview>Couchpotato(https://couchpota.to/) is an automatic NZB and torrent downloader. You can keep a `movies I want` list and it will search for NZBs/torrents of these movies every X hours. Once a movie is found, it will send it to SABnzbd or download the torrent to a specified directory.</Overview>
     <WebUI>http://[IP]:[PORT:5050]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/couchpotato.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/couchpotato-logo.png</Icon>
+    <Date>2021-01-29</Date>
+    <Changes>
+### 2021-01-29
+- Deprecate `UMASK_SET` in favor of UMASK in baseimage, see above for more information.
+
+### 2021-01-23
+- Rebasing to alpine 3.13.
+
+### 2019-06-10
+- Add back unrar and unzip that were accidentally left out during rebase.
+
+### 2019-06-06
+- Rebasing to alpine 3.12.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-02-22
+- Rebasing to alpine 3.9.
+
+### 2019-01-14
+- Multi-arch builds.
+
+### 2018-08-16
+- Rebase to alpine 3.8.
+
+### 2017-11-06
+- Rebase to alpine 3.7.
+
+### 2017-07-20
+- Internal git pull instead of at runtime, add UMASK_SET variable.
+
+### 2017-07-12
+- Add inspect commands to README, move to jenkins build and push
+
+### 2017-05-25
+- Rebase to alpine 3.6
+
+### 2017-02-07
+- Rebase to alpine 3.5.
+
+### 2016-11-11
+- Stop cp logging to docker log (they are accessible in the webui and the config folder).
+
+### 2016-09-30
+- Fix umask.
+
+### 2016-09-09
+- Add layer badges to README.
+
+### 2016-08-27
+- Add badges to README.
+
+### 2016-08-08
+- Rebase to alpine linux.
+
+### 2015-11-12
+- Misc Code Cleanup.
+
+### 2015-10-02
+- Change to python baseimage.
+
+### 2015-07-28
+- Updated to latest baseimage (for testing), and a fix to autoupdate.
+
+    </Changes>
     <Config Name="WebUI" Target="5050" Default="5050" Mode="tcp" Description="http gui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Couchpotato Application Data." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Downloads Folder." Type="Path" Display="always" Required="true" Mask="false"/>
