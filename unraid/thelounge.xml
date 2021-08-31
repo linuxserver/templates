@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-thelounge/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>thelounge</Name>
     <Repository>ghcr.io/linuxserver/thelounge</Repository>
@@ -11,11 +12,66 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-thelounge/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-thelounge#application-setup</GitHub>
     <Project>https://thelounge.github.io/</Project>
-    <Overview>[Thelounge](https://thelounge.github.io/) (a fork of shoutIRC) is a web IRC client that you host on your own server.</Overview>
+    <Overview>Thelounge(https://thelounge.github.io/) (a fork of shoutIRC) is a web IRC client that you host on your own server.</Overview>
     <WebUI>http://[IP]:[PORT:9000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/thelounge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Date>2021-01-23</Date>
+    <Changes>
+### 2021-01-23
+- Rebasing to alpine 3.13.
+
+### 2020-06-02
+- Rebasing to alpine 3.12.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-05-15
+- Update Arm variant images to build sqlite3 module.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-02-22
+- Rebasing to alpine 3.9.
+
+### 2019-01-28
+- Add pipeline logic and multi arch.
+
+### 2018-08-25
+- Use global install, simplifies adding users.
+
+### 2018-08-20
+- Rebase to alpine 3.8.
+
+### 2018-01-06
+- Rebase to alpine 3.7.
+
+### 2017-05-26
+- Rebase to alpine 3.6.
+
+### 2017-02-06
+- Rebase to alpine 3.5.
+
+### 2016-10-14
+- Bump to pickup 2.10 release.
+
+### 2016-10-14
+- Add version layer information.
+
+### 2016-09-11
+- Add layer badges to README.
+
+### 2016-08-31
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="9000" Default="9000" Mode="tcp" Description="Application WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
