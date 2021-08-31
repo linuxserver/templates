@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-pydio-cells/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>pydio-cells</Name>
     <Repository>ghcr.io/linuxserver/pydio-cells</Repository>
@@ -11,17 +12,39 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-pydio-cells/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-pydio-cells#application-setup</GitHub>
     <Project>https://pydio.com/</Project>
-    <Overview>[Pydio-cells](https://pydio.com/) is the nextgen file sharing platform for organizations. It is a full rewrite of the Pydio project using the Go language following a micro-service architecture.</Overview>
+    <Overview>Pydio-cells(https://pydio.com/) is the nextgen file sharing platform for organizations. It is a full rewrite of the Pydio project using the Go language following a micro-service architecture.</Overview>
     <ExtraParams>pydio-cells --cap-add=NET_ADMIN</ExtraParams>
     <WebUI>https://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/pydio-cells.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Date>2021-01-23</Date>
+    <Changes>
+### 2021-01-23
+- Rebasing to alpine 3.13.
+
+### 2020-06-01
+- Rebasing to alpine 3.12.
+
+### 2020-04-18
+- Switch to https as default (only affects new installs). Add self signed cert, add `SERVER_IP` var for adding to cert as SAN. Add optional gRPC port mapping for CellsSync.
+
+### 2020-04-17
+- Update compile options, previous release was broken for new installs.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-12-12
+- Initial Release
+
+    </Changes>
     <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="Http port" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 33060" Target="33060" Default="33060" Mode="tcp" Description="gRPC port (required for CellsSync)." Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="All the config files reside here." Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="EXTERNALURL" Target="EXTERNALURL" Default="yourdomain.url" Description="The external url you would like to use to access Pydio Cells (Can be https://domain.url or https://IP:PORT)." Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="SERVER_IP" Target="SERVER_IP" Default="0.0.0.0" Description="Enter the LAN IP of the docker server. Required for local access by IP, added to self signed cert as SAN (not required if accessing only through reverse proxy)." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="EXTERNALURL" Target="EXTERNALURL" Default="yourdomain.url" Description="The external url you would like to use to access Pydio Cells (Can be https://domain.url or https://IP:PORT)." Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="SERVER_IP" Target="SERVER_IP" Default="0.0.0.0" Description="Enter the LAN IP of the docker server. Required for local access by IP, added to self signed cert as SAN (not required if accessing only through reverse proxy)." Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
