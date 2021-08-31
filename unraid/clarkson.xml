@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-clarkson/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>clarkson</Name>
     <Repository>ghcr.io/linuxserver/clarkson</Repository>
@@ -11,16 +12,47 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-clarkson/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-clarkson#application-setup</GitHub>
     <Project>https://github.com/linuxserver/Clarkson</Project>
-    <Overview>[Clarkson](https://github.com/linuxserver/Clarkson) is a web-based dashboard application that gives you a neat and clean interface for logging your fuel fill-ups for all of your vehicles. The application has full multi-user support, as well as multiple vehicles per user. Whenever you fill-up your car or motorcycle, keep the receipt and record the data in Clarkson.</Overview>
+    <Overview>Clarkson(https://github.com/linuxserver/Clarkson) is a web-based dashboard application that gives you a neat and clean interface for logging your fuel fill-ups for all of your vehicles. The application has full multi-user support, as well as multiple vehicles per user. Whenever you fill-up your car or motorcycle, keep the receipt and record the data in Clarkson.</Overview>
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/clarkson.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/clarkson-logo.png</Icon>
+    <Date>2020-06-02</Date>
+    <Changes>
+### 2020-06-02
+- Rebasing to alpine 3.12.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-03-23
+- Updating runtime dependancies for the JRE.
+
+### 2019-02-22
+- Rebasing to alpine 3.9.
+
+### 2019-02-11
+- Add pipeline logic and multi arch.
+
+### 2018-08-22
+- Rebase to alpine linux 3.8.
+
+### 2018-02-19
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="MYSQL_HOST" Target="MYSQL_HOST" Default="mysql_host" Description="Points the backend to the MySQL database. This can be either a docker hostname or an IP." Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="MYSQL_USERNAME" Target="MYSQL_USERNAME" Default="mysql_username" Description="The user with access to the _clarkson_ schema." Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="MYSQL_PASSWORD" Target="MYSQL_PASSWORD" Default="mysql_password" Description="The password for the user." Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="ENABLE_REGISTRATIONS" Target="ENABLE_REGISTRATIONS" Default="true/false" Description="**Defaults to _false_.** If set to _true_, allows new users to register." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="MYSQL_HOST" Target="MYSQL_HOST" Default="mysql_host" Description="Points the backend to the MySQL database. This can be either a docker hostname or an IP." Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="MYSQL_USERNAME" Target="MYSQL_USERNAME" Default="mysql_username" Description="The user with access to the _clarkson_ schema." Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="MYSQL_PASSWORD" Target="MYSQL_PASSWORD" Default="mysql_password" Description="The password for the user." Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="ENABLE_REGISTRATIONS" Target="ENABLE_REGISTRATIONS" Default="true/false" Description="**Defaults to _false_.** If set to _true_, allows new users to register." Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
