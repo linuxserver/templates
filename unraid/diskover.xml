@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-diskover/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>diskover</Name>
     <Repository>ghcr.io/linuxserver/diskover</Repository>
@@ -11,27 +12,49 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-diskover/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-diskover#application-setup</GitHub>
     <Project>https://github.com/shirosaidev/diskover</Project>
-    <Overview>[diskover](https://github.com/shirosaidev/diskover) is a file system crawler and disk space usage software that uses Elasticsearch to index and manage data across heterogeneous storage systems.</Overview>
+    <Overview>diskover(https://github.com/shirosaidev/diskover) is a file system crawler and disk space usage software that uses Elasticsearch to index and manage data across heterogeneous storage systems.</Overview>
     <WebUI>http://[IP]:[PORT:]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/diskover.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Date>2020-11-19</Date>
+    <Changes>
+### 2020-11-19
+- Fix pip packages.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-04-12
+- Rebase to Alpine 3.9.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2018-11-01
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="diskover Web UI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 9181" Target="9181" Default="9181" Mode="tcp" Description="rq-dashboard web UI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 9999" Target="9999" Default="9999" Mode="tcp" Description="diskover socket server" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="Default mount point to crawl" Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="REDIS_HOST" Target="REDIS_HOST" Default="redis" Description="Redis host (optional)" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="REDIS_PORT" Target="REDIS_PORT" Default="6379" Description="Redis port (optional)" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="ES_HOST" Target="ES_HOST" Default="elasticsearch" Description="ElasticSearch host (optional)" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="ES_PORT" Target="ES_PORT" Default="9200" Description="ElasticSearch port (optional)" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="ES_USER" Target="ES_USER" Default="elastic" Description="ElasticSearch username (optional)" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="ES_PASS" Target="ES_PASS" Default="changeme" Description="ElasticSearch password (optional)" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="INDEX_NAME" Target="INDEX_NAME" Default="diskover-" Description="Index name prefix (optional)" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="DISKOVER_OPTS" Target="DISKOVER_OPTS" Default="" Description="Optional arguments to pass to the diskover crawler (optional)" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="WORKER_OPTS" Target="WORKER_OPTS" Default="" Description="Optional argumens to pass to the diskover bots launcher (optional)" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="RUN_ON_START" Target="RUN_ON_START" Default="true" Description="Initiate a crawl every time the container is started (optional)" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="USE_CRON" Target="USE_CRON" Default="true" Description="Run a crawl on as a cron job (optional)" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="REDIS_HOST" Target="REDIS_HOST" Default="redis" Description="Redis host (optional)" Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="REDIS_PORT" Target="REDIS_PORT" Default="6379" Description="Redis port (optional)" Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="ES_HOST" Target="ES_HOST" Default="elasticsearch" Description="ElasticSearch host (optional)" Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="ES_PORT" Target="ES_PORT" Default="9200" Description="ElasticSearch port (optional)" Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="ES_USER" Target="ES_USER" Default="elastic" Description="ElasticSearch username (optional)" Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="ES_PASS" Target="ES_PASS" Default="changeme" Description="ElasticSearch password (optional)" Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="INDEX_NAME" Target="INDEX_NAME" Default="diskover-" Description="Index name prefix (optional)" Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="DISKOVER_OPTS" Target="DISKOVER_OPTS" Default="" Description="Optional arguments to pass to the diskover crawler (optional)" Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="WORKER_OPTS" Target="WORKER_OPTS" Default="" Description="Optional argumens to pass to the diskover bots launcher (optional)" Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="RUN_ON_START" Target="RUN_ON_START" Default="true" Description="Initiate a crawl every time the container is started (optional)" Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="USE_CRON" Target="USE_CRON" Default="true" Description="Run a crawl on as a cron job (optional)" Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
