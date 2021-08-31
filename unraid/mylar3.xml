@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-mylar3/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>mylar3</Name>
     <Repository>ghcr.io/linuxserver/mylar3</Repository>
@@ -11,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-mylar3/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-mylar3#application-setup</GitHub>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable Mylar3 releases</TagDescription>
@@ -20,10 +22,31 @@
         <TagDescription>Commits to Mylar3 `python3-dev` branch</TagDescription>
     </Branch>
     <Project>https://github.com/mylar3/mylar3</Project>
-    <Overview>[Mylar3](https://github.com/mylar3/mylar3) is an automated Comic Book downloader (cbr/cbz) for use with NZB and torrents written in python. It supports SABnzbd, NZBGET, and many torrent clients in addition to DDL.</Overview>
+    <Overview>Mylar3(https://github.com/mylar3/mylar3) is an automated Comic Book downloader (cbr/cbz) for use with NZB and torrents written in python. It supports SABnzbd, NZBGET, and many torrent clients in addition to DDL.</Overview>
     <WebUI>http://[IP]:[PORT:8090]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mylar3.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mylar3-logo.png</Icon>
+    <Date>2021-05-25</Date>
+    <Changes>
+### 2021-05-25
+- Add `libwebp` support.
+
+### 2021-05-17
+- Add linuxserver wheel index.
+
+### 2021-01-23
+- Rebasing to alpine 3.13.
+
+### 2021-01-03
+- Output mylar log to docker log.
+
+### 2020-12-21
+- Release `nightly` tag based on commits to upstream `python3-dev` branch.
+
+### 2020-09-28
+- Initial release.
+
+    </Changes>
     <Config Name="WebUI" Target="8090" Default="8090" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where mylar should store config files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /comics" Target="/comics" Default="" Mode="rw" Description="Map to your comics folder." Type="Path" Display="always" Required="true" Mask="false"/>
