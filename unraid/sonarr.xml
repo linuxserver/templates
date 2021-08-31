@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-sonarr/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>sonarr</Name>
     <Repository>ghcr.io/linuxserver/sonarr</Repository>
@@ -11,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-sonarr/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-sonarr#application-setup</GitHub>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable releases from Sonarr (currently v3)</TagDescription>
@@ -28,10 +30,76 @@
         <TagDescription>DEPRECATED - Stable Sonarr releases, but run on Mono 5.14</TagDescription>
     </Branch>
     <Project>https://sonarr.tv/</Project>
-    <Overview>[Sonarr](https://sonarr.tv/) (formerly NZBdrone) is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.</Overview>
+    <Overview>Sonarr(https://sonarr.tv/) (formerly NZBdrone) is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.</Overview>
     <WebUI>http://[IP]:[PORT:8989]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sonarr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sonarr-logo.png</Icon>
+    <Date>2021-05-11</Date>
+    <Changes>
+### 2021-05-11
+- Make the paths clearer to the user.
+
+### 2021-03-10
+- Upgrade to Sonarr v3. Existing users are highly recommended to make a backup prior to update.
+
+### 2021-01-18
+- Deprecate `UMASK_SET` in favor of UMASK in baseimage, see above for more information.
+
+### 2020-04-05
+- Move app to /app.
+
+### 2019-08-01
+- Rebase to Linuxserver LTS mono version.
+
+### 2019-06-13
+- Add env variable for setting umask.
+
+### 2019-05-10
+- Rebase to Bionic.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-02-01
+- Multi arch images and pipeline build logic
+
+### 2017-12-15
+- Fix continuation lines.
+
+### 2017-07-12
+- Add inspect commands to README, move to jenkins build and push.
+
+### 2017-04-17
+- Switch to using inhouse mono baseimage, adds python also.
+
+### 2017-04-14
+- Change to mount /etc/localtime in README, thanks cbgj.
+
+### 2017-04-13
+- Switch to official mono repository.
+
+### 2016-09-30
+- Fix umask
+
+### 2016-09-23
+- Add cd to /opt fixes redirects with althub (issue #25) , make XDG config environment variable
+
+### 2016-09-15
+- Add libcurl3 package.
+
+### 2016-09-09
+- Add layer badges to README.
+
+### 2016-08-27
+- Add badges to README.
+
+### 2016-07-20
+- Rebase to xenial.
+
+### 2015-08-31
+- Cleanup, changed sources to fetch binarys from. also a new baseimage.
+
+    </Changes>
     <Config Name="WebUI" Target="8989" Default="8989" Mode="tcp" Description="The port for the Sonarr webinterface" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Database and sonarr configs" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /tv" Target="/tv" Default="" Mode="rw" Description="Location of TV library on disk (See note in Application setup)" Type="Path" Display="always" Required="false" Mask="false"/>
