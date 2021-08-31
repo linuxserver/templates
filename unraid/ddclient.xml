@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-ddclient/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>ddclient</Name>
     <Repository>ghcr.io/linuxserver/ddclient</Repository>
@@ -11,11 +12,69 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-ddclient/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-ddclient#application-setup</GitHub>
     <Project>https://github.com/ddclient/ddclient</Project>
-    <Overview>[Ddclient](https://github.com/ddclient/ddclient) is a Perl client used to update dynamic DNS entries for accounts on Dynamic DNS Network Service Provider. It was originally written by Paul Burry and is now mostly by wimpunk. It has the capability to update more than just dyndns and it can fetch your WAN-ipaddress in a few different ways.</Overview>
+    <Overview>Ddclient(https://github.com/ddclient/ddclient) is a Perl client used to update dynamic DNS entries for accounts on Dynamic DNS Network Service Provider. It was originally written by Paul Burry and is now mostly by wimpunk. It has the capability to update more than just dyndns and it can fetch your WAN-ipaddress in a few different ways.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/ddclient.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ddclient-logo.png</Icon>
+    <Date>2021-05-15</Date>
+    <Changes>
+### 2021-05-15
+- Distribute script &#39;sample-get-ip-from-fritzbox&#39; from ddclient repo
+
+### 2021-03-08
+- Added bind-tools to provide nsupdate
+
+### 2020-06-01
+- Rebasing to alpine 3.12.
+
+### 2020-02-08
+- Ingest from Github.
+
+### 2019-02-06
+- Fix permissions.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-03-10
+- Add perl-io-socket-inet6 for ipv6 support.
+
+### 2019-02-22
+- Rebasing to alpine 3.9.
+
+### 2019-02-11
+- Add pipeline logic and multi arch.
+
+### 2018-08-22
+- Rebase to alpine 3.8.
+
+### 2018-08-10
+- Update to ddclient v3.9.0. For Cloudflare users, please ensure you remove the line `server=www.cloudflare.com` from your `ddclient.conf`.
+
+### 2017-12-07
+- Rebase to alpine 3.7.
+
+### 2017-05-28
+- Rebase to alpine 3.6.
+
+### 2017-02-10
+- Rebase to alpine 3.5.
+
+### 2016-11-26
+- Update README to new standard and add icon and other small details.
+
+### 2016-08-29
+- Initial release.
+
+    </Changes>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where ddclient should store its config files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
