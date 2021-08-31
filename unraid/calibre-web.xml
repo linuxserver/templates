@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-calibre-web/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>calibre-web</Name>
     <Repository>ghcr.io/linuxserver/calibre-web</Repository>
@@ -11,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-calibre-web/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-calibre-web#application-setup</GitHub>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Releases of Calibre-Web</TagDescription>
@@ -20,17 +22,98 @@
         <TagDescription>Commits to the master branch of Calibre-Web</TagDescription>
     </Branch>
     <Project>https://github.com/janeczku/calibre-web</Project>
-    <Overview>[Calibre-web](https://github.com/janeczku/calibre-web) is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.   It is also possible to integrate google drive and edit metadata and your calibre library through the app itself.
+    <Overview>Calibre-web(https://github.com/janeczku/calibre-web) is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.   It is also possible to integrate google drive and edit metadata and your calibre library through the app itself.
 
 This software is a fork of library and licensed under the GPL v3 License.</Overview>
     <WebUI>http://[IP]:[PORT:8083]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/calibre-web.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/calibre-web-logo.png</Icon>
+    <Date>2021-06-24</Date>
+    <Changes>
+### 2021-06-24
+- Add note on optional OAUTHLIB_RELAX_TOKEN_SCOPE for Google OAUTH support.
+
+### 2021-05-17
+- Add linuxserver wheel index.
+
+### 2021-02-10
+- Add libxrandr2
+
+### 2021-01-25
+- Add nightly tag
+
+### 2021-01-19
+- Add python3-pkg-resources
+
+### 2021-01-13
+- Rebase to Ubuntu Focal, see here(https://docs.linuxserver.io/faq#my-host-is-incompatible-with-images-based-on-ubuntu-focal) for troubleshooting armhf.
+
+### 2020-10-12
+- Add libxi6
+
+### 2020-07-12
+- Add kepubify for arm64v8
+
+### 2020-06-05
+- Add kepubify for x86-64 and arm32v7
+
+### 2020-05-06
+- Add libxslt1.1 and update ImageMagick policy
+
+### 2020-01-19
+- Adding LDAP libs.
+
+### 2019-10-13
+- Migrate to Python3.
+
+### 2019-08-01
+- Add libxcomposite1.
+
+### 2019-06-13
+- Add docker mod to enable optional ebook conversion on x86-64.  Add unrar.
+
+### 2019-06-02
+- Rebase to Ubuntu Bionic and add Gdrive support.
+
+### 2019-03-23
+- Switching to new Base images, shift to arm32v7 tag.
+
+### 2019-02-23
+- Rebase to alpine 3.9, use repo version of imagemagick.
+
+### 2019-02-11
+- Add pipeline logic and multi arch.
+
+### 2019-01-03
+- Remove guest user from default app.db.
+
+### 2018-08-16
+- Rebase to alpine 3.8.
+
+### 2018-07-03
+- New build pushed, all versions below `67` have vulnerability(https://github.com/janeczku/calibre-web/issues/534).
+
+### 2018-01-05
+- Deprecate cpu_core routine lack of scaling.
+
+### 2017-12-06
+- Rebase to alpine 3.7.
+
+### 2017-11-27
+- Use cpu core counting routine to speed up build time.
+
+### 2017-07-24
+- Curl version for imagemagick.
+
+### 2017-07-17
+- Initial release.
+
+    </Changes>
     <Config Name="WebUI" Target="8083" Default="8083" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where calibre-web stores the internal database and config." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /books" Target="/books" Default="" Mode="rw" Description="Where your preexisting calibre database is located." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="DOCKER_MODS" Target="DOCKER_MODS" Default="linuxserver/calibre-web:calibre" Description="#optional and **x86-64 only** Adds the ability to perform ebook conversion" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="OAUTHLIB_RELAX_TOKEN_SCOPE" Target="OAUTHLIB_RELAX_TOKEN_SCOPE" Default="1" Description="Optionally set this to allow Google OAUTH to work" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="DOCKER_MODS" Target="DOCKER_MODS" Default="linuxserver/calibre-web:calibre" Description="#optional and **x86-64 only** Adds the ability to perform ebook conversion" Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="OAUTHLIB_RELAX_TOKEN_SCOPE" Target="OAUTHLIB_RELAX_TOKEN_SCOPE" Default="1" Description="Optionally set this to allow Google OAUTH to work" Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
