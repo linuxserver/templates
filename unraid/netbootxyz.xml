@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-netbootxyz/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>netbootxyz</Name>
     <Repository>ghcr.io/linuxserver/netbootxyz</Repository>
@@ -11,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-netbootxyz/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-netbootxyz#application-setup</GitHub>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Web application for full self hosting</TagDescription>
@@ -20,18 +22,39 @@
         <TagDescription>TFTP server only with NETBOOT.XYZ boot files</TagDescription>
     </Branch>
     <Project>https://netboot.xyz</Project>
-    <Overview>[Netbootxyz](https://netboot.xyz) is a way to PXE boot various operating system installers or utilities from one place within the BIOS without the need of having to go retrieve the media to run the tool. iPXE is used to provide a user friendly menu from within the BIOS that lets you easily choose the operating system you want along with any specific types of versions or bootable flags.</Overview>
+    <Overview>Netbootxyz(https://netboot.xyz) is a way to PXE boot various operating system installers or utilities from one place within the BIOS without the need of having to go retrieve the media to run the tool. iPXE is used to provide a user friendly menu from within the BIOS that lets you easily choose the operating system you want along with any specific types of versions or bootable flags.</Overview>
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/netbootxyz.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/netbootxyz-logo.png</Icon>
+    <Date>2021-04-29</Date>
+    <Changes>
+### 2021-04-29
+- Rebasing to alpine 3.13, add SUBFOLDER env variable.
+
+### 2020-06-01
+- Rebasing to alpine 3.12.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-12-13
+- Swapping latest tag over to webapp stack for management.
+
+### 2019-12-10
+- Adding tftp branch to provide tftp only option to latest users.
+
+### 2019-10-22
+- Initial release.
+
+    </Changes>
     <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Web configuration interface." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 69" Target="69" Default="69" Mode="udp" Description="TFTP Port." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 80" Target="80" Default="8080" Mode="tcp" Description="NGINX server for hosting assets." Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Storage for boot menu files and web application config" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /assets" Target="/assets" Default="" Mode="rw" Description="Storage for NETBOOT.XYZ bootable assets (live CDs and other files)" Type="Path" Display="always" Required="false" Mask="false"/>
-    <Config Name="MENU_VERSION" Target="MENU_VERSION" Default="1.9.9" Description="Specify a specific version of boot files you want to use from NETBOOT.XYZ (unset pulls latest)" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="PORT_RANGE" Target="PORT_RANGE" Default="30000:30010" Description="Specify the port range tftp will use for data transfers [(see Wikipedia)](https://en.wikipedia.org/wiki/Trivial_File_Transfer_Protocol#Details)" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="SUBFOLDER" Target="SUBFOLDER" Default="/" Description="Specify a sobfolder if running this behind a reverse proxy (IE /proxy/)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="MENU_VERSION" Target="MENU_VERSION" Default="1.9.9" Description="Specify a specific version of boot files you want to use from NETBOOT.XYZ (unset pulls latest)" Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="PORT_RANGE" Target="PORT_RANGE" Default="30000:30010" Description="Specify the port range tftp will use for data transfers (see Wikipedia)(https://en.wikipedia.org/wiki/Trivial_File_Transfer_Protocol#Details)" Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="SUBFOLDER" Target="SUBFOLDER" Default="/" Description="Specify a sobfolder if running this behind a reverse proxy (IE /proxy/)" Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
