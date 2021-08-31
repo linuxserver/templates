@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-pyload/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>pyload</Name>
     <Repository>ghcr.io/linuxserver/pyload</Repository>
@@ -11,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-pyload/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-pyload#application-setup</GitHub>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable releases from Pyload</TagDescription>
@@ -20,10 +22,34 @@
         <TagDescription>Development releases from Pyload-ng (currently alpha)</TagDescription>
     </Branch>
     <Project>https://pyload.net/</Project>
-    <Overview>[Pyload](https://pyload.net/) is a Free and Open Source download manager written in Python and designed to be extremely lightweight, easily extensible and fully manageable via web.</Overview>
+    <Overview>Pyload(https://pyload.net/) is a Free and Open Source download manager written in Python and designed to be extremely lightweight, easily extensible and fully manageable via web.</Overview>
     <WebUI>http://[IP]:[PORT:8000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/pyload.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pyload-logo.png</Icon>
+    <Date>2021-02-23</Date>
+    <Changes>
+### 2021-02-23
+- Add Python plugin `passlib`.
+
+### 2021-02-16
+- Publish `ng` tag for pyload-ng (currently alpha).
+
+### 2020-11-04
+- Rebase to alpine 3.11.
+
+### 2020-10-18
+- Chown app folder to fix plugin updater.
+
+### 2019-07-18
+- Add ffmpeg for plugins the do video processing.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-06-08
+- Initial release.
+
+    </Changes>
     <Config Name="WebUI" Target="8000" Default="8000" Mode="tcp" Description="Allows HTTP access to the application" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 7227" Target="7227" Default="7227" Mode="tcp" Description="pyLoad control port" Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="pyLoad Configuration and files database" Type="Path" Display="advanced" Required="true" Mask="false"/>
