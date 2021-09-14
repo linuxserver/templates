@@ -18,8 +18,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/audacity.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/audacity-logo.png</Icon>
-    <Date>2021-04-07</Date>
+    <Date>2021-09-14</Date>
     <Changes>
+### 2021-09-14
+- Use the official appimage, switch to single arch (x86_64). Armhf and aarch64 users can remain on version 3.0.2 but there won&#39;t be further updates.
+
 ### 2021-04-07
 - Initial release.
 
