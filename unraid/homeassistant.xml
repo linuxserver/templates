@@ -21,6 +21,9 @@
     <Date>2021-09-13</Date>
     <Changes>
 ### 2021-09-13
+- Build psycopg locally as the HA provided wheel does not seem to work properly.
+
+### 2021-09-13
 - Fix setcap in service. Build CISO8601 locally as the HA provided wheel does not seem to work properly.
 
 ### 2021-09-12
