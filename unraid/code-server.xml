@@ -32,8 +32,11 @@
     <WebUI>http://[IP]:[PORT:8443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/code-server.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/code-server-logo.png</Icon>
-    <Date>2021-07-11</Date>
+    <Date>2021-09-16</Date>
     <Changes>
+### 2021-09-16
+- Fix slow `chown` on large workspace (contents of workspace folder no longer chowned).
+
 ### 2021-07-11
 - Bump node to 14 to fix builds
 
