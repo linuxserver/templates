@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/swag.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2021-09-17</Date>
+    <Date>2021-09-19</Date>
     <Changes>
+### 2021-09-19
+- Add an optional header to opt out of Google FLoC in `ssl.conf`.
+
 ### 2021-09-17
 - Mark `SUBDOMAINS` var as optional.
 
