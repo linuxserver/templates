@@ -28,8 +28,11 @@ Where are your photos and documents? With Nextcloud you pick a server of your ch
     <WebUI>https://[IP]:[PORT:443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nextcloud.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nextcloud-logo.png</Icon>
-    <Date>2021-03-21</Date>
+    <Date>2021-09-11</Date>
     <Changes>
+### 2021-09-11
+- Rebasing to alpine 3.14
+
 ### 2021-03-21
 - Publish `php8` tag for testing.
 
