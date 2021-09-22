@@ -30,8 +30,11 @@
     <WebUI>http://[IP]:[PORT:8096]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/jellyfin.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/jellyfin-logo.png</Icon>
-    <Date>2021-06-23</Date>
+    <Date>2021-09-22</Date>
     <Changes>
+### 2021-09-22
+- Pull only the server, web and ffmpeg packages instead of the wrapper.
+
 ### 2021-06-23
 - Add log message if device permissions are incorrect. Pin jellyfin dependency versions to prevent upstream apt repo issues. Deprecate the `bionic` tag.
 
