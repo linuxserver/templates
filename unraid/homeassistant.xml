@@ -18,8 +18,11 @@
     <WebUI>http://[IP]:[PORT:8123]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/homeassistant.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/homeassistant-logo.png</Icon>
-    <Date>2021-09-13</Date>
+    <Date>2021-09-25</Date>
     <Changes>
+### 2021-09-25
+- Use the new lsio homeassistant wheel repo, instead of the HA wheels.
+
 ### 2021-09-13
 - Build psycopg locally as the HA provided wheel does not seem to work properly.
 
