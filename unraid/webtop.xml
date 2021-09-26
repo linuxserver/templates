@@ -66,8 +66,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/webtop.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png</Icon>
-    <Date>2021-04-20</Date>
+    <Date>2021-09-26</Date>
     <Changes>
+### 2021-09-26
+- Rebase to Alpine versions to 3.14.
+
 ### 2021-04-20
 - Initial release.
 
