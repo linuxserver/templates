@@ -18,8 +18,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/pidgin.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pidgin-logo.png</Icon>
-    <Date>2021-05-14</Date>
+    <Date>2021-09-26</Date>
     <Changes>
+### 2021-09-26
+- Rebase to Alpine 3.14.
+
 ### 2021-05-14
 - Initial release.
 
