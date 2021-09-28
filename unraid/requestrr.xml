@@ -18,8 +18,11 @@
     <WebUI>http://[IP]:[PORT:4545]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/requestrr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/requestrr-logo.png</Icon>
-    <Date>2021-02-21</Date>
+    <Date>2021-09-27</Date>
     <Changes>
+### 2021-09-27
+- Allow app to write to tmp folder.
+
 ### 2021-02-21
 - Initial Release.
 
