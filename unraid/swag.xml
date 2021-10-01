@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/swag.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2021-09-19</Date>
+    <Date>2021-10-01</Date>
     <Changes>
+### 2021-10-01
+- Check if the cert uses the old LE root cert, revoke and regenerate if necessary. Here&#39;s more info(https://twitter.com/letsencrypt/status/1443621997288767491) on LE root cert expiration
+
 ### 2021-09-19
 - Add an optional header to opt out of Google FLoC in `ssl.conf`.
 
