@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-boinc/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>boinc</Name>
-    <Repository>ghcr.io/linuxserver/boinc</Repository>
+    <Repository>lscr.io/linuxserver/boinc</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/boinc</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
