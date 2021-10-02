@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-taisun/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>taisun</Name>
-    <Repository>ghcr.io/linuxserver/taisun</Repository>
+    <Repository>lscr.io/linuxserver/taisun</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/taisun</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
