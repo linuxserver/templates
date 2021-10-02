@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-requestrr/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>requestrr</Name>
-    <Repository>ghcr.io/linuxserver/requestrr</Repository>
+    <Repository>lscr.io/linuxserver/requestrr</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/requestrr</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
