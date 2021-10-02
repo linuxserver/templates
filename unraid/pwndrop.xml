@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-pwndrop/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>pwndrop</Name>
-    <Repository>ghcr.io/linuxserver/pwndrop</Repository>
+    <Repository>lscr.io/linuxserver/pwndrop</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/pwndrop</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
@@ -32,7 +32,7 @@
     </Changes>
     <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="web gui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration and data." Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="SECRET_PATH" Target="SECRET_PATH" Default="/pwndrop" Description="Secret path for admin access. Defaults to `/pwndrop`. This parameter only takes effect during initial install; it can later be changed in the web gui." Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="SECRET_PATH" Target="SECRET_PATH" Default="/pwndrop" Description="Secret path for admin access. Defaults to `/pwndrop`. This parameter only takes effect during initial install; it can later be changed in the web gui." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
