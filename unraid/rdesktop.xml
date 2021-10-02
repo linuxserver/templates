@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-rdesktop/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>rdesktop</Name>
-    <Repository>ghcr.io/linuxserver/rdesktop</Repository>
+    <Repository>lscr.io/linuxserver/rdesktop</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/rdesktop</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
