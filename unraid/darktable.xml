@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-darktable/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>darktable</Name>
-    <Repository>ghcr.io/linuxserver/darktable</Repository>
+    <Repository>lscr.io/linuxserver/darktable</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/darktable</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
