@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-chevereto/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>chevereto</Name>
-    <Repository>ghcr.io/linuxserver/chevereto</Repository>
+    <Repository>lscr.io/linuxserver/chevereto</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/chevereto</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
