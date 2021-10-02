@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-jackett/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>jackett</Name>
-    <Repository>ghcr.io/linuxserver/jackett</Repository>
+    <Repository>lscr.io/linuxserver/jackett</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/jackett</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
@@ -80,8 +80,8 @@
     <Config Name="WebUI" Target="9117" Default="9117" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where Jackett should store its config file." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Path to torrent blackhole." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="AUTO_UPDATE" Target="AUTO_UPDATE" Default="true" Description="Allow Jackett to update inside of the container (currently recommended by Jackett and enabled by default)" Type="Variable" Display="always" Required="false" Mask="true"/>
-    <Config Name="RUN_OPTS" Target="RUN_OPTS" Default="run options here" Description="Optionally specify additional arguments to be passed." Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="AUTO_UPDATE" Target="AUTO_UPDATE" Default="true" Description="Allow Jackett to update inside of the container (currently recommended by Jackett and enabled by default)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="RUN_OPTS" Target="RUN_OPTS" Default="run options here" Description="Optionally specify additional arguments to be passed." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
