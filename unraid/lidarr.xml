@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-lidarr/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>lidarr</Name>
-    <Repository>ghcr.io/linuxserver/lidarr</Repository>
+    <Repository>lscr.io/linuxserver/lidarr</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/lidarr</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
