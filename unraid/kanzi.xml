@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-kanzi/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>kanzi</Name>
-    <Repository>ghcr.io/linuxserver/kanzi</Repository>
+    <Repository>lscr.io/linuxserver/kanzi</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/kanzi</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
@@ -26,8 +26,8 @@
     </Changes>
     <Config Name="WebUI" Target="8000" Default="8000" Mode="tcp" Description="Application Port" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="INVOCATION_NAME" Target="INVOCATION_NAME" Default="kanzi" Description="Specify an invocation name for this skill, use either kanzi or kod." Type="Variable" Display="always" Required="true" Mask="true"/>
-    <Config Name="URL_ENDPOINT" Target="URL_ENDPOINT" Default="https://server.com/kanzi/" Description="Specify the URL at which the webserver is reachable either `https://kanzi.server.com/` or `https://server.com/kanzi/` Note the trailing slash **MUST** be included." Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="INVOCATION_NAME" Target="INVOCATION_NAME" Default="kanzi" Description="Specify an invocation name for this skill, use either kanzi or kod." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="URL_ENDPOINT" Target="URL_ENDPOINT" Default="https://server.com/kanzi/" Description="Specify the URL at which the webserver is reachable either `https://kanzi.server.com/` or `https://server.com/kanzi/` Note the trailing slash **MUST** be included." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
