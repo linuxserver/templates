@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-dillinger/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>dillinger</Name>
-    <Repository>ghcr.io/linuxserver/dillinger</Repository>
+    <Repository>lscr.io/linuxserver/dillinger</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/dillinger</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
