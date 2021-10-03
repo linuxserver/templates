@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-smokeping/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>smokeping</Name>
-    <Repository>ghcr.io/linuxserver/smokeping</Repository>
+    <Repository>lscr.io/linuxserver/smokeping</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/smokeping</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
