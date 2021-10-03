@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-mstream/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>mstream</Name>
-    <Repository>ghcr.io/linuxserver/mstream</Repository>
+    <Repository>lscr.io/linuxserver/mstream</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/mstream</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
