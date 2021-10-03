@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-nextcloud/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>nextcloud</Name>
-    <Repository>ghcr.io/linuxserver/nextcloud</Repository>
+    <Repository>lscr.io/linuxserver/nextcloud</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/nextcloud</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
