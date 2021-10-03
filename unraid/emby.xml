@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-emby/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>emby</Name>
-    <Repository>ghcr.io/linuxserver/emby</Repository>
+    <Repository>lscr.io/linuxserver/emby</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/emby</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
