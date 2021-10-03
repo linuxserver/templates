@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-nzbhydra2/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>nzbhydra2</Name>
-    <Repository>ghcr.io/linuxserver/nzbhydra2</Repository>
+    <Repository>lscr.io/linuxserver/nzbhydra2</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/nzbhydra2</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
