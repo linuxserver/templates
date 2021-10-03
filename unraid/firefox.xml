@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-firefox/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>firefox</Name>
-    <Repository>ghcr.io/linuxserver/firefox</Repository>
+    <Repository>lscr.io/linuxserver/firefox</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/firefox</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
