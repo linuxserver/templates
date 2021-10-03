@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-dokuwiki/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>dokuwiki</Name>
-    <Repository>ghcr.io/linuxserver/dokuwiki</Repository>
+    <Repository>lscr.io/linuxserver/dokuwiki</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/dokuwiki</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
