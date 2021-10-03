@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-sickgear/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>sickgear</Name>
-    <Repository>ghcr.io/linuxserver/sickgear</Repository>
+    <Repository>lscr.io/linuxserver/sickgear</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/sickgear</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
