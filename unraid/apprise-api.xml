@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-apprise-api/blob/main/readme-vars.yml -->
 <Container version="2">
     <Name>apprise-api</Name>
-    <Repository>ghcr.io/linuxserver/apprise-api</Repository>
+    <Repository>lscr.io/linuxserver/apprise-api</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/apprise-api</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
