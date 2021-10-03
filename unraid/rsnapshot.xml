@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-rsnapshot/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>rsnapshot</Name>
-    <Repository>ghcr.io/linuxserver/rsnapshot</Repository>
+    <Repository>lscr.io/linuxserver/rsnapshot</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/rsnapshot</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
