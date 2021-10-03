@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-bazarr/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>bazarr</Name>
-    <Repository>ghcr.io/linuxserver/bazarr</Repository>
+    <Repository>lscr.io/linuxserver/bazarr</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/bazarr</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
