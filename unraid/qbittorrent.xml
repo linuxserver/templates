@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-qbittorrent/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>qbittorrent</Name>
-    <Repository>ghcr.io/linuxserver/qbittorrent</Repository>
+    <Repository>lscr.io/linuxserver/qbittorrent</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/qbittorrent</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
@@ -94,7 +94,7 @@
     <Config Name="Port: 8080" Target="8080" Default="8080" Mode="tcp" Description="http gui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Location of downloads on disk." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="WEBUI_PORT" Target="WEBUI_PORT" Default="8080" Description="for changing the port of the webui, see below for explanation" Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="WEBUI_PORT" Target="WEBUI_PORT" Default="8080" Description="for changing the port of the webui, see below for explanation" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
