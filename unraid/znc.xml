@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-znc/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>znc</Name>
-    <Repository>ghcr.io/linuxserver/znc</Repository>
+    <Repository>lscr.io/linuxserver/znc</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/znc</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
