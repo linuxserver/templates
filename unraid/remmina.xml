@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-remmina/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>remmina</Name>
-    <Repository>ghcr.io/linuxserver/remmina</Repository>
+    <Repository>lscr.io/linuxserver/remmina</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/remmina</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
