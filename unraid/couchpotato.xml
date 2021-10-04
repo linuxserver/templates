@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-couchpotato/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>couchpotato</Name>
-    <Repository>ghcr.io/linuxserver/couchpotato</Repository>
+    <Repository>lscr.io/linuxserver/couchpotato</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/couchpotato</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
