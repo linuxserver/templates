@@ -18,8 +18,11 @@
     <WebUI>http://[IP]:[PORT:8888]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/resilio-sync.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/resilio-sync-logo.png</Icon>
-    <Date>2021-01-20</Date>
+    <Date>2021-10-03</Date>
     <Changes>
+### 2021-10-03
+- Use upstream apt repo to install. Rebase to focal.
+
 ### 2021-01-20
 - Deprecate `UMASK_SET` in favor of UMASK in baseimage, see above for more information.
 
