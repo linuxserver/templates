@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-audacity/blob/main/readme-vars.yml -->
 <Container version="2">
     <Name>audacity</Name>
-    <Repository>ghcr.io/linuxserver/audacity</Repository>
+    <Repository>lscr.io/linuxserver/audacity</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/audacity</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
