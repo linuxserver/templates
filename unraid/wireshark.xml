@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-wireshark/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>wireshark</Name>
-    <Repository>ghcr.io/linuxserver/wireshark</Repository>
+    <Repository>lscr.io/linuxserver/wireshark</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/wireshark</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
