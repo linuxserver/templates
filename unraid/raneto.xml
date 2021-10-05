@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-raneto/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>raneto</Name>
-    <Repository>ghcr.io/linuxserver/raneto</Repository>
+    <Repository>lscr.io/linuxserver/raneto</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/raneto</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
