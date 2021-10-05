@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-pidgin/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>pidgin</Name>
-    <Repository>ghcr.io/linuxserver/pidgin</Repository>
+    <Repository>lscr.io/linuxserver/pidgin</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/pidgin</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
