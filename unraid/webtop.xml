@@ -27,7 +27,7 @@
     </Branch>
     <Branch>
         <Tag>arch-xfce</Tag>
-        <TagDescription>Arch Fedora</TagDescription>
+        <TagDescription>XFCE Arch</TagDescription>
     </Branch>
     <Branch>
         <Tag>alpine-kde</Tag>
