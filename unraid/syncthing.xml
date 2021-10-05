@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-syncthing/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>syncthing</Name>
-    <Repository>ghcr.io/linuxserver/syncthing</Repository>
+    <Repository>lscr.io/linuxserver/syncthing</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/syncthing</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
