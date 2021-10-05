@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-ddclient/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>ddclient</Name>
-    <Repository>ghcr.io/linuxserver/ddclient</Repository>
+    <Repository>lscr.io/linuxserver/ddclient</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/ddclient</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
