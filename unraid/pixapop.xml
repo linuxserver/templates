@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-pixapop/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>pixapop</Name>
-    <Repository>ghcr.io/linuxserver/pixapop</Repository>
+    <Repository>lscr.io/linuxserver/pixapop</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/pixapop</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
@@ -36,7 +36,7 @@
     <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Stores config and logs for nginx base." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /photos" Target="/photos" Default="" Mode="rw" Description="Your local folder of photos." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="APP_USERNAME" Target="APP_USERNAME" Default="admin" Description="Specify a username to enable authentication." Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="APP_USERNAME" Target="APP_USERNAME" Default="admin" Description="Specify a username to enable authentication." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="APP_PASSWORD" Target="APP_PASSWORD" Default="admin" Description="Specify a password to enable authentication." Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
