@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-thelounge/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>thelounge</Name>
-    <Repository>ghcr.io/linuxserver/thelounge</Repository>
+    <Repository>lscr.io/linuxserver/thelounge</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/thelounge</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
