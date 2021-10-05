@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-plex/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>plex</Name>
-    <Repository>ghcr.io/linuxserver/plex</Repository>
+    <Repository>lscr.io/linuxserver/plex</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/plex</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
@@ -137,8 +137,8 @@
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Plex library location. *This can grow very large, 50gb+ is likely for a large collection.*" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /tv" Target="/tv" Default="" Mode="rw" Description="Media goes here. Add as many as needed e.g. `/movies`, `/tv`, etc." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /movies" Target="/movies" Default="" Mode="rw" Description="Media goes here. Add as many as needed e.g. `/movies`, `/tv`, etc." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="VERSION" Target="VERSION" Default="docker" Description="Set whether to update plex or not - see Application Setup section." Type="Variable" Display="always" Required="true" Mask="true"/>
-    <Config Name="PLEX_CLAIM" Target="PLEX_CLAIM" Default="" Description="Optionally you can obtain a claim token from https://plex.tv/claim and input here. Keep in mind that the claim tokens expire within 4 minutes." Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="VERSION" Target="VERSION" Default="docker" Description="Set whether to update plex or not - see Application Setup section." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="PLEX_CLAIM" Target="PLEX_CLAIM" Default="" Description="Optionally you can obtain a claim token from https://plex.tv/claim and input here. Keep in mind that the claim tokens expire within 4 minutes." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
