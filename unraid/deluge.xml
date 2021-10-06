@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-deluge/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>deluge</Name>
-    <Repository>ghcr.io/linuxserver/deluge</Repository>
+    <Repository>lscr.io/linuxserver/deluge</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/deluge</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
@@ -112,7 +112,7 @@
     <Config Name="Port: 6881" Target="6881" Default="6881" Mode="udp" Description="Inbound torrent traffic (See App Setup)" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="deluge configs" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="torrent download directory" Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="DELUGE_LOGLEVEL" Target="DELUGE_LOGLEVEL" Default="error" Description="set the loglevel output when running Deluge, default is info for deluged and warning for delgued-web" Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="DELUGE_LOGLEVEL" Target="DELUGE_LOGLEVEL" Default="error" Description="set the loglevel output when running Deluge, default is info for deluged and warning for delgued-web" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
