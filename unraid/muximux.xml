@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-muximux/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>muximux</Name>
-    <Repository>ghcr.io/linuxserver/muximux</Repository>
+    <Repository>lscr.io/linuxserver/muximux</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/muximux</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
