@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-headphones/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>headphones</Name>
-    <Repository>ghcr.io/linuxserver/headphones</Repository>
+    <Repository>lscr.io/linuxserver/headphones</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/headphones</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
