@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-adguardhome-sync/blob/main/readme-vars.yml -->
 <Container version="2">
     <Name>adguardhome-sync</Name>
-    <Repository>ghcr.io/linuxserver/adguardhome-sync</Repository>
+    <Repository>lscr.io/linuxserver/adguardhome-sync</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/adguardhome-sync</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
@@ -33,7 +33,7 @@
     </Changes>
     <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="Port for AdGuardHome Sync&#39;s web API." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="CONFIGFILE" Target="CONFIGFILE" Default="/config/adguardhome-sync.yaml" Description="Set a custom config file." Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="CONFIGFILE" Target="CONFIGFILE" Default="/config/adguardhome-sync.yaml" Description="Set a custom config file." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
