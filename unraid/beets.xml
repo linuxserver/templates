@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-beets/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>beets</Name>
-    <Repository>ghcr.io/linuxserver/beets</Repository>
+    <Repository>lscr.io/linuxserver/beets</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/beets</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
