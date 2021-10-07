@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-digikam/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>digikam</Name>
-    <Repository>ghcr.io/linuxserver/digikam</Repository>
+    <Repository>lscr.io/linuxserver/digikam</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/digikam</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
