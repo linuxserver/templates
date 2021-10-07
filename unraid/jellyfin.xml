@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-jellyfin/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>jellyfin</Name>
-    <Repository>ghcr.io/linuxserver/jellyfin</Repository>
+    <Repository>lscr.io/linuxserver/jellyfin</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/jellyfin</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
@@ -89,7 +89,7 @@
     <Config Name="Path: /data/tvshows" Target="/data/tvshows" Default="" Mode="rw" Description="Media goes here. Add as many as needed e.g. `/data/movies`, `/data/tv`, etc." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /data/movies" Target="/data/movies" Default="" Mode="rw" Description="Media goes here. Add as many as needed e.g. `/data/movies`, `/data/tv`, etc." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /opt/vc/lib" Target="/opt/vc/lib" Default="" Mode="rw" Description="Path for Raspberry Pi OpenMAX libs *optional*." Type="Path" Display="always" Required="false" Mask="false"/>
-    <Config Name="JELLYFIN_PublishedServerUrl" Target="JELLYFIN_PublishedServerUrl" Default="192.168.0.5" Description="Set the autodiscovery response domain or IP address." Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="JELLYFIN_PublishedServerUrl" Target="JELLYFIN_PublishedServerUrl" Default="192.168.0.5" Description="Set the autodiscovery response domain or IP address." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
