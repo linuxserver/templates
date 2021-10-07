@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-xbackbone/blob/main/readme-vars.yml -->
 <Container version="2">
     <Name>xbackbone</Name>
-    <Repository>ghcr.io/linuxserver/xbackbone</Repository>
+    <Repository>lscr.io/linuxserver/xbackbone</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/xbackbone</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
