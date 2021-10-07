@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-nano-wallet/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>nano-wallet</Name>
-    <Repository>ghcr.io/linuxserver/nano-wallet</Repository>
+    <Repository>lscr.io/linuxserver/nano-wallet</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/nano-wallet</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
