@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-projectsend/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>projectsend</Name>
-    <Repository>ghcr.io/linuxserver/projectsend</Repository>
+    <Repository>lscr.io/linuxserver/projectsend</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/projectsend</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
@@ -51,7 +51,7 @@
     <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where to store projectsend config files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="Where to store files to share." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="MAX_UPLOAD" Target="MAX_UPLOAD" Default="5000" Description="To set maximum upload size (in MB), default if unset is 5000." Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="MAX_UPLOAD" Target="MAX_UPLOAD" Default="5000" Description="To set maximum upload size (in MB), default if unset is 5000." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
