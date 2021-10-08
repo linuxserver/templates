@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-webgrabplus/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>webgrabplus</Name>
-    <Repository>ghcr.io/linuxserver/webgrabplus</Repository>
+    <Repository>lscr.io/linuxserver/webgrabplus</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/webgrabplus</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
