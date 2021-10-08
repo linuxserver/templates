@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-syslog-ng/blob/main/readme-vars.yml -->
 <Container version="2">
     <Name>syslog-ng</Name>
-    <Repository>ghcr.io/linuxserver/syslog-ng</Repository>
+    <Repository>lscr.io/linuxserver/syslog-ng</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/syslog-ng</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
