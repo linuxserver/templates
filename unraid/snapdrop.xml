@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-snapdrop/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>snapdrop</Name>
-    <Repository>ghcr.io/linuxserver/snapdrop</Repository>
+    <Repository>lscr.io/linuxserver/snapdrop</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/snapdrop</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
