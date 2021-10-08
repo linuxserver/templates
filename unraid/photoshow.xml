@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-photoshow/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>photoshow</Name>
-    <Repository>ghcr.io/linuxserver/photoshow</Repository>
+    <Repository>lscr.io/linuxserver/photoshow</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/photoshow</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
