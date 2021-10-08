@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-wikijs/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>wikijs</Name>
-    <Repository>ghcr.io/linuxserver/wikijs</Repository>
+    <Repository>lscr.io/linuxserver/wikijs</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/wikijs</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
