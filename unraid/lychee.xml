@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-lychee/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>lychee</Name>
-    <Repository>ghcr.io/linuxserver/lychee</Repository>
+    <Repository>lscr.io/linuxserver/lychee</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/lychee</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
@@ -79,10 +79,10 @@ Please note that the v4 upgrade process resets ALL password-protected albums. An
     <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="http gui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /pictures" Target="/pictures" Default="" Mode="rw" Description="Where lychee will store uploaded data." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="DB_HOST" Target="DB_HOST" Default="mariadb" Description="for specifying the database host" Type="Variable" Display="always" Required="true" Mask="true"/>
-    <Config Name="DB_USERNAME" Target="DB_USERNAME" Default="lychee" Description="for specifying the database user" Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="DB_HOST" Target="DB_HOST" Default="mariadb" Description="for specifying the database host" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="DB_USERNAME" Target="DB_USERNAME" Default="lychee" Description="for specifying the database user" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="dbpassword" Description="for specifying the database password" Type="Variable" Display="always" Required="true" Mask="true"/>
-    <Config Name="DB_DATABASE" Target="DB_DATABASE" Default="lychee" Description="for specifying the database to be used" Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="DB_DATABASE" Target="DB_DATABASE" Default="lychee" Description="for specifying the database to be used" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
