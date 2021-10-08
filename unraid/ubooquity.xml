@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-ubooquity/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>ubooquity</Name>
-    <Repository>ghcr.io/linuxserver/ubooquity</Repository>
+    <Repository>lscr.io/linuxserver/ubooquity</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/ubooquity</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
@@ -75,7 +75,7 @@
     <Config Name="Path: /books" Target="/books" Default="" Mode="rw" Description="Location of books." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /comics" Target="/comics" Default="" Mode="rw" Description="Location of comics." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /files" Target="/files" Default="" Mode="rw" Description="Location of raw files." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="MAXMEM" Target="MAXMEM" Default="maxmem" Description="To set the maximum memory. ( ex: set &#39;1024&#39; for 1GB )" Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="MAXMEM" Target="MAXMEM" Default="maxmem" Description="To set the maximum memory. ( ex: set &#39;1024&#39; for 1GB )" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
