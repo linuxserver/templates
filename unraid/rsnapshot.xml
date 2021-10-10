@@ -18,8 +18,11 @@
     <WebUI>http://[IP]:[PORT:]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/rsnapshot.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2020-08-20</Date>
+    <Date>2021-10-10</Date>
     <Changes>
+### 2021-10-10
+- Rebase to alpine 3.14.
+
 ### 2020-08-20
 - Initial Release.
 
