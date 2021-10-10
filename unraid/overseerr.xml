@@ -22,7 +22,7 @@
         <TagDescription>Development releases from commits in upstream develop branch</TagDescription>
     </Branch>
     <Project>https://overseerr.dev/</Project>
-    <Overview>Overseerr(https://overseerr.dev/) is a free and open source software application for managing requests for your media library.</Overview>
+    <Overview>Overseerr(https://overseerr.dev/) is a request management and media discovery tool built to work with your existing Plex ecosystem.</Overview>
     <WebUI>http://[IP]:[PORT:5055]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/overseerr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/overseerr-logo.png</Icon>
