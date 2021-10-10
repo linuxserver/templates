@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-nntp2nntp/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>nntp2nntp</Name>
-    <Repository>ghcr.io/linuxserver/nntp2nntp</Repository>
+    <Repository>lscr.io/linuxserver/nntp2nntp</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/nntp2nntp</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
@@ -11,14 +12,30 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-nntp2nntp/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-nntp2nntp#application-setup</GitHub>
     <Project>https://github.com/linuxserver/nntp2nntp</Project>
-    <Overview>[Nntp2nntp](https://github.com/linuxserver/nntp2nntp) proxy allow you to use your NNTP Account from multiple systems, each with own user name and password. It fully supports SSL and you can also limit the access to proxy with SSL certificates. nntp2nntp proxy is very simple and pretty fast.
+    <Overview>Nntp2nntp(https://github.com/linuxserver/nntp2nntp) proxy allow you to use your NNTP Account from multiple systems, each with own user name and password. It fully supports SSL and you can also limit the access to proxy with SSL certificates. nntp2nntp proxy is very simple and pretty fast.
 ## Warning
 
-Whilst we know of no nntp2nntp security issues the [upstream code](https://github.com/linuxserver/nntp2nntp) for this project has received no changes since 06.08.15 and is likely abandoned permanently.  For this reason we strongly recommend you do not make this application public facing and if you must do so other layers of security and SSL should be considered an absolute bare minimum requirement.  We see this proxy being used primarily on a LAN so that all the users NNTP applications can share a common set of internal credentials allowing for central managment of the upstream account e.g change provider, server, thread limits for all applications with one global config change.</Overview>
+Whilst we know of no nntp2nntp security issues the upstream code(https://github.com/linuxserver/nntp2nntp) for this project has received no changes since 06.08.15 and is likely abandoned permanently.  For this reason we strongly recommend you do not make this application public facing and if you must do so other layers of security and SSL should be considered an absolute bare minimum requirement.  We see this proxy being used primarily on a LAN so that all the users NNTP applications can share a common set of internal credentials allowing for central managment of the upstream account e.g change provider, server, thread limits for all applications with one global config change.</Overview>
     <WebUI>http://[IP]:[PORT:1563]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nntp2nntp.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nntp2nntp-logo.png</Icon>
+    <Date>2019-12-19</Date>
+    <Changes>
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-04-23
+- Multiarch builds and build from Github fork.
+
+### 2018-05-15
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="1563" Default="1563" Mode="tcp" Description="will map the container&#39;s port 1563 to port 1563 on the host" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="this will store config on the docker host" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
