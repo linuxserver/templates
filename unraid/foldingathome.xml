@@ -3,7 +3,7 @@
 <!-- GENERATED FROM https://github.com/linuxserver/docker-foldingathome/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>foldingathome</Name>
-    <Repository>ghcr.io/linuxserver/foldingathome</Repository>
+    <Repository>lscr.io/linuxserver/foldingathome</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/foldingathome</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
