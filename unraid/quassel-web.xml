@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-quassel-web/blob/master/readme-vars.yml -->
 <Container version="2">
     <Name>quassel-web</Name>
-    <Repository>ghcr.io/linuxserver/quassel-web</Repository>
+    <Repository>lscr.io/linuxserver/quassel-web</Repository>
     <Registry>https://github.com/orgs/linuxserver/packages/container/package/quassel-web</Registry>
     <DonateText>Donations</DonateText>
     <DonateLink>https://www.linuxserver.io/donate</DonateLink>
@@ -11,11 +12,30 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-quassel-web/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-quassel-web#application-setup</GitHub>
     <Project>https://github.com/magne4000/quassel-webserver</Project>
-    <Overview>[Quassel-web](https://github.com/magne4000/quassel-webserver) is a web client for Quassel.  Note that a Quassel-Core instance is required, we have a container available [here.](https://hub.docker.com/r/linuxserver/quassel-core/)</Overview>
+    <Overview>Quassel-web(https://github.com/magne4000/quassel-webserver) is a web client for Quassel.  Note that a Quassel-Core instance is required, we have a container available here.(https://hub.docker.com/r/linuxserver/quassel-core/)</Overview>
     <WebUI>https://[IP]:[PORT:64443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/quassel-web.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/quassel-web-logo.png</Icon>
+    <Date>2020-06-01</Date>
+    <Changes>
+### 2020-06-01
+- Rebasing to alpine 3.12.
+
+### 2019-12-19
+- Rebasing to alpine 3.11.
+
+### 2019-06-28
+- Rebasing to alpine 3.10.
+
+### 2019-05-18
+- Reconfigure environmental variable setup.
+
+### 2019-04-28
+- Initial Release.
+
+    </Changes>
     <Config Name="WebUI" Target="64080" Default="64080" Mode="tcp" Description="will map the container&#39;s port 64080 to port 64080 on the host" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="this will store config on the docker host" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="QUASSEL_CORE" Target="QUASSEL_CORE" Default="192.168.1.10" Description="specify the URL or IP address of your Quassel Core instance" Type="Variable" Display="always" Required="true" Mask="false"/>
