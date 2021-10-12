@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/swag.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2021-10-06</Date>
+    <Date>2021-10-12</Date>
     <Changes>
+### 2021-10-12
+- Fix deprecated LE root cert check to fix failures when using `STAGING=true`, and failures in revoking.
+
 ### 2021-10-06
 - Added support for Hurricane Electric (HE) DNS validation. Added lxml build deps.
 
