@@ -30,8 +30,11 @@
     <WebUI>http://[IP]:[PORT:7878]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/radarr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/radarr-logo.png</Icon>
-    <Date>2021-05-08</Date>
+    <Date>2021-10-17</Date>
     <Changes>
+### 2021-10-17
+- Remove `UMASK_SET`.
+
 ### 2021-05-08
 - Make the paths clearer to the user
 
