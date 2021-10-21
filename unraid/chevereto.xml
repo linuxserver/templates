@@ -13,13 +13,17 @@
     <Support>https://github.com/linuxserver/docker-chevereto/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-chevereto#application-setup</GitHub>
-    <Project>https://github.com/Chevereto/Chevereto-Free</Project>
-    <Overview>Chevereto(https://github.com/Chevereto/Chevereto-Free) is an image hosting software that allows you to create a beautiful and full-featured image hosting website on your own server. It&#39;s your hosting and your rules, so say goodbye to closures and restrictions.</Overview>
+    <Project>https://github.com/rodber/chevereto-free</Project>
+    <Overview>Chevereto(https://github.com/rodber/chevereto-free) is an image hosting software that allows you to create a beautiful and full-featured image hosting website on your own server. It&#39;s your hosting and your rules, so say goodbye to closures and restrictions.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/chevereto.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/chevereto-logo.png</Icon>
-    <Date>2021-07-22</Date>
+    <Requires>A MYSQL compatible database, like MariaDB</Requires>
+    <Date>2021-10-21</Date>
     <Changes>
+### 2021-10-21
+- Removed deprecation warning, change reposiory links.
+
 ### 2021-07-22
 - Rebase to Alpine 3.14.
 
