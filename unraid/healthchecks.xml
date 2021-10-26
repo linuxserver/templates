@@ -79,11 +79,12 @@
     <Config Name="EMAIL_HOST_USER" Target="EMAIL_HOST_USER" Default="EMAIL_HOST_USER" Description="SMTP user" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="EMAIL_HOST_PASSWORD" Target="EMAIL_HOST_PASSWORD" Default="EMAIL_HOST_PASSWORD" Description="SMTP password" Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="EMAIL_USE_TLS" Target="EMAIL_USE_TLS" Default="True or False" Description="Use TLS for SMTP (`True` or `False`)" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="ALLOWED_HOSTS" Target="ALLOWED_HOSTS" Default="ALLOWED_HOSTS" Description="array of valid hostnames for the server `&#34;test.com&#34;,&#34;test2.com&#34;` or `&#34;*&#34;`" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="ALLOWED_HOSTS" Target="ALLOWED_HOSTS" Default="ALLOWED_HOSTS" Description="array of valid hostnames for the server `&#34;test.com&#34;,&#34;test2.com&#34;` (default: `&#34;*&#34;`)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="SUPERUSER_EMAIL" Target="SUPERUSER_EMAIL" Default="SUPERUSER_EMAIL" Description="Superuser email" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="SUPERUSER_PASSWORD" Target="SUPERUSER_PASSWORD" Default="SUPERUSER_PASSWORD" Description="Superuser password" Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="REGENERATE_SETTINGS" Target="REGENERATE_SETTINGS" Default="True/False" Description="Defaults to False. Set to true to always override the `local_settings.py` file with values from environment variables. Do not set to True if you have made manual modifications to this file." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="SITE_LOGO_URL" Target="SITE_LOGO_URL" Default="SITE_LOGO_URL" Description="Custom site logo URL" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="SECRET_KEY" Description="A secret key used for cryptographic signing. docker-healthchecks will generate a secure value if one does not exist" Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
