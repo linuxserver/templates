@@ -18,6 +18,10 @@
         <TagDescription>Stable releases</TagDescription>
     </Branch>
     <Branch>
+        <Tag>focal</Tag>
+        <TagDescription>Stable releases, based on Ubuntu Focal</TagDescription>
+    </Branch>
+    <Branch>
         <Tag>development</Tag>
         <TagDescription>DEPRECATED (no longer updated) - Prereleases from their GitHub</TagDescription>
     </Branch>
