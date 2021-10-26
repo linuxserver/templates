@@ -26,8 +26,11 @@
     <WebUI>http://[IP]:[PORT:6767]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/bazarr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bazarr-logo.png</Icon>
-    <Date>2021-10-22</Date>
+    <Date>2021-10-25</Date>
     <Changes>
+### 2021-10-25
+- Rebase to alpine 3.14. Fix numpy wheel.
+
 ### 2021-10-22
 - Added openblas package to prevent numpy error.
 
