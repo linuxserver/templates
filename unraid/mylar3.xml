@@ -26,8 +26,11 @@
     <WebUI>http://[IP]:[PORT:8090]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mylar3.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mylar3-logo.png</Icon>
-    <Date>2021-05-25</Date>
+    <Date>2021-11-02</Date>
     <Changes>
+### 2021-11-02
+- Rebase to alpine 3.14. Remove `pathlib.py`.
+
 ### 2021-05-25
 - Add `libwebp` support.
 
