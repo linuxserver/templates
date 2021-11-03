@@ -18,8 +18,11 @@
     <WebUI>http://[IP]:[PORT:]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/diskover.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2021-10-31</Date>
+    <Date>2021-11-03</Date>
     <Changes>
+### 2021-11-03
+- Added more support for potential config files.
+
 ### 2021-10-31
 - Added xpack.security variable to ElasticSearch; added instructions to edit Constants.php in diskover; corrected command needed to manually generate an index in diskover
 
