@@ -28,8 +28,11 @@ This software is a fork of library and licensed under the GPL v3 License.</Overv
     <WebUI>http://[IP]:[PORT:8083]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/calibre-web.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/calibre-web-logo.png</Icon>
-    <Date>2021-06-24</Date>
+    <Date>2021-11-04</Date>
     <Changes>
+### 2021-11-04
+- Update pip arguments to ignore distro installed packages.
+
 ### 2021-06-24
 - Add note on optional OAUTHLIB_RELAX_TOKEN_SCOPE for Google OAUTH support.
 
