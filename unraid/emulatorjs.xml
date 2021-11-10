@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-emulatorjs/blob/master/readme-vars.yml -->
+<Container version="2">
+    <Name>emulatorjs</Name>
+    <Repository>lscr.io/linuxserver/emulatorjs</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/emulatorjs</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-emulatorjs/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-emulatorjs#application-setup</GitHub>
+    <Project>https://github.com/linuxserver/emulatorjs</Project>
+    <Overview>Emulatorjs(https://github.com/linuxserver/emulatorjs) - A fork of NeptunJS used to run multiple web based emulators for retro games. This projects adds a management layer for adding roms and artwork to make it self hosted.</Overview>
+    <WebUI>http://[IP]:[PORT:3000]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/emulatorjs.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/emulatorjs-logo.png</Icon>
+    <Date>2021-10-23</Date>
+    <Changes>
+### 2021-10-23
+- Initial release.
+
+    </Changes>
+    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Rom/artwork management interface, used to generate/manage config files and download artwork" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 80" Target="80" Default="80" Mode="tcp" Description="Emulation frontend containing static web files used to browse and launch games" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 4001" Target="4001" Default="4001" Mode="tcp" Description="IPFS peering port, if you want to participate in the P2P network to distribute frontend artwork please forward this to the Internet" Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="Path to store roms/artwork" Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="SUBFOLDER" Target="SUBFOLDER" Default="/" Description="Specify a subfolder for reverse proxies IE &#39;/FOLDER/&#39;" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
