@@ -19,8 +19,11 @@
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/chevereto.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/chevereto-logo.png</Icon>
     <Requires>A MYSQL compatible database, like MariaDB</Requires>
-    <Date>2021-10-21</Date>
+    <Date>2021-11-13</Date>
     <Changes>
+### 2021-11-13
+- Add composer to fix missing dependencies.
+
 ### 2021-10-21
 - Removed deprecation warning, change reposiory links.
 
