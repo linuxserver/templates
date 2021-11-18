@@ -112,5 +112,5 @@
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-    <Config Name="<path to device>" Default="<path to device>" Description="For passing through USB devices." Type="Device" Display="always" Required="true" Mask="false"/>
+    <Config Name="path to device" Default="path to device" Description="For passing through USB devices." Type="Device" Display="always" Required="true" Mask="false"/>
 </Container>
