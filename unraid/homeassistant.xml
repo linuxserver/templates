@@ -16,7 +16,7 @@
     <Project>https://www.home-assistant.io/</Project>
     <Overview>Homeassistant(https://www.home-assistant.io/) is open source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts. Perfect to run on a Raspberry Pi or a local server.</Overview>
     <WebUI>http://[IP]:[PORT:8123]</WebUI>
-    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/homeassistant.xml</TemplateURL>
+    <TemplateURL>false</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/homeassistant-logo.png</Icon>
     <Date>2021-09-25</Date>
     <Changes>
