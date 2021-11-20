@@ -18,8 +18,11 @@
     <WebUI>http://[IP]:[PORT:8081]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sickchill.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sickchill-logo.png</Icon>
-    <Date>2021-05-14</Date>
+    <Date>2021-11-20</Date>
     <Changes>
+### 2021-11-20
+- Modify binary usage from SickChill.py to SickChill.
+
 ### 2021-05-14
 - Add linuxserver wheel index.
 
