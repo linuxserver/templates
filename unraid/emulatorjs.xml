@@ -18,8 +18,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/emulatorjs.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/emulatorjs-logo.png</Icon>
-    <Date>2021-11-19</Date>
+    <Date>2021-11-26</Date>
     <Changes>
+### 2021-11-26
+- Configure IPFS in a lower power mode, use homebuilt blobs for emu cores.
+
 ### 2021-11-19
 - Pin retroarch version.
 
