@@ -19,7 +19,7 @@
     </Branch>
     <Branch>
         <Tag>focal</Tag>
-        <TagDescription>Stable releases, based on Ubuntu Focal</TagDescription>
+        <TagDescription>DEPRECATED (no longer updated, `latest` is rebased on focal) - Stable releases, based on Ubuntu Focal</TagDescription>
     </Branch>
     <Branch>
         <Tag>development</Tag>
@@ -36,8 +36,11 @@
     <WebUI>http://[IP]:[PORT:8443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/code-server.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/code-server-logo.png</Icon>
-    <Date>2021-09-16</Date>
+    <Date>2021-11-29</Date>
     <Changes>
+### 2021-11-29
+- Rebase to Ubuntu focal.
+
 ### 2021-09-16
 - Fix slow `chown` on large workspace (contents of workspace folder no longer chowned).
 
