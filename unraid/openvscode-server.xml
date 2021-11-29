@@ -13,6 +13,14 @@
     <Support>https://github.com/linuxserver/docker-openvscode-server/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-openvscode-server#application-setup</GitHub>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Stable releases</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>insiders</Tag>
+        <TagDescription>Insiders releases</TagDescription>
+    </Branch>
     <Project>https://github.com/gitpod-io/openvscode-server</Project>
     <Overview>Openvscode-server(https://github.com/gitpod-io/openvscode-server) provides a version of VS Code that runs a server on a remote machine and allows access through a modern web browser.</Overview>
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
