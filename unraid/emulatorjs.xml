@@ -21,7 +21,7 @@
     <Date>2021-11-29</Date>
     <Changes>
 ### 2021-11-29
-- Add wasm mime type to NGINX, rebase to Alpine 3.15.
+- Add wasm mime type to NGINX
 
 ### 2021-11-26
 - Configure IPFS in a lower power mode, use homebuilt blobs for emu cores.
