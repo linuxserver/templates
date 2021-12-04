@@ -22,8 +22,11 @@ Please note that the v4 upgrade process resets ALL password-protected albums. An
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/lychee.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/lychee-logo.png</Icon>
-    <Date>2021-05-13</Date>
+    <Date>2021-12-04</Date>
     <Changes>
+### 2021-12-04
+- Rebase to alpine 3.15 with php8.
+
 ### 2021-05-13
 - Make readme clearer.
 
