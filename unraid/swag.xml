@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/swag.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2021-11-22</Date>
+    <Date>2021-11-30</Date>
     <Changes>
+### 2021-11-30
+- Move maxmind to a new mod(https://github.com/linuxserver/docker-mods/tree/swag-maxmind)
+
 ### 2021-11-22
 - Added support for Infomaniak DNS for certificate generation.
 
@@ -147,7 +150,6 @@
     <Config Name="ONLY_SUBDOMAINS" Target="ONLY_SUBDOMAINS" Default="false" Description="If you wish to get certs only for certain subdomains, but not the main domain (main domain may be hosted on another machine and cannot be validated), set this to `true`" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="EXTRA_DOMAINS" Target="EXTRA_DOMAINS" Default="" Description="Additional fully qualified domain names (comma separated, no spaces) ie. `extradomain.com,subdomain.anotherdomain.org,*.anotherdomain.org`" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="STAGING" Target="STAGING" Default="false" Description="Set to `true` to retrieve certs in staging mode. Rate limits will be much higher, but the resulting cert will not pass the browser&#39;s security test. Only to be used for testing purposes." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="MAXMINDDB_LICENSE_KEY" Target="MAXMINDDB_LICENSE_KEY" Default="" Description="Add your MaxmindDB license key to automatically download the GeoLite2-City.mmdb database. Download location is /config/geoip2db. The database is updated weekly." Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
