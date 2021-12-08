@@ -20,8 +20,11 @@ HedgeDoc is a real-time, multi-platform collaborative markdown note editor.  Thi
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/hedgedoc.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/hedgedoc-logo.png</Icon>
-    <Date>2021-10-15</Date>
+    <Date>2021-12-07</Date>
     <Changes>
+### 2021-12-07
+- Rebase to ubuntu focal. Update to node 16. Make sure uploads are persistent.
+
 ### 2021-10-15
 - Add required env var `CMD_DOMAIN`.
 
