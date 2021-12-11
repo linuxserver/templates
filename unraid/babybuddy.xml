@@ -18,8 +18,11 @@
     <WebUI>http://[IP]:[PORT:8000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/babybuddy.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/babybuddy-logo.png</Icon>
-    <Date>2021-11-14</Date>
+    <Date>2021-12-11</Date>
     <Changes>
+### 2021-12-11
+- Add py3-mysqlclient for mysql/mariadb.
+
 ### 2021-11-14
 - Add lxml dependencies (temp fix for amd64 by force compiling lxml).
 
