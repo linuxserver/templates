@@ -18,8 +18,11 @@
     <WebUI>https://[IP]:[PORT:8443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/unifi-controller.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-controller-logo.png</Icon>
-    <Date>2021-06-11</Date>
+    <Date>2021-12-11</Date>
     <Changes>
+### 2021-12-11
+- Add java opts to mitigate CVE-2021-44228.
+
 ### 2021-06-11
 - Allow for changing Java initial mem via new optional environment variable.
 
