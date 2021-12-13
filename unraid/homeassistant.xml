@@ -18,8 +18,11 @@
     <WebUI>http://[IP]:[PORT:8123]</WebUI>
     <TemplateURL>false</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/homeassistant-logo.png</Icon>
-    <Date>2021-09-25</Date>
+    <Date>2021-12-12</Date>
     <Changes>
+### 2021-12-12
+- Use the new `build.yaml` to determine HA base version.
+
 ### 2021-09-25
 - Use the new lsio homeassistant wheel repo, instead of the HA wheels.
 
