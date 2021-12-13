@@ -14,12 +14,15 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-unifi-controller#application-setup</GitHub>
     <Project>https://www.ubnt.com/enterprise/#unifi</Project>
-    <Overview>The Unifi-controller(https://www.ubnt.com/enterprise/#unifi) Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.</Overview>
+    <Overview>The Unifi-controller(https://www.ubnt.com/enterprise/#unifi) software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.</Overview>
     <WebUI>https://[IP]:[PORT:8443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/unifi-controller.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-controller-logo.png</Icon>
-    <Date>2021-12-11</Date>
+    <Date>2020-12-13</Date>
     <Changes>
+### 2020-12-13
+- Rebase 64 bit containers to Focal.
+
 ### 2021-12-11
 - Add java opts to mitigate CVE-2021-44228.
 
