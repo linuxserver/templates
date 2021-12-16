@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-ldap-auth/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-ldap-auth#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-ldap-auth#readme</ReadMe>
     <Project>https://github.com/nginxinc/nginx-ldap-auth</Project>
     <Overview>Ldap-auth(https://github.com/nginxinc/nginx-ldap-auth) software is for authenticating users who request protected resources from servers proxied by nginx. It includes a daemon (ldap-auth) that communicates with an authentication server, and a webserver daemon that generates an authentication cookie based on the user’s credentials. The daemons are written in Python for use with a Lightweight Directory Access Protocol (LDAP) authentication server (OpenLDAP or Microsoft Windows Active Directory 2003 and 2012).</Overview>
     <WebUI>http://[IP]:[PORT:9000]</WebUI>
