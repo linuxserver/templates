@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-deluge/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-deluge#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-deluge#readme</ReadMe>
     <Project>http://deluge-torrent.org/</Project>
     <Overview>Deluge(http://deluge-torrent.org/) is a lightweight, Free Software, cross-platform BitTorrent client.
 
