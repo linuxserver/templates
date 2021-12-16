@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-booksonic-air/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-booksonic-air#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-booksonic-air#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable booksonic-air releases</TagDescription>
