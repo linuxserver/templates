@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-jackett/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-jackett#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-jackett#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable Jackett Releases</TagDescription>
@@ -20,6 +21,8 @@
     <Branch>
         <Tag>development</Tag>
         <TagDescription>Latest Jackett Releases</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-jackett/tree/development#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-jackett/tree/development#application-setup</GitHub>
     </Branch>
     <Project>https://github.com/Jackett/Jackett</Project>
     <Overview>Jackett(https://github.com/Jackett/Jackett) works as a proxy server: it translates queries from apps (Sonarr, SickRage, CouchPotato, Mylar, etc) into tracker-site-specific http queries, parses the html response, then sends results back to the requesting software. This allows for getting recent uploads (like RSS) and performing searches. Jackett is a single repository of maintained indexer scraping and translation logic - removing the burden from other apps.</Overview>
