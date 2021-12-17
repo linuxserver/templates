@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-pylon/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-pylon#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-pylon#readme</ReadMe>
     <Project>https://github.com/pylonide/pylon</Project>
     <Overview>Pylon(https://github.com/pylonide/pylon) is a web based integrated development environment built with Node.js as a backend and with a supercharged JavaScript/HTML5 frontend, licensed under GPL version 3. This project originates from Cloud9 v2 project.</Overview>
     <WebUI>http://[IP]:[PORT:3131]</WebUI>
