@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-sabnzbd/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-sabnzbd#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-sabnzbd#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable SABnzbd releases</TagDescription>
@@ -20,6 +21,8 @@
     <Branch>
         <Tag>unstable</Tag>
         <TagDescription>Pre-releases from their GitHub</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-sabnzbd/tree/unstable#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-sabnzbd/tree/unstable#application-setup</GitHub>
     </Branch>
     <Project>http://sabnzbd.org/</Project>
     <Overview>Sabnzbd(http://sabnzbd.org/) makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.</Overview>
