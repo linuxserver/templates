@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-healthchecks/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-healthchecks#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-healthchecks#readme</ReadMe>
     <Project>https://github.com/healthchecks/healthchecks</Project>
     <Overview>Healthchecks(https://github.com/healthchecks/healthchecks) is a watchdog for your cron jobs. It&#39;s a web server that listens for pings from your cron jobs, plus a web interface.</Overview>
     <WebUI>http://[IP]:[PORT:8000]</WebUI>
