@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/webgrabplus.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webgrabplus-logo.png</Icon>
-    <Date>2021-08-05</Date>
+    <Date>2021-12-17</Date>
     <Changes>
+### 2021-12-17
+- Update to version 3.2.2 beta.
+
 ### 2021-08-05
 - Update to version 3.2.1 beta.
 
