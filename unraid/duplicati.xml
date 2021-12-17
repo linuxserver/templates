@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-duplicati/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-duplicati#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-duplicati#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Beta releases of Duplicati</TagDescription>
@@ -20,6 +21,8 @@
     <Branch>
         <Tag>development</Tag>
         <TagDescription>Canary releases of Duplicati</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-duplicati/tree/development#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-duplicati/tree/development#application-setup</GitHub>
     </Branch>
     <Project>https://www.duplicati.com/</Project>
     <Overview>Duplicati(https://www.duplicati.com/) works with standard protocols like FTP, SSH, WebDAV as well as popular services like Microsoft OneDrive, Amazon Cloud Drive and S3, Google Drive, box.com, Mega, hubiC and many others.</Overview>
