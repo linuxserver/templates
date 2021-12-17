@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-ubooquity/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-ubooquity#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-ubooquity#readme</ReadMe>
     <Project>https://vaemendis.net/ubooquity/</Project>
     <Overview>Ubooquity(https://vaemendis.net/ubooquity/) is a free, lightweight and easy-to-use home server for your comics and ebooks. Use it to access your files from anywhere, with a tablet, an e-reader, a phone or a computer.</Overview>
     <WebUI>http://[IP]:[PORT:2203]</WebUI>
