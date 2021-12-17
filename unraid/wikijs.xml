@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-wikijs/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-wikijs</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-wikijs#readme</ReadMe>
     <Project>https://github.com/Requarks/wiki</Project>
     <Overview>Wikijs(https://github.com/Requarks/wiki) A modern, lightweight and powerful wiki app built on NodeJS.</Overview>
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
