@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-snipe-it/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-snipe-it#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-snipe-it#readme</ReadMe>
     <Project>https://github.com/snipe/snipe-it</Project>
     <Overview>Snipe-it(https://github.com/snipe/snipe-it) makes asset management easy. It was built by people solving real-world IT and asset management problems, and a solid UX has always been a top priority. Straightforward design and bulk actions mean getting things done faster.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
