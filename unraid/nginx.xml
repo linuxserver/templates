@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-nginx/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-nginx#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-nginx#readme</ReadMe>
     <Project>https://nginx.org/</Project>
     <Overview>Nginx(https://nginx.org/) is a simple webserver with php support. The config files reside in `/config` for easy user customization.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
