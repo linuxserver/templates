@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-tautulli/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-tautulli#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-tautulli#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable Tautulli releases</TagDescription>
@@ -20,6 +21,8 @@
     <Branch>
         <Tag>develop</Tag>
         <TagDescription>Built at head of Tautulli nightly branch</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-tautulli/tree/develop#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-tautulli/tree/develop#application-setup</GitHub>
     </Branch>
     <Project>http://tautulli.com</Project>
     <Overview>Tautulli(http://tautulli.com) is a python based web application for monitoring, analytics and notifications for Plex Media Server.</Overview>
