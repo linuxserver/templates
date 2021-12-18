@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-boinc/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-boinc#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-boinc#readme</ReadMe>
     <Project>https://boinc.berkeley.edu/</Project>
     <Overview>BOINC(https://boinc.berkeley.edu/) is a platform for high-throughput computing on a large scale (thousands or millions of computers). It can be used for volunteer computing (using consumer devices) or grid computing (using organizational resources). It supports virtualized, parallel, and GPU-based applications.</Overview>
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
@@ -42,5 +43,5 @@
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-    <Config Name="/dev/dri" Default="/dev/dri" Description="Only needed if you want to use your Intel GPU (vaapi)." Type="Device" Display="always" Required="true" Mask="false"/>
+    <Config Name="/dev/dri" Default="/dev/dri" Description="Only needed if you want to use your Intel GPU (vaapi)." Type="Device" Display="always" Required="false" Mask="false"/>
 </Container>
