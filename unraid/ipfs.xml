@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-ipfs/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-ipfs#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-ipfs#readme</ReadMe>
     <Project>https://ipfs.io/</Project>
     <Overview>Ipfs(https://ipfs.io/) - A peer-to-peer hypermedia protocol designed to make the web faster, safer, and more open.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
