@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-taisun/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-taisun#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-taisun#readme</ReadMe>
     <Project>https://www.taisun.io/</Project>
     <Overview>Taisun(https://www.taisun.io/) is an application for a Docker enabled device with an emphasis on providing a web based interface for managing a single server.
 Taisun allows you to:
