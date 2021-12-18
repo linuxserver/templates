@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-rdesktop/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-rdesktop#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-rdesktop#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>XFCE Focal</TagDescription>
@@ -20,50 +21,74 @@
     <Branch>
         <Tag>xfce-bionic</Tag>
         <TagDescription>XFCE Bionic</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/xfce-bionic#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/xfce-bionic#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>kde-focal</Tag>
         <TagDescription>KDE Focal</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/kde-focal#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/kde-focal#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>kde-bionic</Tag>
         <TagDescription>KDE Bionic</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/kde-bionic#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/kde-bionic#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>mate-focal</Tag>
         <TagDescription>MATE Focal</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/mate-focal#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/mate-focal#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>mate-bionic</Tag>
         <TagDescription>MATE Bionic</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/mate-bionic#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/mate-bionic#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>i3-focal</Tag>
         <TagDescription>i3 Focal</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/i3-focal#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/i3-focal#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>i3-bionic</Tag>
         <TagDescription>i3 Bionic</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/i3-bionic#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/i3-bionic#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>openbox-focal</Tag>
         <TagDescription>Openbox Focal</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/openbox-focal#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/openbox-focal#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>openbox-bionic</Tag>
         <TagDescription>Openbox Bionic</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/openbox-bionic#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/openbox-bionic#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>icewm-focal</Tag>
         <TagDescription>IceWM Focal</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/icewm-focal#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/icewm-focal#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>icewm-bionic</Tag>
         <TagDescription>IceWM Bionic</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/icewm-bionic#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/icewm-bionic#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>alpine</Tag>
         <TagDescription>XFCE Alpine</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/alpine#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/alpine#application-setup</GitHub>
     </Branch>
     <Project>http://xrdp.org/</Project>
     <Overview>Rdesktop(http://xrdp.org/) - Ubuntu based containers containing full desktop environments in officially supported flavors accessible via RDP.</Overview>
