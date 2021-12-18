@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-lidarr/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-lidarr#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-lidarr#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable Lidarr releases.</TagDescription>
@@ -20,10 +21,14 @@
     <Branch>
         <Tag>develop</Tag>
         <TagDescription>Develop Lidarr Releases.</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-lidarr/tree/develop#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-lidarr/tree/develop#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>nightly</Tag>
         <TagDescription>Nightly Lidarr Releases.</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-lidarr/tree/nightly#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-lidarr/tree/nightly#application-setup</GitHub>
     </Branch>
     <Project>https://github.com/lidarr/Lidarr</Project>
     <Overview>Lidarr(https://github.com/lidarr/Lidarr) is a music collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new tracks from your favorite artists and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.</Overview>
