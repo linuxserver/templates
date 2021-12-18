@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-pwndrop/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-pwndrop#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-pwndrop#readme</ReadMe>
     <Project>https://github.com/kgretzky/pwndrop</Project>
     <Overview>Pwndrop(https://github.com/kgretzky/pwndrop) is a self-deployable file hosting service for sending out red teaming payloads or securely sharing your private files over HTTP and WebDAV.</Overview>
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
