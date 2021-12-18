@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-adguardhome-sync/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-adguardhome-sync#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-adguardhome-sync#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable releases from GitHub</TagDescription>
@@ -22,8 +23,11 @@
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/adguardhome-sync.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2021-08-09</Date>
+    <Date>2021-12-18</Date>
     <Changes>
+### 2021-12-18
+- Rebase to Alpine 3.15.
+
 ### 2021-08-09
 - Rebase to Alpine 3.14.
 
