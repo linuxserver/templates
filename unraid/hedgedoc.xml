@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-hedgedoc/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-hedgedoc#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-hedgedoc#readme</ReadMe>
     <Project>https://hedgedoc.org/</Project>
     <Overview>HedgeDoc(https://hedgedoc.org/) gives you access to all your files wherever you are.
 
