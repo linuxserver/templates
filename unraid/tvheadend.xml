@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-tvheadend/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-tvheadend#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-tvheadend#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Current latest release.</TagDescription>
@@ -20,14 +21,20 @@
     <Branch>
         <Tag>release-4.2</Tag>
         <TagDescription>Latest release from 4.2 branch.</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-tvheadend/tree/release-4.2#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-tvheadend/tree/release-4.2#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>stable-4.2.1</Tag>
         <TagDescription>Old stable version. Will not be updated anymore!</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-tvheadend/tree/stable-4.2.1#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-tvheadend/tree/stable-4.2.1#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>stable-4.0.9</Tag>
         <TagDescription>Old stable version. Will not be updated anymore!</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-tvheadend/tree/stable-4.0.9#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-tvheadend/tree/stable-4.0.9#application-setup</GitHub>
     </Branch>
     <Project>https://www.tvheadend.org/</Project>
     <Overview>Tvheadend(https://www.tvheadend.org/) works as a proxy server: is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SATIP and HDHomeRun as input sources.
@@ -167,6 +174,6 @@ Multiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV D
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-    <Config Name="/dev/dri" Default="/dev/dri" Description="Only needed if you want to use your AMD/Intel GPU for hardware accelerated video encoding (vaapi)." Type="Device" Display="always" Required="true" Mask="false"/>
-    <Config Name="/dev/dvb" Default="/dev/dvb" Description="Only needed if you want to pass through a DVB card to the container. If you use IPTV or HDHomeRun you can leave it out." Type="Device" Display="always" Required="true" Mask="false"/>
+    <Config Name="/dev/dri" Default="/dev/dri" Description="Only needed if you want to use your AMD/Intel GPU for hardware accelerated video encoding (vaapi)." Type="Device" Display="always" Required="false" Mask="false"/>
+    <Config Name="/dev/dvb" Default="/dev/dvb" Description="Only needed if you want to pass through a DVB card to the container. If you use IPTV or HDHomeRun you can leave it out." Type="Device" Display="always" Required="false" Mask="false"/>
 </Container>
