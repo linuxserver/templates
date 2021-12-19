@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-medusa/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-medusa#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-medusa#readme</ReadMe>
     <Project>https://pymedusa.com/</Project>
     <Overview>Medusa(https://pymedusa.com/) is an automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.</Overview>
     <WebUI>http://[IP]:[PORT:8081]</WebUI>
