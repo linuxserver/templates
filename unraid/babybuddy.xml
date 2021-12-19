@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-babybuddy/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-babybuddy#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-babybuddy#readme</ReadMe>
     <Project>https://github.com/babybuddy/babybuddy</Project>
     <Overview>Babybuddy(https://github.com/babybuddy/babybuddy) is a buddy for babies! Helps caregivers track sleep, feedings, diaper changes, tummy time and more to learn about and predict baby&#39;s needs without (as much) guess work.</Overview>
     <WebUI>http://[IP]:[PORT:8000]</WebUI>
