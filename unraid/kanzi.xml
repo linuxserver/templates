@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-kanzi/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-kanzi#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-kanzi#readme</ReadMe>
     <Project>https://lexigr.am/</Project>
     <Overview>Kanzi(https://lexigr.am/), formerly titled Kodi-Alexa, this custom skill is the ultimate voice remote control for navigating Kodi. It can do anything you can think of (100+ intents).  This container also contains lexigram-cli to setup Kanzi with an Amazon Developer Account and automatically deploy it to Amazon.</Overview>
     <WebUI>https://[IP]:[PORT:8000]</WebUI>
