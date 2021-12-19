@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-bazarr/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-bazarr#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-bazarr#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable releases from Bazarr</TagDescription>
@@ -20,6 +21,8 @@
     <Branch>
         <Tag>development</Tag>
         <TagDescription>Pre-releases from Bazarr</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-bazarr/tree/development#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-bazarr/tree/development#application-setup</GitHub>
     </Branch>
     <Project>https://www.bazarr.media/</Project>
     <Overview>Bazarr(https://www.bazarr.media/) is a companion application to Sonarr and Radarr. It can manage and download subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you.</Overview>
