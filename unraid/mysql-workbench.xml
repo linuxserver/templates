@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-mysql-workbench/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-mysql-workbench#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-mysql-workbench#readme</ReadMe>
     <Project>https://www.mysql.com/products/workbench/</Project>
     <Overview>MySQL Workbench(https://www.mysql.com/products/workbench/) is a unified visual tool for database architects, developers, and DBAs. MySQL Workbench provides data modeling, SQL development, and comprehensive administration tools for server configuration, user administration, backup, and much more.</Overview>
     <ExtraParams>--cap-add=IPC_LOCK</ExtraParams>
