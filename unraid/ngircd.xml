@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-ngircd/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-ngircd#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-ngircd#readme</ReadMe>
     <Project>https://ngircd.barton.de/</Project>
     <Overview>Ngircd(https://ngircd.barton.de/) is a free, portable and lightweight Internet Relay Chat server for small or private networks, developed under the GNU General Public License (GPL). It is easy to configure, can cope with dynamic IP addresses, and supports IPv6, SSL-protected connections as well as PAM for authentication. It is written from scratch and not based on the original IRCd.</Overview>
     <WebUI>http://[IP]:[PORT:6667]</WebUI>
