@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-sickgear/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-sickgear#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-sickgear#readme</ReadMe>
     <Project>https://github.com/sickgear/sickgear</Project>
     <Overview>SickGear(https://github.com/sickgear/sickgear) provides management of TV shows and/or Anime, it detects new episodes, links downloader apps, and more..
 
