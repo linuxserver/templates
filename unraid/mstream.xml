@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-mstream/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-mstream#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-mstream#readme</ReadMe>
     <Project>https://mstream.io/</Project>
     <Overview>mstream(https://mstream.io/) is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere.  There are mobile apps available for both Android and iPhone.</Overview>
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
