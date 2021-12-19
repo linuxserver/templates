@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-nextcloud/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-nextcloud#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-nextcloud#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable Nextcloud releases (currently php7)</TagDescription>
@@ -20,6 +21,8 @@
     <Branch>
         <Tag>php8</Tag>
         <TagDescription>Experimental php8 based Nextcloud releases</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-nextcloud/tree/php8#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-nextcloud/tree/php8#application-setup</GitHub>
     </Branch>
     <Project>https://nextcloud.com/</Project>
     <Overview>Nextcloud(https://nextcloud.com/) gives you access to all your files wherever you are.
