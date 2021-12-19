@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-firefox/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-firefox#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-firefox#readme</ReadMe>
     <Project>https://www.mozilla.org/en-US/firefox/</Project>
     <Overview>Firefox(https://www.mozilla.org/en-US/firefox/) Browser, also known as Mozilla Firefox or simply Firefox, is a free and open-source web browser developed by the Mozilla Foundation and its subsidiary, the Mozilla Corporation. Firefox uses the Gecko layout engine to render web pages, which implements current and anticipated web standards.</Overview>
     <ExtraParams>--shm-size=1gb</ExtraParams>
