@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-webtop/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-webtop#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-webtop#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>XFCE Alpine</TagDescription>
@@ -20,94 +21,140 @@
     <Branch>
         <Tag>ubuntu-xfce</Tag>
         <TagDescription>XFCE Ubuntu</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/ubuntu-xfce#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-webtop/tree/ubuntu-xfce#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>fedora-xfce</Tag>
         <TagDescription>XFCE Fedora</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/fedora-xfce#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-webtop/tree/fedora-xfce#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>arch-xfce</Tag>
         <TagDescription>XFCE Arch</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/arch-xfce#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-webtop/tree/arch-xfce#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>alpine-kde</Tag>
         <TagDescription>KDE Alpine</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/alpine-kde#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-webtop/tree/alpine-kde#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>ubuntu-kde</Tag>
         <TagDescription>KDE Ubuntu</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/ubuntu-kde#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-webtop/tree/ubuntu-kde#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>fedora-kde</Tag>
         <TagDescription>KDE Fedora</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/fedora-kde#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-webtop/tree/fedora-kde#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>arch-kde</Tag>
         <TagDescription>KDE Arch</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/arch-kde#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-webtop/tree/arch-kde#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>alpine-mate</Tag>
         <TagDescription>MATE Alpine</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/alpine-mate#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-webtop/tree/alpine-mate#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>ubuntu-mate</Tag>
         <TagDescription>MATE Ubuntu</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/ubuntu-mate#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-webtop/tree/ubuntu-mate#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>fedora-mate</Tag>
         <TagDescription>MATE Fedora</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/fedora-mate#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-webtop/tree/fedora-mate#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>arch-mate</Tag>
         <TagDescription>MATE Arch</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/arch-mate#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-webtop/tree/arch-mate#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>alpine-i3</Tag>
         <TagDescription>i3 Alpine</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/alpine-i3#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-webtop/tree/alpine-i3#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>ubuntu-i3</Tag>
         <TagDescription>i3 Ubuntu</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/ubuntu-i3#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-webtop/tree/ubuntu-i3#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>fedora-i3</Tag>
         <TagDescription>i3 Fedora</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/fedora-i3#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-webtop/tree/fedora-i3#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>arch-i3</Tag>
         <TagDescription>i3 Arch</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/arch-i3#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-webtop/tree/arch-i3#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>alpine-openbox</Tag>
         <TagDescription>Openbox Alpine</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/alpine-openbox#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-webtop/tree/alpine-openbox#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>ubuntu-openbox</Tag>
         <TagDescription>Openbox Ubuntu</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/ubuntu-openbox#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-webtop/tree/ubuntu-openbox#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>fedora-openbox</Tag>
         <TagDescription>Openbox Fedora</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/fedora-openbox#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-webtop/tree/fedora-openbox#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>arch-openbox</Tag>
         <TagDescription>Openbox Arch</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/arch-openbox#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-webtop/tree/arch-openbox#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>alpine-icewm</Tag>
         <TagDescription>IceWM Alpine</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/alpine-icewm#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-webtop/tree/alpine-icewm#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>ubuntu-icewm</Tag>
         <TagDescription>IceWM Ubuntu</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/ubuntu-icewm#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-webtop/tree/ubuntu-icewm#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>fedora-icewm</Tag>
         <TagDescription>IceWM Fedora</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/fedora-icewm#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-webtop/tree/fedora-icewm#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>arch-icewm</Tag>
         <TagDescription>IceWM Arch</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/arch-icewm#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-webtop/tree/arch-icewm#application-setup</GitHub>
     </Branch>
     <Project>https://github.com/linuxserver/docker-webtop</Project>
     <Overview>Webtop(https://github.com/linuxserver/docker-webtop) - Alpine, Ubuntu, Fedora, and Arch based containers containing full desktop environments in officially supported flavors accessible via any modern web browser.</Overview>
