@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-smokeping/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-smokeping#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-smokeping#readme</ReadMe>
     <Project>https://oss.oetiker.ch/smokeping/</Project>
     <Overview>Smokeping(https://oss.oetiker.ch/smokeping/) keeps track of your network latency. For a full example of what this application is capable of visit UCDavis(http://smokeping.ucdavis.edu/cgi-bin/smokeping.fcgi).</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
