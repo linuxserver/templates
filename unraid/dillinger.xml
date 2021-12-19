@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-dillinger/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-dillinger#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-dillinger#readme</ReadMe>
     <Project>https://github.com/joemccann/dillinger</Project>
     <Overview>Dillinger(https://github.com/joemccann/dillinger) is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5 Markdown editor.</Overview>
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
