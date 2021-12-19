@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-nzbhydra2/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-nzbhydra2#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-nzbhydra2#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable releases</TagDescription>
@@ -20,6 +21,8 @@
     <Branch>
         <Tag>dev</Tag>
         <TagDescription>Prereleases from their GitHub</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-nzbhydra2/tree/dev#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-nzbhydra2/tree/dev#application-setup</GitHub>
     </Branch>
     <Project>https://github.com/theotherp/nzbhydra2</Project>
     <Overview>Nzbhydra2(https://github.com/theotherp/nzbhydra2) is a meta search application for NZB indexers, the &#34;spiritual successor&#34; to NZBmegasearcH, and an evolution of the original application NZBHydra(https://github.com/theotherp/nzbhydra).
