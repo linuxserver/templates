@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-quassel-core/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-quassel-core#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-quassel-core#readme</ReadMe>
     <Project>http://quassel-irc.org/</Project>
     <Overview>Quassel-core(http://quassel-irc.org/) is a modern, cross-platform, distributed IRC client, meaning that one (or multiple) client(s) can attach to and detach from a central core.
 
