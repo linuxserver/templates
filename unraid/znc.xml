@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-znc/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-znc#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-znc#readme</ReadMe>
     <Project>http://wiki.znc.in/ZNC</Project>
     <Overview>Znc(http://wiki.znc.in/ZNC) is an IRC network bouncer or BNC. It can detach the client from the actual IRC server, and also from selected channels. Multiple clients from different locations can connect to a single ZNC account simultaneously and therefore appear under the same nickname on IRC.</Overview>
     <WebUI>http://[IP]:[PORT:6501]</WebUI>
