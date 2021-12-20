@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-habridge/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-habridge#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-habridge#readme</ReadMe>
     <Project>http://bwssystems.com/#/habridge</Project>
     <Overview>Habridge(http://bwssystems.com/#/habridge) emulates Philips Hue API to other home automation gateways such as an Amazon Echo/Dot Gen 1 (gen 2 has issues discovering ha-bridge) or other systems that support Philips Hue. The Bridge handles basic commands such as &#34;On&#34;, &#34;Off&#34; and &#34;brightness&#34; commands of the hue protocol. This bridge can control most devices that have a distinct API.
 
