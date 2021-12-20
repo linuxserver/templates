@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-radarr/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-radarr#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-radarr#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable Radarr releases</TagDescription>
@@ -20,10 +21,14 @@
     <Branch>
         <Tag>develop</Tag>
         <TagDescription>Radarr releases from their develop branch</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-radarr/tree/develop#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-radarr/tree/develop#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>nightly</Tag>
         <TagDescription>Radarr releases from their nightly branch</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-radarr/tree/nightly#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-radarr/tree/nightly#application-setup</GitHub>
     </Branch>
     <Project>https://github.com/Radarr/Radarr</Project>
     <Overview>Radarr(https://github.com/Radarr/Radarr) - A fork of Sonarr to work with movies à la Couchpotato.</Overview>
