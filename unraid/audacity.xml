@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-audacity/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-audacity#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-audacity#readme</ReadMe>
     <Project>https://www.audacityteam.org/</Project>
     <Overview>Audacity(https://www.audacityteam.org/) is an easy-to-use, multi-track audio editor and recorder. Developed by a group of volunteers as open source.</Overview>
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
