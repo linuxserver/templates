@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-limnoria/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-limnoria#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-limnoria#readme</ReadMe>
     <Project>https://github.com/ProgVal/limnoria</Project>
     <Overview>Limnoria(https://github.com/ProgVal/limnoria) A robust, full-featured, and user/programmer-friendly Python IRC bot, with many existing plugins. Successor of the well-known Supybot.</Overview>
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
