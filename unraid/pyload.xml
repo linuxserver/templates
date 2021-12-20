@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-pyload/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-pyload#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-pyload#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable releases from Pyload</TagDescription>
@@ -20,6 +21,8 @@
     <Branch>
         <Tag>ng</Tag>
         <TagDescription>Development releases from Pyload-ng (currently alpha)</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-pyload/tree/ng#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-pyload/tree/ng#application-setup</GitHub>
     </Branch>
     <Project>https://pyload.net/</Project>
     <Overview>Pyload(https://pyload.net/) is a Free and Open Source download manager written in Python and designed to be extremely lightweight, easily extensible and fully manageable via web.</Overview>
