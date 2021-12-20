@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-qbittorrent/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-qbittorrent#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-qbittorrent#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable qbittorrent releases</TagDescription>
@@ -20,6 +21,8 @@
     <Branch>
         <Tag>unstable</Tag>
         <TagDescription>Unstable qbittorrent releases</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-qbittorrent/tree/unstable#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-qbittorrent/tree/unstable#application-setup</GitHub>
     </Branch>
     <Project>https://www.qbittorrent.org/</Project>
     <Overview>The Qbittorrent(https://www.qbittorrent.org/) project aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.</Overview>
