@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-ombi/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-ombi#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-ombi#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable Ombi releases</TagDescription>
@@ -20,6 +21,8 @@
     <Branch>
         <Tag>development</Tag>
         <TagDescription>Releases from the `develop` branch of Ombi</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-ombi/tree/development#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-ombi/tree/development#application-setup</GitHub>
     </Branch>
     <Project>https://ombi.io</Project>
     <Overview>Ombi(https://ombi.io) allows you to host your own Plex Request and user management system.
