@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-thelounge/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-thelounge#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-thelounge#readme</ReadMe>
     <Project>https://thelounge.github.io/</Project>
     <Overview>Thelounge(https://thelounge.github.io/) (a fork of shoutIRC) is a web IRC client that you host on your own server.</Overview>
     <WebUI>http://[IP]:[PORT:9000]</WebUI>
