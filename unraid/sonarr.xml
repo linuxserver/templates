@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-sonarr/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-sonarr#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-sonarr#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable releases from Sonarr (currently v3)</TagDescription>
@@ -20,6 +21,8 @@
     <Branch>
         <Tag>develop</Tag>
         <TagDescription>Development releases from Sonarr (currently v3)</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-sonarr/tree/develop#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-sonarr/tree/develop#application-setup</GitHub>
     </Branch>
     <Project>https://sonarr.tv/</Project>
     <Overview>Sonarr(https://sonarr.tv/) (formerly NZBdrone) is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.</Overview>
