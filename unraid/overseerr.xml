@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-overseerr/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-overseerr#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-overseerr#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable releases from GitHub</TagDescription>
@@ -20,6 +21,8 @@
     <Branch>
         <Tag>develop</Tag>
         <TagDescription>Development releases from commits in upstream develop branch</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-overseerr/tree/develop#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-overseerr/tree/develop#application-setup</GitHub>
     </Branch>
     <Project>https://overseerr.dev/</Project>
     <Overview>Overseerr(https://overseerr.dev/) is a request management and media discovery tool built to work with your existing Plex ecosystem.</Overview>
