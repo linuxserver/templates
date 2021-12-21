@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-diskover/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-diskover#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-diskover#readme</ReadMe>
     <Project>https://github.com/diskoverdata/diskover-community</Project>
     <Overview>diskover(https://github.com/diskoverdata/diskover-community) is an open source file system indexer that uses Elasticsearch to index and manage data across heterogeneous storage systems.</Overview>
     <WebUI>http://[IP]:[PORT:]</WebUI>
