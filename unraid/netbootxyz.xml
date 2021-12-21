@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-netbootxyz/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-netbootxyz#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-netbootxyz#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Web application for full self hosting</TagDescription>
@@ -20,6 +21,8 @@
     <Branch>
         <Tag>tftp</Tag>
         <TagDescription>TFTP server only with NETBOOT.XYZ boot files</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-netbootxyz/tree/tftp#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-netbootxyz/tree/tftp#application-setup</GitHub>
     </Branch>
     <Project>https://netboot.xyz</Project>
     <Overview>Netbootxyz(https://netboot.xyz) is a way to PXE boot various operating system installers or utilities from one place within the BIOS without the need of having to go retrieve the media to run the tool. iPXE is used to provide a user friendly menu from within the BIOS that lets you easily choose the operating system you want along with any specific types of versions or bootable flags.</Overview>
