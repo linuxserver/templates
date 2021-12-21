@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-raneto/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-raneto#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-raneto#readme</ReadMe>
     <Project>http://raneto.com/</Project>
     <Overview>Raneto(http://raneto.com/) - is an open source Knowledgebase platform that uses static Markdown files to power your Knowledgebase.</Overview>
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
