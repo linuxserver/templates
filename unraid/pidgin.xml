@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-pidgin/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-pidgin#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-pidgin#readme</ReadMe>
     <Project>https://pidgin.im/</Project>
     <Overview>Pidgin(https://pidgin.im/) is a chat program which lets you log into accounts on multiple chat networks simultaneously. This means that you can be chatting with friends on XMPP and sitting in an IRC channel at the same time.</Overview>
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
