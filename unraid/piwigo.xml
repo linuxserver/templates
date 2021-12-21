@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-piwigo/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-piwigo#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-piwigo#readme</ReadMe>
     <Project>http://piwigo.org/</Project>
     <Overview>Piwigo(http://piwigo.org/) is a photo gallery software for the web that comes with powerful features to publish and manage your collection of pictures.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
