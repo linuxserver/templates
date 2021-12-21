@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-librespeed/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-librespeed#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-librespeed#readme</ReadMe>
     <Project>https://github.com/librespeed/speedtest</Project>
     <Overview>Librespeed(https://github.com/librespeed/speedtest) is a very lightweight Speedtest implemented in Javascript, using XMLHttpRequest and Web Workers.
 No Flash, No Java, No Websocket, No Bullshit.</Overview>
