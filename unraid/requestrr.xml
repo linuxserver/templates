@@ -13,13 +13,17 @@
     <Support>https://github.com/linuxserver/docker-requestrr/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-requestrr#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-requestrr#readme</ReadMe>
     <Project>https://github.com/darkalfx/requestrr</Project>
     <Overview>Requestrr(https://github.com/darkalfx/requestrr) is a chatbot used to simplify using services like Sonarr/Radarr/Ombi via the use of chat.</Overview>
     <WebUI>http://[IP]:[PORT:4545]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/requestrr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/requestrr-logo.png</Icon>
-    <Date>2021-09-27</Date>
+    <Date>2021-12-20</Date>
     <Changes>
+### 2021-12-20
+- Deprecate.
+
 ### 2021-09-27
 - Allow app to write to tmp folder.
 
