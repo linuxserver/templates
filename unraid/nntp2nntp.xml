@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-nntp2nntp/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-nntp2nntp#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-nntp2nntp#readme</ReadMe>
     <Project>https://github.com/linuxserver/nntp2nntp</Project>
     <Overview>Nntp2nntp(https://github.com/linuxserver/nntp2nntp) proxy allow you to use your NNTP Account from multiple systems, each with own user name and password. It fully supports SSL and you can also limit the access to proxy with SSL certificates. nntp2nntp proxy is very simple and pretty fast.
 ## Warning
