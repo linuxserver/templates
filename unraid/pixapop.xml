@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-pixapop/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-pixapop#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-pixapop#readme</ReadMe>
     <Project>https://github.com/bierdok/pixapop</Project>
     <Overview>Pixapop(https://github.com/bierdok/pixapop) is an open-source single page application to view your photos in the easiest way possible.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
