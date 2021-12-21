@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-calibre-web/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-calibre-web#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-calibre-web#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Releases of Calibre-Web</TagDescription>
@@ -20,6 +21,8 @@
     <Branch>
         <Tag>nightly</Tag>
         <TagDescription>Commits to the master branch of Calibre-Web</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-calibre-web/tree/nightly#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-calibre-web/tree/nightly#application-setup</GitHub>
     </Branch>
     <Project>https://github.com/janeczku/calibre-web</Project>
     <Overview>Calibre-web(https://github.com/janeczku/calibre-web) is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.   It is also possible to integrate google drive and edit metadata and your calibre library through the app itself.
