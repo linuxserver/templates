@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-grav/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-grav#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-grav#readme</ReadMe>
     <Project>https://github.com/getgrav/grav/</Project>
     <Overview>Grav(https://github.com/getgrav/grav/) is a Fast, Simple, and Flexible, file-based Web-platform.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
