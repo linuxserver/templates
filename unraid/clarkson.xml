@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-clarkson/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-clarkson#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-clarkson#readme</ReadMe>
     <Project>https://github.com/linuxserver/Clarkson</Project>
     <Overview>Clarkson(https://github.com/linuxserver/Clarkson) is a web-based dashboard application that gives you a neat and clean interface for logging your fuel fill-ups for all of your vehicles. The application has full multi-user support, as well as multiple vehicles per user. Whenever you fill-up your car or motorcycle, keep the receipt and record the data in Clarkson.</Overview>
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
