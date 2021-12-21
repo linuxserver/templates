@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-pydio-cells/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-pydio-cells#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-pydio-cells#readme</ReadMe>
     <Project>https://pydio.com/</Project>
     <Overview>Pydio-cells(https://pydio.com/) is the nextgen file sharing platform for organizations. It is a full rewrite of the Pydio project using the Go language following a micro-service architecture.</Overview>
     <ExtraParams>pydio-cells --cap-add=NET_ADMIN</ExtraParams>
