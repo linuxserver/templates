@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-ddclient/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-ddclient#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-ddclient#readme</ReadMe>
     <Project>https://github.com/ddclient/ddclient</Project>
     <Overview>Ddclient(https://github.com/ddclient/ddclient) is a Perl client used to update dynamic DNS entries for accounts on Dynamic DNS Network Service Provider. It was originally written by Paul Burry and is now mostly by wimpunk. It has the capability to update more than just dyndns and it can fetch your WAN-ipaddress in a few different ways.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
