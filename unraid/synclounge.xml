@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-synclounge/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-synclounge#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-synclounge#readme</ReadMe>
     <Project>https://github.com/samcm/synclounge</Project>
     <Overview>Synclounge(https://github.com/samcm/synclounge) is a third party tool that allows you to watch Plex in sync with your friends/family, wherever you are.</Overview>
     <WebUI>http://[IP]:[PORT:8088]</WebUI>
