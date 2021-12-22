@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-duckdns/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-duckdns#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-duckdns#readme</ReadMe>
     <Project>https://duckdns.org/</Project>
     <Overview>Duckdns(https://duckdns.org/) is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn&#39;t require reactivation or forum posts to maintain its existence.</Overview>
     <WebUI>http://[IP]:[PORT:]</WebUI>
