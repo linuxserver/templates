@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-paperless-ng/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-paperless-ng#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-paperless-ng#readme</ReadMe>
     <Project>https://github.com/jonaswinkler/paperless-ng</Project>
     <Overview>Paperless-ng(https://github.com/jonaswinkler/paperless-ng) is an application by Daniel Quinn and contributors that indexes your scanned documents and allows you to easily search for documents and store metadata alongside your documents.&#34;</Overview>
     <WebUI>http://[IP]:[PORT:8000]</WebUI>
