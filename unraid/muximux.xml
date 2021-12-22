@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-muximux/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-muximux#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-muximux#readme</ReadMe>
     <Project>https://github.com/mescon/Muximux</Project>
     <Overview>Muximux(https://github.com/mescon/Muximux) is a lightweight portal to view and manage your HTPC apps without having to run anything more than a PHP enabled webserver. With Muximux you don&#39;t need to keep multiple tabs open, or bookmark the URL to all of your apps.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
