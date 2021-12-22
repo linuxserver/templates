@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-htpcmanager/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-htpcmanager#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-htpcmanager#readme</ReadMe>
     <Project>https://github.com/HTPC-Manager/HTPC-Manager</Project>
     <Overview>Htpcmanager(https://github.com/HTPC-Manager/HTPC-Manager) is a front end for many htpc related applications.</Overview>
     <WebUI>http://[IP]:[PORT:8085]</WebUI>
