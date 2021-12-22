@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-cops/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-cops#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-cops#readme</ReadMe>
     <Project>http://blog.slucas.fr/en/oss/calibre-opds-php-server</Project>
     <Overview>Cops(http://blog.slucas.fr/en/oss/calibre-opds-php-server) by Sébastien Lucas, stands for Calibre OPDS (and HTML) Php Server.
 
