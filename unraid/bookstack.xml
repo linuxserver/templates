@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-bookstack/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-bookstack#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-bookstack#readme</ReadMe>
     <Project>https://github.com/BookStackApp/BookStack</Project>
     <Overview>Bookstack(https://github.com/BookStackApp/BookStack) is a free and open source Wiki designed for creating beautiful documentation. Featuring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease.
 
