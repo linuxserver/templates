@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-syncthing/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-syncthing#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-syncthing#readme</ReadMe>
     <Project>https://syncthing.net</Project>
     <Overview>Syncthing(https://syncthing.net) replaces proprietary sync and cloud services with something open, trustworthy and decentralized. Your data is your data alone and you deserve to choose where it is stored, if it is shared with some third party and how it&#39;s transmitted over the Internet.</Overview>
     <WebUI>http://[IP]:[PORT:8384]</WebUI>
