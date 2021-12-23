@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-oscam/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-oscam#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-oscam#readme</ReadMe>
     <Project>http://www.streamboard.tv/oscam/</Project>
     <Overview>Oscam(http://www.streamboard.tv/oscam/) is an Open Source Conditional Access Module software used for descrambling DVB transmissions using smart cards. It&#39;s both a server and a client.</Overview>
     <WebUI>http://[IP]:[PORT:8888]</WebUI>
