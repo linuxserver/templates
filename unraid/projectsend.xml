@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-projectsend/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-projectsend#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-projectsend#readme</ReadMe>
     <Project>http://www.projectsend.org</Project>
     <Overview>Projectsend(http://www.projectsend.org) is a self-hosted application that lets you upload files and assign them to specific clients that you create yourself. Secure, private and easy. No more depending on external services or e-mail to send those files.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
