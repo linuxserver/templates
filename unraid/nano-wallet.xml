@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-nano-wallet/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-nano-wallet#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-nano-wallet#readme</ReadMe>
     <Project>https://nano.org/</Project>
     <Overview>Nano-wallet(https://nano.org/) is a digital payment protocol designed to be accessible and lightweight, with a focus on removing inefficiencies present in other cryptocurrencies. With ultrafast transactions and zero fees on a secure, green and decentralized network, this makes Nano ideal for everyday transactions.
 
