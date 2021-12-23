@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-daapd/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-daapd#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-daapd#readme</ReadMe>
     <Project>https://owntone.github.io/owntone-server/</Project>
     <Overview>Daapd(https://owntone.github.io/owntone-server/) (iTunes) media server with support for AirPlay devices, Apple Remote (and compatibles), Chromecast, MPD and internet radio.</Overview>
     <WebUI>http://[IP]:[PORT:3689]</WebUI>
