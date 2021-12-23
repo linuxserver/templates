@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-nzbget/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-nzbget#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-nzbget#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable nzbget releases</TagDescription>
@@ -20,6 +21,8 @@
     <Branch>
         <Tag>testing</Tag>
         <TagDescription>nzbget pre-releases</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-nzbget/tree/testing#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-nzbget/tree/testing#application-setup</GitHub>
     </Branch>
     <Project>http://nzbget.net/</Project>
     <Overview>Nzbget(http://nzbget.net/) is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources.</Overview>
