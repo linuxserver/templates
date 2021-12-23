@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-xbackbone/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-xbackbone#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-xbackbone#readme</ReadMe>
     <Project>https://github.com/SergiX44/XBackBone</Project>
     <Overview>Xbackbone(https://github.com/SergiX44/XBackBone) is a simple, self-hosted, lightweight PHP file manager that support the instant sharing tool ShareX and *NIX systems. It supports uploading and displaying images, GIF, video, code, formatted text, and file downloading and uploading. Also have a web UI with multi user management, past uploads history and search support.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
