@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-quassel-web/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-quassel-web#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-quassel-web#readme</ReadMe>
     <Project>https://github.com/magne4000/quassel-webserver</Project>
     <Overview>Quassel-web(https://github.com/magne4000/quassel-webserver) is a web client for Quassel.  Note that a Quassel-Core instance is required, we have a container available here.(https://hub.docker.com/r/linuxserver/quassel-core/)</Overview>
     <WebUI>https://[IP]:[PORT:64443]</WebUI>
