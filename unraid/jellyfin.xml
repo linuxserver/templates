@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-jellyfin/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-jellyfin#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-jellyfin#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Stable Jellyfin releases - Focal baseimage</TagDescription>
@@ -20,10 +21,14 @@
     <Branch>
         <Tag>bionic</Tag>
         <TagDescription>DEPRECATED, no longer updated - Stable Jellyfin releases - Bionic baseimage</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-jellyfin/tree/bionic#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-jellyfin/tree/bionic#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>nightly</Tag>
         <TagDescription>Nightly Jellyfin releases</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-jellyfin/tree/nightly#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-jellyfin/tree/nightly#application-setup</GitHub>
     </Branch>
     <Project>https://jellyfin.github.io/</Project>
     <Overview>Jellyfin(https://jellyfin.github.io/) is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps. Jellyfin is descended from Emby&#39;s 3.5.2 release and ported to the .NET Core framework to enable full cross-platform support. There are no strings attached, no premium licenses or features, and no hidden agendas: just a team who want to build something better and work together to achieve it.</Overview>
