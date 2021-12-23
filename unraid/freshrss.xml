@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-freshrss/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-freshrss#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-freshrss#readme</ReadMe>
     <Project>https://freshrss.org/</Project>
     <Overview>Freshrss(https://freshrss.org/) is a free, self-hostable aggregator for rss feeds.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
