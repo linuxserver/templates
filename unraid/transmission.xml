@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-transmission/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-transmission#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-transmission#readme</ReadMe>
     <Project>https://www.transmissionbt.com/</Project>
     <Overview>Transmission(https://www.transmissionbt.com/) is designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, µTP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more.</Overview>
     <WebUI>http://[IP]:[PORT:9091]</WebUI>
