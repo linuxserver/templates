@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-cloud9/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-cloud9#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-cloud9#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
         <TagDescription>Docker and Compose environment pre-installed</TagDescription>
@@ -20,18 +21,26 @@
     <Branch>
         <Tag>go</Tag>
         <TagDescription>Basic Golang environment pre-installed</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-cloud9/tree/go#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-cloud9/tree/go#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>nodejs</Tag>
         <TagDescription>Current stable NodeJS/NPM environment pre-installed</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-cloud9/tree/nodejs#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-cloud9/tree/nodejs#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>python</Tag>
         <TagDescription>Current Python3 environment pre-installed</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-cloud9/tree/python#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-cloud9/tree/python#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>ruby</Tag>
         <TagDescription>Current Ruby environment pre-installed</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-cloud9/tree/ruby#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-cloud9/tree/ruby#application-setup</GitHub>
     </Branch>
     <Project>https://github.com/c9/core</Project>
     <Overview>Cloud9(https://github.com/c9/core) Cloud9 is a complete web based IDE with terminal access. This container is for running their core SDK locally and developing plugins.</Overview>
