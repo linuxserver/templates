@@ -13,6 +13,7 @@
     <Support>https://github.com/linuxserver/docker-headphones/issues/new/choose</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-headphones</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-headphones#readme</ReadMe>
     <Project>https://github.com/rembo10/headphones</Project>
     <Overview>Headphones(https://github.com/rembo10/headphones) is an automated music downloader for NZB and Torrent, written in Python. It supports SABnzbd, NZBget, Transmission, µTorrent and Blackhole.</Overview>
     <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
