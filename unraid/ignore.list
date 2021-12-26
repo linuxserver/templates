@@ -7,4 +7,5 @@ nano
 openssh-server
 openvpn-as
 tester
-wireguardrequestrr
+wireguard
+requestrr
