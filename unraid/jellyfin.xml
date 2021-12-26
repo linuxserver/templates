@@ -35,8 +35,11 @@
     <WebUI>http://[IP]:[PORT:8096]</WebUI>
     <TemplateURL>false</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/jellyfin-logo.png</Icon>
-    <Date>2021-12-10</Date>
+    <Date>2021-12-25</Date>
     <Changes>
+### 2021-12-25
+- Fix video device group perms error message.
+
 ### 2021-12-10
 - Rework readme, disable template sync.
 
