@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/smokeping.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/smokeping-logo.png</Icon>
-    <Date>2021-01-23</Date>
+    <Date>2021-03-29</Date>
     <Changes>
+### 2021-03-29
+- Dockerfile: Install curl before we call it
+
 ### 2021-01-23
 - Rebasing to alpine 3.13.
 
