@@ -19,13 +19,16 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/digikam.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/digikam-logo.png</Icon>
-    <Date>2020-05-20</Date>
+    <Date>2021-12-27</Date>
     <Changes>
-### 2020-05-20
-- Initial release.
+### 2021-12-27
+- Rebase to focal to resolve dependency issues.
 
 ### 2021-03-27
 - Download link fixed.
+
+### 2020-05-20
+- Initial release.
 
     </Changes>
     <Config Name="Port: 3000" Target="3000" Default="3000" Mode="tcp" Description="digiKam desktop gui" Type="Port" Display="always" Required="false" Mask="false"/>
