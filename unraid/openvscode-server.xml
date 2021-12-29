@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/openvscode-server.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/openvscode-server-logo.png</Icon>
-    <Date>2021-12-10</Date>
+    <Date>2021-12-29</Date>
     <Changes>
+### 2021-12-29
+- Add `install-extension` as a helper for mods to install extensions.
+
 ### 2021-12-10
 - Update deprecated connectionToken arg.
 
