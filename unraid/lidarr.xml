@@ -30,13 +30,22 @@
         <ReadMe>https://github.com/linuxserver/docker-lidarr/tree/nightly#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-lidarr/tree/nightly#application-setup</GitHub>
     </Branch>
+    <Branch>
+        <Tag>nightly-alpine</Tag>
+        <TagDescription>Nightly Lidarr Releases using our Alpine baseimage.</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-lidarr/tree/nightly-alpine#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-lidarr/tree/nightly-alpine#application-setup</GitHub>
+    </Branch>
     <Project>https://github.com/lidarr/Lidarr</Project>
     <Overview>Lidarr(https://github.com/lidarr/Lidarr) is a music collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new tracks from your favorite artists and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.</Overview>
     <WebUI>http://[IP]:[PORT:8686]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/lidarr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/lidarr-logo.png</Icon>
-    <Date>2021-08-01</Date>
+    <Date>2021-12-30</Date>
     <Changes>
+### 2021-12-30
+- Add nightly-alpine branch.
+
 ### 2021-08-01
 - Add libchromaprint-tools.
 
