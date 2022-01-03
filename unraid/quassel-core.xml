@@ -21,8 +21,11 @@ This container handles the IRC connection (quasselcore) and requires a desktop c
     <WebUI>http://[IP]:[PORT:4242]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/quassel-core.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/quassel-core-logo.png</Icon>
-    <Date>2021-08-07</Date>
+    <Date>2022-01-03</Date>
     <Changes>
+### 2022-01-03
+- Rebase to alpine 3.15. Add new build deps and apply other fixes for 0.14.
+
 ### 2021-08-07
 - Fixing incorrect database password variable operator.
 
