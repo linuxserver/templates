@@ -19,10 +19,13 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/emulatorjs.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/emulatorjs-logo.png</Icon>
-    <Date>2021-11-29</Date>
+    <Date>2022-01-04</Date>
     <Changes>
+### 2022-01-04
+- Add headers needed for Threaded emulators.
+
 ### 2021-11-29
-- Add wasm mime type to NGINX
+- Add wasm mime type to NGINX.
 
 ### 2021-11-26
 - Configure IPFS in a lower power mode, use homebuilt blobs for emu cores.
