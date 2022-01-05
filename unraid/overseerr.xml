@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:5055]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/overseerr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/overseerr-logo.png</Icon>
-    <Date>2021-10-10</Date>
+    <Date>2022-01-04</Date>
     <Changes>
+### 2022-01-04
+- Remove cached files.
+
 ### 2021-10-10
 - Add additional post-build cleanup.
 
