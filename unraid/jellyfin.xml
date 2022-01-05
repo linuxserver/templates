@@ -16,13 +16,7 @@
     <ReadMe>https://github.com/linuxserver/docker-jellyfin#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
-        <TagDescription>Stable Jellyfin releases - Focal baseimage</TagDescription>
-    </Branch>
-    <Branch>
-        <Tag>bionic</Tag>
-        <TagDescription>DEPRECATED, no longer updated - Stable Jellyfin releases - Bionic baseimage</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-jellyfin/tree/bionic#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-jellyfin/tree/bionic#application-setup</GitHub>
+        <TagDescription>Stable Jellyfin releases</TagDescription>
     </Branch>
     <Branch>
         <Tag>nightly</Tag>
@@ -35,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8096]</WebUI>
     <TemplateURL>false</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/jellyfin-logo.png</Icon>
-    <Date>2021-12-25</Date>
+    <Date>2022-01-05</Date>
     <Changes>
+### 2022-01-05
+- Specify Intel iHD driver versions to avoid mismatched libva errors.
+
 ### 2021-12-25
 - Fix video device group perms error message.
 
