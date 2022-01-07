@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/webgrabplus.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webgrabplus-logo.png</Icon>
-    <Date>2021-12-17</Date>
+    <Date>2022-01-06</Date>
     <Changes>
+### 2022-01-06
+- Rebase to Ubuntu focal. Enable auto builds on version updates (beta and stable).
+
 ### 2021-12-17
 - Update to version 3.2.2 beta.
 
