@@ -20,8 +20,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/swag.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2021-12-21</Date>
+    <Date>2022-01-09</Date>
     <Changes>
+### 2022-01-09
+- Added a fail2ban jail for nginx unauthorized
+
 ### 2021-12-21
 - Fixed issue with iptables not working as expected
 
