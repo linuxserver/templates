@@ -19,6 +19,12 @@
         <TagDescription>Stable SABnzbd releases</TagDescription>
     </Branch>
     <Branch>
+        <Tag>alpine</Tag>
+        <TagDescription>Stable SABnzbd releases using our Alpine baseimage</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-sabnzbd/tree/alpine#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-sabnzbd/tree/alpine#application-setup</GitHub>
+    </Branch>
+    <Branch>
         <Tag>unstable</Tag>
         <TagDescription>Pre-releases from their GitHub</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-sabnzbd/tree/unstable#readme</ReadMe>
@@ -29,8 +35,11 @@
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sabnzbd.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sabnzbd-logo.png</Icon>
-    <Date>2021-08-08</Date>
+    <Date>2022-01-13</Date>
     <Changes>
+### 2022-01-13
+- Add Alpine branch.
+
 ### 2021-08-08
 - Bump to focal, dont enforce binding to ipv4 port 8080
 
@@ -102,7 +111,6 @@
 
     </Changes>
     <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="HTTP port for the WebUI." Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Port: 9090" Target="9090" Default="9090" Mode="tcp" Description="HTTPS port for the WebUI." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Local path for sabnzbd config files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Local path for finished downloads." Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="Path: /incomplete-downloads" Target="/incomplete-downloads" Default="" Mode="rw" Description="Local path for incomplete-downloads." Type="Path" Display="always" Required="false" Mask="false"/>
