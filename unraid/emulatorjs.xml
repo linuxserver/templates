@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/emulatorjs.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/emulatorjs-logo.png</Icon>
-    <Date>2022-01-04</Date>
+    <Date>2022-01-14</Date>
     <Changes>
+### 2022-01-14
+- Add profile paths and rebase to Alpine 3.15.
+
 ### 2022-01-04
 - Add headers needed for Threaded emulators.
 
@@ -43,6 +46,7 @@
     <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Rom/artwork management interface, used to generate/manage config files and download artwork" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 80" Target="80" Default="80" Mode="tcp" Description="Emulation frontend containing static web files used to browse and launch games" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 4001" Target="4001" Default="4001" Mode="tcp" Description="IPFS peering port, if you want to participate in the P2P network to distribute frontend artwork please forward this to the Internet" Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Path to store user profiles" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="Path to store roms/artwork" Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="SUBFOLDER" Target="SUBFOLDER" Default="/" Description="Specify a subfolder for reverse proxies IE &#39;/FOLDER/&#39;" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
