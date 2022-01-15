@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8337]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/beets.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/beets-logo.png</Icon>
-    <Date>2019-12-19</Date>
+    <Date>2022-01-15</Date>
     <Changes>
+### 2022-01-15
+- Rebasing to alpine 3.15.
+
 ### 2019-12-19
 - Rebasing to alpine 3.11.
 
