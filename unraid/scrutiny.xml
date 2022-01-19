@@ -20,8 +20,11 @@
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/scrutiny.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/scrutiny-logo.png</Icon>
-    <Date>2020-09-17</Date>
+    <Date>2020-11-22</Date>
     <Changes>
+### 2020-11-22
+- Added fix for `nsswitch.conf` to resolve local hosts
+
 ### 2020-09-17
 - Initial Release.
 
