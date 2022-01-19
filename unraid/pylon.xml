@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3131]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/pylon.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2020-06-02</Date>
+    <Date>2022-01-19</Date>
     <Changes>
+### 2022-01-19
+- Rebasing to alpine 3.15.
+
 ### 2020-06-02
 - Rebasing to alpine 3.12.
 
