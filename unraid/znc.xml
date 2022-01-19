@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:6501]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/znc.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/znc-logo.png</Icon>
-    <Date>2020-06-01</Date>
+    <Date>2022-01-19</Date>
     <Changes>
+### 2022-01-19
+- Rebasing to alpine 3.15.
+
 ### 2020-06-01
 - Rebasing to alpine 3.12.
 
