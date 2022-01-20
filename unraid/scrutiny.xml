@@ -20,8 +20,11 @@
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/scrutiny.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/scrutiny-logo.png</Icon>
-    <Date>2020-11-22</Date>
+    <Date>2022-01-19</Date>
     <Changes>
+### 2022-01-19
+- Rebase to Alpine 3.15.
+
 ### 2020-11-22
 - Added fix for `nsswitch.conf` to resolve local hosts
 
