@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:7396]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/foldingathome.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/foldingathome-logo.png</Icon>
-    <Date>2021-01-09</Date>
+    <Date>2022-01-15</Date>
     <Changes>
+### 2022-01-15
+- Rebase to Ubuntu Focal. Add arm64v8 builds (cpu only). Increase verbosity about gpu driver permission settings.
+
 ### 2021-01-09
 - Add nvidia.icd.
 
