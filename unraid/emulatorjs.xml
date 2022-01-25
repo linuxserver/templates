@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/emulatorjs.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/emulatorjs-logo.png</Icon>
-    <Date>2022-01-14</Date>
+    <Date>2022-01-25</Date>
     <Changes>
+### 2022-01-25
+- Allow users to mount in existing rom directories.
+
 ### 2022-01-14
 - Add profile paths and rebase to Alpine 3.15.
 
