@@ -32,6 +32,9 @@
     <Date>2022-01-24</Date>
     <Changes>
 ### 2022-01-24
+- Replace unrar with p7zip.
+
+### 2022-01-24
 - Initial release.
 
     </Changes>
