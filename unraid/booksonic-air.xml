@@ -19,7 +19,7 @@
         <TagDescription>Stable booksonic-air releases</TagDescription>
     </Branch>
     <Project>http://booksonic.org</Project>
-    <Overview>Booksonic-air(http://booksonic.org) is a platform for accessing the audibooks you own wherever you are. At the moment the platform consists of
+    <Overview>Booksonic-air(http://booksonic.org) is a platform for accessing the audiobooks you own wherever you are. At the moment the platform consists of
 Booksonic Air - A server for streaming your audiobooks, successor to the original Booksonic server and based on Airsonic. Booksonic App - An DSub based Android app for connection to Booksonic-Air servers. .</Overview>
     <WebUI>http://[IP]:[PORT:4040]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/booksonic-air.xml</TemplateURL>
