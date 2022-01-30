@@ -26,7 +26,7 @@
     </Branch>
     <Branch>
         <Tag>unstable</Tag>
-        <TagDescription>Pre-releases from their GitHub</TagDescription>
+        <TagDescription>Pre-releases of SABnzbd</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-sabnzbd/tree/unstable#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-sabnzbd/tree/unstable#application-setup</GitHub>
     </Branch>
@@ -35,8 +35,11 @@
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sabnzbd.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sabnzbd-logo.png</Icon>
-    <Date>2022-01-13</Date>
+    <Date>2022-01-25</Date>
     <Changes>
+### 2022-01-25
+- Rebase Unstable branch to Alpine.
+
 ### 2022-01-13
 - Add Alpine branch.
 
