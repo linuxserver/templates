@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-doplarr/blob/main/readme-vars.yml -->
+<Container version="2">
+    <Name>doplarr</Name>
+    <Repository>lscr.io/linuxserver/doplarr</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/doplarr</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-doplarr/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-doplarr#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-doplarr#readme</ReadMe>
+    <Project>https://github.com/kiranshila/Doplarr</Project>
+    <Overview>Doplarr(https://github.com/kiranshila/Doplarr) is an *arr request bot for Discord.&#34;</Overview>
+    <WebUI>http://[IP]:[PORT:]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/doplarr.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/doplarr-logo.png</Icon>
+    <Date>2022-01-30</Date>
+    <Changes>
+### 2022-01-30
+- Initial Release.
+
+    </Changes>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="DISCORD__TOKEN" Target="DISCORD__TOKEN" Default="discord__token" Description="Specify your discord bot token." Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="OVERSEERR__API" Target="OVERSEERR__API" Default="" Description="Specify your Overseerr API key. Leave blank if using Radarr/Sonarr." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="OVERSEERR__URL" Target="OVERSEERR__URL" Default="http://localhost:5055" Description="Specify your Overseerr URL. Leave blank if using Radarr/Sonarr." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="RADARR__API" Target="RADARR__API" Default="" Description="Specify your Radarr API key. Leave blank if using Overseerr." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="RADARR__URL" Target="RADARR__URL" Default="http://localhost:7878" Description="Specify your Radarr URL. Leave blank if using Overseerr." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="SONARR__API" Target="SONARR__API" Default="" Description="Specify your Sonarr API key. Leave blank if using Overseerr." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="SONARR__URL" Target="SONARR__URL" Default="http://localhost:8989" Description="Specify your Sonarr URL. Leave blank if using Overseerr." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="DISCORD__MAX_RESULTS" Target="DISCORD__MAX_RESULTS" Default="25" Description="Sets the maximum size of the search results selection" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="DISCORD__ROLE_ID" Target="DISCORD__ROLE_ID" Default="" Description="The discord role id for users of the bot (omitting this lets everyone on the server use the bot)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="DISCORD__REQUESTED_MSG_STYLE" Target="DISCORD__REQUESTED_MSG_STYLE" Default=":plain" Description="Sets the style of the request alert message. One of `:plain` `:embed` `:none`" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="SONARR__QUALITY_PROFILE" Target="SONARR__QUALITY_PROFILE" Default="" Description="The name of the quality profile to use by default for Sonarr" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="RADARR__QUALITY_PROFILE" Target="RADARR__QUALITY_PROFILE" Default="" Description="The name of the quality profile to use by default for Radarr" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="SONARR__LANGUAGE_PROFILE" Target="SONARR__LANGUAGE_PROFILE" Default="" Description="The name of the language profile to use by default for Radarr" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="OVERSEERR__DEFAULT_ID" Target="OVERSEERR__DEFAULT_ID" Default="" Description="The Overseerr user id to use by default if there is no associated discord account for the requester" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PARTIAL_SEASONS" Target="PARTIAL_SEASONS" Default="true" Description="Sets whether users can request partial seasons." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="LOG_LEVEL" Target="LOG_LEVEL" Default=":info" Description="The log level for the logging backend. This can be changed for debugging purposes. One of trace `:debug` `:info` `:warn` `:error` `:fatal` `:report`" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="JAVA_OPTS" Target="JAVA_OPTS" Default="" Description="For passing additional java options." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
