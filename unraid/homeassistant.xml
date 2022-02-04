@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8123]</WebUI>
     <TemplateURL>false</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/homeassistant-logo.png</Icon>
-    <Date>2021-12-12</Date>
+    <Date>2022-02-04</Date>
     <Changes>
+### 2022-02-04
+- Always compile grpcio on arm32v7 due to pypi pushing a glibc only wheel.
+
 ### 2021-12-12
 - Use the new `build.yaml` to determine HA base version.
 
