@@ -30,19 +30,16 @@
         <ReadMe>https://github.com/linuxserver/docker-radarr/tree/nightly#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-radarr/tree/nightly#application-setup</GitHub>
     </Branch>
-    <Branch>
-        <Tag>nightly-alpine</Tag>
-        <TagDescription>Radarr releases from their nightly branch using our Alpine baseimage</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-radarr/tree/nightly-alpine#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-radarr/tree/nightly-alpine#application-setup</GitHub>
-    </Branch>
     <Project>https://github.com/Radarr/Radarr</Project>
     <Overview>Radarr(https://github.com/Radarr/Radarr) - A fork of Sonarr to work with movies à la Couchpotato.</Overview>
     <WebUI>http://[IP]:[PORT:7878]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/radarr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/radarr-logo.png</Icon>
-    <Date>2021-12-27</Date>
+    <Date>2022-02-04</Date>
     <Changes>
+### 2022-02-04
+- Rebase nightly branch to Alpine and deprecate nightly-alpine branch.
+
 ### 2021-12-27
 - Add nightly-alpine branch.
 
