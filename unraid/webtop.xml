@@ -156,13 +156,16 @@
         <ReadMe>https://github.com/linuxserver/docker-webtop/tree/arch-icewm#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-webtop/tree/arch-icewm#application-setup</GitHub>
     </Branch>
-    <Project>https://github.com/linuxserver/docker-webtop</Project>
-    <Overview>Webtop(https://github.com/linuxserver/docker-webtop) - Alpine, Ubuntu, Fedora, and Arch based containers containing full desktop environments in officially supported flavors accessible via any modern web browser.</Overview>
+    <Project>https://github.com/linuxserver/gclient</Project>
+    <Overview>Webtop(https://github.com/linuxserver/gclient) - Alpine, Ubuntu, Fedora, and Arch based containers containing full desktop environments in officially supported flavors accessible via any modern web browser.</Overview>
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/webtop.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png</Icon>
-    <Date>2021-09-21</Date>
+    <Date>2022-02-05</Date>
     <Changes>
+### 2022-02-05
+- Rebase KDE Ubuntu to Jammy, add new documentation for updated gclient, stop recommending priv mode.
+
 ### 2021-09-21
 - Add Fedora and Arch images, show seccomp settings in readme.
 
@@ -177,6 +180,7 @@
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="abc users home directory" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /var/run/docker.sock" Target="/var/run/docker.sock" Default="" Mode="rw" Description="Docker Socket on the system, if you want to use Docker in the container" Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="SUBFOLDER" Target="SUBFOLDER" Default="/" Description="Specify a subfolder to use with reverse proxies, IE `/subfolder/`" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="KEYBOARD" Target="KEYBOARD" Default="en-us-qwerty" Description="See the keyboard layouts section for more information and options." Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
