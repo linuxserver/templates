@@ -21,8 +21,11 @@ HedgeDoc is a real-time, multi-platform collaborative markdown note editor.  Thi
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/hedgedoc.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/hedgedoc-logo.png</Icon>
-    <Date>2021-12-09</Date>
+    <Date>2022-02-09</Date>
     <Changes>
+### 2022-02-09
+- Add optional var `CMD_PORT` that is needed for accessing at port other than 80, 443 and 3000.
+
 ### 2021-12-09
 - Add optional var `CMD_PROTOCOL_USESSL` that is needed for reverse proxy.
 
@@ -42,7 +45,7 @@ HedgeDoc is a real-time, multi-platform collaborative markdown note editor.  Thi
 - Initial release
 
     </Changes>
-    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="If you wish to access this container from http://{IP}:${PORT}` this *must* be left unchanged." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Web gui port (internal port also needs to be changed if accessing at port other than 80, 443 and 3000)." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="HedgeDoc config and configurable files" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="DB_HOST" Target="DB_HOST" Default="hostname or ip" Description="Host address of mysql database" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_PORT" Target="DB_PORT" Default="3306" Description="Port to access mysql database default is 3306" Type="Variable" Display="always" Required="true" Mask="false"/>
@@ -52,6 +55,7 @@ HedgeDoc is a real-time, multi-platform collaborative markdown note editor.  Thi
     <Config Name="CMD_DOMAIN" Target="CMD_DOMAIN" Default="localhost" Description="The address the gui will be accessed at (ie. `192.168.1.1` or `hedgedoc.domain.com`)." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="CMD_URL_ADDPORT" Target="CMD_URL_ADDPORT" Default="true" Description="Set to `false` if accessing at port `80` or `443`." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="CMD_PROTOCOL_USESSL" Target="CMD_PROTOCOL_USESSL" Default="false" Description="Set to `true` if accessing over https via reverse proxy." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="CMD_PORT" Target="CMD_PORT" Default="3000" Description="If you wish to access hedgedoc at a port different than 80, 443 or 3000, you need to set this to that port (ie. `CMD_PORT=5000`) and change the port mapping accordingly (5000:5000)." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
