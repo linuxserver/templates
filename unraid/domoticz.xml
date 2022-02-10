@@ -47,8 +47,11 @@
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/domoticz.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/domoticz-logo.png</Icon>
-    <Date>2020-12-26</Date>
+    <Date>2022-02-05</Date>
     <Changes>
+### 2022-02-05
+- Set default webroot to /. Add env. variable for setting custom databas path.
+
 ### 2020-12-26
 - Rebase to Ubuntu Focal, see here(https://docs.linuxserver.io/faq#my-host-is-incompatible-with-images-based-on-ubuntu-focal) for troubleshooting armhf.
 
@@ -118,6 +121,7 @@
     <Config Name="Port: 1443" Target="1443" Default="1443" Mode="tcp" Description="Domoticz communication port." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where Domoticz stores config files and data." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="WEBROOT" Target="WEBROOT" Default="domoticz" Description="Sets webroot to domoticz for usage with subfolder reverse proxy. Not needed unless reverse proxying." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="DBASE" Target="DBASE" Default="path to database" Description="Sets path to database. Do not set unless you know what this does." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
