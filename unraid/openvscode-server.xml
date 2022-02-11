@@ -55,7 +55,7 @@
     </Changes>
     <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Web UI port." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="CONNECTION_TOKEN" Target="CONNECTION_TOKEN" Default="supersecrettoken" Description="Optional security token for accessing the Web UI." Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="CONNECTION_TOKEN" Target="CONNECTION_TOKEN" Default="" Description="Optional security token for accessing the Web UI (ie. `supersecrettoken`)." Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="CONNECTION_SECRET" Target="CONNECTION_SECRET" Default="" Description="Optional path to a file inside the container that contains the security token for accessing the Web UI (ie. `/path/to/file`). Overrides `CONNECTION_TOKEN`." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="SUDO_PASSWORD" Target="SUDO_PASSWORD" Default="password" Description="If this optional variable is set, user will have sudo access in the openvscode-server terminal with the specified password." Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="SUDO_PASSWORD_HASH" Target="SUDO_PASSWORD_HASH" Default="" Description="Optionally set sudo password via hash (takes priority over `SUDO_PASSWORD` var). Format is `$type$salt$hashed`." Type="Variable" Display="always" Required="false" Mask="true"/>
