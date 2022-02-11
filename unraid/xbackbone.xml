@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/xbackbone.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/xbackbone-logo.png</Icon>
-    <Date>202021-06-06</Date>
+    <Date>202022-08-02</Date>
     <Changes>
+### 202022-08-02
+- Added note about updating.
+
 ### 202021-06-06
 - Initial Release.
 
