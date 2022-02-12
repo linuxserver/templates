@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/openvscode-server.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/openvscode-server-logo.png</Icon>
-    <Date>2022-02-04</Date>
+    <Date>2022-02-12</Date>
     <Changes>
+### 2022-02-12
+- Update `install-extension` helper to compensate for upstream changes.
+
 ### 2022-02-04
 - Update binary for 1.64.0+. Allow for no token set when both toekn env vars are unset. Add libsecret for keytar.
 
