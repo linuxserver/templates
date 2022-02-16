@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/digikam.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/digikam-logo.png</Icon>
-    <Date>2021-12-27</Date>
+    <Date>2022-02-15</Date>
     <Changes>
+### 2022-02-15
+- Rebase to Arch.
+
 ### 2021-12-27
 - Rebase to focal to resolve dependency issues.
 
