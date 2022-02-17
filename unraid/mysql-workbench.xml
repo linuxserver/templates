@@ -16,14 +16,12 @@
     <ReadMe>https://github.com/linuxserver/docker-mysql-workbench#readme</ReadMe>
     <Project>https://www.mysql.com/products/workbench/</Project>
     <Overview>MySQL Workbench(https://www.mysql.com/products/workbench/) is a unified visual tool for database architects, developers, and DBAs. MySQL Workbench provides data modeling, SQL development, and comprehensive administration tools for server configuration, user administration, backup, and much more.</Overview>
+    <ExtraParams>--cap-add=IPC_LOCK</ExtraParams>
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mysql-workbench.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mysql-workbench-logo.png</Icon>
-    <Date>2022-02-15</Date>
+    <Date>2021-04-20</Date>
     <Changes>
-### 2022-02-15
-- Rebase to Arch.
-
 ### 2021-04-20
 - Rebase on focal.
 
