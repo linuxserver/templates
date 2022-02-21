@@ -41,8 +41,11 @@
     <WebUI>http://[IP]:[PORT:8443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/code-server.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/code-server-logo.png</Icon>
-    <Date>2021-12-29</Date>
+    <Date>2022-02-20</Date>
     <Changes>
+### 2022-02-20
+- Install using the official tarballs.
+
 ### 2021-12-29
 - Add `install-extension` as a helper for mods to install extensions.
 
