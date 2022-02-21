@@ -19,13 +19,16 @@
     <WebUI>http://[IP]:[PORT:9091]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/transmission.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/transmission-logo.png</Icon>
-    <Date>2021-07-09</Date>
+    <Date>2022-02-21</Date>
     <Changes>
+### 2022-02-21
+- Build unrar from source, rebase to Alpine 3.15, add symlinks neeeded for TWC. Credit @alexbelgium
+
 ### 2021-07-09
-- Wait for the transmission-daemon termination after a caught sigterm
+- Wait for the transmission-daemon termination after a caught sigterm.
 
 ### 2021-03-06
-- Add Flood for Transmission as a UI option
+- Add Flood for Transmission as a UI option.
 
 ### 2021-01-23
 - Rebasing to alpine 3.13.
