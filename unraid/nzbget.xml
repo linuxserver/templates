@@ -29,10 +29,13 @@
     <WebUI>http://[IP]:[PORT:6789]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nzbget.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nzbget-logo.png</Icon>
-    <Date>2021-07-04</Date>
+    <Date>2022-02-22</Date>
     <Changes>
+### 2022-02-22
+- Rebase to alpine 3.15, add six and python 7zip tools, allow env variables for credentials.
+
 ### 2021-07-04
-- Rebase to alpine 3.14
+- Rebase to alpine 3.14.
 
 ### 2021-05-28
 - Add linuxserver wheel index.
@@ -119,6 +122,8 @@
     <Config Name="WebUI" Target="6789" Default="6789" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="NZBGet App data." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Location of downloads on disk." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="NZBGET_USER" Target="NZBGET_USER" Default="nzbget" Description="Specify the user for web authentication." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="NZBGET_PASS" Target="NZBGET_PASS" Default="tegbzn6789" Description="Specify the password for web authentication." Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
