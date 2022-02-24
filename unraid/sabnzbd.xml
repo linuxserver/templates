@@ -19,14 +19,8 @@
         <TagDescription>Stable SABnzbd releases</TagDescription>
     </Branch>
     <Branch>
-        <Tag>alpine</Tag>
-        <TagDescription>Stable SABnzbd releases using our Alpine baseimage</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-sabnzbd/tree/alpine#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-sabnzbd/tree/alpine#application-setup</GitHub>
-    </Branch>
-    <Branch>
         <Tag>unstable</Tag>
-        <TagDescription>Pre-releases of SABnzbd</TagDescription>
+        <TagDescription>Pre-releases from their GitHub</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-sabnzbd/tree/unstable#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-sabnzbd/tree/unstable#application-setup</GitHub>
     </Branch>
@@ -35,13 +29,16 @@
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sabnzbd.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sabnzbd-logo.png</Icon>
-    <Date>2022-01-25</Date>
+    <Date>2022-02-22</Date>
     <Changes>
+### 2022-02-22
+- Rebase master branch to Alpine, build unrar from source, deprecate Alpine branch.
+
 ### 2022-01-25
 - Rebase Unstable branch to Alpine.
 
 ### 2022-01-13
-- Add Alpine branch.
+- Add alpine branch
 
 ### 2021-08-08
 - Bump to focal, dont enforce binding to ipv4 port 8080
