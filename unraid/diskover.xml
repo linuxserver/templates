@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/diskover.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2021-11-03</Date>
+    <Date>2022-02-25</Date>
     <Changes>
+### 2022-02-25
+- Add php7-sqlite3 to support rc4 release.
+
 ### 2021-11-03
 - Added more support for potential config files.
 
