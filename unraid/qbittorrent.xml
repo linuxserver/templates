@@ -23,8 +23,11 @@
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/qbittorrent.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/qbittorrent-logo.png</Icon>
-    <Date>2022-02-19</Date>
+    <Date>2022-02-23</Date>
     <Changes>
+### 2022-02-23
+- Rebase to Alpine Edge, install from Alpine repos.
+
 ### 2022-02-19
 - Add jq to build-stage
 
