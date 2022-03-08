@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-kdenlive/blob/master/readme-vars.yml -->
+<Container version="2">
+    <Name>kdenlive</Name>
+    <Repository>lscr.io/linuxserver/kdenlive</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/kdenlive</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-kdenlive/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-kdenlive#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-kdenlive#readme</ReadMe>
+    <Project>https://kdenlive.org/</Project>
+    <Overview>Kdenlive(https://kdenlive.org/) is a powerful free and open source cross-platform video editing program made by the KDE community. Feature rich and production ready.</Overview>
+    <WebUI>http://[IP]:[PORT:3000]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/kdenlive.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kdenlive-logo.png</Icon>
+    <Date>2022-03-07</Date>
+    <Changes>
+### 2022-03-07
+- Initial release.
+
+    </Changes>
+    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Kdenlive desktop gui" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Users home directory in the container, stores local files and settings" Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="SUBFOLDER" Target="SUBFOLDER" Default="/" Description="Specify a subfolder to use with reverse proxies, IE `/subfolder/`" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="KEYBOARD" Target="KEYBOARD" Default="en-us-qwerty" Description="See the keyboard layouts section for more information and options." Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="/dev/dri" Default="/dev/dri" Description="Add this for hardware acceleration (Linux hosts only)" Type="Device" Display="always" Required="false" Mask="false"/>
+</Container>
