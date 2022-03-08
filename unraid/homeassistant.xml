@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8123]</WebUI>
     <TemplateURL>false</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/homeassistant-logo.png</Icon>
-    <Date>2022-03-02</Date>
+    <Date>2022-03-07</Date>
     <Changes>
+### 2022-03-07
+- Install PySwitchbot.
+
 ### 2022-03-02
 - Update pip and use legacy resolver, clean up temp python files, reduce image size.
 
