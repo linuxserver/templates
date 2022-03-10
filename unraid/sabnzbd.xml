@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sabnzbd.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sabnzbd-logo.png</Icon>
-    <Date>2022-02-22</Date>
+    <Date>2022-03-10</Date>
     <Changes>
+### 2022-03-10
+- Add nzb-notify.
+
 ### 2022-02-22
 - Rebase master branch to Alpine, build unrar from source, deprecate Alpine branch.
 
