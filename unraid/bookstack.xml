@@ -23,8 +23,11 @@ For more information on BookStack visit their website and check it out: https://
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/bookstack.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bookstack-logo.png</Icon>
-    <Date>2021-07-11</Date>
+    <Date>2022-03-14</Date>
     <Changes>
+### 2022-03-14
+- Add symlinks for theme support.
+
 ### 2021-07-11
 - Rebase to Alpine 3.14.
 
