@@ -20,8 +20,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/swag.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2022-01-09</Date>
+    <Date>2022-03-28</Date>
     <Changes>
+### 2022-03-28
+- created a logfile for fail2ban nginx-unauthorized in /etc/cont-init.d/50-config
+
 ### 2022-01-09
 - Added a fail2ban jail for nginx unauthorized
 
