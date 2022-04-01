@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:5055]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/overseerr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/overseerr-logo.png</Icon>
-    <Date>2022-01-27</Date>
+    <Date>2022-04-01</Date>
     <Changes>
+### 2022-04-01
+- Rebase main branch to Alpine 3.15.
+
 ### 2022-01-27
 - Rebase develop branch to Alpine 3.15.
 
