@@ -20,8 +20,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/swag.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2022-03-28</Date>
+    <Date>2022-04-05</Date>
     <Changes>
+### 2022-04-05
+- Added support for standalone DNS validation.
+
 ### 2022-03-28
 - created a logfile for fail2ban nginx-unauthorized in /etc/cont-init.d/50-config
 
@@ -153,7 +156,7 @@
     <Config Name="VALIDATION" Target="VALIDATION" Default="http" Description="Certbot validation method to use, options are `http`, `dns` or `duckdns` (`dns` method also requires `DNSPLUGIN` variable set) (`duckdns` method requires `DUCKDNSTOKEN` variable set, and the `SUBDOMAINS` variable must be either empty or set to `wildcard`)." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="SUBDOMAINS" Target="SUBDOMAINS" Default="www," Description="Subdomains you&#39;d like the cert to cover (comma separated, no spaces) ie. `www,ftp,cloud`. For a wildcard cert, set this _exactly_ to `wildcard` (wildcard cert is available via `dns` and `duckdns` validation only)" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="CERTPROVIDER" Target="CERTPROVIDER" Default="" Description="Optionally define the cert provider. Set to `zerossl` for ZeroSSL certs (requires existing ZeroSSL account(https://app.zerossl.com/signup) and the e-mail address entered in `EMAIL` env var). Otherwise defaults to Let&#39;s Encrypt." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="DNSPLUGIN" Target="DNSPLUGIN" Default="cloudflare" Description="Required if `VALIDATION` is set to `dns`. Options are `aliyun`, `cloudflare`, `cloudxns`, `cpanel`, `desec`, `digitalocean`, `directadmin`, `dnsimple`, `dnsmadeeasy`, `dnspod`, `domeneshop`, `gandi`, `gehirn`, `google`, `he`, `hetzner`, `infomaniak`, `inwx`, `ionos`, `linode`, `luadns`, `netcup`, `njalla`, `nsone`, `ovh`, `rfc2136`, `route53`, `sakuracloud`, `transip` and `vultr`. Also need to enter the credentials into the corresponding ini (or json for some plugins) file under `/config/dns-conf`." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="DNSPLUGIN" Target="DNSPLUGIN" Default="cloudflare" Description="Required if `VALIDATION` is set to `dns`. Options are `aliyun`, `cloudflare`, `cloudxns`, `cpanel`, `desec`, `digitalocean`, `directadmin`, `dnsimple`, `dnsmadeeasy`, `dnspod`, `domeneshop`, `gandi`, `gehirn`, `google`, `he`, `hetzner`, `infomaniak`, `inwx`, `ionos`, `linode`, `luadns`, `netcup`, `njalla`, `nsone`, `ovh`, `rfc2136`, `route53`, `sakuracloud`, `standalone`, `transip` and `vultr`. Also need to enter the credentials into the corresponding ini (or json for some plugins) file under `/config/dns-conf`." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PROPAGATION" Target="PROPAGATION" Default="" Description="Optionally override (in seconds) the default propagation time for the dns plugins." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="DUCKDNSTOKEN" Target="DUCKDNSTOKEN" Default="" Description="Required if `VALIDATION` is set to `duckdns`. Retrieve your token from https://www.duckdns.org" Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="EMAIL" Target="EMAIL" Default="" Description="Optional e-mail address used for cert expiration notifications (Required for ZeroSSL)." Type="Variable" Display="always" Required="false" Mask="false"/>
