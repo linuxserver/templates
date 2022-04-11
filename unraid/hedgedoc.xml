@@ -21,8 +21,11 @@ HedgeDoc is a real-time, multi-platform collaborative markdown note editor.  Thi
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/hedgedoc.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/hedgedoc-logo.png</Icon>
-    <Date>2022-02-10</Date>
+    <Date>2022-04-10</Date>
     <Changes>
+### 2022-04-10
+- Use python3 to build node sqlite3.
+
 ### 2022-02-10
 - Rebase to Alpine 3.15.
 
