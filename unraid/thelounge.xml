@@ -14,6 +14,22 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-thelounge#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-thelounge#readme</ReadMe>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Stable releases.</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>next</Tag>
+        <TagDescription>Next Pre-Releases.</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-thelounge/tree/next#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-thelounge/tree/next#application-setup</GitHub>
+    </Branch>
+    <Branch>
+        <Tag>nightly</Tag>
+        <TagDescription>Nightly images from commits in master.</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-thelounge/tree/nightly#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-thelounge/tree/nightly#application-setup</GitHub>
+    </Branch>
     <Project>https://thelounge.github.io/</Project>
     <Overview>Thelounge(https://thelounge.github.io/) (a fork of shoutIRC) is a web IRC client that you host on your own server.</Overview>
     <WebUI>http://[IP]:[PORT:9000]</WebUI>
