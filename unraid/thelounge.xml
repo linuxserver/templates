@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:9000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/thelounge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2021-01-23</Date>
+    <Date>2022-04-11</Date>
     <Changes>
+### 2022-04-11
+- Rebasing to alpine 3.15 and switching from python2-dev to python3-dev for building node sqlite on arm.
+
 ### 2021-01-23
 - Rebasing to alpine 3.13.
 
