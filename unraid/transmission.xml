@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:9091]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/transmission.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/transmission-logo.png</Icon>
-    <Date>2022-02-21</Date>
+    <Date>2022-04-03</Date>
     <Changes>
+### 2022-04-03
+- Add Transmissionic as a UI option.
+
 ### 2022-02-21
 - Build unrar from source, rebase to Alpine 3.15, add symlinks neeeded for TWC. Credit @alexbelgium
 
@@ -97,7 +100,7 @@
 - Rebase to alpine linux 3.5.
 
 ### 2017-01-15
-- Add p7zip, tar , unrar and unzip packages.
+- Add p7zip, tar, unrar, and unzip packages.
 
 ### 2016-10-16
 - Blocklist autoupdate with optional authentication.
@@ -133,12 +136,12 @@
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where transmission should store config files and logs." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Local path for downloads." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /watch" Target="/watch" Default="" Mode="rw" Description="Watch folder for torrent files." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="TRANSMISSION_WEB_HOME" Target="TRANSMISSION_WEB_HOME" Default="/combustion-release/" Description="Specify an alternative UI options are `/combustion-release/`(https://github.com/Secretmapper/combustion), `/transmission-web-control/`(https://github.com/ronggang/transmission-web-control), `/kettu/`(https://github.com/endor/kettu) and `/flood-for-transmission/`(https://github.com/johman10/flood-for-transmission)." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="TRANSMISSION_WEB_HOME" Target="TRANSMISSION_WEB_HOME" Default="/combustion-release/" Description="Specify an alternative UI options are `/combustion-release/`(https://github.com/Secretmapper/combustion), `/transmission-web-control/`(https://github.com/ronggang/transmission-web-control), `/kettu/`(https://github.com/endor/kettu), `/flood-for-transmission/`(https://github.com/johman10/flood-for-transmission), and `/transmissionic/`(https://github.com/6c65726f79/Transmissionic)." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="USER" Target="USER" Default="username" Description="Specify an optional username for the interface" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PASS" Target="PASS" Default="password" Description="Specify an optional password for the interface" Type="Variable" Display="always" Required="false" Mask="true"/>
-    <Config Name="WHITELIST" Target="WHITELIST" Default="iplist" Description="Specify an optional list of comma separated ip whitelist. Fill rpc-whitelist setting." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="PEERPORT" Target="PEERPORT" Default="peerport" Description="Specify an optional port for torrent TCP/UDP connections. Fill peer-port setting." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="HOST_WHITELIST" Target="HOST_WHITELIST" Default="dnsnane list" Description="Specify an optional list of comma separated dns name whitelist. Fill rpc-host-whitelist setting." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="WHITELIST" Target="WHITELIST" Default="iplist" Description="Specify an optional list of comma separated ip whitelist. Fills rpc-whitelist setting." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PEERPORT" Target="PEERPORT" Default="peerport" Description="Specify an optional port for torrent TCP/UDP connections. Fills peer-port setting." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="HOST_WHITELIST" Target="HOST_WHITELIST" Default="dnsname list" Description="Specify an optional list of comma separated dns name whitelist. Fills rpc-host-whitelist setting." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
