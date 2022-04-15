@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/budge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2022-05-02</Date>
+    <Date>2022-15-04</Date>
     <Changes>
+### 2022-15-04
+- Added NPM command to run db migrations.
+
 ### 2022-05-02
 - Initial Release.
 
