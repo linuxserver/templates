@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/paperless-ngx.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2022-04-11</Date>
+    <Date>2022-04-27</Date>
     <Changes>
+### 2022-04-27
+- Add build-dependencies for arm32 builds.
+
 ### 2022-04-11
 - Replaced uwsgi with gunicorn due to websocket issues.
 
