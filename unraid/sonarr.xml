@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8989]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sonarr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sonarr-logo.png</Icon>
-    <Date>2022-02-20</Date>
+    <Date>2022-04-28</Date>
     <Changes>
+### 2022-04-28
+- Rebase master branch to mono 6.12 base (focal).
+
 ### 2022-02-20
 - Rebase develop branch to Alpine, deprecate develop-alpine branch.
 
