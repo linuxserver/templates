@@ -16,11 +16,14 @@
     <ReadMe>https://github.com/linuxserver/docker-webgrabplus#readme</ReadMe>
     <Project>http://www.webgrabplus.com</Project>
     <Overview>Webgrabplus(http://www.webgrabplus.com) is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.</Overview>
-    <WebUI>http://[IP]:[PORT:80]</WebUI>
+    <ExtraParams>--hostname=webgrabplus --mac-address=00:00:00:00:00:00</ExtraParams>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/webgrabplus.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webgrabplus-logo.png</Icon>
-    <Date>2022-03-23</Date>
+    <Date>2022-04-29</Date>
     <Changes>
+### 2022-04-29
+- Add `hostname` and `mac_address` arguments that are needed for the license check to compose and cli samples.
+
 ### 2022-03-23
 - Rebase to Alpine 3.15.
 
