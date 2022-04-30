@@ -16,7 +16,6 @@
     <ReadMe>https://github.com/linuxserver/docker-mariadb#readme</ReadMe>
     <Project>https://mariadb.org/</Project>
     <Overview>Mariadb(https://mariadb.org/) is one of the most popular database servers. Made by the original developers of MySQL.</Overview>
-    <WebUI>http://[IP]:[PORT:3306]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mariadb.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mariadb-logo.png</Icon>
     <Date>2021-07-06</Date>
