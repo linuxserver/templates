@@ -16,7 +16,7 @@
     <ReadMe>https://github.com/linuxserver/docker-pwndrop#readme</ReadMe>
     <Project>https://github.com/kgretzky/pwndrop</Project>
     <Overview>Pwndrop(https://github.com/kgretzky/pwndrop) is a self-deployable file hosting service for sending out red teaming payloads or securely sharing your private files over HTTP and WebDAV.</Overview>
-    <WebUI>http://[IP]:[PORT:8080]</WebUI>
+    <WebUI>http://[IP]:[PORT:8080]/pwndrop</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/pwndrop.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pwndrop-logo.png</Icon>
     <Date>2021-01-23</Date>
