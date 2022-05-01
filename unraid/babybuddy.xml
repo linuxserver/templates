@@ -16,7 +16,7 @@
     <ReadMe>https://github.com/linuxserver/docker-babybuddy#readme</ReadMe>
     <Project>https://github.com/babybuddy/babybuddy</Project>
     <Overview>Babybuddy(https://github.com/babybuddy/babybuddy) is a buddy for babies! Helps caregivers track sleep, feedings, diaper changes, tummy time and more to learn about and predict baby&#39;s needs without (as much) guess work.</Overview>
-    <WebUI>http://[IP]:[PORT:8000]</WebUI>
+    <WebUI>http://[IP]:[PORT:8000]/</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/babybuddy.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/babybuddy-logo.png</Icon>
     <Date>2022-04-03</Date>
