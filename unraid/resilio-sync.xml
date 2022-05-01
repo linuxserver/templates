@@ -16,7 +16,7 @@
     <ReadMe>https://github.com/linuxserver/docker-resilio-sync#readme</ReadMe>
     <Project>https://www.resilio.com/individuals/</Project>
     <Overview>Resilio-sync(https://www.resilio.com/individuals/) (formerly BitTorrent Sync) uses the BitTorrent protocol to sync files and folders between all of your devices. There are both free and paid versions, this container supports both. There is an official sync image but we created this one as it supports user mapping to simplify permissions for volumes.</Overview>
-    <WebUI>http://[IP]:[PORT:8888]</WebUI>
+    <WebUI>http://[IP]:[PORT:8888]/gui</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/resilio-sync.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/resilio-sync-logo.png</Icon>
     <Date>2021-10-03</Date>
