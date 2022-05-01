@@ -18,18 +18,6 @@
         <Tag>latest</Tag>
         <TagDescription>Stable releases</TagDescription>
     </Branch>
-    <Branch>
-        <Tag>focal</Tag>
-        <TagDescription>DEPRECATED (no longer updated, `latest` is rebased on focal) - Stable releases, based on Ubuntu Focal</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-code-server/tree/focal#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-code-server/tree/focal#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>development</Tag>
-        <TagDescription>DEPRECATED (no longer updated) - Prereleases from their GitHub</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-code-server/tree/development#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-code-server/tree/development#application-setup</GitHub>
-    </Branch>
     <Project>https://coder.com</Project>
     <Overview>Code-server(https://coder.com) is VS Code running on a remote server, accessible through the browser.
 - Code on your Chromebook, tablet, and laptop with a consistent dev environment.
