@@ -33,8 +33,11 @@ Even automatically send them weekly newsletters of new content that has been add
     <WebUI>http://[IP]:[PORT:3579]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/ombi.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ombi-logo.png</Icon>
-    <Date>2021-04-26</Date>
+    <Date>2022-05-01</Date>
     <Changes>
+### 2022-05-01
+- Rebase to Jammy.
+
 ### 2021-04-26
 - Update tarball name, allow for v4 builds in stable.
 
