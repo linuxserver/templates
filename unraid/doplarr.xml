@@ -18,8 +18,11 @@
     <Overview>Doplarr(https://github.com/kiranshila/Doplarr) is an *arr request bot for Discord.&#34;</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/doplarr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/doplarr-logo.png</Icon>
-    <Date>2022-01-30</Date>
+    <Date>2022-05-01</Date>
     <Changes>
+### 2022-05-01
+- Remove `DISCORD__ROLE_ID` environment variable, see Permissions Configuration(https://github.com/kiranshila/Doplarr/blob/main/docs/configuration.md#permissions).
+
 ### 2022-01-30
 - Variable adjustments.
 
@@ -36,7 +39,6 @@
     <Config Name="SONARR__API" Target="SONARR__API" Default="sonarr__api" Description="Specify your Sonarr API key. Leave blank if using Overseerr." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="SONARR__URL" Target="SONARR__URL" Default="http://localhost:8989" Description="Specify your Sonarr URL. Leave blank if using Overseerr." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DISCORD__MAX_RESULTS" Target="DISCORD__MAX_RESULTS" Default="25" Description="Sets the maximum size of the search results selection" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="DISCORD__ROLE_ID" Target="DISCORD__ROLE_ID" Default="not_set_by_default" Description="The discord role id for users of the bot (omitting this lets everyone on the server use the bot)" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="DISCORD__REQUESTED_MSG_STYLE" Target="DISCORD__REQUESTED_MSG_STYLE" Default=":plain" Description="Sets the style of the request alert message. One of `:plain` `:embed` `:none`" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="SONARR__QUALITY_PROFILE" Target="SONARR__QUALITY_PROFILE" Default="not_set_by_default" Description="The name of the quality profile to use by default for Sonarr" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="RADARR__QUALITY_PROFILE" Target="RADARR__QUALITY_PROFILE" Default="not_set_by_default" Description="The name of the quality profile to use by default for Radarr" Type="Variable" Display="always" Required="false" Mask="false"/>
