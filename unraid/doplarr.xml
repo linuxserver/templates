@@ -16,7 +16,6 @@
     <ReadMe>https://github.com/linuxserver/docker-doplarr#readme</ReadMe>
     <Project>https://github.com/kiranshila/Doplarr</Project>
     <Overview>Doplarr(https://github.com/kiranshila/Doplarr) is an *arr request bot for Discord.&#34;</Overview>
-    <WebUI>http://[IP]:[PORT:]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/doplarr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/doplarr-logo.png</Icon>
     <Date>2022-01-30</Date>
