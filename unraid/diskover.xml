@@ -16,7 +16,6 @@
     <ReadMe>https://github.com/linuxserver/docker-diskover#readme</ReadMe>
     <Project>https://github.com/diskoverdata/diskover-community</Project>
     <Overview>diskover(https://github.com/diskoverdata/diskover-community) is an open source file system indexer that uses Elasticsearch to index and manage data across heterogeneous storage systems.</Overview>
-    <WebUI>http://[IP]:[PORT:]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/diskover.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
     <Date>2022-02-25</Date>
