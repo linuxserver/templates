@@ -16,7 +16,7 @@
     <ReadMe>https://github.com/linuxserver/docker-pydio-cells#readme</ReadMe>
     <Project>https://pydio.com/</Project>
     <Overview>Pydio-cells(https://pydio.com/) is the nextgen file sharing platform for organizations. It is a full rewrite of the Pydio project using the Go language following a micro-service architecture.</Overview>
-    <ExtraParams>pydio-cells --cap-add=NET_ADMIN</ExtraParams>
+    <ExtraParams>--hostname=pydio-cells --cap-add=NET_ADMIN</ExtraParams>
     <WebUI>https://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/pydio-cells.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
