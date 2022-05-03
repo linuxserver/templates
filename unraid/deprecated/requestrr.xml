@@ -12,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-requestrr/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/linuxserver/docker-requestrr#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-requestrr#readme</ReadMe>
     <Project>https://github.com/darkalfx/requestrr</Project>
