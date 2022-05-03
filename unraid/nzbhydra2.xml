@@ -31,8 +31,11 @@ It provides easy access to a number of raw and newznab based indexers. The appli
     <WebUI>http://[IP]:[PORT:5076]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nzbhydra2.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nzbhydra2-logo.png</Icon>
-    <Date>2022-04-18</Date>
+    <Date>2022-05-03</Date>
     <Changes>
+### 2022-05-03
+- Rebase to Jammy.
+
 ### 2022-04-18
 - Rebase to Alpine 3.15.
 
