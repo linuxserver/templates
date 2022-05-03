@@ -26,7 +26,7 @@
     </Branch>
     <Project>https://github.com/gitpod-io/openvscode-server</Project>
     <Overview>Openvscode-server(https://github.com/gitpod-io/openvscode-server) provides a version of VS Code that runs a server on a remote machine and allows access through a modern web browser.</Overview>
-    <WebUI>http://[IP]:[PORT:3000]</WebUI>
+    <WebUI>http://[IP]:[PORT:3000]/?tkn=lsio</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/openvscode-server.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/openvscode-server-logo.png</Icon>
     <Date>2022-02-12</Date>
