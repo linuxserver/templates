@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/blender.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/blender-logo.png</Icon>
-    <Date>2022-03-12</Date>
+    <Date>2022-05-06</Date>
     <Changes>
+### 2022-05-06
+- Use the full semver version in image tags. Arm32/64 version tags are inaccurate due to installing from ubuntu repo, which is usually behind.
+
 ### 2022-03-12
 - Initial Release.
 
