@@ -35,8 +35,11 @@
     <WebUI>http://[IP]:[PORT:8686]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/lidarr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/lidarr-logo.png</Icon>
-    <Date>2022-02-04</Date>
+    <Date>2022-05-06</Date>
     <Changes>
+### 2022-05-06
+- Rebase develop branch to Alpine.
+
 ### 2022-02-04
 - Rebase nightly branch to Alpine, deprecate nightly-alpine branch.
 
