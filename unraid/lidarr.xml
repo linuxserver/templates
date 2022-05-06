@@ -38,6 +38,9 @@
     <Date>2022-05-06</Date>
     <Changes>
 ### 2022-05-06
+- Rebase master branch to Focal.
+
+### 2022-05-06
 - Rebase develop branch to Alpine.
 
 ### 2022-02-04
