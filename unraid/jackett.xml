@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:9117]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/jackett.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/jackett-logo.png</Icon>
-    <Date>2020-05-24</Date>
+    <Date>2022-05-10</Date>
     <Changes>
+### 2022-05-10
+- Rebase to Ubuntu Focal.
+
 ### 2020-05-24
 - Allow user to optionally enable auto updates.
 
