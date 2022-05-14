@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/snipe-it.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/snipe-it-logo.png</Icon>
-    <Date>2022-04-12</Date>
+    <Date>2022-05-14</Date>
     <Changes>
+### 2022-05-14
+- Add php7-sodium for v6.
+
 ### 2022-04-12
 - Don&#39;t build development elements.
 
