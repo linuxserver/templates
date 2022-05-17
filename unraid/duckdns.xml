@@ -18,9 +18,12 @@
     <Overview>Duckdns(https://duckdns.org/) is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn&#39;t require reactivation or forum posts to maintain its existence.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/duckdns.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/duckdns-logo.png</Icon>
-    <Date>2022-04-16</Date>
+    <Date>2022-05-17</Date>
     <Changes>
-### 2022-04-16
+### 2022-05-17
+- Don&#39;t allow insecure connections and add timeout.
+
+### 2022-05-17
 - Add random jitter to update time.
 
 ### 2022-02-23
