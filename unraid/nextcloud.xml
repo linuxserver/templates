@@ -31,8 +31,11 @@ Where are your photos and documents? With Nextcloud you pick a server of your ch
     <WebUI>https://[IP]:[PORT:443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nextcloud.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nextcloud-logo.png</Icon>
-    <Date>2022-04-28</Date>
+    <Date>2022-05-21</Date>
     <Changes>
+### 2022-05-21
+- Update version check endpoint.
+
 ### 2022-04-28
 - Increase OPCache interned strings buffered setting to 16.
 
