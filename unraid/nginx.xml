@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nginx.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nginx-logo.png</Icon>
-    <Date>2021-07-01</Date>
+    <Date>2022-05-22</Date>
     <Changes>
+### 2022-05-22
+- Install nginx version from 3.14.
+
 ### 2021-07-01
 - Rebasing to alpine 3.14.
 
