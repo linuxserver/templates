@@ -23,8 +23,11 @@
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/qbittorrent.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/qbittorrent-logo.png</Icon>
-    <Date>2022-03-02</Date>
+    <Date>2022-05-25</Date>
     <Changes>
+### 2022-05-25
+- Fetch qbitorrent-cli from upstream repo.
+
 ### 2022-03-02
 - Add unrar, 7zip, and qbitorrent-cli.
 
