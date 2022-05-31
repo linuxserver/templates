@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8000]/</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/babybuddy.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/babybuddy-logo.png</Icon>
-    <Date>2022-04-03</Date>
+    <Date>2022-05-28</Date>
     <Changes>
+### 2022-05-28
+- Add missing PUID/PGID vars to readme.
+
 ### 2022-04-03
 - Rebase to alpine-nginx baseimage. Add `CSRF_TRUSTED_ORIGINS` env var.
 
