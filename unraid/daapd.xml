@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3689]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/daapd.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2022-02-12</Date>
+    <Date>2022-05-31</Date>
     <Changes>
+### 2022-05-31
+- Add new deps, flex and bison.
+
 ### 2022-02-12
 - Rebase to Alpine 3.15.
 
