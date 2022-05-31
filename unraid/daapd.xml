@@ -22,6 +22,9 @@
     <Date>2022-05-31</Date>
     <Changes>
 ### 2022-05-31
+- Make sure the user has access to the audio device.
+
+### 2022-05-31
 - Add new deps, flex and bison.
 
 ### 2022-02-12
