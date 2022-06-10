@@ -12,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-chevereto/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/linuxserver/docker-chevereto#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-chevereto#readme</ReadMe>
     <Project>https://github.com/rodber/chevereto-free</Project>
@@ -20,8 +21,11 @@
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/chevereto.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/chevereto-logo.png</Icon>
     <Requires>A MYSQL compatible database, like MariaDB</Requires>
-    <Date>2021-11-13</Date>
+    <Date>2022-06-13</Date>
     <Changes>
+### 2022-06-13
+- Deprecate.
+
 ### 2021-11-13
 - Add composer to fix missing dependencies.
 
