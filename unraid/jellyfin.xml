@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8096]</WebUI>
     <TemplateURL>false</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/jellyfin-logo.png</Icon>
-    <Date>2022-01-05</Date>
+    <Date>2022-06-11</Date>
     <Changes>
+### 2022-06-11
+- Switch to upstream repo&#39;s ffmpeg5 build.
+
 ### 2022-01-05
 - Specify Intel iHD driver versions to avoid mismatched libva errors.
 
