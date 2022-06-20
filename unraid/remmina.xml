@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/remmina.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/remmina-logo.png</Icon>
-    <Date>2020-03-27</Date>
+    <Date>2022-06-19</Date>
     <Changes>
+### 2022-06-19
+- Rebase to Focal. Drop Telepathy plugin due to lack of packages.
+
 ### 2020-03-27
 - Initial release.
 
