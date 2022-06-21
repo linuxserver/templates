@@ -12,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-kanzi/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/linuxserver/docker-kanzi#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-kanzi#readme</ReadMe>
     <Project>https://lexigr.am/</Project>
@@ -19,8 +20,11 @@
     <WebUI>https://[IP]:[PORT:8000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/kanzi.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kanzi-logo.png</Icon>
-    <Date>2019-04-13</Date>
+    <Date>2022-06-20</Date>
     <Changes>
+### 2022-06-20
+- Deprecate image.
+
 ### 2019-04-13
 - Initial Release.
 
