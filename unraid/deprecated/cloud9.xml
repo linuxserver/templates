@@ -12,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-cloud9/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/linuxserver/docker-cloud9#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-cloud9#readme</ReadMe>
     <Branch>
@@ -47,8 +48,11 @@
     <WebUI>http://[IP]:[PORT:8000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/cloud9.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cloud9-logo.png</Icon>
-    <Date>2021-06-24</Date>
+    <Date>2022-06-23</Date>
     <Changes>
+### 2022-06-23
+- Deprecate image.
+
 ### 2021-06-24
 - Use prebuilt compose binaries for the linuxserver repo.
 
