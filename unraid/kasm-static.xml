@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>kasm</Name>
+    <Repository>lscr.io/linuxserver/kasm</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/kasm</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>true</Privileged>
+    <Support>https://github.com/linuxserver/docker-kasm/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-kasm#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-kasm#readme</ReadMe>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Stable Kasm releases</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>develop</Tag>
+        <TagDescription>Tip of develop</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-kasm/tree/develop#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-kasm/tree/develop#application-setup</GitHub>
+    </Branch>
+    <Project>https://www.kasmweb.com/</Project>
+    <Overview>Kasm(https://www.kasmweb.com/) Workspaces is a docker container streaming platform for delivering browser-based access to desktops, applications, and web services. Kasm uses devops-enabled Containerized Desktop Infrastructure (CDI) to create on-demand, disposable, docker containers that are accessible via web browser. Example use-cases include Remote Browser Isolation (RBI), Data Loss Prevention (DLP), Desktop as a Service (DaaS), Secure Remote Access Services (RAS), and Open Source Intelligence (OSINT) collections.
+
+The rendering of the graphical-based containers is powered by the open-source project KasmVNC(https://www.kasmweb.com/kasmvnc.html).</Overview>
+    <WebUI>https://[IP]:[PORT:3000]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/kasm-static.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kasm-logo.png</Icon>
+    <Date>2022-07-02</Date>
+    <Changes>
+### 2022-07-02
+- Initial Release.
+
+    </Changes>
+    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Kasm Installation wizard. (https)" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 6333" Target="6333" Default="6333" Mode="tcp" Description="Kasm Workspaces interface. (https)" Type="Port" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Path: /opt" Target="/opt" Default="" Mode="rw" Description="Docker and installation storage." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /profiles" Target="/profiles" Default="" Mode="rw" Description="Optionally specify a path for persistent profile storage." Type="Path" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="KASM_PORT" Target="KASM_PORT" Default="6333" Description="Specify the port you bind to the outside for Kasm Workspaces." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="DOCKER_HUB_USERNAME" Target="DOCKER_HUB_USERNAME" Default="USER" Description="Optionally specify a DockerHub Username to pull private images." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="DOCKER_HUB_PASSWORD" Target="DOCKER_HUB_PASSWORD" Default="PASS" Description="Optionally specify a DockerHub password to pull private images." Type="Variable" Display="advanced" Required="false" Mask="true"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
