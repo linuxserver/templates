@@ -37,7 +37,7 @@ The rendering of the graphical-based containers is powered by the open-source pr
     </Changes>
     <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Kasm Installation wizard. (https)" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 6333" Target="6333" Default="6333" Mode="tcp" Description="Kasm Workspaces interface. (https)" Type="Port" Display="advanced" Required="false" Mask="false"/>
-    <Config Name="Path: /opt" Target="/opt" Default="" Mode="rw" Description="Docker and installation storage." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /opt" Target="/opt" Default="" Mode="rw" Description="Docker and installation storage. (requires /mnt/cache/appdata/path or direct disk mount)" Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /profiles" Target="/profiles" Default="" Mode="rw" Description="Optionally specify a path for persistent profile storage." Type="Path" Display="advanced" Required="false" Mask="false"/>
     <Config Name="KASM_PORT" Target="KASM_PORT" Default="6333" Description="Specify the port you bind to the outside for Kasm Workspaces." Type="Variable" Display="advanced" Required="false" Mask="false"/>
     <Config Name="DOCKER_HUB_USERNAME" Target="DOCKER_HUB_USERNAME" Default="USER" Description="Optionally specify a DockerHub Username to pull private images." Type="Variable" Display="advanced" Required="false" Mask="false"/>
