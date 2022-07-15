@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/papermerge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-logo.png</Icon>
-    <Date>2021-04-13</Date>
+    <Date>2022-07-15</Date>
     <Changes>
+### 2022-07-15
+- Don&#39;t install development python packages
+
 ### 2021-04-13
 - Handle upstream stapler change
 
