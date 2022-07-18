@@ -23,8 +23,11 @@
     <WebUI>http://[IP]:[PORT:32400]/web/index.html</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/plex.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/plex-logo.png</Icon>
-    <Date>2022-05-16</Date>
+    <Date>2022-07-18</Date>
     <Changes>
+### 2022-07-18
+- Pin all opencl related driver packages.
+
 ### 2022-05-16
 - Pin opencl version.
 
