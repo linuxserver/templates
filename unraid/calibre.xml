@@ -14,23 +14,16 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-calibre#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-calibre#readme</ReadMe>
-    <Branch>
-        <Tag>latest</Tag>
-        <TagDescription>Default Ubuntu based image</TagDescription>
-    </Branch>
-    <Branch>
-        <Tag>arch</Tag>
-        <TagDescription>Arch based image supporting arm platforms</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-calibre/tree/arch#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-calibre/tree/arch#application-setup</GitHub>
-    </Branch>
     <Project>https://calibre-ebook.com/</Project>
     <Overview>Calibre(https://calibre-ebook.com/) is a powerful and easy to use e-book manager. Users say it’s outstanding and a must-have. It’ll allow you to do nearly everything and it takes things a step beyond normal e-book software. It’s also completely free and open source and great for both casual users and computer experts.</Overview>
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/calibre.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/calibre-logo.png</Icon>
-    <Date>2022-07-11</Date>
+    <Date>2022-07-24</Date>
     <Changes>
+### 2022-07-24
+- Add arm64 build for master branch.
+
 ### 2022-07-11
 - Update dependencies for Calibre 6.
 
