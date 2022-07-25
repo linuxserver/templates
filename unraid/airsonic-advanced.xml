@@ -23,8 +23,11 @@
     <WebUI>http://[IP]:[PORT:4040]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/airsonic-advanced.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/airsonic-advanced-logo.png</Icon>
-    <Date>2022-01-02</Date>
+    <Date>2022-07-25</Date>
     <Changes>
+### 2022-07-25
+- Add vorbis-tools.
+
 ### 2022-01-02
 - Initial Release.
 
