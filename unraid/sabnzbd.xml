@@ -20,17 +20,26 @@
     </Branch>
     <Branch>
         <Tag>unstable</Tag>
-        <TagDescription>Pre-releases from their GitHub</TagDescription>
+        <TagDescription>Pre-releases from the develop branch</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-sabnzbd/tree/unstable#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-sabnzbd/tree/unstable#application-setup</GitHub>
+    </Branch>
+    <Branch>
+        <Tag>nightly</Tag>
+        <TagDescription>Latest commits from the develop branch</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-sabnzbd/tree/nightly#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-sabnzbd/tree/nightly#application-setup</GitHub>
     </Branch>
     <Project>http://sabnzbd.org/</Project>
     <Overview>Sabnzbd(http://sabnzbd.org/) makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.</Overview>
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sabnzbd.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sabnzbd-logo.png</Icon>
-    <Date>2022-03-10</Date>
+    <Date>2022-08-31</Date>
     <Changes>
+### 2022-08-31
+- Add nightly tag.
+
 ### 2022-03-10
 - Add nzb-notify.
 
