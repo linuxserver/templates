@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:6789]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nzbget.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nzbget-logo.png</Icon>
-    <Date>2022-02-22</Date>
+    <Date>2022-08-12</Date>
     <Changes>
+### 2022-08-12
+- Bump unrar to 6.1.7.
+
 ### 2022-02-22
 - Rebase to alpine 3.15, add six and python 7zip tools, allow env variables for credentials.
 
