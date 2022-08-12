@@ -35,9 +35,12 @@
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sabnzbd.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sabnzbd-logo.png</Icon>
-    <Date>2022-08-31</Date>
+    <Date>2022-08-12</Date>
     <Changes>
-### 2022-08-31
+### 2022-08-12
+- Bump unrar to 6.1.7.
+
+### 2022-07-31
 - Add nightly tag.
 
 ### 2022-03-10
