@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:5055]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/overseerr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/overseerr-logo.png</Icon>
-    <Date>2022-04-01</Date>
+    <Date>2022-08-20</Date>
     <Changes>
+### 2022-08-20
+- Don&#39;t install cypress.
+
 ### 2022-04-01
 - Rebase main branch to Alpine 3.15.
 
