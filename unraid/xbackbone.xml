@@ -19,12 +19,15 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/xbackbone.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/xbackbone-logo.png</Icon>
-    <Date>202022-08-02</Date>
+    <Date>2022-08-20</Date>
     <Changes>
-### 202022-08-02
+### 2022-08-20
+- Rebasing to alpine 3.15 with php8. Restructure nginx configs (see changes announcement(https://info.linuxserver.io/issues/2022-08-20-nginx-base)).
+
+### 2022-08-02
 - Added note about updating.
 
-### 202021-06-06
+### 2021-06-06
 - Initial Release.
 
     </Changes>
