@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8123]</WebUI>
     <TemplateURL>false</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/homeassistant-logo.png</Icon>
-    <Date>2022-07-07</Date>
+    <Date>2022-07-29</Date>
     <Changes>
+### 2022-07-29
+- Improve usb device permission fix.
+
 ### 2022-07-07
 - Rebase to alpine 3.16, switch to cp310 wheels.
 
