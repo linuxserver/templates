@@ -19,36 +19,34 @@
     <ExtraParams>--cap-add=NET_ADMIN --cap-add=NET_RAW</ExtraParams>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/fail2ban.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/fail2ban-logo.png</Icon>
-    <Date>2022-08-09</Date>
+    <Date>2022-08-25</Date>
     <Changes>
+### 2022-08-25
+- Update README to clarify remote log information.
+
 ### 2022-08-09
 - Initial Release.
 
     </Changes>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /var/log" Target="/var/log" Default="" Mode="ro" Description="Host logs. Mounted as Read Only." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="Path: /remotelogs/airsonic/airsonic.log" Target="/remotelogs/airsonic/airsonic.log" Default="" Mode="ro" Description="Optional path to airsonic log file. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Path: /remotelogs/airsonic" Target="/remotelogs/airsonic" Default="" Mode="ro" Description="Optional path to airsonic log folder. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="Path: /remotelogs/apache2" Target="/remotelogs/apache2" Default="" Mode="ro" Description="Optional path to apache2 log folder. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
-    <Config Name="Path: /remotelogs/audit/audit.log" Target="/remotelogs/audit/audit.log" Default="" Mode="ro" Description="Optional path to auditd log file. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
-    <Config Name="Path: /remotelogs/authelia/authelia.log" Target="/remotelogs/authelia/authelia.log" Default="" Mode="ro" Description="Optional path to authelia log file. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
-    <Config Name="Path: /remotelogs/emby/embyserver.txt" Target="/remotelogs/emby/embyserver.txt" Default="" Mode="ro" Description="Optional path to emby log file. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
-    <Config Name="Path: /remotelogs/exim/mainlog" Target="/remotelogs/exim/mainlog" Default="" Mode="ro" Description="Optional path to exim log file. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
-    <Config Name="Path: /remotelogs/filebrowser/filebrowser.log" Target="/remotelogs/filebrowser/filebrowser.log" Default="" Mode="ro" Description="Optional path to filebrowser log file. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
-    <Config Name="Path: /remotelogs/gitea/gitea.log" Target="/remotelogs/gitea/gitea.log" Default="" Mode="ro" Description="Optional path to gitea log file. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
-    <Config Name="Path: /remotelogs/homeassistant/home-assistant.log" Target="/remotelogs/homeassistant/home-assistant.log" Default="" Mode="ro" Description="Optional path to homeassistant log file. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
-    <Config Name="Path: /remotelogs/lighttpd/error.log" Target="/remotelogs/lighttpd/error.log" Default="" Mode="ro" Description="Optional path to lighttpd error log file. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
-    <Config Name="Path: /remotelogs/nextcloud/nextcloud.log" Target="/remotelogs/nextcloud/nextcloud.log" Default="" Mode="ro" Description="Optional path to nextcloud log file. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Path: /remotelogs/authelia" Target="/remotelogs/authelia" Default="" Mode="ro" Description="Optional path to authelia log folder. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Path: /remotelogs/emby" Target="/remotelogs/emby" Default="" Mode="ro" Description="Optional path to emby log folder. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Path: /remotelogs/filebrowser" Target="/remotelogs/filebrowser" Default="" Mode="ro" Description="Optional path to filebrowser log folder. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Path: /remotelogs/homeassistant" Target="/remotelogs/homeassistant" Default="" Mode="ro" Description="Optional path to homeassistant log folder. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Path: /remotelogs/lighttpd" Target="/remotelogs/lighttpd" Default="" Mode="ro" Description="Optional path to lighttpd log folder. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Path: /remotelogs/nextcloud" Target="/remotelogs/nextcloud" Default="" Mode="ro" Description="Optional path to nextcloud log folder. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="Path: /remotelogs/nginx" Target="/remotelogs/nginx" Default="" Mode="ro" Description="Optional path to nginx log folder. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
-    <Config Name="Path: /remotelogs/nzbget/nzbget.log" Target="/remotelogs/nzbget/nzbget.log" Default="" Mode="ro" Description="Optional path to nzbget log file. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
-    <Config Name="Path: /remotelogs/overseerr/overseerr.log" Target="/remotelogs/overseerr/overseerr.log" Default="" Mode="ro" Description="Optional path to overseerr log file. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
-    <Config Name="Path: /remotelogs/prowlarr/prowlarr.txt" Target="/remotelogs/prowlarr/prowlarr.txt" Default="" Mode="ro" Description="Optional path to prowlarr log file. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
-    <Config Name="Path: /remotelogs/radarr/radarr.txt" Target="/remotelogs/radarr/radarr.txt" Default="" Mode="ro" Description="Optional path to radarr log file. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
-    <Config Name="Path: /remotelogs/roundcube/errors" Target="/remotelogs/roundcube/errors" Default="" Mode="ro" Description="Optional path to roundcube error log file. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
-    <Config Name="Path: /remotelogs/sabnzbd/sabnzbd.log" Target="/remotelogs/sabnzbd/sabnzbd.log" Default="" Mode="ro" Description="Optional path to sabnzbd log file. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
-    <Config Name="Path: /remotelogs/sonarr/sonarr.txt" Target="/remotelogs/sonarr/sonarr.txt" Default="" Mode="ro" Description="Optional path to sonarr log file. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
-    <Config Name="Path: /remotelogs/unificontroller/server.log" Target="/remotelogs/unificontroller/server.log" Default="" Mode="ro" Description="Optional path to unificontroller server log file. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
-    <Config Name="Path: /remotelogs/vaultwarden/vaultwarden.log" Target="/remotelogs/vaultwarden/vaultwarden.log" Default="" Mode="ro" Description="Optional path to vaultwarden log file. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
-    <Config Name="Path: /remotelogs/vsftpd/vsftpd.log" Target="/remotelogs/vsftpd/vsftpd.log" Default="" Mode="ro" Description="Optional path to vsftpd log file. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Path: /remotelogs/nzbget" Target="/remotelogs/nzbget" Default="" Mode="ro" Description="Optional path to nzbget log folder. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Path: /remotelogs/overseerr" Target="/remotelogs/overseerr" Default="" Mode="ro" Description="Optional path to overseerr log folder. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Path: /remotelogs/prowlarr" Target="/remotelogs/prowlarr" Default="" Mode="ro" Description="Optional path to prowlarr log folder. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Path: /remotelogs/radarr" Target="/remotelogs/radarr" Default="" Mode="ro" Description="Optional path to radarr log folder. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Path: /remotelogs/sabnzbd" Target="/remotelogs/sabnzbd" Default="" Mode="ro" Description="Optional path to sabnzbd log folder. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Path: /remotelogs/sonarr" Target="/remotelogs/sonarr" Default="" Mode="ro" Description="Optional path to sonarr log folder. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Path: /remotelogs/unificontroller" Target="/remotelogs/unificontroller" Default="" Mode="ro" Description="Optional path to unificontroller log folder. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Path: /remotelogs/vaultwarden" Target="/remotelogs/vaultwarden" Default="" Mode="ro" Description="Optional path to vaultwarden log folder. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
