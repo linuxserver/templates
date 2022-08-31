@@ -14,16 +14,6 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-tvheadend#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-tvheadend#readme</ReadMe>
-    <Branch>
-        <Tag>latest</Tag>
-        <TagDescription>Current latest release.</TagDescription>
-    </Branch>
-    <Branch>
-        <Tag>release-4.2</Tag>
-        <TagDescription>Latest release from 4.2 branch.</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-tvheadend/tree/release-4.2#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-tvheadend/tree/release-4.2#application-setup</GitHub>
-    </Branch>
     <Project>https://www.tvheadend.org/</Project>
     <Overview>Tvheadend(https://www.tvheadend.org/) works as a proxy server: is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SATIP and HDHomeRun as input sources.
 Tvheadend offers the HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SATIP streaming.
@@ -31,8 +21,11 @@ Multiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV D
     <WebUI>http://[IP]:[PORT:9981]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/tvheadend.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/tvheadend-logo.png</Icon>
-    <Date>2022-08-19</Date>
+    <Date>2022-08-31</Date>
     <Changes>
+### 2022-08-31
+- Update sample env vars and how RUN_OPTS are handled.
+
 ### 2022-08-19
 - Switch to new picons builder.
 
@@ -167,7 +160,7 @@ Multiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV D
     <Config Name="Port: 9982" Target="9982" Default="9982" Mode="tcp" Description="HTSP server port." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where TVHeadend show store it&#39;s config files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /recordings" Target="/recordings" Default="" Mode="rw" Description="Where you want the PVR to store recordings." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="RUN_OPTS" Target="RUN_OPTS" Default="run options here" Description="Optionally specify additional arguments to be passed. See Additional runtime parameters." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="RUN_OPTS" Target="RUN_OPTS" Default="" Description="Optionally specify additional arguments to be passed. See Additional runtime parameters." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
