@@ -24,8 +24,11 @@
     <WebUI>http://[IP]:[PORT:8112]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/deluge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/deluge-logo.png</Icon>
-    <Date>2022-08-12</Date>
+    <Date>2022-08-29</Date>
     <Changes>
+### 2022-08-29
+- Rebase to Alpine Edge again to follow latest releases.
+
 ### 2022-08-12
 - Bump unrar to 6.1.7.
 
