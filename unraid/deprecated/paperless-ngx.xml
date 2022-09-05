@@ -12,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-paperless-ngx/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/linuxserver/docker-paperless-ngx#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-paperless-ngx#readme</ReadMe>
     <Project>https://github.com/paperless-ngx/paperless-ngx</Project>
@@ -19,8 +20,11 @@
     <WebUI>http://[IP]:[PORT:8000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/paperless-ngx.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/paperless-ngx-logo.png</Icon>
-    <Date>2022-05-16</Date>
+    <Date>2022-09-05</Date>
     <Changes>
+### 2022-09-05
+- Deprecate.
+
 ### 2022-05-16
 - Add correct libqpdf.so to arm builds.
 
