@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]/install/make-config.php</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/projectsend.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/projectsend-logo.png</Icon>
-    <Date>2022-08-20</Date>
+    <Date>2022-08-23</Date>
     <Changes>
+### 2022-08-23
+- Add translation support
+
 ### 2022-08-20
 - Rebasing to alpine 3.15 with php8. Restructure nginx configs (see changes announcement(https://info.linuxserver.io/issues/2022-08-20-nginx-base)).
 
