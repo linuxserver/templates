@@ -18,8 +18,11 @@
     <Overview>Duckdns(https://duckdns.org/) is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn&#39;t require reactivation or forum posts to maintain its existence.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/duckdns.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/duckdns-logo.png</Icon>
-    <Date>2022-05-17</Date>
+    <Date>2022-09-19</Date>
     <Changes>
+### 2022-09-19
+- Rebase to alpine 3.15.
+
 ### 2022-05-17
 - Don&#39;t allow insecure connections and add timeout.
 
