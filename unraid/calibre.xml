@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/calibre.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/calibre-logo.png</Icon>
-    <Date>2022-07-24</Date>
+    <Date>2022-09-16</Date>
     <Changes>
+### 2022-09-16
+- Rebase to jammy.
+
 ### 2022-07-24
 - Add arm64 build for master branch.
 
