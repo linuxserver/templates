@@ -18,8 +18,11 @@
     <Overview>Limnoria(https://github.com/ProgVal/limnoria) A robust, full-featured, and user/programmer-friendly Python IRC bot, with many existing plugins. Successor of the well-known Supybot.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/limnoria.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/limnoria-logo.png</Icon>
-    <Date>2021-05-25</Date>
+    <Date>2022-09-19</Date>
     <Changes>
+### 2022-09-19
+- Rebase to alpine 3.15.
+
 ### 2021-05-25
 - Install plugin requirements on container init.
 
