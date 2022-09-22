@@ -19,8 +19,11 @@
     <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/swag.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2022-08-10</Date>
+    <Date>2022-08-20</Date>
     <Changes>
+### 2022-08-20
+- Existing users should update:(https://github.com/linuxserver/docker-swag/blob/master/README.md#updating-configs) nginx.conf - Rebasing to alpine 3.15 with php8. Restructure nginx configs (see changes announcement(https://info.linuxserver.io/issues/2022-08-20-nginx-base)).
+
 ### 2022-08-10
 - Added support for Dynu DNS validation.
 
@@ -127,7 +130,7 @@
 - Add support for getting certs from ZeroSSL(https://zerossl.com/) via optional `CERTPROVIDER` env var. Update aliyun, domeneshop, inwx and transip dns plugins with the new plugin names. Hide `donoteditthisfile.conf` because users were editing it despite its name. Suppress harmless error when no proxy confs are enabled.
 
 ### 2021-01-03
-- Existing users should update:(https://github.com/linuxserver/docker-swag/blob/master/README.md#updating-configs) /config/nginx/site-confs/default - Add helper pages to aid troubleshooting
+- Existing users should update:(https://github.com/linuxserver/docker-swag/blob/master/README.md#updating-configs) /config/nginx/site-confs/default.conf - Add helper pages to aid troubleshooting
 
 ### 2020-12-10
 - Add support for njalla dns validation
