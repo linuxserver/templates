@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/boinc.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/boinc-logo.png</Icon>
-    <Date>2022-02-24</Date>
+    <Date>2022-09-18</Date>
     <Changes>
+### 2022-09-18
+- Rebase to jammy.
+
 ### 2022-02-24
 - Rebase to focal.
 
