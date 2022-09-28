@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8096]</WebUI>
     <TemplateURL>false</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/emby-logo.png</Icon>
-    <Date>2022-09-18</Date>
+    <Date>2022-09-26</Date>
     <Changes>
+### 2022-09-26
+- Update chown behavior.
+
 ### 2022-09-18
 - Migrate to s6v3, rebase to Ubuntu Jammy.
 
