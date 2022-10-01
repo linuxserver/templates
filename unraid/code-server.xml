@@ -14,10 +14,6 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-code-server#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-code-server#readme</ReadMe>
-    <Branch>
-        <Tag>latest</Tag>
-        <TagDescription>Stable releases</TagDescription>
-    </Branch>
     <Project>https://coder.com</Project>
     <Overview>Code-server(https://coder.com) is VS Code running on a remote server, accessible through the browser.
 - Code on your Chromebook, tablet, and laptop with a consistent dev environment.
@@ -29,8 +25,11 @@
     <WebUI>http://[IP]:[PORT:8443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/code-server.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/code-server-logo.png</Icon>
-    <Date>2022-02-20</Date>
+    <Date>2022-09-29</Date>
     <Changes>
+### 2022-09-29
+- Rebase to jammy, switch to s6v3. Fix chown logic to skip `/config/workspace` contents.
+
 ### 2022-02-20
 - Install using the official tarballs.
 
