@@ -19,8 +19,11 @@
     <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/swag.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2022-09-22</Date>
+    <Date>2022-10-03</Date>
     <Changes>
+### 2022-10-03
+- Add default_server back to default site conf&#39;s https listen.
+
 ### 2022-09-22
 - Added support for DO DNS validation.
 
