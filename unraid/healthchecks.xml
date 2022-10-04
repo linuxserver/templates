@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/healthchecks.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2022-01-08</Date>
+    <Date>2022-09-27</Date>
     <Changes>
+### 2022-09-27
+- Fix sending of Email Reports
+
 ### 2022-01-08
 - Fix CSRF setting for Django 4.0 (introduced in v1.25.0)
 
