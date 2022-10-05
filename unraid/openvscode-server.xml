@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:3000]/?tkn=lsio</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/openvscode-server.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/openvscode-server-logo.png</Icon>
-    <Date>2022-02-12</Date>
+    <Date>2022-09-29</Date>
     <Changes>
+### 2022-09-29
+- Rebase to jammy, switch to s6v3. Fix chown logic to skip `/config/workspace` contents.
+
 ### 2022-02-12
 - Update `install-extension` helper to compensate for upstream changes.
 
