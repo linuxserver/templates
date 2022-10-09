@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:5000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/changedetection.io.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2022-08-07</Date>
+    <Date>2022-10-09</Date>
     <Changes>
+### 2022-10-09
+- Add make as build dep to fix pip jq build on armhf.
+
 ### 2022-08-07
 - Initial release.
 
