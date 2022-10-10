@@ -22,8 +22,11 @@ Powered by SQL and including a Markdown editor for those who prefer it, BookStac
 For more information on BookStack visit their website and check it out: https://www.bookstackapp.com</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/bookstack.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bookstack-logo.png</Icon>
-    <Date>2022-08-20</Date>
+    <Date>2022-10-10</Date>
     <Changes>
+### 2022-10-10
+- Remove password escape logic which caused problems for a small subset of users.
+
 ### 2022-08-20
 - Rebasing to alpine 3.15 with php8. Restructure nginx configs (see changes announcement(https://info.linuxserver.io/issues/2022-08-20-nginx-base)).
 
@@ -85,7 +88,7 @@ For more information on BookStack visit their website and check it out: https://
     <Config Name="DB_HOST" Target="DB_HOST" Default="yourdbhost" Description="for specifying the database host" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_USER" Target="DB_USER" Default="yourdbuser" Description="for specifying the database user" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_PASS" Target="DB_PASS" Default="yourdbpass" Description="for specifying the database password" Type="Variable" Display="always" Required="true" Mask="true"/>
-    <Config Name="DB_DATABASE" Target="DB_DATABASE" Default="bookstackapp" Description="for specifying the database to be used" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="DB_DATABASE" Target="DB_DATABASE" Default="bookstackapp" Description="for specifying the database to be used (non-alphanumeric passwords must be properly escaped.)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
