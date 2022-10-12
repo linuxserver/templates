@@ -26,11 +26,14 @@
     </Branch>
     <Project>https://www.bazarr.media/</Project>
     <Overview>Bazarr(https://www.bazarr.media/) is a companion application to Sonarr and Radarr. It can manage and download subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you.</Overview>
-    <WebUI>http://[IP]:[PORT:6767]</WebUI>
+    <WebUI>http://[IP]:[PORT:6767]/system/status</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/bazarr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bazarr-logo.png</Icon>
-    <Date>2021-15-15</Date>
+    <Date>2022-10-11</Date>
     <Changes>
+### 2022-10-11
+- Rebase master branch to Alpine 3.16, migrate to s6v3.
+
 ### 2021-15-15
 - Temp fix for lxml, compile from scratch to avoid broken official wheel.
 
