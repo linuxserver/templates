@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8090]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mylar3.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mylar3-logo.png</Icon>
-    <Date>2022-02-01</Date>
+    <Date>2022-10-12</Date>
     <Changes>
+### 2022-10-12
+- Rebase to alpine 3.16 and upgrade to s6v3.
+
 ### 2022-02-01
 - Rebase to alpine 3.15.
 
