@@ -12,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-pixapop/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/linuxserver/docker-pixapop#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-pixapop#readme</ReadMe>
     <Project>https://github.com/bierdok/pixapop</Project>
@@ -19,8 +20,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/pixapop.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pixapop-logo.png</Icon>
-    <Date>2020-12-17</Date>
+    <Date>2022-10-14</Date>
     <Changes>
+### 2022-10-14
+- Deprecate image.
+
 ### 2020-12-17
 - Move image to main linuxserver repo, add notice to container log
 
