@@ -14,41 +14,16 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-domoticz#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-domoticz#readme</ReadMe>
-    <Branch>
-        <Tag>latest</Tag>
-        <TagDescription>Current latest stable.</TagDescription>
-    </Branch>
-    <Branch>
-        <Tag>stable</Tag>
-        <TagDescription>Old stable version. Please change to latest branch for stable releases.</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-domoticz/tree/stable#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-domoticz/tree/stable#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>stable-4.9700</Tag>
-        <TagDescription>Old stable version. Will not be updated anymore!</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-domoticz/tree/stable-4.9700#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-domoticz/tree/stable-4.9700#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>stable-3.815</Tag>
-        <TagDescription>Old stable version. Will not be updated anymore!</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-domoticz/tree/stable-3.815#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-domoticz/tree/stable-3.815#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>stable-3.5877</Tag>
-        <TagDescription>Old stable version. Will not be updated anymore!</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-domoticz/tree/stable-3.5877#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-domoticz/tree/stable-3.5877#application-setup</GitHub>
-    </Branch>
     <Project>https://www.domoticz.com</Project>
     <Overview>Domoticz(https://www.domoticz.com) is a Home Automation System that lets you monitor and configure various devices like: Lights, Switches, various sensors/meters like Temperature, Rain, Wind, UV, Electra, Gas, Water and much more. Notifications/Alerts can be sent to any mobile device.</Overview>
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/domoticz.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/domoticz-logo.png</Icon>
-    <Date>2022-02-05</Date>
+    <Date>2022-10-15</Date>
     <Changes>
+### 2022-10-15
+- Remove deprecated legacy stable branches.
+
 ### 2022-02-05
 - Set default webroot to /. Add env. variable for setting custom databas path.
 
