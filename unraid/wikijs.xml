@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/wikijs.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/wikijs-logo.png</Icon>
-    <Date>2021-01-23</Date>
+    <Date>2022-10-10</Date>
     <Changes>
+### 2022-10-10
+- Rebasing to alpine 3.16, migrate to s6v3.
+
 ### 2021-01-23
 - Rebasing to alpine 3.13.
 
