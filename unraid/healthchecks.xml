@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/healthchecks.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2022-10-11</Date>
+    <Date>2022-10-18</Date>
     <Changes>
+### 2022-10-18
+- Add curl-dev to fix broken pip builds.
+
 ### 2022-10-11
 - Rebase to Alpine 3.16, migrate to s6v3.
 
