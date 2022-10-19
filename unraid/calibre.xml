@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/calibre.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/calibre-logo.png</Icon>
-    <Date>2022-10-18</Date>
+    <Date>2022-10-19</Date>
     <Changes>
+### 2022-10-19
+- Set the window title to `Calibre`. Remove websocat as it is now handled properly in the baseimage.
+
 ### 2022-10-18
 - Deprecate Arch branch.
 
