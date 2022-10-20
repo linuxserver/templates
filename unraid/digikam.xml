@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/digikam.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/digikam-logo.png</Icon>
-    <Date>2022-03-07</Date>
+    <Date>2022-10-20</Date>
     <Changes>
+### 2022-10-20
+- Migrate to s6v3.
+
 ### 2022-03-07
 - Add Exiftool and firefox for image exports.
 
