@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/pidgin.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pidgin-logo.png</Icon>
-    <Date>2022-02-15</Date>
+    <Date>2022-10-21</Date>
     <Changes>
+### 2022-10-21
+- Rebase to Alpine 3.16, migrate to s6v3.
+
 ### 2022-02-15
 - Add build deps for discord.
 
