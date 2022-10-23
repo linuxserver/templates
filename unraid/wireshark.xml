@@ -20,8 +20,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/wireshark.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/wireshark-logo.png</Icon>
-    <Date>2022-02-14</Date>
+    <Date>2022-10-23</Date>
     <Changes>
+### 2022-10-23
+- Rebase to Alpine 3.16, migrate to s6v3.
+
 ### 2022-02-14
 - Rebase to Alpine.
 
