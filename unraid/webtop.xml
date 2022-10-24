@@ -156,13 +156,16 @@
         <ReadMe>https://github.com/linuxserver/docker-webtop/tree/arch-icewm#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-webtop/tree/arch-icewm#application-setup</GitHub>
     </Branch>
-    <Project>https://github.com/linuxserver/gclient</Project>
-    <Overview>Webtop(https://github.com/linuxserver/gclient) - Alpine, Ubuntu, Fedora, and Arch based containers containing full desktop environments in officially supported flavors accessible via any modern web browser.</Overview>
+    <Project>https://github.com/linuxserver/docker-webtop</Project>
+    <Overview>Webtop(https://github.com/linuxserver/docker-webtop) - Alpine, Ubuntu, Fedora, and Arch based containers containing full desktop environments in officially supported flavors accessible via any modern web browser.</Overview>
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/webtop.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png</Icon>
-    <Date>2022-03-12</Date>
+    <Date>2022-10-21</Date>
     <Changes>
+### 2022-10-21
+- Rebase xfce to Alpine 3.16, migrate to s6v3.
+
 ### 2022-03-12
 - Add documentation for mounting in a GPU.
 
