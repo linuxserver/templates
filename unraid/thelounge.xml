@@ -35,8 +35,11 @@
     <WebUI>http://[IP]:[PORT:9000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/thelounge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2022-04-12</Date>
+    <Date>2022-10-24</Date>
     <Changes>
+### 2022-10-24
+- Fix sqlite3 build.
+
 ### 2022-04-12
 - Install from source using yarn.
 
