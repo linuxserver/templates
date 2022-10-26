@@ -160,8 +160,11 @@
     <Overview>Rdesktop(http://xrdp.org/) - Containers containing full desktop environments in many popular flavors for Alpine, Ubuntu, Arch, and Fedora accessible via RDP.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/rdesktop.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/rdesktop-logo.png</Icon>
-    <Date>2022-03-05</Date>
+    <Date>2022-10-26</Date>
     <Changes>
+### 2022-10-26
+- Rebase Alpine xfce to 3.16, migrate to s6v3.
+
 ### 2022-03-05
 - Organize tags differently to run Ubuntu at latest LTS, make Alpine latest, add docs about GPU accel.
 
