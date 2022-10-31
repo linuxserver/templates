@@ -18,13 +18,22 @@
         <Tag>latest</Tag>
         <TagDescription>Stable qbittorrent releases</TagDescription>
     </Branch>
+    <Branch>
+        <Tag>libtorrentv1</Tag>
+        <TagDescription>Static qbittorrent builds using libtorrent v1</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-qbittorrent/tree/libtorrentv1#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-qbittorrent/tree/libtorrentv1#application-setup</GitHub>
+    </Branch>
     <Project>https://www.qbittorrent.org/</Project>
     <Overview>The Qbittorrent(https://www.qbittorrent.org/) project aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.</Overview>
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/qbittorrent.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/qbittorrent-logo.png</Icon>
-    <Date>2022-08-31</Date>
+    <Date>2022-10-31</Date>
     <Changes>
+### 2022-10-31
+- Add libtorrentv1 branch.
+
 ### 2022-08-31
 - Rebase to Alpine Edge again to follow latest releases.
 
