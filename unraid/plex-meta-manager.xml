@@ -18,8 +18,11 @@
     <Overview>Plex-meta-manager(https://github.com/meisnate12/Plex-Meta-Manager) is a Python 3 script that can be continuously run using YAML configuration files to update on a schedule the metadata of the movies, shows, and collections in your libraries as well as automatically build collections based on various methods all detailed in the wiki.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/plex-meta-manager.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2022-10-03</Date>
+    <Date>2022-10-25</Date>
     <Changes>
+### 2022-10-25
+- Support commandline args and relative paths.
+
 ### 2022-10-03
 - Rebase to Alpine 3.16, migrate to s6v3.
 
