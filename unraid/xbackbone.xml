@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/xbackbone.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/xbackbone-logo.png</Icon>
-    <Date>2022-11-01</Date>
+    <Date>2022-11-04</Date>
     <Changes>
+### 2022-11-04
+- Rebase to Alpine 3.16, migrate to s6v3.
+
 ### 2022-11-01
 - Move application install to /app/www/public, add migration notices for existing users. Container updates should now update the application correctly
 
