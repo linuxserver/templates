@@ -20,7 +20,7 @@
     </Branch>
     <Branch>
         <Tag>development</Tag>
-        <TagDescription>Latest commit from the github master branch.</TagDescription>
+        <TagDescription>Latest commit from the github 2.x branch.</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-heimdall/tree/development#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-heimdall/tree/development#application-setup</GitHub>
     </Branch>
@@ -31,8 +31,11 @@ Why not use it as your browser start page? It even has the ability to include a 
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/heimdall.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/heimdall-logo.png</Icon>
-    <Date>2021-03-13</Date>
+    <Date>2022-11-04</Date>
     <Changes>
+### 2022-11-04
+- Build commits to upstream branch 2.x for the `development` tag.
+
 ### 2021-03-13
 - Make searchproviders.yaml user configurable.
 
