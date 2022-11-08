@@ -14,6 +14,16 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-mastodon#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-mastodon#readme</ReadMe>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Stable releases.</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>develop</Tag>
+        <TagDescription>Pre-releases *only*.</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-mastodon/tree/develop#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-mastodon/tree/develop#application-setup</GitHub>
+    </Branch>
     <Project>https://github.com/mastodon/mastodon/</Project>
     <Overview>Mastodon(https://github.com/mastodon/mastodon/) is a free, open-source social network server based on ActivityPub where users can follow friends and discover new ones..</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mastodon.xml</TemplateURL>
