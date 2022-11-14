@@ -27,7 +27,7 @@
     <Project>https://github.com/mastodon/mastodon/</Project>
     <Overview>Mastodon(https://github.com/mastodon/mastodon/) is a free, open-source social network server based on ActivityPub where users can follow friends and discover new ones..</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mastodon.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mastodon-logo.png</Icon>
     <Date>2022-11-05</Date>
     <Changes>
 ### 2022-11-05
