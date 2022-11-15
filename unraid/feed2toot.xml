@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-feed2toot/blob/main/readme-vars.yml -->
+<Container version="2">
+    <Name>feed2toot</Name>
+    <Repository>lscr.io/linuxserver/feed2toot</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/feed2toot</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-feed2toot/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-feed2toot#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-feed2toot#readme</ReadMe>
+    <Project>https://gitlab.com/chaica/feed2toot</Project>
+    <Overview>Feed2toot(https://gitlab.com/chaica/feed2toot) Feed2toot automatically parses rss feeds, identifies new posts and posts them on the Mastodon social network.</Overview>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/feed2toot.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Date>2022-11-14</Date>
+    <Changes>
+### 2022-11-14
+- Initial Release.
+
+    </Changes>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Local path for feed2toot config files." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="FEED_LIMIT" Target="FEED_LIMIT" Default="5" Description="Limit number of RSS entries published at each execution." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
