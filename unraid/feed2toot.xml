@@ -15,7 +15,7 @@
     <GitHub>https://github.com/linuxserver/docker-feed2toot#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-feed2toot#readme</ReadMe>
     <Project>https://gitlab.com/chaica/feed2toot</Project>
-    <Overview>Feed2toot(https://gitlab.com/chaica/feed2toot) Feed2toot automatically parses rss feeds, identifies new posts and posts them on the Mastodon social network.</Overview>
+    <Overview>Feed2toot(https://gitlab.com/chaica/feed2toot) automatically parses rss feeds, identifies new posts and posts them on the Mastodon social network.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/feed2toot.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
     <Date>2022-11-14</Date>
