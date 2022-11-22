@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/piwigo.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/piwigo-logo.png</Icon>
-    <Date>2022-08-20</Date>
+    <Date>2022-11-08</Date>
     <Changes>
+### 2022-11-08
+- Rebase to Alpine 3.16, migrate to s6v3. Move application install to /app/www/public, add migration for existing users. Container updates should now update the application correctly.
+
 ### 2022-08-20
 - Rebasing to alpine 3.15 with php8. Restructure nginx configs (see changes announcement(https://info.linuxserver.io/issues/2022-08-20-nginx-base)).
 
@@ -87,7 +90,7 @@
     </Changes>
     <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="Application WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="Path: /gallery" Target="/gallery" Default="" Mode="rw" Description="Image, plugin, and theme storage for Piwigo" Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /gallery" Target="/gallery" Default="" Mode="rw" Description="Image storage for Piwigo" Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
