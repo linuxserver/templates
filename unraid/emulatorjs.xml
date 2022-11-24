@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/emulatorjs.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/emulatorjs-logo.png</Icon>
-    <Date>2022-04-04</Date>
+    <Date>2022-11-24</Date>
     <Changes>
+### 2022-11-24
+- Update IPFS links for chdman.
+
 ### 2022-04-04
 - Ingest pre-built chdman bins during build time.
 
