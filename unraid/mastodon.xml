@@ -56,7 +56,7 @@
     <Config Name="SMTP_PASSWORD" Target="SMTP_PASSWORD" Default="" Description="SMTP password" Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="SMTP_FROM_ADDRESS" Target="SMTP_FROM_ADDRESS" Default="notifications@example.com" Description="From address for emails send from Mastodon" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="S3_ENABLED" Target="S3_ENABLED" Default="false" Description="Enable or disable S3 storage of uploaded files" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="WEB_DOMAIN" Target="WEB_DOMAIN" Default="mastodon.example.com" Description="This can be set if you want your server identifier to be different to the subdomain hosting Mastodon. See https://docs.joinmastodon.org/admin/config/#basic" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="WEB_DOMAIN" Target="WEB_DOMAIN" Default="mastodon.example.com" Description="This can be set if you want your server identifier to be different to the subdomain hosting Mastodon. See https://docs.joinmastodon.org/admin/config/#basic(https://docs.joinmastodon.org/admin/config/#basic)" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="ES_HOST" Target="ES_HOST" Default="es" Description="Elasticsearch server hostname" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="ES_PORT" Target="ES_PORT" Default="9200" Description="Elasticsearch port" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="ES_USER" Target="ES_USER" Default="elastic" Description="Elasticsearch username" Type="Variable" Display="always" Required="false" Mask="false"/>
