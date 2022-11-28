@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:6789]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nzbget.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nzbget-logo.png</Icon>
-    <Date>2022-11-13</Date>
+    <Date>2022-11-27</Date>
     <Changes>
+### 2022-11-27
+- Advanced notice: This image will be deprecated on 2022-12-31. Please consider switching to SABnzbd https://github.com/linuxserver/docker-sabnzbd
+
 ### 2022-11-13
 - Rebase master to 3.16, migrate to s6v3.
 
