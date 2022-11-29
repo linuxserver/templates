@@ -24,8 +24,11 @@
     <WebUI>http://[IP]:[PORT:8112]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/deluge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/deluge-logo.png</Icon>
-    <Date>2022-11-24</Date>
+    <Date>2022-11-29</Date>
     <Changes>
+### 2022-11-29
+- Restore geoip using py3-geoip as an interim measure.
+
 ### 2022-11-24
 - Remove GeoIP packages as geoip will not build under Py 3.11 and Deluge still doesn&#39;t support geoip2.
 
