@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/qbittorrent.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/qbittorrent-logo.png</Icon>
-    <Date>2022-10-31</Date>
+    <Date>2022-11-29</Date>
     <Changes>
+### 2022-11-29
+- Add openssl1.1-compat for qbittorrent-cli.
+
 ### 2022-10-31
 - Add libtorrentv1 branch.
 
