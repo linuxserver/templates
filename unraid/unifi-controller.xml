@@ -19,8 +19,11 @@
     <WebUI>https://[IP]:[PORT:8443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/unifi-controller.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-controller-logo.png</Icon>
-    <Date>2022-06-01</Date>
+    <Date>2022-11-30</Date>
     <Changes>
+### 2022-11-30
+- Bump JRE to 11.
+
 ### 2022-06-01
 - Deprecate armhf.
 
