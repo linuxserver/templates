@@ -20,8 +20,11 @@
     <WebUI>https://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/pydio-cells.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2022-10-19</Date>
+    <Date>2022-12-01</Date>
     <Changes>
+### 2022-12-01
+- Rebasing to alpine 3.17. Adding multi-arch support. Updating cli arguments for v4 compatibility.
+
 ### 2022-10-19
 - Rebasing to alpine 3.16. Upgrading to s6v3. Updating build instructions for v4.
 
