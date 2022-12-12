@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8875]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/minisatip.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/minisatip-logo.png</Icon>
-    <Date>2021-01-23</Date>
+    <Date>2022-11-12</Date>
     <Changes>
+### 2022-11-12
+- Rebasing to alpine 3.137, upgrading to s6v3.
+
 ### 2021-01-23
 - Rebasing to alpine 3.13.
 
@@ -77,7 +80,7 @@
     <Config Name="Port: 554" Target="554" Default="554" Mode="tcp" Description="RTSP Port" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 1900" Target="1900" Default="1900" Mode="udp" Description="App Discovery" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Configuration files and minisatip data" Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="RUN_OPTS" Target="RUN_OPTS" Default="parameter" Description="Specify specific run params for minisatip" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="RUN_OPTS" Target="RUN_OPTS" Default="" Description="Specify specific run params for minisatip" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
