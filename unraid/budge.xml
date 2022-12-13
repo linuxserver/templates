@@ -16,10 +16,14 @@
     <ReadMe>https://github.com/linuxserver/docker-budge#readme</ReadMe>
     <Project>https://github.com/linuxserver/budge</Project>
     <Overview>budge(https://github.com/linuxserver/budge) is an open source &#39;budgeting with envelopes&#39; personal finance app.</Overview>
+    <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/budge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2022-15-04</Date>
+    <Date>2022-11-29</Date>
     <Changes>
+### 2022-11-29
+- Rebase to Alpine 3.17, migrate to s6v3.
+
 ### 2022-15-04
 - Added NPM command to run db migrations.
 
