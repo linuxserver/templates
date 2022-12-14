@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/grav.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/grav-logo.png</Icon>
-    <Date>2022-09-05</Date>
+    <Date>2022-12-11</Date>
     <Changes>
+### 2022-12-11
+- Rebase to Alpine 3.17, PHP 8.1.
+
 ### 2022-09-05
 - All php to read envs passed to container.
 
