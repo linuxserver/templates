@@ -19,8 +19,11 @@
     <ExtraParams>--cap-add=NET_ADMIN --cap-add=NET_RAW</ExtraParams>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/fail2ban.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/fail2ban-logo.png</Icon>
-    <Date>2022-08-25</Date>
+    <Date>2022-12-15</Date>
     <Changes>
+### 2022-12-15
+- Rebase to Alpine 3.17, Add ssmtp and whois packages. Symlink config to allow live reloading.
+
 ### 2022-08-25
 - Update README to clarify remote log information.
 
