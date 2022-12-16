@@ -28,11 +28,14 @@
     <Overview>Nzbhydra2(https://github.com/theotherp/nzbhydra2) is a meta search application for NZB indexers, the &#34;spiritual successor&#34; to NZBmegasearcH, and an evolution of the original application NZBHydra(https://github.com/theotherp/nzbhydra).
 
 It provides easy access to a number of raw and newznab based indexers. The application NZBHydra 2 is replacing NZBHydra 1 and supports migrating from V1. Be wary that there may be some compatibility issues for those migrating from V1 to V2, so ensure you back up your old configuration before moving over to the new version. **NOTE:** The last version that supports migration is `linuxserver/nzbhydra2:v2.10.2-ls49`</Overview>
-    <WebUI>http://[IP]:[PORT:5076]</WebUI>
+    <WebUI>http://[IP]:[PORT:5076]/system/about</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nzbhydra2.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nzbhydra2-logo.png</Icon>
-    <Date>2022-09-11</Date>
+    <Date>2022-12-10</Date>
     <Changes>
+### 2022-12-10
+- Bump master JRE to v17. Default mapIpToHost to false.
+
 ### 2022-09-11
 - Migrate to s6v3.
 
