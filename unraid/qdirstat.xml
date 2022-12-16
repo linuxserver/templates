@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/qdirstat.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/qdirstat-logo.png</Icon>
-    <Date>2022-04-06</Date>
+    <Date>2022-12-16</Date>
     <Changes>
+### 2022-12-16
+- Rebase to Jammy.
+
 ### 2022-04-06
 - Add xfce terminal.
 
