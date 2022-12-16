@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/remmina.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/remmina-logo.png</Icon>
-    <Date>2022-06-19</Date>
+    <Date>2022-12-16</Date>
     <Changes>
+### 2022-12-16
+- Rebase to Jammy. Drop nx, xdmcp plugins due to lack of packages. Add Kiosk, Secret, x2go plugins.
+
 ### 2022-06-19
 - Rebase to Focal. Drop Telepathy plugin due to lack of packages.
 
