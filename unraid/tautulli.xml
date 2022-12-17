@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8181]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/tautulli.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/tautulli-logo.png</Icon>
-    <Date>2022-10-04</Date>
+    <Date>2022-12-15</Date>
     <Changes>
+### 2022-12-15
+- Rebase master branch to Alpine 3.17.
+
 ### 2022-10-04
 - Rebase master branch to Alpine 3.16, migrate to s6v3.
 
