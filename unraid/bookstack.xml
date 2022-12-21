@@ -22,8 +22,11 @@ Powered by SQL and including a Markdown editor for those who prefer it, BookStac
 For more information on BookStack visit their website and check it out: https://www.bookstackapp.com</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/bookstack.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bookstack-logo.png</Icon>
-    <Date>2022-10-10</Date>
+    <Date>2022-12-21</Date>
     <Changes>
+### 2022-12-21
+- Update db info in .env file when env vars are updated.
+
 ### 2022-10-10
 - Remove password escape logic which caused problems for a small subset of users.
 
