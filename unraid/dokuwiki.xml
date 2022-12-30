@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/dokuwiki.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/dokuwiki-logo.png</Icon>
-    <Date>2022-13-11</Date>
+    <Date>2022-12-28</Date>
     <Changes>
+### 2022-12-28
+- Rebase to Alpine 3.17, migrate to s6v3.
+
 ### 2022-13-11
 - Move lib/images/smileys/local and lib/images/interwiki outside of the container for user defined smiley and interwiki icon support.
 
