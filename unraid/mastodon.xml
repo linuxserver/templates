@@ -28,8 +28,11 @@
     <Overview>Mastodon(https://github.com/mastodon/mastodon/) is a free, open-source social network server based on ActivityPub where users can follow friends and discover new ones..</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mastodon.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mastodon-logo.png</Icon>
-    <Date>2022-11-05</Date>
+    <Date>2022-12-19</Date>
     <Changes>
+### 2022-12-19
+- Support separate sidekiq queue instances.
+
 ### 2022-11-05
 - Initial Release.
 
@@ -65,6 +68,11 @@
     <Config Name="AWS_ACCESS_KEY_ID" Target="AWS_ACCESS_KEY_ID" Default="" Description="S3 bucket access key ID" Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="AWS_SECRET_ACCESS_KEY" Target="AWS_SECRET_ACCESS_KEY" Default="" Description="S3 bucket secret access key" Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="S3_ALIAS_HOST" Target="S3_ALIAS_HOST" Default="" Description="Alternate hostname for object fetching if you are front the S3 connections." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="SIDEKIQ_ONLY" Target="SIDEKIQ_ONLY" Default="false" Description="Only run the sidekiq service in this container instance. For large scale instances that need better queue handling." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="SIDEKIQ_QUEUE" Target="SIDEKIQ_QUEUE" Default="" Description="The name of the sidekiq queue to run in this container. See notes(https://docs.joinmastodon.org/admin/scaling/#sidekiq-queues)." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="SIDEKIQ_DEFAULT" Target="SIDEKIQ_DEFAULT" Default="false" Description="Set to `true` on the main container if you&#39;re running additional sidekiq instances. It will run the `default` queue." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="SIDEKIQ_THREADS" Target="SIDEKIQ_THREADS" Default="5" Description="The number of threads for sidekiq to use. See notes(https://docs.joinmastodon.org/admin/scaling/#sidekiq-threads)." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="DB_POOL" Target="DB_POOL" Default="5" Description="The size of the DB connection pool, must be *at least* the same as `SIDEKIQ_THREADS`. See notes(https://docs.joinmastodon.org/admin/scaling/#sidekiq-threads)." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
