@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
-<!-- GENERATED FROM https://github.com/linuxserver/docker-prowlarr/blob/develop/readme-vars.yml -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-prowlarr/blob/main/readme-vars.yml -->
 <Container version="2">
     <Name>prowlarr</Name>
     <Repository>lscr.io/linuxserver/prowlarr</Repository>
@@ -12,9 +12,12 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-prowlarr/issues/new/choose</Support>
     <Shell>bash</Shell>
-    <Beta>True</Beta>
     <GitHub>https://github.com/linuxserver/docker-prowlarr#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-prowlarr#readme</ReadMe>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Prowlarr stable releases</TagDescription>
+    </Branch>
     <Branch>
         <Tag>develop</Tag>
         <TagDescription>Prowlarr releases from their develop branch</TagDescription>
@@ -29,11 +32,14 @@
     </Branch>
     <Project>https://github.com/Prowlarr/Prowlarr</Project>
     <Overview>Prowlarr(https://github.com/Prowlarr/Prowlarr) is a indexer manager/proxy built on the popular arr .net/reactjs base stack to integrate with your various PVR apps. Prowlarr supports both Torrent Trackers and Usenet Indexers. It integrates seamlessly with Sonarr, Radarr, Lidarr, and Readarr offering complete management of your indexers with no per app Indexer setup required (we do it all).</Overview>
-    <WebUI>http://[IP]:[PORT:9696]</WebUI>
+    <WebUI>http://[IP]:[PORT:9696]/system/status</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/prowlarr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/prowlarr-logo.png</Icon>
-    <Date>2022-02-20</Date>
+    <Date>2023-01-03</Date>
     <Changes>
+### 2023-01-03
+- Publish stable release.
+
 ### 2022-02-20
 - Rebase develop branch to Alpine.
 
