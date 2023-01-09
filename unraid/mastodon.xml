@@ -28,8 +28,11 @@
     <Overview>Mastodon(https://github.com/mastodon/mastodon/) is a free, open-source social network server based on ActivityPub where users can follow friends and discover new ones..</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mastodon.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mastodon-logo.png</Icon>
-    <Date>2022-12-19</Date>
+    <Date>2023-01-09</Date>
     <Changes>
+### 2023-01-09
+- Updated nginx conf to fix bring inline with Mastodon configuration (fixes Elk integration).
+
 ### 2022-12-19
 - Support separate sidekiq queue instances.
 
