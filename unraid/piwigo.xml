@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/piwigo.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/piwigo-logo.png</Icon>
-    <Date>2022-11-08</Date>
+    <Date>2023-01-16</Date>
     <Changes>
+### 2023-01-16
+- Fix broken custom template persistence.
+
 ### 2022-11-08
 - Rebase to Alpine 3.16, migrate to s6v3. Move application install to /app/www/public, add migration for existing users. Container updates should now update the application correctly.
 
