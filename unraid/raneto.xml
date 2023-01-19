@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/raneto.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/raneto-logo.png</Icon>
-    <Date>2022-08-10</Date>
+    <Date>2023-01-18</Date>
     <Changes>
+### 2023-01-18
+- Rebase to Alpine 3.17, migrate to s6v3.
+
 ### 2022-08-10
 - Rebasing to alpine 3.15.
 
