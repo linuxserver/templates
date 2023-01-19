@@ -12,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-nzbget/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/linuxserver/docker-nzbget#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-nzbget#readme</ReadMe>
     <Branch>
@@ -29,8 +30,11 @@
     <WebUI>http://[IP]:[PORT:6789]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nzbget.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nzbget-logo.png</Icon>
-    <Date>2022-11-27</Date>
+    <Date>2022-12-31</Date>
     <Changes>
+### 2022-12-31
+- Deprecate image.  Please consider switching to SABnzbd https://github.com/linuxserver/docker-sabnzbd
+
 ### 2022-11-27
 - Advanced notice: This image will be deprecated on 2022-12-31. Please consider switching to SABnzbd https://github.com/linuxserver/docker-sabnzbd
 
