@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/digikam.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/digikam-logo.png</Icon>
-    <Date>2022-11-21</Date>
+    <Date>2023-01-20</Date>
     <Changes>
+### 2023-01-20
+- Added breeze-icons package for icon support.
+
 ### 2022-11-21
 - Trigger upon baseimage updates (arch being a rolling distro has too many dependency breaks otherwise). Release version will be the baseimage build date going forward.
 
