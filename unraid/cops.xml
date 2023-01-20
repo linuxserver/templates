@@ -50,8 +50,11 @@ If you want to use the OPDS feed don&#39;t forget to specify feed.php at the end
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/cops.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cops-logo.png</Icon>
-    <Date>2022-08-20</Date>
+    <Date>2023-01-19</Date>
     <Changes>
+### 2023-01-19
+- Rebase to alpine 3.17 with php8.1.
+
 ### 2022-08-20
 - Rebasing to alpine 3.15 with php8. Restructure nginx configs (see changes announcement(https://info.linuxserver.io/issues/2022-08-20-nginx-base)).
 
