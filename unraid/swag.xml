@@ -19,8 +19,11 @@
     <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/swag.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2023-01-16</Date>
+    <Date>2023-01-20</Date>
     <Changes>
+### 2023-01-20
+- Rebase to alpine 3.17 with php8.1.
+
 ### 2023-01-16
 - Remove nchan module because it keeps causing crashes.
 
