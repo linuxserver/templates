@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]/smokeping/smokeping.cgi</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/smokeping.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/smokeping-logo.png</Icon>
-    <Date>2022-12-12</Date>
+    <Date>2023-01-22</Date>
     <Changes>
+### 2023-01-22
+- Revert to using Apache due to latency issues with nginx and fcgiwrap.
+
 ### 2022-12-12
 - Rebase to Alpine 3.17, migrate to s6v3, switch to nginx and fcgiwrap.
 
