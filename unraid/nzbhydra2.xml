@@ -31,8 +31,11 @@ It provides easy access to a number of raw and newznab based indexers. The appli
     <WebUI>http://[IP]:[PORT:5076]/system/about</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nzbhydra2.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nzbhydra2-logo.png</Icon>
-    <Date>2023-01-20</Date>
+    <Date>2023-01-22</Date>
     <Changes>
+### 2023-01-22
+- Update release URL for arch-specific packages.
+
 ### 2023-01-20
 - Update dependencies for v5.
 
