@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/phpmyadmin.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/phpmyadmin-logo.png</Icon>
-    <Date>2022-11-18</Date>
+    <Date>2023-01-20</Date>
     <Changes>
+### 2023-01-20
+- Rebase to alpine 3.17 with php8.1.
+
 ### 2022-11-18
 - Rebasing to Alpine 3.16, migrate to s6v3.
 
