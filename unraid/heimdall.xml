@@ -26,13 +26,18 @@
     </Branch>
     <Project>https://heimdall.site</Project>
     <Overview>Heimdall(https://heimdall.site) is a way to organise all those links to your most used web sites and web applications in a simple way.
+
 Simplicity is the key to Heimdall.
+
 Why not use it as your browser start page? It even has the ability to include a search bar using either Google, Bing or DuckDuckGo.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/heimdall.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/heimdall-logo.png</Icon>
-    <Date>2022-11-14</Date>
+    <Date>2023-01-20</Date>
     <Changes>
+### 2023-01-20
+- Rebase to alpine 3.17 with php8.1.
+
 ### 2022-11-14
 - Rebasing to alpine 3.15 with php8. Restructure nginx configs (see changes announcement(https://info.linuxserver.io/issues/2022-08-20-nginx-base)).
 
