@@ -18,8 +18,11 @@
     <Overview>Mariadb(https://mariadb.org/) is one of the most popular database servers. Made by the original developers of MySQL.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mariadb.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mariadb-logo.png</Icon>
-    <Date>2023-01-31</Date>
+    <Date>2023-02-04</Date>
     <Changes>
+### 2023-02-04
+- Minor updates to defaults in custom.cnf.
+
 ### 2023-01-31
 - Rebase to 3.17.
 
