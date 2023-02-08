@@ -23,8 +23,11 @@
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/adguardhome-sync.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2022-10-03</Date>
+    <Date>2023-02-07</Date>
     <Changes>
+### 2023-02-07
+- Rebase to Alpine 3.17, update amd64 artifact name.
+
 ### 2022-10-03
 - Rebase to Alpine 3.16, migrate to s6v3.
 
