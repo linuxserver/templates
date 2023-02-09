@@ -14,10 +14,6 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-plex#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-plex#readme</ReadMe>
-    <Branch>
-        <Tag>latest</Tag>
-        <TagDescription>Stable releases with Focal baseimage</TagDescription>
-    </Branch>
     <Project>https://plex.tv</Project>
     <Overview>Plex(https://plex.tv) organizes video, music and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone Plex Media Server. has always been a top priority. Straightforward design and bulk actions mean getting things done faster.</Overview>
     <WebUI>http://[IP]:[PORT:32400]/web/index.html</WebUI>
