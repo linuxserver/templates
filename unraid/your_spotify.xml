@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-your_spotify/blob/main/readme-vars.yml -->
+<Container version="2">
+    <Name>your_spotify</Name>
+    <Repository>lscr.io/linuxserver/your_spotify</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/your_spotify</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-your_spotify/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-your_spotify#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-your_spotify#readme</ReadMe>
+    <Project>https://github.com/Yooooomi/your_spotify</Project>
+    <Overview>Your_spotify(https://github.com/Yooooomi/your_spotify) is a self-hosted application that tracks what you listen and offers you a dashboard to explore statistics about it! It&#39;s composed of a web server which polls the Spotify API every now and then and a web application on which you can explore your statistics.</Overview>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/your_spotify.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/your_spotify-logo.png</Icon>
+    <Date>2023-01-23</Date>
+    <Changes>
+### 2023-01-23
+- Initial Release.
+
+    </Changes>
+    <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="your_spotify HTTP webui" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 443" Target="443" Default="443" Mode="tcp" Description="your_spotify HTTPS webui" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="APP_URL" Target="APP_URL" Default="http://localhost" Description="The protocol and hostname where the app will be accessed." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="SPOTIFY_PUBLIC" Target="SPOTIFY_PUBLIC" Default="" Description="Your Spotify application client ID." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="SPOTIFY_SECRET" Target="SPOTIFY_SECRET" Default="" Description="Your Spotify application secret." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="CORS" Target="CORS" Default="http://localhost:80,https://localhost:443" Description="Allowed CORS sources, set to `all` to allow any source." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="MONGO_ENDPOINT" Target="MONGO_ENDPOINT" Default="mongodb://mongo:27017/your_spotify" Description="Set mongodb endpoint address/port." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
