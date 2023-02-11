@@ -23,8 +23,11 @@
     <WebUI>http://[IP]:[PORT:4040]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/airsonic-advanced.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/airsonic-advanced-logo.png</Icon>
-    <Date>2022-10-23</Date>
+    <Date>2023-02-11</Date>
     <Changes>
+### 2023-02-11
+- Rebase to Alpine 3.17.
+
 ### 2022-10-23
 - Rebase to Alpine 3.16, migrate to s6v3.
 
