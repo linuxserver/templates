@@ -24,12 +24,21 @@
         <ReadMe>https://github.com/linuxserver/docker-mastodon/tree/develop#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-mastodon/tree/develop#application-setup</GitHub>
     </Branch>
+    <Branch>
+        <Tag>glitch</Tag>
+        <TagDescription>glitch-soc(https://github.com/glitch-soc/mastodon) fork releases.</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-mastodon/tree/glitch#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-mastodon/tree/glitch#application-setup</GitHub>
+    </Branch>
     <Project>https://github.com/mastodon/mastodon/</Project>
     <Overview>Mastodon(https://github.com/mastodon/mastodon/) is a free, open-source social network server based on ActivityPub where users can follow friends and discover new ones..</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mastodon.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mastodon-logo.png</Icon>
-    <Date>2023-01-09</Date>
+    <Date>2023-02-09</Date>
     <Changes>
+### 2023-02-09
+- Add Glitch branch.
+
 ### 2023-01-09
 - Updated nginx conf to fix bring inline with Mastodon configuration (fixes Elk integration).
 
