@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/dillinger.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/dillinger-logo.png</Icon>
-    <Date>2022-04-19</Date>
+    <Date>2023-02-13</Date>
     <Changes>
+### 2023-02-13
+- Rebase to Alpine 3.17, migrate to s6v3.
+
 ### 2022-04-19
 - Rebase to Alpine.
 
