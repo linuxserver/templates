@@ -20,8 +20,11 @@
 This container handles the IRC connection (quasselcore) and requires a desktop client (quasselclient) to be used and configured. It is designed to be always on and will keep your identity present in IRC even when your clients cannot be online. Backlog (history) is downloaded by your client upon reconnection allowing infinite scrollback through time.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/quassel-core.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/quassel-core-logo.png</Icon>
-    <Date>2022-01-03</Date>
+    <Date>2023-02-13</Date>
     <Changes>
+### 2023-02-13
+- Rebase to Alpine 3.17, migrate to s6v3.
+
 ### 2022-01-03
 - Rebase to alpine 3.15. Add new build deps and apply other fixes for 0.14.
 
