@@ -19,8 +19,11 @@
     <WebUI>https://[IP]:[PORT:64443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/quassel-web.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/quassel-web-logo.png</Icon>
-    <Date>2022-02-12</Date>
+    <Date>2023-02-13</Date>
     <Changes>
+### 2023-02-13
+- Rebasing to Alpine 3.17, migrate to s6v3.
+
 ### 2022-02-12
 - Rebasing to alpine 3.15.
 
