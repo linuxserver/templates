@@ -19,8 +19,11 @@
     <WebUI>https://[IP]:[PORT:8443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/unifi-controller.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-controller-logo.png</Icon>
-    <Date>2023-01-23</Date>
+    <Date>2023-02-20</Date>
     <Changes>
+### 2023-02-20
+- Migrate to s6v3, install deb package on build, fix permissions.
+
 ### 2023-01-23
 - Exclude `run` from `/config` volume.
 
