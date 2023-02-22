@@ -14,10 +14,6 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-nextcloud#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-nextcloud#readme</ReadMe>
-    <Branch>
-        <Tag>latest</Tag>
-        <TagDescription>Stable Nextcloud releases</TagDescription>
-    </Branch>
     <Project>https://nextcloud.com/</Project>
     <Overview>Nextcloud(https://nextcloud.com/) gives you access to all your files wherever you are.
 
@@ -25,8 +21,11 @@ Where are your photos and documents? With Nextcloud you pick a server of your ch
     <WebUI>https://[IP]:[PORT:443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nextcloud.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nextcloud-logo.png</Icon>
-    <Date>2022-10-10</Date>
+    <Date>2023-01-20</Date>
     <Changes>
+### 2023-01-20
+- Rebase to alpine 3.17 with php8.1.
+
 ### 2022-10-10
 - Rebasing to alpine 3.15 with php8. Restructure nginx configs (see changes announcement(https://info.linuxserver.io/issues/2022-08-20-nginx-base)).
 
