@@ -16,12 +16,14 @@
     <ReadMe>https://github.com/linuxserver/docker-headphones#readme</ReadMe>
     <Project>https://github.com/rembo10/headphones</Project>
     <Overview>Headphones(https://github.com/rembo10/headphones) is an automated music downloader for NZB and Torrent, written in Python. It supports SABnzbd, NZBget, Transmission, µTorrent and Blackhole.</Overview>
-    <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
     <WebUI>http://[IP]:[PORT:8181]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/headphones.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/headphones-logo.png</Icon>
-    <Date>2022-02-02</Date>
+    <Date>2023-02-23</Date>
     <Changes>
+### 2023-02-23
+- Rebase to Alpine 3.17, migrate to s6v3.
+
 ### 2022-02-02
 - Rebasing to alpine 3.15. Updating to Python 3.
 
