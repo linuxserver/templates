@@ -21,8 +21,11 @@ Multiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV D
     <WebUI>http://[IP]:[PORT:9981]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/tvheadend.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/tvheadend-logo.png</Icon>
-    <Date>2022-08-31</Date>
+    <Date>2023-02-23</Date>
     <Changes>
+### 2023-02-23
+- Rebase to Alpine 3.17, migrate to s6v3, drop armhf support.
+
 ### 2022-08-31
 - Update sample env vars and how RUN_OPTS are handled.
 
