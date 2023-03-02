@@ -22,8 +22,11 @@ Powered by SQL and including a Markdown editor for those who prefer it, BookStac
 For more information on BookStack visit their website and check it out: https://www.bookstackapp.com</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/bookstack.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bookstack-logo.png</Icon>
-    <Date>2023-01-19</Date>
+    <Date>2023-03-01</Date>
     <Changes>
+### 2023-03-01
+- Add php iconv.
+
 ### 2023-01-19
 - Rebase to alpine 3.17 with php8.1.
 
