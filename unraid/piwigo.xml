@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/piwigo.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/piwigo-logo.png</Icon>
-    <Date>2023-01-16</Date>
+    <Date>2023-01-20</Date>
     <Changes>
+### 2023-01-20
+- Rebase to alpine 3.17 with php8.1.
+
 ### 2023-01-16
 - Fix broken custom template persistence.
 
