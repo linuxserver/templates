@@ -19,8 +19,11 @@
     <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/swag.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2023-02-09</Date>
+    <Date>2023-03-02</Date>
     <Changes>
+### 2023-03-02
+- Set permissions on crontabs during init.
+
 ### 2023-02-09
 - Existing users should update:(https://github.com/linuxserver/docker-swag/blob/master/README.md#updating-configs) proxy.conf, authelia-location.conf and authelia-server.conf - Add Authentik configs, update Authelia configs.
 
