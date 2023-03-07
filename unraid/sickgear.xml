@@ -21,8 +21,11 @@ For more information on SickGear visit their website and check it out: https://g
     <WebUI>http://[IP]:[PORT:8081]/home/view-changes</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sickgear.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sickgear-logo.png</Icon>
-    <Date>2022-11-18</Date>
+    <Date>2023-03-05</Date>
     <Changes>
+### 2023-03-05
+- Rebase to Alpine 3.17.
+
 ### 2022-11-18
 - Update service file from legacy SickBeard.py to sickgear.py.
 
