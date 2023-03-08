@@ -18,8 +18,11 @@
     <Overview>Feed2toot(https://gitlab.com/chaica/feed2toot) automatically parses rss feeds, identifies new posts and posts them on the Mastodon social network.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/feed2toot.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2022-12-22</Date>
+    <Date>2023-03-02</Date>
     <Changes>
+### 2023-03-02
+- Allow user customizable cron.
+
 ### 2022-12-22
 - Rebase to alpine 3.17.
 
