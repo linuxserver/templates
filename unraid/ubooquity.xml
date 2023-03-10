@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:2203]/ubooquity/admin</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/ubooquity.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ubooquity-logo.png</Icon>
-    <Date>2022-10-10</Date>
+    <Date>2023-03-05</Date>
     <Changes>
+### 2023-03-05
+- Rebase to Alpine 3.17.
+
 ### 2022-10-10
 - Rebasing to alpine 3.16, migrate to s6v3.
 
@@ -79,7 +82,7 @@
     <Config Name="Path: /books" Target="/books" Default="" Mode="rw" Description="Location of books." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /comics" Target="/comics" Default="" Mode="rw" Description="Location of comics." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /files" Target="/files" Default="" Mode="rw" Description="Location of raw files." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="MAXMEM" Target="MAXMEM" Default="maxmem" Description="To set the maximum memory. ( ex: set &#39;1024&#39; for 1GB )" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="MAXMEM" Target="MAXMEM" Default="" Description="To set the maximum memory. ( ex: set &#39;1024&#39; for 1GB )" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
