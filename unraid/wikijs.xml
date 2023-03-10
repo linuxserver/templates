@@ -12,15 +12,18 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-wikijs/issues/new/choose</Support>
     <Shell>bash</Shell>
-    <GitHub>https://github.com/linuxserver/docker-wikijs</GitHub>
+    <GitHub>https://github.com/linuxserver/docker-wikijs#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-wikijs#readme</ReadMe>
     <Project>https://github.com/Requarks/wiki</Project>
     <Overview>Wikijs(https://github.com/Requarks/wiki) A modern, lightweight and powerful wiki app built on NodeJS.</Overview>
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/wikijs.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/wikijs-logo.png</Icon>
-    <Date>2022-10-10</Date>
+    <Date>2023-03-05</Date>
     <Changes>
+### 2023-03-05
+- Rebase to Alpine 3.17.
+
 ### 2022-10-10
 - Rebasing to alpine 3.16, migrate to s6v3.
 
@@ -40,6 +43,12 @@
     <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Port for Wiki.js&#39;s web interface." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where Wiki.js config is stored." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="Where Wiki.js data is stored." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="DB_TYPE" Target="DB_TYPE" Default="sqlite" Description="Set to sqlite (default) or postgres depending on the database engine you wish to use" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="DB_HOST" Target="DB_HOST" Default="" Description="DB hostname (postgres only)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="DB_PORT" Target="DB_PORT" Default="" Description="DB port (postgres only)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="DB_NAME" Target="DB_NAME" Default="" Description="DB name (postgres only)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="DB_USER" Target="DB_USER" Default="" Description="DB username (postgres only)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="DB_PASS" Target="DB_PASS" Default="" Description="DB password (postgres only)" Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
