@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8888]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/oscam.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/oscam-logo.png</Icon>
-    <Date>2022-11-03</Date>
+    <Date>2023-03-13</Date>
     <Changes>
+### 2023-03-13
+- Rebase to Alpine 3.17.
+
 ### 2022-11-03
 - Rebasing to alpine 3.16 and s6v3. Update pcsd driver link.
 
