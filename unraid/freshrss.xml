@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/freshrss.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/freshrss-logo.png</Icon>
-    <Date>2023-01-19</Date>
+    <Date>2023-03-02</Date>
     <Changes>
+### 2023-03-02
+- Split cron into separate init step and set crontab permissions.
+
 ### 2023-01-19
 - Rebase to alpine 3.17 with php8.1.
 
