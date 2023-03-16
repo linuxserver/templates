@@ -35,8 +35,11 @@
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sabnzbd.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sabnzbd-logo.png</Icon>
-    <Date>2023-03-05</Date>
+    <Date>2023-03-15</Date>
     <Changes>
+### 2023-03-15
+- Switch from p7zip to 7zip, bump unrar to 6.2.6.
+
 ### 2023-03-05
 - Rebase master branch to Alpine 3.17.
 
