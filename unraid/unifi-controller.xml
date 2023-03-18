@@ -14,13 +14,26 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-unifi-controller#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-unifi-controller#readme</ReadMe>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Stable Unifi Controller releases.</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>mongoless</Tag>
+        <TagDescription>Stable Unifi Controller releases without mongodb included.</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-unifi-controller/tree/mongoless#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-unifi-controller/tree/mongoless#application-setup</GitHub>
+    </Branch>
     <Project>https://www.ubnt.com/enterprise/#unifi</Project>
     <Overview>The Unifi-controller(https://www.ubnt.com/enterprise/#unifi) software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.</Overview>
     <WebUI>https://[IP]:[PORT:8443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/unifi-controller.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-controller-logo.png</Icon>
-    <Date>2023-03-10</Date>
+    <Date>2023-03-18</Date>
     <Changes>
+### 2023-03-18
+- Add mongoless branch.
+
 ### 2023-03-10
 - Test writing to /run/unifi and symlink to /config/run if it fails.
 
