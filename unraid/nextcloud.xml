@@ -21,8 +21,11 @@ Where are your photos and documents? With Nextcloud you pick a server of your ch
     <WebUI>https://[IP]:[PORT:443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nextcloud.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nextcloud-logo.png</Icon>
-    <Date>2023-03-02</Date>
+    <Date>2023-03-21</Date>
     <Changes>
+### 2023-03-21
+- Add php81-sysvsem as new dep for v26. Update default X-Robots-Tag to `noindex, nofollow``.
+
 ### 2023-03-02
 - Set permissions on crontabs during init.
 
