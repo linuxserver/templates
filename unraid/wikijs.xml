@@ -22,6 +22,9 @@
     <Date>2023-03-21</Date>
     <Changes>
 ### 2023-03-21
+- Restore git and openssh packages for git storage support.
+
+### 2023-03-21
 - Create dummy /etc/os-release to fix System Info page.
 
 ### 2022-10-10
