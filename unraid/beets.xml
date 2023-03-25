@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8337]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/beets.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/beets-logo.png</Icon>
-    <Date>2023-02-24</Date>
+    <Date>2023-03-25</Date>
     <Changes>
+### 2023-03-25
+- Add requests_oauthlib required for beatport plugin(https://beets.readthedocs.io/en/stable/plugins/beatport.html).
+
 ### 2023-02-24
 - Rebase to Alpine 3.17, migrate to s6v3, install chromaprint from Alpine repos, add beetcamp plugin.
 
