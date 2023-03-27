@@ -31,8 +31,11 @@ This software is a fork of library and licensed under the GPL v3 License.</Overv
     <WebUI>http://[IP]:[PORT:8083]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/calibre-web.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/calibre-web-logo.png</Icon>
-    <Date>2022-12-27</Date>
+    <Date>2023-03-27</Date>
     <Changes>
+### 2023-03-27
+- Add cmake as build dep for Levenshtein.
+
 ### 2022-12-27
 - Add ghostscript, libxtst6, libxkbfile-dev.
 
