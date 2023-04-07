@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/boinc.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/boinc-logo.png</Icon>
-    <Date>2022-11-14</Date>
+    <Date>2023-04-03</Date>
     <Changes>
+### 2023-04-03
+- Rebase to KasmVNC base image. Deprecate armhf build as the new base does not support it. Add bzip2 and xz-utils.
+
 ### 2022-11-14
 - Fix opencl driver.
 
@@ -50,6 +53,7 @@
 
     </Changes>
     <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="Boinc desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 8181" Target="8181" Default="8181" Mode="tcp" Description="Boinc desktop gui HTTPS." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where BOINC should store its database and config." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PASSWORD" Target="PASSWORD" Default="" Description="Optionally set a password for the gui." Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
