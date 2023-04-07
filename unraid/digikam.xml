@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/digikam.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/digikam-logo.png</Icon>
-    <Date>2023-01-20</Date>
+    <Date>2023-03-18</Date>
     <Changes>
+### 2023-03-18
+- Rebase to KasmVNC base image.
+
 ### 2023-01-20
 - Added breeze-icons package for icon support.
 
@@ -50,9 +53,9 @@
 
     </Changes>
     <Config Name="Port: 3000" Target="3000" Default="3000" Mode="tcp" Description="digiKam desktop gui" Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Port: 3001" Target="3001" Default="3001" Mode="tcp" Description="digiKam desktop gui HTTPS" Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Users home directory in the container, stores database." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="SUBFOLDER" Target="SUBFOLDER" Default="/" Description="Specify a subfolder to use with reverse proxies, IE `/subfolder/`" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="KEYBOARD" Target="KEYBOARD" Default="en-us-qwerty" Description="See the keyboard layouts section for more information and options." Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
