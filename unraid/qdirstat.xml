@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/qdirstat.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/qdirstat-logo.png</Icon>
-    <Date>2022-12-16</Date>
+    <Date>2023-04-03</Date>
     <Changes>
+### 2023-04-03
+- Rebase to KasmVNC base image. Deprecate armhf build as the new base does not support it.
+
 ### 2022-12-16
 - Rebase to Jammy.
 
@@ -35,6 +38,7 @@
 
     </Changes>
     <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="QdirStat desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 3001" Target="3001" Default="3001" Mode="tcp" Description="QdirStat desktop gui HTTPS." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Users home directory in the container, stores qdirstat settings and scans." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="Data you want to analyze disk usage information of." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
