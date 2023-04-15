@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/phpmyadmin.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/phpmyadmin-logo.png</Icon>
-    <Date>2023-01-20</Date>
+    <Date>2023-04-13</Date>
     <Changes>
+### 2023-04-13
+- Move ssl.conf include to default.conf.
+
 ### 2023-01-20
 - Rebase to alpine 3.17 with php8.1.
 
