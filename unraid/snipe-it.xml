@@ -21,6 +21,9 @@
     <Date>2023-04-13</Date>
     <Changes>
 ### 2023-04-13
+- Move ssl.conf include to default.conf.
+
+### 2023-04-13
 - Add php81-pecl-redis for redis support.
 
 ### 2022-12-28
