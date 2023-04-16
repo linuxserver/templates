@@ -23,8 +23,11 @@ Please note that the v4 upgrade process resets ALL password-protected albums. An
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/lychee.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/lychee-logo.png</Icon>
-    <Date>2023-01-11</Date>
+    <Date>2023-04-13</Date>
     <Changes>
+### 2023-04-13
+- Move ssl.conf include to default.conf.
+
 ### 2023-01-11
 - Rebasing to alpine 3.17 with php8.1. Restructure nginx configs (see changes announcement(https://info.linuxserver.io/issues/2022-08-20-nginx-base)). Switch to git clone as builds fail with the release artifact.
 
