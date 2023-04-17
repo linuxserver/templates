@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/budge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2022-11-29</Date>
+    <Date>2023-04-13</Date>
     <Changes>
+### 2023-04-13
+- Move ssl.conf include to default.conf.
+
 ### 2022-11-29
 - Rebase to Alpine 3.17, migrate to s6v3.
 
