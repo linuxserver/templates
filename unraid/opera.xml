@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-opera/blob/master/readme-vars.yml -->
+<Container version="2">
+    <Name>opera</Name>
+    <Repository>lscr.io/linuxserver/opera</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/opera</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-opera/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-opera#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-opera#readme</ReadMe>
+    <Project>https://www.opera.com/</Project>
+    <Overview>Opera(https://www.opera.com/) is a multi-platform web browser developed by its namesake company Opera. The browser is based on Chromium, but distinguishes itself from other Chromium-based browsers (Chrome, Edge, etc.) through its user interface and other features.</Overview>
+    <ExtraParams>--shm-size=1gb</ExtraParams>
+    <WebUI>http://[IP]:[PORT:3000]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/opera.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Date>2023-04-09</Date>
+    <Changes>
+### 2023-04-09
+- Initial release.
+
+    </Changes>
+    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Opera desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 3001" Target="3001" Default="3001" Mode="tcp" Description="HTTPS Opera desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Users home directory in the container, stores local files and settings" Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="OPERA_CLI" Target="OPERA_CLI" Default="https://www.linuxserver.io/" Description="Specify one or multiple Chromium CLI flags, this string will be passed to the application in full." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
