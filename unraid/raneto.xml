@@ -22,7 +22,7 @@
     <Date>2023-04-21</Date>
     <Changes>
 ### 2023-04-21
-- Fix for upstream changes. Content now needs to be placed in /config/content/pages.
+- Fix for upstream changes.
 
 ### 2023-01-18
 - Rebase to Alpine 3.17, migrate to s6v3.
