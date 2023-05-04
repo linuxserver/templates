@@ -29,8 +29,11 @@
     <WebUI>https://[IP]:[PORT:8443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/unifi-controller.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-controller-logo.png</Icon>
-    <Date>2023-03-18</Date>
+    <Date>2023-05-02</Date>
     <Changes>
+### 2023-05-02
+- Cleanup `apt-get install` during build to reduce image size.
+
 ### 2023-03-18
 - Add mongoless branch.
 
