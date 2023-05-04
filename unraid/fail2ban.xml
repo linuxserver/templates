@@ -22,6 +22,9 @@
     <Date>2022-12-15</Date>
     <Changes>
 ### 2022-12-15
+- Replace unmaintained ssmtp with msmtp.
+
+### 2022-12-15
 - Rebase to Alpine 3.17, Add ssmtp and whois packages. Symlink config to allow live reloading.
 
 ### 2022-08-25
