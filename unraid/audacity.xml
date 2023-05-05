@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/audacity.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/audacity-logo.png</Icon>
-    <Date>2023-03-18</Date>
+    <Date>2023-05-05</Date>
     <Changes>
+### 2023-05-05
+- Start Audacity in full screen.
+
 ### 2023-03-18
 - Rebase to KasmVNC base image.
 
