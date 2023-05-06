@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/grav.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/grav-logo.png</Icon>
-    <Date>2023-04-13</Date>
+    <Date>2023-05-06</Date>
     <Changes>
+### 2023-05-06
+- Add php-ldap for LDAP support.
+
 ### 2023-04-13
 - Move ssl.conf include to default.conf.
 
