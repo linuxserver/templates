@@ -20,8 +20,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/webcord.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2023-04-21</Date>
+    <Date>2023-05-09</Date>
     <Changes>
+### 2023-05-09
+- Bundle Chromium to provide browser for opening links, etc.
+
 ### 2023-04-21
 - Initial release.
 
