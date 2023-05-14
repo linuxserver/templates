@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]/smokeping/smokeping.cgi</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/smokeping.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/smokeping-logo.png</Icon>
-    <Date>2023-01-22</Date>
+    <Date>2023-05-11</Date>
     <Changes>
+### 2023-05-11
+- Add perl-lwp-protocol-https for master/slave support over https.
+
 ### 2023-01-22
 - Revert to using Apache due to latency issues with nginx and fcgiwrap.
 
