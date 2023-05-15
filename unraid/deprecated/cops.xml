@@ -12,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-cops/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/linuxserver/docker-cops#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-cops#readme</ReadMe>
     <Project>http://blog.slucas.fr/en/oss/calibre-opds-php-server</Project>
@@ -50,8 +51,11 @@ If you want to use the OPDS feed don&#39;t forget to specify feed.php at the end
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/cops.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cops-logo.png</Icon>
-    <Date>2023-04-13</Date>
+    <Date>2023-05-15</Date>
     <Changes>
+### 2023-05-15
+- Deprecate due to upstream dev abandonment of project.
+
 ### 2023-04-13
 - Move ssl.conf include to default.conf.
 
