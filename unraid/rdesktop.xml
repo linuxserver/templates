@@ -160,8 +160,11 @@
     <Overview>Rdesktop(http://xrdp.org/) - Containers containing full desktop environments in many popular flavors for Alpine, Ubuntu, Arch, and Fedora accessible via RDP.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/rdesktop.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/rdesktop-logo.png</Icon>
-    <Date>2022-10-27</Date>
+    <Date>2023-05-18</Date>
     <Changes>
+### 2023-05-18
+- Rebase all Alpine images to 3.18, deprecate armhf.
+
 ### 2022-10-27
 - Rebase all Ubuntu images to Jammy 22.04.
 
