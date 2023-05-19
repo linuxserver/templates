@@ -21,8 +21,11 @@ No Flash, No Java, No Websocket, No Bullshit.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/librespeed.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/librespeed-logo.png</Icon>
-    <Date>2023-01-20</Date>
+    <Date>2023-05-14</Date>
     <Changes>
+### 2023-05-14
+- Added support for ipinfo.io
+
 ### 2023-01-20
 - Rebase to alpine 3.17 with php8.1.
 
@@ -58,6 +61,7 @@ No Flash, No Java, No Websocket, No Bullshit.</Overview>
     <Config Name="DB_USERNAME" Target="DB_USERNAME" Default="DB_USERNAME" Description="Database username. Required for mysql and pgsql." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="DB_PASSWORD" Description="Database password. Required for mysql and pgsql." Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="DB_PORT" Target="DB_PORT" Default="DB_PORT" Description="Database port. Required for mysql." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="IPINFO_APIKEY" Target="IPINFO_APIKEY" Default="ACCESS_TOKEN" Description="Access token from ipinfo.io. Required for detailed IP information." Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
