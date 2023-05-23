@@ -19,7 +19,7 @@
     <ExtraParams>--hostname=pydio-cells --cap-add=NET_ADMIN</ExtraParams>
     <WebUI>https://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/pydio-cells.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pydio-cells-icon.png</Icon>
     <Date>2022-12-01</Date>
     <Changes>
 ### 2022-12-01
