@@ -19,7 +19,7 @@
     <ExtraParams>--shm-size=1gb</ExtraParams>
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/webcord.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webcord-icon.png</Icon>
     <Date>2023-05-18</Date>
     <Changes>
 ### 2023-05-18
