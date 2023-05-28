@@ -35,8 +35,11 @@
     <WebUI>http://[IP]:[PORT:9000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/thelounge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2022-12-18</Date>
+    <Date>2023-05-25</Date>
     <Changes>
+### 2023-05-25
+- Rebase to Alpine 3.18, deprecate armhf.
+
 ### 2022-12-18
 - Rebasing master to alpine 3.17.
 
