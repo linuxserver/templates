@@ -18,8 +18,11 @@
     <Overview>Rsnapshot(http://www.rsnapshot.org/) is a filesystem snapshot utility based on rsync. rsnapshot makes it easy to make periodic snapshots of local machines, and remote machines over ssh. The code makes extensive use of hard links whenever possible, to greatly reduce the disk space required.&#34;</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/rsnapshot.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/rsnapshot-icon.png</Icon>
-    <Date>2023-03-02</Date>
+    <Date>2023-05-25</Date>
     <Changes>
+### 2023-05-25
+- Rebase to Alpine 3.18, deprecate armhf.
+
 ### 2023-03-02
 - Split cron into separate init step and set crontab permissions.
 
