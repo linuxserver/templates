@@ -19,8 +19,11 @@
     <ExtraParams>--cap-add=NET_ADMIN --cap-add=NET_RAW</ExtraParams>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/fail2ban.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/fail2ban-logo.png</Icon>
-    <Date>2022-12-15</Date>
+    <Date>2023-05-25</Date>
     <Changes>
+### 2023-05-25
+- Rebase to Alpine 3.18, deprecate armhf.
+
 ### 2022-12-15
 - Replace unmaintained ssmtp with msmtp.
 
