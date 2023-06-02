@@ -19,8 +19,11 @@
     <ExtraParams>--cap-add=NET_ADMIN --cap-add=NET_RAW</ExtraParams>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/fail2ban.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/fail2ban-logo.png</Icon>
-    <Date>2023-05-25</Date>
+    <Date>2023-06-01</Date>
     <Changes>
+### 2023-06-01
+- Add optional VERBOSITY environment variable, allowing users to set the container log verbosity.
+
 ### 2023-05-25
 - Rebase to Alpine 3.18, deprecate armhf.
 
@@ -56,6 +59,7 @@
     <Config Name="Path: /remotelogs/sonarr" Target="/remotelogs/sonarr" Default="" Mode="ro" Description="Optional path to sonarr log folder. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="Path: /remotelogs/unificontroller" Target="/remotelogs/unificontroller" Default="" Mode="ro" Description="Optional path to unificontroller log folder. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="Path: /remotelogs/vaultwarden" Target="/remotelogs/vaultwarden" Default="" Mode="ro" Description="Optional path to vaultwarden log folder. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Verbosity" Target="VERBOSITY" Default="-vv" Description="Set the container log verbosity. Valid options are -v, -vv, -vvv, -vvvv, or leaving the value blank or not setting the variable." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
