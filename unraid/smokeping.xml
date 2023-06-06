@@ -22,6 +22,9 @@
     <Date>2023-05-16</Date>
     <Changes>
 ### 2023-05-16
+- Add perl-authen-radius for Radius support.
+
+### 2023-05-16
 - Rebase to Alpine 3.18. Deprecate armhf.
 
 ### 2023-05-11
