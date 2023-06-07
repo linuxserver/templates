@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/healthchecks.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2022-12-22</Date>
+    <Date>2023-05-31</Date>
     <Changes>
+### 2023-05-31
+- Rebase to Alpine 3.18. Deprecate armhf.
+
 ### 2022-12-22
 - Rebase to Alpine 3.17. Add extra deps for pycurl. Add INTEGRATIONS_ALLOW_PRIVATE_IPS.
 
