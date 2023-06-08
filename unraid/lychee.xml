@@ -23,8 +23,11 @@ Please note that the v4 upgrade process resets ALL password-protected albums. An
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/lychee.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/lychee-logo.png</Icon>
-    <Date>2023-04-13</Date>
+    <Date>2023-05-25</Date>
     <Changes>
+### 2023-05-25
+- Rebase to Alpine 3.18, deprecate armhf.
+
 ### 2023-04-13
 - Move ssl.conf include to default.conf.
 
@@ -86,6 +89,7 @@ Please note that the v4 upgrade process resets ALL password-protected albums. An
     <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="http gui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /pictures" Target="/pictures" Default="" Mode="rw" Description="Where lychee will store uploaded data." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="DB_CONNECTION" Target="DB_CONNECTION" Default="mysql" Description="for specifying the database type" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_HOST" Target="DB_HOST" Default="mariadb" Description="for specifying the database host" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_PORT" Target="DB_PORT" Default="3306" Description="for specifying the database port" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_USERNAME" Target="DB_USERNAME" Default="lychee" Description="for specifying the database user" Type="Variable" Display="always" Required="true" Mask="false"/>
