@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8123]</WebUI>
     <TemplateURL>false</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/homeassistant-logo.png</Icon>
-    <Date>2023-05-03</Date>
+    <Date>2023-06-07</Date>
     <Changes>
+### 2023-06-07
+- Rebase to alpine 3.18, switch to cp311 wheels.
+
 ### 2023-05-03
 - Deprecate arm32v7. Latest HA version with an arm32v7 build is `2023.4.6`.
 
