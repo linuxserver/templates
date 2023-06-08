@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8096]</WebUI>
     <TemplateURL>false</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/emby-logo.png</Icon>
-    <Date>2023-05-31</Date>
+    <Date>2023-06-08</Date>
     <Changes>
+### 2023-06-08
+- Fix package extraction so it doesn&#39;t change /tmp perms.
+
 ### 2023-05-31
 - Use upstream deb packages instead of rpm.
 
