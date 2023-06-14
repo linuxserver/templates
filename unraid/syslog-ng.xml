@@ -18,8 +18,11 @@
     <Overview>syslog-ng(https://www.syslog-ng.com/products/open-source-log-management/) allows you to flexibly collect, parse, classify, rewrite and correlate logs from across your infrastructure and store or route them to log analysis tools.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/syslog-ng.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/syslog-ng-logo.png</Icon>
-    <Date>2023-01-10</Date>
+    <Date>2023-06-11</Date>
     <Changes>
+### 2023-06-11
+- Rebase to Alpine 3.18, deprecate armhf.
+
 ### 2023-01-10
 - Add paho-mqtt-c library as required by the syslog-ng documentation
 
