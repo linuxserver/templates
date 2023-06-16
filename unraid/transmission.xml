@@ -19,10 +19,13 @@
     <WebUI>http://[IP]:[PORT:9091]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/transmission.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/transmission-logo.png</Icon>
-    <Date>2023-05-25</Date>
+    <Date>2023-06-10</Date>
     <Changes>
+### 2023-06-10
+- Bump unrar to 6.2.8, install transmission-extra.
+
 ### 2023-05-25
-- Rebase to Alpine 3.18, deprecate armhf.
+- Deprecate armhf.
 
 ### 2023-05-14
 - Explicitly install transmission-remote.
