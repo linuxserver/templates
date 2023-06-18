@@ -21,8 +21,11 @@ HedgeDoc is a real-time, multi-platform collaborative markdown note editor.  Thi
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/hedgedoc.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/hedgedoc-logo.png</Icon>
-    <Date>2022-11-02</Date>
+    <Date>2023-06-18</Date>
     <Changes>
+### 2023-06-18
+- Rebase to Alpine 3.18, deprecate armhf as per https://www.linuxserver.io/armhf(https://www.linuxserver.io/armhf).
+
 ### 2022-11-02
 - Rebase to Alpine 3.16, migrate to s6v3.
 
