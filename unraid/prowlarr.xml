@@ -35,8 +35,11 @@
     <WebUI>http://[IP]:[PORT:9696]/system/status</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/prowlarr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/prowlarr-logo.png</Icon>
-    <Date>2023-01-03</Date>
+    <Date>2023-06-06</Date>
     <Changes>
+### 2023-06-06
+- Rebase master to Alpine 3.18, deprecate armhf as per https://www.linuxserver.io/armhf(https://www.linuxserver.io/armhf).
+
 ### 2023-01-03
 - Publish stable release.
 
