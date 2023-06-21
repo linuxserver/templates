@@ -35,8 +35,11 @@
     <WebUI>http://[IP]:[PORT:8686]/system/status</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/lidarr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/lidarr-logo.png</Icon>
-    <Date>2023-01-17</Date>
+    <Date>2023-06-06</Date>
     <Changes>
+### 2023-06-06
+- Rebase master to Alpine 3.18, deprecate armhf as per https://www.linuxserver.io/armhf(https://www.linuxserver.io/armhf).
+
 ### 2023-01-17
 - Rebase master branch to Alpine 3.17, migrate to s6v3.
 
