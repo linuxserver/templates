@@ -24,6 +24,9 @@ Where are your photos and documents? With Nextcloud you pick a server of your ch
     <Date>2023-05-25</Date>
     <Changes>
 ### 2023-05-25
+- Existing users should update `/config/nginx/site-confs/default.conf` - Security fix for real ip settings.
+
+### 2023-05-25
 - Rebase to Alpine 3.18, deprecate armhf.
 
 ### 2023-04-13
