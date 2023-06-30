@@ -24,8 +24,11 @@
     <WebUI>http://[IP]:[PORT:8112]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/deluge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/deluge-logo.png</Icon>
-    <Date>2022-11-29</Date>
+    <Date>2023-06-30</Date>
     <Changes>
+### 2023-06-30
+- Bump unrar to 6.2.8, deprecate armhf as per https://www.linuxserver.io/armhf(https://www.linuxserver.io/armhf).
+
 ### 2022-11-29
 - Restore geoip using py3-geoip as an interim measure.
 
