@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:5299]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/lazylibrarian.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/lazylibrarian-logo.png</Icon>
-    <Date>2022-12-07</Date>
+    <Date>2023-07-01</Date>
     <Changes>
+### 2023-07-01
+- Deprecate armhf. As announced here(https://www.linuxserver.io/blog/a-farewell-to-arm-hf)
+
 ### 2022-12-07
 - Rebase to Ubuntu Jammy, migrate to s6v3. Use pyproject.toml for deps. Build unrar from source.
 
