@@ -33,8 +33,11 @@ Even automatically send them weekly newsletters of new content that has been add
     <WebUI>http://[IP]:[PORT:3579]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/ombi.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ombi-logo.png</Icon>
-    <Date>2022-09-11</Date>
+    <Date>2023-07-01</Date>
     <Changes>
+### 2023-07-01
+- Deprecate armhf. As announced here(https://www.linuxserver.io/blog/a-farewell-to-arm-hf)
+
 ### 2022-09-11
 - Migrate to s6v3.
 
