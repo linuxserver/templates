@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8888]/gui</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/resilio-sync.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/resilio-sync-logo.png</Icon>
-    <Date>2022-12-14</Date>
+    <Date>2023-07-03</Date>
     <Changes>
+### 2023-07-03
+- Deprecate armhf. As announced here(https://www.linuxserver.io/blog/a-farewell-to-arm-hf)
+
 ### 2022-12-14
 - Rebase to Jammy, migrate to s6v3.
 
