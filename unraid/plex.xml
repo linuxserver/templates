@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:32400]/web/index.html</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/plex.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/plex-logo.png</Icon>
-    <Date>2022-10-16</Date>
+    <Date>2023-07-03</Date>
     <Changes>
+### 2023-07-03
+- Deprecate armhf. As announced here(https://www.linuxserver.io/blog/a-farewell-to-arm-hf)
+
 ### 2022-10-16
 - Rebase to jammy. Update to s6v3. Remove opencl packages (bundled with plex).
 
