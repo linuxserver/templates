@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8088]/</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/synclounge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/synclounge-logo.png</Icon>
-    <Date>2022-11-29</Date>
+    <Date>2023-07-04</Date>
     <Changes>
+### 2023-07-04
+- Deprecate armhf. As announced here(https://www.linuxserver.io/blog/a-farewell-to-arm-hf)
+
 ### 2022-11-29
 - Rebase to alpine 3.17, upgrade to s6v3.
 
