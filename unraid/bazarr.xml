@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:6767]/system/status</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/bazarr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bazarr-logo.png</Icon>
-    <Date>2023-02-26</Date>
+    <Date>2023-07-04</Date>
     <Changes>
+### 2023-07-04
+- Deprecate armhf. As announced here(https://www.linuxserver.io/blog/a-farewell-to-arm-hf)
+
 ### 2023-02-26
 - Add dependencies for postgres support. Add mediainfo.
 
