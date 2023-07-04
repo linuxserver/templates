@@ -31,8 +31,11 @@ It provides easy access to a number of raw and newznab based indexers. The appli
     <WebUI>http://[IP]:[PORT:5076]/system/about</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nzbhydra2.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nzbhydra2-logo.png</Icon>
-    <Date>2023-01-22</Date>
+    <Date>2023-07-04</Date>
     <Changes>
+### 2023-07-04
+- Deprecate armhf. As announced here(https://www.linuxserver.io/blog/a-farewell-to-arm-hf)
+
 ### 2023-01-22
 - Update release URL for arch-specific packages.
 
