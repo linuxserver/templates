@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8000]/</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/babybuddy.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/babybuddy-logo.png</Icon>
-    <Date>2023-05-25</Date>
+    <Date>2023-07-05</Date>
     <Changes>
+### 2023-07-05
+- Add standard HTTP/HTTPS listen ports 80 and 443, keeping 8000 for backwards compatibility.
+
 ### 2023-05-25
 - Rebase to Alpine 3.18, deprecate armhf.
 
