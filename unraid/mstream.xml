@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mstream.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mstream-logo.png</Icon>
-    <Date>2023-02-13</Date>
+    <Date>2023-07-05</Date>
     <Changes>
+### 2023-07-05
+- Deprecate armhf. As announced here(https://www.linuxserver.io/blog/a-farewell-to-arm-hf)
+
 ### 2023-02-13
 - Rebase to Alpine 3.17, migrate to s6v3.
 
