@@ -20,8 +20,11 @@
     <WebUI>https://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/pydio-cells.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pydio-cells-icon.png</Icon>
-    <Date>2022-12-01</Date>
+    <Date>2023-07-06</Date>
     <Changes>
+### 2023-07-06
+- Deprecate armhf. As announced here(https://www.linuxserver.io/blog/a-farewell-to-arm-hf)
+
 ### 2022-12-01
 - Rebasing to alpine 3.17. Adding multi-arch support. Updating cli arguments for v4 compatibility.
 
