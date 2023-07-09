@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-flexget/blob/main/readme-vars.yml -->
+<Container version="2">
+    <Name>flexget</Name>
+    <Repository>lscr.io/linuxserver/flexget</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/flexget</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-flexget/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-flexget#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-flexget#readme</ReadMe>
+    <Project>http://flexget.com/</Project>
+    <Overview>Flexget(http://flexget.com/) is a multipurpose automation tool for all of your media.</Overview>
+    <WebUI>http://[IP]:[PORT:5050]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/flexget.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Date>2023-07-03</Date>
+    <Changes>
+### 2023-07-03
+- Initial Release.
+
+    </Changes>
+    <Config Name="WebUI" Target="5050" Default="5050" Mode="tcp" Description="HTTP port for the WebUI." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Local path for sabnzbd config files." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="Default path for downloads." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="FG_LOG_LEVEL" Target="FG_LOG_LEVEL" Default="info" Description="Set the FlexGet logging level." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="FG_WEBUI_PASSWORD" Target="FG_WEBUI_PASSWORD" Default="info" Description="Set the FlexGet webui password. Pay attention to Bash/YAML reserved characters." Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
