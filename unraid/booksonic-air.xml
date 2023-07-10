@@ -21,8 +21,11 @@
     <WebUI>http://[IP]:[PORT:4040]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/booksonic-air.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/booksonic-air-logo.png</Icon>
-    <Date>2022-12-25</Date>
+    <Date>2023-07-10</Date>
     <Changes>
+### 2023-07-10
+- Rebase to Alpine 3.18.
+
 ### 2022-12-25
 - Rebase to Alpine 3.17, migrate to s6v3, bump jre to 11, deprecate armhf.
 
