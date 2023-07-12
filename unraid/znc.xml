@@ -18,8 +18,11 @@
     <Overview>Znc(http://wiki.znc.in/ZNC) is an IRC network bouncer or BNC. It can detach the client from the actual IRC server, and also from selected channels. Multiple clients from different locations can connect to a single ZNC account simultaneously and therefore appear under the same nickname on IRC.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/znc.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/znc-logo.png</Icon>
-    <Date>2023-07-07</Date>
+    <Date>2023-07-12</Date>
     <Changes>
+### 2023-07-12
+- Rebasing to Alpine 3.18.
+
 ### 2023-07-07
 - Deprecate armhf. As announced here(https://www.linuxserver.io/blog/a-farewell-to-arm-hf)
 
