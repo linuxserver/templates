@@ -26,7 +26,7 @@
 
     </Changes>
     <Config Name="WebUI" Target="5050" Default="5050" Mode="tcp" Description="HTTP port for the WebUI." Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Local path for sabnzbd config files." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Local path for FlexGet config files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="Default path for downloads." Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="FG_LOG_LEVEL" Target="FG_LOG_LEVEL" Default="info" Description="Set the FlexGet logging level." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="FG_WEBUI_PASSWORD" Target="FG_WEBUI_PASSWORD" Default="info" Description="Set the FlexGet webui password. Pay attention to Bash/YAML reserved characters." Type="Variable" Display="always" Required="false" Mask="true"/>
