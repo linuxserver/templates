@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/dokuwiki.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/dokuwiki-logo.png</Icon>
-    <Date>2023-05-25</Date>
+    <Date>2023-07-21</Date>
     <Changes>
+### 2023-07-21
+- Update built-in plugins on container update.
+
 ### 2023-05-25
 - Rebase to Alpine 3.18, deprecate armhf.
 
