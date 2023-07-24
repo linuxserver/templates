@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]/smokeping/smokeping.cgi</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/smokeping.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/smokeping-logo.png</Icon>
-    <Date>2023-05-16</Date>
+    <Date>2023-07-23</Date>
     <Changes>
+### 2023-07-23
+- Add Authen::TacacsPlus for Tacacs+ support.
+
 ### 2023-05-16
 - Add perl-authen-radius for Radius support.
 
