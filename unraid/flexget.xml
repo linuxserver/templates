@@ -29,6 +29,8 @@
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Local path for FlexGet config files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="Default path for downloads." Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="FG_LOG_LEVEL" Target="FG_LOG_LEVEL" Default="info" Description="Set the FlexGet logging level." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="FG_LOG_FILE" Target="FG_LOG_FILE" Default="/config/flexget.log" Description="Set the FlexGet log file location." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="FG_CONFIG_FILE" Target="FG_CONFIG_FILE" Default="/config/.flexget/config.yml" Description="Set the FlexGet config file location." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="FG_WEBUI_PASSWORD" Target="FG_WEBUI_PASSWORD" Default="info" Description="Set the FlexGet webui password. Pay attention to Bash/YAML reserved characters." Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
