@@ -16,7 +16,7 @@
     <ReadMe>https://github.com/linuxserver/docker-snapdrop#readme</ReadMe>
     <Project>https://github.com/RobinLinus/snapdrop</Project>
     <Overview>Snapdrop(https://github.com/RobinLinus/snapdrop) A local file sharing in your browser. Inspired by Apple&#39;s Airdrop.</Overview>
-    <WebUI>http://[IP]:[PORT:3000]</WebUI>
+    <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/snapdrop.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/snapdrop-logo.png</Icon>
     <Date>2023-05-25</Date>
