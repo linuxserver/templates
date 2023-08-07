@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-steamos/blob/master/readme-vars.yml -->
+<Container version="2">
+    <Name>steamos</Name>
+    <Repository>lscr.io/linuxserver/steamos</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/steamos</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-steamos/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-steamos#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-steamos#readme</ReadMe>
+    <Project>https://www.steamdeck.com/</Project>
+    <Overview>SteamOS(https://www.steamdeck.com/) is an Arch based Linux distribution made by Valve Software. This container is a vanilla Arch install with Steam repositories added for software support. **This container will only work with modern AMD/Intel GPUs on a real Linux Host**</Overview>
+    <ExtraParams>--cap-add=NET_ADMIN --shm-size=1gb --security-opt seccomp=unconfined</ExtraParams>
+    <WebUI>http://[IP]:[PORT:3000]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/steamos.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/steamos-logo.png</Icon>
+    <Date>2023-07-04</Date>
+    <Changes>
+### 2023-07-04
+- Initial release.
+
+    </Changes>
+    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="SteamOS desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 3001" Target="3001" Default="3001" Mode="tcp" Description="HTTPS SteamOS desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 27031-27036" Target="27031-27036" Default="27031-27036" Mode="udp" Description="Steam Remote Play Ports (UDP)." Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Port: 27031-27036" Target="27031-27036" Default="27031-27036" Mode="tcp" Description="Steam Remote Play Ports (TCP)." Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Users home directory in the container, stores all files and games." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Path: /dev/input" Target="/dev/input" Default="" Mode="rw" Description="Optional for gamepad support." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Path: /run/udev/data" Target="/run/udev/data" Default="" Mode="rw" Description="Optional for gamepad support." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="DRINODE" Target="DRINODE" Default="/dev/dri/renderD128" Description="Specify the render device (GPU) for the contianer to use." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="HOST_IP" Target="HOST_IP" Default="192.168.100.10" Description="Specify the IP of the host, needed for LAN Remote Play." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="/dev/dri" Default="/dev/dri" Description="Video card passthrough to Steam." Type="Device" Display="always" Required="true" Mask="false"/>
+</Container>
