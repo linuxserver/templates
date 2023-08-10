@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-kimai/blob/main/readme-vars.yml -->
+<Container version="2">
+    <Name>kimai</Name>
+    <Repository>lscr.io/linuxserver/kimai</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/kimai</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-kimai/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-kimai#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-kimai#readme</ReadMe>
+    <Project>https://kimai.org/</Project>
+    <Overview>Kimai(https://kimai.org/) is a professional grade time-tracking application, free and open-source.
+It handles use-cases of freelancers as well as companies with dozens or hundreds of users.
+Kimai was build to track your project times and ships with many advanced features, including but not limited to:
+
+JSON API, invoicing, data exports, multi-timer and punch-in punch-out mode, tagging, multi-user - multi-timezones - multi-language (over 30 translations existing(https://hosted.weblate.org/projects/kimai/)!), authentication via SAML/LDAP/Database, two-factor authentication (2FA) with TOTP, customizable role and team permissions, responsive design, user/customer/project specific rates, advanced search and filtering, money and time budgets, advanced reporting, support for plugins(https://www.kimai.org/store/) and so much more.</Overview>
+    <WebUI>http://[IP]:[PORT:80]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/kimai.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kimai-logo.png</Icon>
+    <Requires>
+        A MySQL or MariaDB database is required.
+                This container requires an external application to be run separately.
+        We recommend using our [MariaDB](https://github.com/linuxserver/docker-mariadb) container from community applications.
+            </Requires>
+    <Date>2023-08-09</Date>
+    <Changes>
+### 2023-08-09
+- Initial Release.
+
+    </Changes>
+    <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="http gui" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 443" Target="443" Default="443" Mode="tcp" Description="https gui" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="mysql://your_db_user:your_db_pass@your_db_host:3306/your_db_name" Description="Configure your database connection" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
