@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:5050]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/flexget.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2023-07-03</Date>
+    <Date>2023-08-10</Date>
     <Changes>
+### 2023-08-10
+- Bump unrar to 6.2.10.
+
 ### 2023-07-03
 - Initial Release.
 
