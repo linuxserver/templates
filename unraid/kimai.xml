@@ -20,7 +20,6 @@ It handles use-cases of freelancers as well as companies with dozens or hundreds
 Kimai was build to track your project times and ships with many advanced features, including but not limited to:
 
 JSON API, invoicing, data exports, multi-timer and punch-in punch-out mode, tagging, multi-user - multi-timezones - multi-language (over 30 translations existing(https://hosted.weblate.org/projects/kimai/)!), authentication via SAML/LDAP/Database, two-factor authentication (2FA) with TOTP, customizable role and team permissions, responsive design, user/customer/project specific rates, advanced search and filtering, money and time budgets, advanced reporting, support for plugins(https://www.kimai.org/store/) and so much more.</Overview>
-    <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/kimai.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kimai-logo.png</Icon>
     <Requires>
