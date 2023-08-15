@@ -14,6 +14,16 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-nextcloud#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-nextcloud#readme</ReadMe>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Stable Nextcloud releases</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>develop</Tag>
+        <TagDescription>Beta Nextcloud pre-releases *only*</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-nextcloud/tree/develop#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-nextcloud/tree/develop#application-setup</GitHub>
+    </Branch>
     <Project>https://nextcloud.com/</Project>
     <Overview>Nextcloud(https://nextcloud.com/) gives you access to all your files wherever you are.
 
@@ -21,8 +31,11 @@ Where are your photos and documents? With Nextcloud you pick a server of your ch
     <WebUI>https://[IP]:[PORT:443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nextcloud.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nextcloud-logo.png</Icon>
-    <Date>2023-06-25</Date>
+    <Date>2023-08-14</Date>
     <Changes>
+### 2023-08-14
+- Add develop branch.
+
 ### 2023-06-25
 - Move Nextcloud installation inside container. Remove CLI updater. See changes announcement(https://info.linuxserver.io/issues/2023-06-25-nextcloud/).
 
