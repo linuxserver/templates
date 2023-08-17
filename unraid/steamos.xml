@@ -30,9 +30,9 @@
     <Config Name="Port: 3001" Target="3001" Default="3001" Mode="tcp" Description="HTTPS SteamOS desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 27031-27036" Target="27031-27036" Default="27031-27036" Mode="udp" Description="Steam Remote Play Ports (UDP)." Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Port: 27031-27036" Target="27031-27036" Default="27031-27036" Mode="tcp" Description="Steam Remote Play Ports (TCP)." Type="Port" Display="always" Required="false" Mask="false"/>
-    <Config Name="Port: 47984-47990:47984-47990" Target="47984-47990:47984-47990" Default="47984-47990:47984-47990" Mode="tcp" Description="Sunshine Ports (TCP)." Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Port: 47984-47990" Target="47984-47990" Default="47984-47990" Mode="tcp" Description="Sunshine Ports (TCP)." Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Port: 48010:48010" Target="48010:48010" Default="48010:48010" Mode="tcp" Description="Sunshine Ports (TCP)." Type="Port" Display="always" Required="false" Mask="false"/>
-    <Config Name="Port: 47998-48000:47998-48000" Target="47998-48000:47998-48000" Default="47998-48000:47998-48000" Mode="udp" Description="Sunshine Ports (UDP)." Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Port: 47998-48000" Target="47998-48000" Default="47998-48000" Mode="udp" Description="Sunshine Ports (UDP)." Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Users home directory in the container, stores all files and games." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /dev/input" Target="/dev/input" Default="" Mode="rw" Description="Optional for gamepad support. *Only working for Steam Remote Play" Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="Path: /run/udev/data" Target="/run/udev/data" Default="" Mode="rw" Description="Optional for gamepad support. *Only working for Steam Remote Play" Type="Path" Display="always" Required="false" Mask="false"/>
