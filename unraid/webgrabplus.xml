@@ -19,10 +19,13 @@
     <ExtraParams>--hostname=webgrabplus --mac-address=00:00:00:00:00:00</ExtraParams>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/webgrabplus.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webgrabplus-logo.png</Icon>
-    <Date>2023-08-16</Date>
+    <Date>2023-08-18</Date>
     <Changes>
+### 2023-08-18
+- Rebase to Alpine 3.18.
+
 ### 2023-08-16
-- Update dotnet framework to 7.x
+- Update dotnet framework to 7.x.
 
 ### 2023-07-06
 - Deprecate armhf. As announced here(https://www.linuxserver.io/blog/a-farewell-to-arm-hf)
