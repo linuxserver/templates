@@ -114,6 +114,7 @@ For more information on BookStack visit their website and check it out: https://
     <Config Name="DB_USER" Target="DB_USER" Default="yourdbuser" Description="for specifying the database user" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_PASS" Target="DB_PASS" Default="yourdbpass" Description="for specifying the database password (minimum 4 characters and non-alphanumeric passwords must be properly escaped.)" Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="DB_DATABASE" Target="DB_DATABASE" Default="bookstackapp" Description="for specifying the database to be used" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="QUEUE_CONNECTION" Target="QUEUE_CONNECTION" Default="" Description="Set to `database` to enable async actions like sending email or triggering webhooks. See documentation(https://www.bookstackapp.com/docs/admin/email-webhooks/#async-action-handling)." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
