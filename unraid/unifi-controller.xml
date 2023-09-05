@@ -29,8 +29,11 @@
     <WebUI>https://[IP]:[PORT:8443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/unifi-controller.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-controller-logo.png</Icon>
-    <Date>2023-05-02</Date>
+    <Date>2023-09-04</Date>
     <Changes>
+### 2023-09-04
+- Bump JRE to 17 to support v7.5.
+
 ### 2023-05-02
 - Cleanup `apt-get install` during build to reduce image size.
 
