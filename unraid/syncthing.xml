@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8384]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/syncthing.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/syncthing-logo.png</Icon>
-    <Date>2023-07-01</Date>
+    <Date>2023-09-05</Date>
     <Changes>
+### 2023-09-05
+- Rebase to Alpine 3.18.
+
 ### 2023-07-01
 - Deprecate armhf. As announced here(https://www.linuxserver.io/blog/a-farewell-to-arm-hf)
 
