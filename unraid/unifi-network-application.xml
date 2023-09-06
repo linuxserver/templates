@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-unifi-network-application/blob/main/readme-vars.yml -->
+<Container version="2">
+    <Name>unifi-network-application</Name>
+    <Repository>lscr.io/linuxserver/unifi-network-application</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/unifi-network-application</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-unifi-network-application/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-unifi-network-application#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-unifi-network-application#readme</ReadMe>
+    <Project>https://ui.com/</Project>
+    <Overview>The Unifi-network-application(https://ui.com/) software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.</Overview>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/unifi-network-application.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Date>2023-09-05</Date>
+    <Changes>
+### 2023-09-05
+- Initial release.
+
+    </Changes>
+    <Config Name="WebUI" Target="8443" Default="8443" Mode="tcp" Description="Unifi web admin port" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 3478" Target="3478" Default="3478" Mode="udp" Description="Unifi STUN port" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 10001" Target="10001" Default="10001" Mode="udp" Description="Required for AP discovery" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 8080" Target="8080" Default="8080" Mode="tcp" Description="Required for device communication" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 1900" Target="1900" Default="1900" Mode="udp" Description="Required for `Make controller discoverable on L2 network` option" Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Port: 8843" Target="8843" Default="8843" Mode="tcp" Description="Unifi guest portal HTTPS redirect port" Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Port: 8880" Target="8880" Default="8880" Mode="tcp" Description="Unifi guest portal HTTP redirect port" Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Port: 6789" Target="6789" Default="6789" Mode="tcp" Description="For mobile throughput test" Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Port: 5514" Target="5514" Default="5514" Mode="udp" Description="Remote syslog port" Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="All Unifi data stored here" Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="MONGO_USER" Target="MONGO_USER" Default="unifi" Description="Mongodb Username. Only evaluated on first run." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="MONGO_PASS" Target="MONGO_PASS" Default="" Description="Mongodb Password. Only evaluated on first run." Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="MONGO_HOST" Target="MONGO_HOST" Default="unifi-db" Description="Mongodb Hostname. Only evaluated on first run." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="MONGO_PORT" Target="MONGO_PORT" Default="27017" Description="Mongodb Port. Only evaluated on first run." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="MONGO_DBNAME" Target="MONGO_DBNAME" Default="unifi" Description="Mongodb Database Name (stats DB is automatically suffixed with `_stat`). Only evaluated on first run." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="MEM_LIMIT" Target="MEM_LIMIT" Default="1024" Description="Optionally change the Java memory limit (in Megabytes). Set to `default` to reset to default" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="MEM_STARTUP" Target="MEM_STARTUP" Default="1024" Description="Optionally change the Java initial/minimum memory (in Megabytes). Set to `default` to reset to default" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
