@@ -29,8 +29,11 @@
     <WebUI>https://[IP]:[PORT:8443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/unifi-controller.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-controller-logo.png</Icon>
-    <Date>2023-09-04</Date>
+    <Date>2023-09-05</Date>
     <Changes>
+### 2023-09-05
+- Add deprecation warning as per https://info.linuxserver.io/issues/2023-09-06-unifi-controller(https://info.linuxserver.io/issues/2023-09-06-unifi-controller).
+
 ### 2023-09-04
 - Bump JRE to 17 to support v7.5.
 
