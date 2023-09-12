@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8096]</WebUI>
     <TemplateURL>false</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/jellyfin-logo.png</Icon>
-    <Date>2023-07-04</Date>
+    <Date>2023-09-12</Date>
     <Changes>
+### 2023-09-12
+- Take ownership of plugin directories.
+
 ### 2023-07-04
 - Deprecate armhf. As announced here(https://www.linuxserver.io/blog/a-farewell-to-arm-hf)
 
