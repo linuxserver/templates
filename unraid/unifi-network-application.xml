@@ -34,8 +34,8 @@
     <Config Name="Port: 6789" Target="6789" Default="6789" Mode="tcp" Description="For mobile throughput test" Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Port: 5514" Target="5514" Default="5514" Mode="udp" Description="Remote syslog port" Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="All Unifi data stored here" Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="MONGO_USER" Target="MONGO_USER" Default="unifi" Description="Mongodb Username. Only evaluated on first run." Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="MONGO_PASS" Target="MONGO_PASS" Default="" Description="Mongodb Password. Only evaluated on first run." Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="MONGO_USER" Target="MONGO_USER" Default="unifi" Description="Mongodb Username. Only evaluated on first run. **Special characters must be url encoded(https://en.wikipedia.org/wiki/Percent-encoding)**." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="MONGO_PASS" Target="MONGO_PASS" Default="" Description="Mongodb Password. Only evaluated on first run. **Special characters must be url encoded(https://en.wikipedia.org/wiki/Percent-encoding)**." Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="MONGO_HOST" Target="MONGO_HOST" Default="unifi-db" Description="Mongodb Hostname. Only evaluated on first run." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="MONGO_PORT" Target="MONGO_PORT" Default="27017" Description="Mongodb Port. Only evaluated on first run." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="MONGO_DBNAME" Target="MONGO_DBNAME" Default="unifi" Description="Mongodb Database Name (stats DB is automatically suffixed with `_stat`). Only evaluated on first run." Type="Variable" Display="always" Required="true" Mask="false"/>
