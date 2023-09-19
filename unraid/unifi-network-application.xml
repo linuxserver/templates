@@ -17,7 +17,7 @@
     <Project>https://ui.com/</Project>
     <Overview>The Unifi-network-application(https://ui.com/) software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/unifi-network-application.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-network-application-icon.png</Icon>
     <Date>2023-09-05</Date>
     <Changes>
 ### 2023-09-05
