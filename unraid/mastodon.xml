@@ -91,6 +91,7 @@
     <Config Name="SIDEKIQ_DEFAULT" Target="SIDEKIQ_DEFAULT" Default="false" Description="Set to `true` on the main container if you&#39;re running additional sidekiq instances. It will run the `default` queue." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="SIDEKIQ_THREADS" Target="SIDEKIQ_THREADS" Default="5" Description="The number of threads for sidekiq to use. See notes(https://docs.joinmastodon.org/admin/scaling/#sidekiq-threads)." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="DB_POOL" Target="DB_POOL" Default="5" Description="The size of the DB connection pool, must be *at least* the same as `SIDEKIQ_THREADS`. See notes(https://docs.joinmastodon.org/admin/scaling/#sidekiq-threads)." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="NO_CHOWN" Target="NO_CHOWN" Default="" Description="Set to `true` to skip chown of /config on init. *READ THE APPLICATION NOTES BEFORE SETTING THIS*." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
