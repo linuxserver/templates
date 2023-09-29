@@ -31,8 +31,11 @@ Where are your photos and documents? With Nextcloud you pick a server of your ch
     <WebUI>https://[IP]:[PORT:443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nextcloud.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nextcloud-logo.png</Icon>
-    <Date>2023-08-14</Date>
+    <Date>2023-08-31</Date>
     <Changes>
+### 2023-08-31
+- Re-add updatenotification app. This allows users to be notified for app updates, but also notifies for NextCloud updates. Updating NextCloud via the web UI is not supported when using this image.
+
 ### 2023-08-14
 - Add develop branch.
 
