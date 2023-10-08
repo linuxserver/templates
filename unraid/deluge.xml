@@ -24,8 +24,11 @@
     <WebUI>http://[IP]:[PORT:8112]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/deluge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/deluge-logo.png</Icon>
-    <Date>2023-08-10</Date>
+    <Date>2023-10-07</Date>
     <Changes>
+### 2023-10-07
+- Install unrar from linuxserver repo(https://github.com/linuxserver/docker-unrar).
+
 ### 2023-08-10
 - Bump unrar to 6.2.10.
 
