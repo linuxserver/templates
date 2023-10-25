@@ -12,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-embystat/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/linuxserver/docker-embystat#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-embystat#readme</ReadMe>
     <Project>https://github.com/mregni/EmbyStat</Project>
@@ -19,8 +20,11 @@
     <WebUI>http://[IP]:[PORT:6555]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/embystat.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/embystat-logo.png</Icon>
-    <Date>2023-07-03</Date>
+    <Date>2023-10-25</Date>
     <Changes>
+### 2023-10-25
+- Deprecate image due to upstream app no longer being in active development per this update(https://github.com/mregni/EmbyStat/pull/1933/files).
+
 ### 2023-07-03
 - Deprecate armhf. As announced here(https://www.linuxserver.io/blog/a-farewell-to-arm-hf)
 
