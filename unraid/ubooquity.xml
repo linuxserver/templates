@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:2203]/ubooquity/admin</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/ubooquity.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ubooquity-logo.png</Icon>
-    <Date>2023-07-12</Date>
+    <Date>2023-10-29</Date>
     <Changes>
+### 2023-10-29
+- Bump JRE to 17 to support v3.
+
 ### 2023-07-12
 - Rebase to Alpine 3.18.
 
