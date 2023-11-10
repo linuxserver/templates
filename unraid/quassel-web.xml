@@ -19,8 +19,11 @@
     <WebUI>https://[IP]:[PORT:64443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/quassel-web.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/quassel-web-logo.png</Icon>
-    <Date>2023-07-06</Date>
+    <Date>2023-11-10</Date>
     <Changes>
+### 2023-11-10
+- Rebase to Alpine 3.18. Rename settings-user.js to .cjs to match upstream.
+
 ### 2023-07-06
 - Deprecate armhf. As announced here(https://www.linuxserver.io/blog/a-farewell-to-arm-hf)
 
