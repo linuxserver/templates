@@ -68,9 +68,9 @@
     <Config Name="DB_PORT" Target="DB_PORT" Default="5432" Description="Portgres port" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="ES_ENABLED" Target="ES_ENABLED" Default="false" Description="Enable or disable Elasticsearch (requires a separate ES instance)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="SECRET_KEY_BASE" Target="SECRET_KEY_BASE" Default="" Description="Browser session secret. Changing it will break all active browser sessions." Type="Variable" Display="always" Required="true" Mask="true"/>
-    <Config Name="OTP_SECRET" Target="OTP_SECRET" Default="" Description="MFA secret. Changing it will break two-factor authentication." Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="VAPID_PRIVATE_KEY" Target="VAPID_PRIVATE_KEY" Default="" Description="Push notification private key. Changing it will break push notifications." Type="Variable" Display="always" Required="true" Mask="true"/>
-    <Config Name="VAPID_PUBLIC_KEY" Target="VAPID_PUBLIC_KEY" Default="" Description="Push notification public key. Changing it will break push notifications." Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="OTP_SECRET" Target="OTP_SECRET" Default="" Description="MFA secret. Changing it after initial setup will break two-factor authentication." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="VAPID_PRIVATE_KEY" Target="VAPID_PRIVATE_KEY" Default="" Description="Push notification private key. Changing it after initial setup will break push notifications." Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="VAPID_PUBLIC_KEY" Target="VAPID_PUBLIC_KEY" Default="" Description="Push notification public key. Changing it after initial setup will break push notifications." Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="SMTP_SERVER" Target="SMTP_SERVER" Default="mail.example.com" Description="SMTP server for email notifications" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="SMTP_PORT" Target="SMTP_PORT" Default="25" Description="SMTP server port" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="SMTP_LOGIN" Target="SMTP_LOGIN" Default="" Description="SMTP username" Type="Variable" Display="always" Required="true" Mask="false"/>
