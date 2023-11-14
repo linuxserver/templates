@@ -25,7 +25,8 @@
 
     </Changes>
     <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="API port" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="HISHTORY_POSTGRES_DB" Target="HISHTORY_POSTGRES_DB" Default="postgresql://${HISHTORY_DB_USER}:${HISHTORY_DB_PASS}@hishtory-db:5432/hishtory?sslmode=disable" Description="Postgres DB Connection URI(https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING). Special characters must be URL encoded(https://en.wikipedia.org/wiki/URL_encoding)." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="HISHTORY_POSTGRES_DB" Target="HISHTORY_POSTGRES_DB" Default="postgresql://${HISHTORY_DB_USER}:${HISHTORY_DB_PASS}@hishtory-db:5432/hishtory?sslmode=disable" Description="Postgres DB Connection URI(https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING). Special characters must be URL encoded(https://en.wikipedia.org/wiki/URL_encoding)." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="HISHTORY_SQLITE_DB" Target="HISHTORY_SQLITE_DB" Default="/config/hishtory.db" Description="SQLite database path. Needs to be a mounted volume for persistence. Don&#39;t set at the same time as HISHTORY_POSTGRES_DB." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
