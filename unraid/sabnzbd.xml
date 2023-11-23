@@ -35,8 +35,11 @@
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sabnzbd.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sabnzbd-logo.png</Icon>
-    <Date>2023-09-13</Date>
+    <Date>2023-11-23</Date>
     <Changes>
+### 2023-11-23
+- Build translations.
+
 ### 2023-09-13
 - Use par2cmdline-turbo in place of par2cmdline.
 
