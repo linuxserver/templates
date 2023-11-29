@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-faster-whisper/blob/main/readme-vars.yml -->
+<Container version="2">
+    <Name>faster-whisper</Name>
+    <Repository>lscr.io/linuxserver/faster-whisper</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/faster-whisper</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-faster-whisper/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-faster-whisper#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-faster-whisper#readme</ReadMe>
+    <Project>https://github.com/SYSTRAN/faster-whisper</Project>
+    <Overview>Faster-whisper(https://github.com/SYSTRAN/faster-whisper) is a reimplementation of OpenAI&#39;s Whisper model using CTranslate2, which is a fast inference engine for Transformer models.</Overview>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/faster-whisper.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Date>2023-11-25</Date>
+    <Changes>
+### 2023-11-25
+- Initial Release.
+
+    </Changes>
+    <Config Name="WebUI" Target="10300" Default="10300" Mode="tcp" Description="Wyoming connection port." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Local path for Whisper config files." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="WHISPER_MODEL" Target="WHISPER_MODEL" Default="tiny-int8" Description="Whisper model that will be used for transcription." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="WHISPER_BEAM" Target="WHISPER_BEAM" Default="1" Description="Number of candidates to consider simultaneously during transcription." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="WHISPER_LANG" Target="WHISPER_LANG" Default="en" Description="Language that you will speak to the add-on." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
