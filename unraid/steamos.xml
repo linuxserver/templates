@@ -20,8 +20,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/steamos.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/steamos-logo.png</Icon>
-    <Date>2023-10-06</Date>
+    <Date>2023-11-29</Date>
     <Changes>
+### 2023-11-29
+- Switch to openbox for bigpicture mode.
+
 ### 2023-10-06
 - Ingest sunshine from AUR to compile at build time.
 
