@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]/smokeping/smokeping.cgi</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/smokeping.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/smokeping-logo.png</Icon>
-    <Date>2023-11-21</Date>
+    <Date>2023-11-29</Date>
     <Changes>
+### 2023-11-29
+- Bump tcpping to 1.8.
+
 ### 2023-11-21
 - Add support for IRTT Probes.
 
