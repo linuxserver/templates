@@ -19,8 +19,11 @@
     <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/swag.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2023-11-23</Date>
+    <Date>2023-11-30</Date>
     <Changes>
+### 2023-11-30
+- Existing users should update:(https://github.com/linuxserver/docker-swag/blob/master/README.md#updating-configs) site-confs/default.conf - Fix index.php being downloaded on 404.
+
 ### 2023-11-23
 - Run certbot as root to allow fix http validation.
 
