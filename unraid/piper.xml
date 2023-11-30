@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-piper/blob/main/readme-vars.yml -->
+<Container version="2">
+    <Name>piper</Name>
+    <Repository>lscr.io/linuxserver/piper</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/piper</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-piper/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-piper#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-piper#readme</ReadMe>
+    <Project>https://github.com/rhasspy/piper/</Project>
+    <Overview>Piper(https://github.com/rhasspy/piper/) is a fast, local neural text to speech system that sounds great and is optimized for the Raspberry Pi 4. This container provides a Wyoming protocol server for Piper.</Overview>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/piper.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/piper-logo.png</Icon>
+    <Date>2023-11-25</Date>
+    <Changes>
+### 2023-11-25
+- Initial Release.
+
+    </Changes>
+    <Config Name="WebUI" Target="10200" Default="10200" Mode="tcp" Description="Wyoming connection port." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Local path for piper config files." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PIPER_VOICE" Target="PIPER_VOICE" Default="en_US-lessac-medium" Description="The Piper voice(https://huggingface.co/rhasspy/piper-voices/tree/main) to use, in the format `language-name-quality`" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="PIPER_LENGTH" Target="PIPER_LENGTH" Default="1.0" Description="Voice speaking rate, 1.0 is default with  1.0 being faster and  1.0 being slower." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PIPER_NOISE" Target="PIPER_NOISE" Default="0.667" Description="Controls the variability of the voice by adding noise. Values above 1 will start to degrade audio." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PIPER_NOISEW" Target="PIPER_NOISEW" Default="0.333" Description="Controls the variability of speaking cadence. Values above 1 produce extreme stutters and pauses." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PIPER_SPEAKER" Target="PIPER_SPEAKER" Default="0" Description="Speaker number to use if the voice supports multiple speakers." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PIPER_PROCS" Target="PIPER_PROCS" Default="1" Description="Number of Piper processes to run simultaneously." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
