@@ -21,8 +21,11 @@ No Flash, No Java, No Websocket, No Bullshit.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/librespeed.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/librespeed-logo.png</Icon>
-    <Date>2023-05-25</Date>
+    <Date>2023-12-06</Date>
     <Changes>
+### 2023-12-06
+- Replace php mysqli with php pdo_pgsql.
+
 ### 2023-05-25
 - Rebase to Alpine 3.18, deprecate armhf.
 
