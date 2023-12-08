@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-ferdium/blob/master/readme-vars.yml -->
+<Container version="2">
+    <Name>ferdium</Name>
+    <Repository>lscr.io/linuxserver/ferdium</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/ferdium</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-ferdium/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-ferdium#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-ferdium#readme</ReadMe>
+    <Project>https://ferdium.org/</Project>
+    <Overview>Ferdium(https://ferdium.org/) is a desktop app that helps you organize how you use your favourite apps by combining them into one application.</Overview>
+    <ExtraParams>--shm-size=1gb</ExtraParams>
+    <WebUI>http://[IP]:[PORT:3000]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/ferdium.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ferdium-logo.png</Icon>
+    <Date>2023-12-07</Date>
+    <Changes>
+### 2023-12-07
+- Initial release.
+
+    </Changes>
+    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Ferdium desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 3001" Target="3001" Default="3001" Mode="tcp" Description="Ferdium desktop gui HTTPS." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Users home directory in the container, stores program settings and files." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
