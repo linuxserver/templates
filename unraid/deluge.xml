@@ -24,8 +24,11 @@
     <WebUI>http://[IP]:[PORT:8112]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/deluge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/deluge-logo.png</Icon>
-    <Date>2023-10-07</Date>
+    <Date>2023-12-07</Date>
     <Changes>
+### 2023-12-07
+- Add optional port 58846 to readme for thin client connectivity.
+
 ### 2023-10-07
 - Install unrar from linuxserver repo(https://github.com/linuxserver/docker-unrar).
 
@@ -144,6 +147,7 @@
     <Config Name="WebUI" Target="8112" Default="8112" Mode="tcp" Description="Port for webui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 6881" Target="6881" Default="6881" Mode="tcp" Description="Inbound torrent traffic (See App Setup)" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 6881" Target="6881" Default="6881" Mode="udp" Description="Inbound torrent traffic (See App Setup)" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 58846" Target="58846" Default="58846" Mode="tcp" Description="Default deluged port for thin client connectivity" Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="deluge configs" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="torrent download directory" Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="DELUGE_LOGLEVEL" Target="DELUGE_LOGLEVEL" Default="error" Description="set the loglevel output when running Deluge, default is info for deluged and warning for delgued-web" Type="Variable" Display="always" Required="false" Mask="false"/>
