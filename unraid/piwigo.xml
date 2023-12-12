@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/piwigo.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/piwigo-logo.png</Icon>
-    <Date>2023-06-03</Date>
+    <Date>2023-12-12</Date>
     <Changes>
+### 2023-12-12
+- Rebase to Alpine 3.18.
+
 ### 2023-06-03
 - Revert to Alpine 3.17 due to compatibility issues with php 8.2.
 
