@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8875]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/minisatip.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/minisatip-logo.png</Icon>
-    <Date>2023-07-26</Date>
+    <Date>2023-12-08</Date>
     <Changes>
+### 2023-12-08
+- Rebase to Alpine 3.19, switch to building from releases rather than commits.
+
 ### 2023-07-26
 - Build with DDCI=1 for Digital Devices CI support.
 
