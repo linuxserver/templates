@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8123]</WebUI>
     <TemplateURL>false</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/homeassistant-logo.png</Icon>
-    <Date>2023-07-05</Date>
+    <Date>2023-12-18</Date>
     <Changes>
+### 2023-12-18
+- Add Bluetooth instructions to readme.
+
 ### 2023-07-05
 - Deprecate armhf. As announced here(https://www.linuxserver.io/blog/a-farewell-to-arm-hf)
 
