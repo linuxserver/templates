@@ -26,7 +26,7 @@ Please note that the v4 upgrade process resets ALL password-protected albums. An
     <Date>2023-12-25</Date>
     <Changes>
 ### 2023-12-25
-- Build npm dependencies into image.
+- Existing users should update: site-confs/default.conf - Cleanup default site conf. Build npm dependencies into image.
 
 ### 2023-05-25
 - Rebase to Alpine 3.18, deprecate armhf.
