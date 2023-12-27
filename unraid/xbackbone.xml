@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/xbackbone.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/xbackbone-logo.png</Icon>
-    <Date>2023-05-25</Date>
+    <Date>2023-12-25</Date>
     <Changes>
+### 2023-12-25
+- Existing users should update: site-confs/default.conf - Cleanup default site conf.
+
 ### 2023-05-25
 - Rebase to Alpine 3.18, deprecate armhf.
 
