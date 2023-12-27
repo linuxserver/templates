@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/phpmyadmin.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/phpmyadmin-logo.png</Icon>
-    <Date>2023-09-06</Date>
+    <Date>2023-12-25</Date>
     <Changes>
+### 2023-12-25
+- Existing users should update: site-confs/default.conf - Cleanup default site conf.
+
 ### 2023-09-06
 - Add support for custom themes.
 
