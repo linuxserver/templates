@@ -34,8 +34,11 @@
     <Overview>Plex-meta-manager(https://github.com/meisnate12/Plex-Meta-Manager) is a Python 3 script that can be continuously run using YAML configuration files to update on a schedule the metadata of the movies, shows, and collections in your libraries as well as automatically build collections based on various methods all detailed in the wiki.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/plex-meta-manager.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2023-06-10</Date>
+    <Date>2023-12-23</Date>
     <Changes>
+### 2023-12-23
+- Rebase to Alpine 3.19.
+
 ### 2023-06-10
 - Rebase to Alpine 3.18, deprecate armhf.
 
@@ -58,7 +61,7 @@
 - Initial Release.
 
     </Changes>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Local path for plex-meta-manager config files." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PMM_CONFIG" Target="PMM_CONFIG" Default="/config/config.yml" Description="Specify a custom config file to use." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PMM_TIME" Target="PMM_TIME" Default="03:00" Description="Comma-separated list of times to update each day. Format: `HH:MM`." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PMM_RUN" Target="PMM_RUN" Default="False" Description="Set to `True` to run without the scheduler." Type="Variable" Display="always" Required="false" Mask="false"/>
