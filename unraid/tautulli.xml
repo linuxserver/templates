@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8181]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/tautulli.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/tautulli-logo.png</Icon>
-    <Date>2023-08-26</Date>
+    <Date>2023-12-23</Date>
     <Changes>
+### 2023-12-23
+- Rebase to Alpine 3.19.
+
 ### 2023-08-26
 - Rebase to Alpine 3.18.
 
@@ -120,7 +123,7 @@
 
     </Changes>
     <Config Name="WebUI" Target="8181" Default="8181" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains tautulli config and database." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
