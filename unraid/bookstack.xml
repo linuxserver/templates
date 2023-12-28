@@ -22,8 +22,11 @@ Powered by SQL and including a Markdown editor for those who prefer it, BookStac
 For more information on BookStack visit their website and check it out: https://www.bookstackapp.com</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/bookstack.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bookstack-logo.png</Icon>
-    <Date>2023-10-31</Date>
+    <Date>2023-12-23</Date>
     <Changes>
+### 2023-12-23
+- Rebase to Alpine 3.19 with php 8.3.
+
 ### 2023-10-31
 - Further sanitize sed replace.
 
@@ -110,7 +113,7 @@ For more information on BookStack visit their website and check it out: https://
 
     </Changes>
     <Config Name="WebUI" Target="80" Default="6875" Mode="tcp" Description="will map the container&#39;s port 80 to port 6875 on the host" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="this will store any uploaded data on the docker host" Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="APP_URL" Target="APP_URL" Default="yourbaseurl" Description="for specifying the IP:port or URL your application will be accessed on (ie. `http://192.168.1.1:6875` or `https://bookstack.mydomain.com`" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_HOST" Target="DB_HOST" Default="yourdbhost" Description="for specifying the database host" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_PORT" Target="DB_PORT" Default="yourdbport" Description="for specifying the database port if not default 3306" Type="Variable" Display="always" Required="true" Mask="false"/>
