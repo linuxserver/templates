@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/phpmyadmin.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/phpmyadmin-logo.png</Icon>
-    <Date>2023-12-25</Date>
+    <Date>2023-12-28</Date>
     <Changes>
+### 2023-12-28
+- Rebase to Alpine 3.19 with php 8.3.
+
 ### 2023-12-25
 - Existing users should update: site-confs/default.conf - Cleanup default site conf.
 
@@ -50,7 +53,7 @@
 
     </Changes>
     <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="Port for web frontend" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PMA_ARBITRARY" Target="PMA_ARBITRARY" Default="1" Description="Set to `1` to allow you to connect to any server. Setting to `0` will only allow you to connect to specified hosts (See Application Setup)" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PMA_ABSOLUTE_URI" Target="PMA_ABSOLUTE_URI" Default="https://phpmyadmin.example.com" Description="Set the URL you will use to access the web frontend" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
