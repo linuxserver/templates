@@ -18,8 +18,11 @@
     <Overview>Feed2toot(https://gitlab.com/chaica/feed2toot) automatically parses rss feeds, identifies new posts and posts them on the Mastodon social network.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/feed2toot.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2023-05-25</Date>
+    <Date>2023-12-23</Date>
     <Changes>
+### 2023-12-23
+- Rebase to Alpine 3.19.
+
 ### 2023-05-25
 - Rebase to Alpine 3.18, deprecate armhf.
 
@@ -33,7 +36,7 @@
 - Initial Release.
 
     </Changes>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Local path for feed2toot config files." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="FEED_LIMIT" Target="FEED_LIMIT" Default="5" Description="Limit number of RSS entries published at each execution." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
