@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/healthchecks.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2023-05-31</Date>
+    <Date>2023-12-23</Date>
     <Changes>
+### 2023-12-23
+- Rebase to Alpine 3.19.
+
 ### 2023-05-31
 - Rebase to Alpine 3.18. Deprecate armhf.
 
@@ -96,7 +99,7 @@
     </Changes>
     <Config Name="WebUI" Target="8000" Default="8000" Mode="tcp" Description="Healthchecks Web UI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 2525" Target="2525" Default="2525" Mode="tcp" Description="Port for inbound SMTP pings" Type="Port" Display="always" Required="false" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Database and healthchecks config directory" Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="SITE_ROOT" Target="SITE_ROOT" Default="" Description="The site&#39;s top-level URL and the port it listens to if differrent than 80 or 443 (e.g., https://healthchecks.example.com:8000)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="SITE_NAME" Target="SITE_NAME" Default="" Description="The site&#39;s name (e.g., &#34;Example Corp HealthChecks&#34;)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DEFAULT_FROM_EMAIL" Target="DEFAULT_FROM_EMAIL" Default="" Description="From email for alerts" Type="Variable" Display="always" Required="true" Mask="false"/>
