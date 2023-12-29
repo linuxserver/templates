@@ -197,8 +197,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/webtop.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png</Icon>
-    <Date>2023-11-07</Date>
+    <Date>2023-12-29</Date>
     <Changes>
+### 2023-12-29
+- Rebase Alpine to 3.19 and swap back to Firefox.
+
 ### 2023-11-07
 - Rebase Fedora to 39.
 
