@@ -16,11 +16,11 @@
     <ReadMe>https://github.com/linuxserver/docker-sonarr#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
-        <TagDescription>Stable releases from Sonarr (currently v3)</TagDescription>
+        <TagDescription>Stable releases from Sonarr</TagDescription>
     </Branch>
     <Branch>
         <Tag>develop</Tag>
-        <TagDescription>Development releases from Sonarr (currently v4)</TagDescription>
+        <TagDescription>Development releases from Sonarr</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-sonarr/tree/develop#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-sonarr/tree/develop#application-setup</GitHub>
     </Branch>
@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8989]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sonarr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sonarr-logo.png</Icon>
-    <Date>2023-02-15</Date>
+    <Date>2023-12-30</Date>
     <Changes>
+### 2023-12-30
+- Rebase master branch to Alpine 3.19.
+
 ### 2023-02-15
 - Rebase master branch to Jammy.
 
