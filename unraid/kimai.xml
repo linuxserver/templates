@@ -27,8 +27,11 @@ JSON API, invoicing, data exports, multi-timer and punch-in punch-out mode, tagg
                 This container requires an external application to be run separately.
         We recommend using our [MariaDB](https://github.com/linuxserver/docker-mariadb) container from community applications.
             </Requires>
-    <Date>2023-08-21</Date>
+    <Date>2024-01-02</Date>
     <Changes>
+### 2024-01-02
+- Symlink config.yaml to /config for user editing.
+
 ### 2023-08-21
 - Important documentation update for setting `DATABASE_URL` with version 2.0.30 and later.
 
