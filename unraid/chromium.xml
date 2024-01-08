@@ -20,9 +20,12 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/chromium.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/chromium-logo.png</Icon>
-    <Date>2023-05-13</Date>
+    <Date>2024-01-08</Date>
     <Changes>
-### 2023-05-13
+### 2024-01-08
+- Fix re-launch issue for chromium by purging temp files on launch.
+
+### 2023-12-29
 - Rebase to Debian Bookworm.
 
 ### 2023-05-13
