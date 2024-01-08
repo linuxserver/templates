@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:9000]/test</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/ldap-auth.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ldap-auth-logo.png</Icon>
-    <Date>2023-06-20</Date>
+    <Date>2023-12-23</Date>
     <Changes>
+### 2023-12-23
+- Rebase to Alpine 3.19.
+
 ### 2023-06-20
 - Sync upstream changes, including the ability to disable referrals with `X-Ldap-DisableReferrals`.
 
