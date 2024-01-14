@@ -102,7 +102,7 @@
     <Config Name="DB_DATABASE" Target="DB_DATABASE" Default="" Description="Path to DB file for `sqlite`. DB name for `mysql` and `pgsql`." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="APP_NAME" Target="APP_NAME" Default="Lychee" Description="The gallery name." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="APP_URL" Target="APP_URL" Default="" Description="The URL you will use to access Lychee including protocol, and port where appropriate." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="APP_FORCE_HTTPS" Target="APP_FORCE_HTTPS" Default="" Description="Set to `true` if running behind an https reverse proxy." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="TRUSTED_PROXIES" Target="TRUSTED_PROXIES" Default="" Description="Set to the IP or netmask covering your reverse proxy, if running behind one. Set to `*` to trust all IPs (**do not** use `*` if exposed to the internet`)." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
