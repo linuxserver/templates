@@ -20,8 +20,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/steamos.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/steamos-logo.png</Icon>
-    <Date>2023-11-29</Date>
+    <Date>2024-01-15</Date>
     <Changes>
+### 2024-01-15
+- Install gperftools to fix source games.
+
 ### 2023-11-29
 - Switch to openbox for bigpicture mode.
 
