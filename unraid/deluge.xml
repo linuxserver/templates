@@ -24,8 +24,11 @@
     <WebUI>http://[IP]:[PORT:8112]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/deluge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/deluge-logo.png</Icon>
-    <Date>2023-12-07</Date>
+    <Date>2023-12-26</Date>
     <Changes>
+### 2023-12-26
+- Replace source for GeoIP database.
+
 ### 2023-12-07
 - Add optional port 58846 to readme for thin client connectivity.
 
