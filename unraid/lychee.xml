@@ -19,9 +19,12 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/lychee.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/lychee-logo.png</Icon>
-    <Date>2024-01-23</Date>
+    <Date>2024-01-18</Date>
     <Changes>
-### 2024-01-23
+### 2024-01-18
+- Add php-sodium.
+
+### 2024-01-13
 - Rebase to Alpine 3.19 with php 8.3.
 
 ### 2023-12-27
