@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-monica/blob/main/readme-vars.yml -->
+<Container version="2">
+    <Name>monica</Name>
+    <Repository>lscr.io/linuxserver/monica</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/monica</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-monica/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-monica#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-monica#readme</ReadMe>
+    <Project>https://github.com/monicahq/monica</Project>
+    <Overview>Monica(https://github.com/monicahq/monica) is an open source personal relationship management system, that lets you document your life.</Overview>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/monica.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/monica-logo.png</Icon>
+    <Date>2024-01-17</Date>
+    <Changes>
+### 2024-01-17
+- Initial Release.
+
+    </Changes>
+    <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="http gui" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 443" Target="443" Default="443" Mode="tcp" Description="https gui" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="DB_HOST" Target="DB_HOST" Default="" Description="Mariadb DB server hostname." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="DB_PORT" Target="DB_PORT" Default="" Description="Mariadb DB server port." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="DB_USERNAME" Target="DB_USERNAME" Default="" Description="Mariadb DB user." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="" Description="Mariadb DB password." Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="DB_DATABASE" Target="DB_DATABASE" Default="" Description="Mariadb DB name." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="APP_URL" Target="APP_URL" Default="http://localhost:80" Description="The URL you will use to access Monica including protocol, and port where appropriate." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="TRUSTED_PROXIES" Target="TRUSTED_PROXIES" Default="" Description="Set to the IP or netmask covering your reverse proxy, if running behind one. Set to `*` to trust all IPs (**do not** use `*` if exposed to the internet`)." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="APP_ENV" Target="APP_ENV" Default="local" Description="Set to `production` when exposing the container to anyone else; this also makes https mandatory." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="APP_DISABLE_SIGNUP" Target="APP_DISABLE_SIGNUP" Default="true" Description="Set to `false` to enable new account sign-ups." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
