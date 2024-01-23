@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/gitqlient.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/gitqlient-icon.png</Icon>
-    <Date>2023-04-02</Date>
+    <Date>2024-01-21</Date>
     <Changes>
+### 2024-01-21
+- Rebase to Alpine 3.19.
+
 ### 2023-04-02
 - Initial release.
 
