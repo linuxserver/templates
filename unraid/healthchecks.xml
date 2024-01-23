@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/healthchecks.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2023-12-23</Date>
+    <Date>2024-01-22</Date>
     <Changes>
+### 2024-01-22
+- Fix CSRF handling.
+
 ### 2023-12-23
 - Rebase to Alpine 3.19.
 
@@ -111,7 +114,8 @@
     <Config Name="SUPERUSER_EMAIL" Target="SUPERUSER_EMAIL" Default="" Description="Superuser email" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="SUPERUSER_PASSWORD" Target="SUPERUSER_PASSWORD" Default="" Description="Superuser password" Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="REGENERATE_SETTINGS" Target="REGENERATE_SETTINGS" Default="" Description="Defaults to False. Set to True to always override the `local_settings.py` file with values from environment variables. Do not set to True if you have made manual modifications to this file." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="ALLOWED_HOSTS" Target="ALLOWED_HOSTS" Default="" Description="Array of valid hostnames for the server `&#34;test.com&#34;,&#34;test2.com&#34;` (default: `&#34;*&#34;`)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="ALLOWED_HOSTS" Target="ALLOWED_HOSTS" Default="" Description="A list(https://docs.python.org/3/tutorial/introduction.html#lists) of valid hostnames for the server. Default is: `&#34;*&#34;`" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="CSRF_TRUSTED_ORIGINS" Target="CSRF_TRUSTED_ORIGINS" Default="" Description="A list(https://docs.python.org/3/tutorial/introduction.html#lists) of trusted origins for unsafe requests (e.g. POST). Defaults to the value of `SITE_ROOT`." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="APPRISE_ENABLED" Target="APPRISE_ENABLED" Default="" Description="Defaults to False. A boolean that turns on/off the Apprise integration (https://github.com/caronc/apprise)" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="DEBUG" Target="DEBUG" Default="" Description="Defaults to True. Debug mode relaxes CSRF protections and increases logging verbosity but should be disabled for production instances as it will impact performance and security." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="INTEGRATIONS_ALLOW_PRIVATE_IPS" Target="INTEGRATIONS_ALLOW_PRIVATE_IPS" Default="" Description="Defaults to False. Set to True to allow integrations to connect to private IP addresses." Type="Variable" Display="always" Required="false" Mask="false"/>
