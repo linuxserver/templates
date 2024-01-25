@@ -21,8 +21,11 @@ No Flash, No Java, No Websocket, No Bullshit.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/librespeed.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/librespeed-logo.png</Icon>
-    <Date>2023-12-06</Date>
+    <Date>2023-12-23</Date>
     <Changes>
+### 2023-12-23
+- Rebase to Alpine 3.19 with php 8.3.
+
 ### 2023-12-06
 - Replace php mysqli with php pdo_pgsql.
 
@@ -58,7 +61,7 @@ No Flash, No Java, No Websocket, No Bullshit.</Overview>
 
     </Changes>
     <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="web gui" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PASSWORD" Target="PASSWORD" Default="PASSWORD" Description="Set the password for the results database." Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="CUSTOM_RESULTS" Target="CUSTOM_RESULTS" Default="false" Description="(optional) set to `true` to enable custom results page in `/config/www/results/index.php`." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="DB_TYPE" Target="DB_TYPE" Default="sqlite" Description="Defaults to `sqlite`, can also be set to `mysql` or `postgresql`." Type="Variable" Display="always" Required="false" Mask="false"/>
