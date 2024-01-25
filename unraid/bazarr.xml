@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:6767]/system/status</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/bazarr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bazarr-logo.png</Icon>
-    <Date>2023-09-19</Date>
+    <Date>2023-12-23</Date>
     <Changes>
+### 2023-12-23
+- Rebase to Alpine 3.19.
+
 ### 2023-09-19
 - Install unrar from linuxserver repo(https://github.com/linuxserver/docker-unrar).
 
@@ -114,7 +117,7 @@
 
     </Changes>
     <Config Name="WebUI" Target="6767" Default="6767" Mode="tcp" Description="Allows HTTP access to the internal webserver." Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Bazarr data" Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /movies" Target="/movies" Default="" Mode="rw" Description="Location of your movies" Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="Path: /tv" Target="/tv" Default="" Mode="rw" Description="Location of your TV Shows" Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
