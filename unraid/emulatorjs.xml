@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/emulatorjs.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/emulatorjs-logo.png</Icon>
-    <Date>2024-01-23</Date>
+    <Date>2024-01-24</Date>
     <Changes>
+### 2024-01-24
+- Pin node back on aarch64 as well for compatibility.
+
 ### 2024-01-23
 - Add logic to symlink out RO rom directories to support upgrades.
 
