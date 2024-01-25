@@ -18,9 +18,12 @@
     <Overview>Healthchecks(https://github.com/healthchecks/healthchecks) is a watchdog for your cron jobs. It&#39;s a web server that listens for pings from your cron jobs, plus a web interface.</Overview>
     <WebUI>http://[IP]:[PORT:8000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/healthchecks.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2024-01-22</Date>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/healthchecks-logo.png</Icon>
+    <Date>2024-01-24</Date>
     <Changes>
+### 2024-01-24
+- No longer write envs to local_settings.py. Envs will take precedence over any existing values in config file. Removed `REGENERATE_SETTINGS` as it is now obsolete.
+
 ### 2024-01-22
 - Fix CSRF handling.
 
@@ -102,26 +105,26 @@
     </Changes>
     <Config Name="WebUI" Target="8000" Default="8000" Mode="tcp" Description="Healthchecks Web UI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 2525" Target="2525" Default="2525" Mode="tcp" Description="Port for inbound SMTP pings" Type="Port" Display="always" Required="false" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="SITE_ROOT" Target="SITE_ROOT" Default="" Description="The site&#39;s top-level URL and the port it listens to if differrent than 80 or 443 (e.g., https://healthchecks.example.com:8000)" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="SITE_NAME" Target="SITE_NAME" Default="" Description="The site&#39;s name (e.g., &#34;Example Corp HealthChecks&#34;)" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="DEFAULT_FROM_EMAIL" Target="DEFAULT_FROM_EMAIL" Default="" Description="From email for alerts" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="EMAIL_HOST" Target="EMAIL_HOST" Default="" Description="SMTP host" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="EMAIL_PORT" Target="EMAIL_PORT" Default="" Description="SMTP port" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="EMAIL_HOST_USER" Target="EMAIL_HOST_USER" Default="" Description="SMTP user" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="EMAIL_HOST_PASSWORD" Target="EMAIL_HOST_PASSWORD" Default="" Description="SMTP password" Type="Variable" Display="always" Required="true" Mask="true"/>
-    <Config Name="EMAIL_USE_TLS" Target="EMAIL_USE_TLS" Default="" Description="Use TLS for SMTP (`True` or `False`)" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="SUPERUSER_EMAIL" Target="SUPERUSER_EMAIL" Default="" Description="Superuser email" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="SUPERUSER_PASSWORD" Target="SUPERUSER_PASSWORD" Default="" Description="Superuser password" Type="Variable" Display="always" Required="true" Mask="true"/>
-    <Config Name="REGENERATE_SETTINGS" Target="REGENERATE_SETTINGS" Default="" Description="Defaults to False. Set to True to always override the `local_settings.py` file with values from environment variables. Do not set to True if you have made manual modifications to this file." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="ALLOWED_HOSTS" Target="ALLOWED_HOSTS" Default="" Description="A list(https://docs.python.org/3/tutorial/introduction.html#lists) of valid hostnames for the server. Default is: `&#34;*&#34;`" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="SITE_ROOT" Target="SITE_ROOT" Default="" Description="The site&#39;s top-level URL and the port it listens to if different than 80 or 443 (e.g., https://healthchecks.example.com:8000)." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="SITE_NAME" Target="SITE_NAME" Default="" Description="The site&#39;s name (e.g., &#34;Example Corp HealthChecks&#34;)." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="SUPERUSER_EMAIL" Target="SUPERUSER_EMAIL" Default="" Description="Superuser email." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="SUPERUSER_PASSWORD" Target="SUPERUSER_PASSWORD" Default="" Description="Superuser password." Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="ALLOWED_HOSTS" Target="ALLOWED_HOSTS" Default="" Description="A comma-separated list of valid hostnames for the server. Default is: `*`." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="APPRISE_ENABLED" Target="APPRISE_ENABLED" Default="False" Description="Set to `True` to enable the Apprise integration (https://github.com/caronc/apprise)." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="CSRF_TRUSTED_ORIGINS" Target="CSRF_TRUSTED_ORIGINS" Default="" Description="A list(https://docs.python.org/3/tutorial/introduction.html#lists) of trusted origins for unsafe requests (e.g. POST). Defaults to the value of `SITE_ROOT`." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="APPRISE_ENABLED" Target="APPRISE_ENABLED" Default="" Description="Defaults to False. A boolean that turns on/off the Apprise integration (https://github.com/caronc/apprise)" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="DEBUG" Target="DEBUG" Default="" Description="Defaults to True. Debug mode relaxes CSRF protections and increases logging verbosity but should be disabled for production instances as it will impact performance and security." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="DEBUG" Target="DEBUG" Default="True" Description="Set to `False` to disable. Debug mode relaxes CSRF protections and increases logging verbosity but should be disabled for production instances as it will impact performance and security." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="DEFAULT_FROM_EMAIL" Target="DEFAULT_FROM_EMAIL" Default="" Description="From email for alerts." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="EMAIL_HOST" Target="EMAIL_HOST" Default="" Description="SMTP host." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="EMAIL_PORT" Target="EMAIL_PORT" Default="" Description="SMTP port." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="EMAIL_HOST_USER" Target="EMAIL_HOST_USER" Default="" Description="SMTP user." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="EMAIL_HOST_PASSWORD" Target="EMAIL_HOST_PASSWORD" Default="" Description="SMTP password." Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="EMAIL_USE_TLS" Target="EMAIL_USE_TLS" Default="" Description="Use TLS for SMTP (`True` or `False`)." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="INTEGRATIONS_ALLOW_PRIVATE_IPS" Target="INTEGRATIONS_ALLOW_PRIVATE_IPS" Default="" Description="Defaults to False. Set to True to allow integrations to connect to private IP addresses." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="PING_EMAIL_DOMAIN" Target="PING_EMAIL_DOMAIN" Default="" Description="The domain to use for generating ping email addresses." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="" Description="A secret key used for cryptographic signing. Will generate a secure value if one is not supplied" Type="Variable" Display="always" Required="false" Mask="true"/>
-    <Config Name="SITE_LOGO_URL" Target="SITE_LOGO_URL" Default="" Description="Full URL to custom site logo" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PING_EMAIL_DOMAIN" Target="PING_EMAIL_DOMAIN" Default="" Description="The domain to use for generating ping email addresses. Defaults to `localhost`." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="RP_ID" Target="RP_ID" Default="" Description="If using webauthn for 2FA set this to match your Healthchecks domain. Webauthn will only work over https." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="" Description="A secret key used for cryptographic signing. Will generate a random value if one is not supplied and save it to `/config/local_settings.py`." Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="SITE_LOGO_URL" Target="SITE_LOGO_URL" Default="" Description="Full URL to custom site logo." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
