@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8000]/</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/babybuddy.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/babybuddy-logo.png</Icon>
-    <Date>2023-07-05</Date>
+    <Date>2023-12-23</Date>
     <Changes>
+### 2023-12-23
+- Rebase to Alpine 3.19 with php 8.3.
+
 ### 2023-07-05
 - Add standard HTTP/HTTPS listen ports 80 and 443, keeping 8000 for backwards compatibility.
 
@@ -59,7 +62,7 @@
 
     </Changes>
     <Config Name="WebUI" Target="8000" Default="8000" Mode="tcp" Description="the port for the web ui" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration and data." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="CSRF_TRUSTED_ORIGINS" Target="CSRF_TRUSTED_ORIGINS" Default="http://127.0.0.1:8000,https://babybuddy.domain.com" Description="Add any address you&#39;d like to access babybuddy at (comma separated, no spaces)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
