@@ -18,8 +18,11 @@
     <Overview>Mariadb(https://mariadb.org/) is one of the most popular database servers. Made by the original developers of MySQL.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mariadb.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mariadb-logo.png</Icon>
-    <Date>2023-06-09</Date>
+    <Date>2023-12-23</Date>
     <Changes>
+### 2023-12-23
+- Rebase to Alpine 3.19.
+
 ### 2023-06-09
 - Update lc_messages path in shipped custom.cnf to match upstream.
 
@@ -94,7 +97,7 @@
 
     </Changes>
     <Config Name="WebUI" Target="3306" Default="3306" Mode="tcp" Description="Mariadb listens on this port." Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains the db itself and all assorted settings." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="MYSQL_ROOT_PASSWORD" Target="MYSQL_ROOT_PASSWORD" Default="ROOT_ACCESS_PASSWORD" Description="Set this to root password for installation (minimum 4 characters and non-alphanumeric passwords must be properly escaped)." Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="MYSQL_DATABASE" Target="MYSQL_DATABASE" Default="USER_DB_NAME" Description="Specify the name of a database to be created on image startup." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="MYSQL_USER" Target="MYSQL_USER" Default="MYSQL_USER" Description="This user will have superuser access to the database specified by MYSQL_DATABASE (do not use root here)." Type="Variable" Display="always" Required="false" Mask="false"/>
