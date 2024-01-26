@@ -18,8 +18,11 @@
     <Overview>Minetest(http://www.minetest.net/) (server) is a near-infinite-world block sandbox game and a game engine, inspired by InfiniMiner, Minecraft, and the like.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/minetest.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/minetest-logo.png</Icon>
-    <Date>2023-12-23</Date>
+    <Date>2024-01-26</Date>
     <Changes>
+### 2024-01-26
+- Temporaroly pin irrlicht to continue building pending a bugfix release.
+
 ### 2023-12-23
 - Rebase to Alpine 3.19.
 
