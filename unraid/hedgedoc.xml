@@ -21,8 +21,11 @@ HedgeDoc is a real-time, multi-platform collaborative markdown note editor.  Thi
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/hedgedoc.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/hedgedoc-logo.png</Icon>
-    <Date>2023-06-18</Date>
+    <Date>2023-12-23</Date>
     <Changes>
+### 2023-12-23
+- Rebase to Alpine 3.19.
+
 ### 2023-06-18
 - Rebase to Alpine 3.18, deprecate armhf as per https://www.linuxserver.io/armhf(https://www.linuxserver.io/armhf).
 
@@ -58,7 +61,7 @@ HedgeDoc is a real-time, multi-platform collaborative markdown note editor.  Thi
 
     </Changes>
     <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Web gui port (internal port also needs to be changed if accessing at port other than 80, 443 and 3000)." Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="HedgeDoc config and configurable files" Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="DB_HOST" Target="DB_HOST" Default="hostname or ip" Description="Host address of mysql database" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_PORT" Target="DB_PORT" Default="3306" Description="Port to access mysql database default is 3306" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_USER" Target="DB_USER" Default="hedgedoc" Description="Database user" Type="Variable" Display="always" Required="true" Mask="false"/>
