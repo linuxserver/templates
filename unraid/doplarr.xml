@@ -18,8 +18,11 @@
     <Overview>Doplarr(https://github.com/kiranshila/Doplarr) is an *arr request bot for Discord.&#34;</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/doplarr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/doplarr-logo.png</Icon>
-    <Date>2023-05-25</Date>
+    <Date>2023-12-23</Date>
     <Changes>
+### 2023-12-23
+- Rebase to Alpine 3.19.
+
 ### 2023-05-25
 - Rebase to Alpine 3.18.
 
@@ -36,7 +39,7 @@
 - Initial Release.
 
     </Changes>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="DISCORD__TOKEN" Target="DISCORD__TOKEN" Default="" Description="Specify your discord bot token." Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="OVERSEERR__API" Target="OVERSEERR__API" Default="" Description="Specify your Overseerr API key. Leave blank if using Radarr/Sonarr." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="OVERSEERR__URL" Target="OVERSEERR__URL" Default="http://localhost:5055" Description="Specify your Overseerr URL. Leave blank if using Radarr/Sonarr." Type="Variable" Display="always" Required="true" Mask="false"/>
