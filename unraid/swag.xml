@@ -19,8 +19,11 @@
     <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/swag.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2024-01-01</Date>
+    <Date>2024-01-23</Date>
     <Changes>
+### 2024-01-23
+- Rebase to Alpine 3.19 with php 8.3, add root periodic crontabs for logrotate.
+
 ### 2024-01-01
 - Add GleSYS DNS plugin.
 
@@ -258,7 +261,7 @@
     </Changes>
     <Config Name="WebUI" Target="443" Default="443" Mode="tcp" Description="Https port" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 80" Target="80" Default="80" Mode="tcp" Description="Http port (required for http validation and http - https redirect)" Type="Port" Display="always" Required="false" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="All the config files including the webroot reside here." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="URL" Target="URL" Default="yourdomain.url" Description="Top url you have control over (`customdomain.com` if you own it, or `customsubdomain.ddnsprovider.com` if dynamic dns)." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="VALIDATION" Target="VALIDATION" Default="http" Description="Certbot validation method to use, options are `http` or `dns` (`dns` method also requires `DNSPLUGIN` variable set)." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="SUBDOMAINS" Target="SUBDOMAINS" Default="www," Description="Subdomains you&#39;d like the cert to cover (comma separated, no spaces) ie. `www,ftp,cloud`. For a wildcard cert, set this *exactly* to `wildcard` (wildcard cert is available via `dns` validation only)" Type="Variable" Display="always" Required="false" Mask="false"/>
