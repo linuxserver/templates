@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/emulatorjs.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/emulatorjs-logo.png</Icon>
-    <Date>2024-01-27</Date>
+    <Date>2024-01-28</Date>
     <Changes>
+### 2024-01-28
+- Skip IPFS config if DISABLE_IPFS is set as env variable.
+
 ### 2024-01-27
 - Add atari5200 support.
 
