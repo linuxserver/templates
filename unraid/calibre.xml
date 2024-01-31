@@ -14,13 +14,26 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-calibre#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-calibre#readme</ReadMe>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Latest Calibre releases</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>v4</Tag>
+        <TagDescription>Calibre v4 releases (x86_64 only)</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-calibre/tree/v4#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-calibre/tree/v4#application-setup</GitHub>
+    </Branch>
     <Project>https://calibre-ebook.com/</Project>
     <Overview>Calibre(https://calibre-ebook.com/) is a powerful and easy to use e-book manager. Users say it&#39;s outstanding and a must-have. It&#39;ll allow you to do nearly everything and it takes things a step beyond normal e-book software. It&#39;s also completely free and open source and great for both casual users and computer experts.</Overview>
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/calibre.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/calibre-logo.png</Icon>
-    <Date>2023-11-17</Date>
+    <Date>2024-01-31</Date>
     <Changes>
+### 2024-01-31
+- Fix fullscreen on start.
+
 ### 2023-11-17
 - Install libxcb-cursor0 for v7 support.
 
