@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/qbittorrent.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/qbittorrent-logo.png</Icon>
-    <Date>2023-12-25</Date>
+    <Date>2024-01-31</Date>
     <Changes>
+### 2024-01-31
+- Remove obsolete compat packages.
+
 ### 2023-12-25
 - Only pull stable releases of qbittorrent-cli.
 
