@@ -14,14 +14,27 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-wps-office#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-wps-office#readme</ReadMe>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Standard English release</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>chinese</Tag>
+        <TagDescription>Simplified Chinese version</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-wps-office/tree/chinese#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-wps-office/tree/chinese#application-setup</GitHub>
+    </Branch>
     <Project>https://www.wps.com/</Project>
     <Overview>WPS Office(https://www.wps.com/) is a lightweight, feature-rich comprehensive office suite with high compatibility. As a handy and professional office software, WPS Office allows you to edit files in Writer, Presentation, Spreadsheet, and PDF to improve your work efficiency.</Overview>
     <ExtraParams>--shm-size=1gb</ExtraParams>
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/wps-office.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/wps-office-icon.png</Icon>
-    <Date>2024-01-17</Date>
+    <Date>2024-01-06</Date>
     <Changes>
+### 2024-01-06
+- Rebase to Debian Bookworm.
+
 ### 2024-01-17
 - Update Chromium wrapper.
 
