@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-speedtest-tracker/blob/main/readme-vars.yml -->
+<Container version="2">
+    <Name>speedtest-tracker</Name>
+    <Repository>lscr.io/linuxserver/speedtest-tracker</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/speedtest-tracker</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-speedtest-tracker/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-speedtest-tracker#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-speedtest-tracker#readme</ReadMe>
+    <Project>https://github.com/alexjustesen/speedtest-tracker</Project>
+    <Overview>Speedtest-tracker(https://github.com/alexjustesen/speedtest-tracker) is a self-hosted internet performance tracking application that runs speedtest checks against Ookla&#39;s Speedtest service.</Overview>
+    <WebUI>http://[IP]:[PORT:80]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/speedtest-tracker.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/speedtest-tracker-logo.png</Icon>
+    <Date>2024-02-10</Date>
+    <Changes>
+### 2024-02-10
+- Initial Release.
+
+    </Changes>
+    <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="Web UI" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains speedtest-tracker config and database, if using sqlite." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="DB_CONNECTION" Target="DB_CONNECTION" Default="sqlite" Description="Set the database type to use. `sqlite`, `pgsql`, or `mysql`" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="APP_KEY" Target="APP_KEY" Default="" Description="App key used for encrypting stored data. Generate with `docker exec speedtest-tracker php /app/www/artisan key:generate --show`" Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="DB_HOST" Target="DB_HOST" Default="" Description="Database hostname (postgres/mysql)." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="DB_PORT" Target="DB_PORT" Default="" Description="Database port (postgres/mysql)." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="DB_DATABASE" Target="DB_DATABASE" Default="" Description="Database name (postgres/mysql)." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="DB_USERNAME" Target="DB_USERNAME" Default="" Description="Database username (postgres/mysql)." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="" Description="Database password (postgres/mysql)." Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
