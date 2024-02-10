@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/bambustudio.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bambustudio-logo.png</Icon>
-    <Date>2024-02-08</Date>
+    <Date>2024-02-10</Date>
     <Changes>
+### 2024-02-10
+- Update Readme with new env vars.
+
 ### 2024-02-08
 - Fix printer camera by ingesting Fedora Appimage, Add program icon for PWA ingestion.
 
