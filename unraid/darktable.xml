@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/darktable.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/darktable-logo.png</Icon>
-    <Date>2024-01-21</Date>
+    <Date>2024-02-10</Date>
     <Changes>
+### 2024-02-10
+- Update Readme with new env vars and ingest proper PWA icon.
+
 ### 2024-01-21
 - Rebase to Arch as Alpine not longer offers aarch64.
 
