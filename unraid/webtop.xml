@@ -197,9 +197,12 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/webtop.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png</Icon>
-    <Date>2024-01-06</Date>
+    <Date>2024-02-11</Date>
     <Changes>
-### 2024-01-06
+### 2024-02-11
+- Add PWA icons and title variants properly.
+
+### 2024-02-06
 - Update Readme about native language support.
 
 ### 2023-12-29
