@@ -20,8 +20,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/opera.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/opera-icon.png</Icon>
-    <Date>2024-02-10</Date>
+    <Date>2024-02-13</Date>
     <Changes>
+### 2024-02-13
+- Remove manual codecs ingestion.
+
 ### 2024-02-10
 - Update Readme with new env vars and ingest proper PWA icon.
 
