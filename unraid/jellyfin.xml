@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8096]</WebUI>
     <TemplateURL>false</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/jellyfin-logo.png</Icon>
-    <Date>2023-09-12</Date>
+    <Date>2024-02-12</Date>
     <Changes>
+### 2024-02-12
+- Use universal hardware acceleration blurb
+
 ### 2023-09-12
 - Take ownership of plugin directories.
 
