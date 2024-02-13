@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8096]</WebUI>
     <TemplateURL>false</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/emby-logo.png</Icon>
-    <Date>2024-01-19</Date>
+    <Date>2024-02-12</Date>
     <Changes>
+### 2024-02-12
+- Use universal hardware acceleration blurb
+
 ### 2024-01-19
 - Fix tonemapping so it&#39;s done with hw acceleration.
 
