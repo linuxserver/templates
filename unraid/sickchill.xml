@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8081]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sickchill.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sickchill-logo.png</Icon>
-    <Date>2023-10-07</Date>
+    <Date>2024-02-13</Date>
     <Changes>
+### 2024-02-13
+- Rebase to Alpine 3.19.
+
 ### 2023-10-07
 - Install unrar from linuxserver repo(https://github.com/linuxserver/docker-unrar).
 
@@ -77,7 +80,7 @@
 
     </Changes>
     <Config Name="WebUI" Target="8081" Default="8081" Mode="tcp" Description="will map the container&#39;s port 8081 to port 8081 on the host" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="this will store config on the docker host" Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="this will store any downloaded data on the docker host" Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /tv" Target="/tv" Default="" Mode="rw" Description="this will allow sickchill to view what you already have" Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
