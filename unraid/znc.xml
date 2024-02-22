@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:6501]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/znc.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/znc-logo.png</Icon>
-    <Date>2023-12-23</Date>
+    <Date>2024-02-22</Date>
     <Changes>
+### 2024-02-22
+- Update build system for v1.9.0 (use cmake).
+
 ### 2023-12-23
 - Rebase to Alpine 3.19.
 
