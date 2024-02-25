@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/netbootxyz.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/netbootxyz-logo.png</Icon>
-    <Date>2023-12-08</Date>
+    <Date>2024-02-24</Date>
     <Changes>
+### 2024-02-24
+- Add new port settings for the webserver and app.
+
 ### 2023-12-08
 - Rebase to Alpine 3.19.
 
@@ -73,6 +76,8 @@
     <Config Name="MENU_VERSION" Target="MENU_VERSION" Default="1.9.9" Description="Specify a specific version of boot files you want to use from NETBOOT.XYZ (unset pulls latest)" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PORT_RANGE" Target="PORT_RANGE" Default="30000:30010" Description="Specify the port range tftp will use for data transfers (see Wikipedia)(https://en.wikipedia.org/wiki/Trivial_File_Transfer_Protocol#Details)" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="SUBFOLDER" Target="SUBFOLDER" Default="/" Description="Specify a sobfolder if running this behind a reverse proxy (IE /proxy/)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="NGINX_PORT" Target="NGINX_PORT" Default="80" Description="Specify a different internal port for the asset server" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="WEB_APP_PORT" Target="WEB_APP_PORT" Default="3000" Description="Specify a different internal port for the configuration UI" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
