@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nginx.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nginx-logo.png</Icon>
-    <Date>2023-05-25</Date>
+    <Date>2024-03-05</Date>
     <Changes>
+### 2024-03-05
+- Rebase to Alpine 3.19 with php 8.3.
+
 ### 2023-05-25
 - Rebase to Alpine 3.18, deprecate armhf.
 
@@ -168,7 +171,7 @@
     </Changes>
     <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="http" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 443" Target="443" Default="443" Mode="tcp" Description="https" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains your www content and all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
