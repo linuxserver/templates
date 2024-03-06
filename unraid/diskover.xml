@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/diskover.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2023-05-25</Date>
+    <Date>2024-03-06</Date>
     <Changes>
+### 2024-03-06
+- Rebase to Alpine 3.19 with php 8.3.
+
 ### 2023-05-25
 - Rebase to Alpine 3.18, deprecate armhf.
 
