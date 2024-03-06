@@ -19,8 +19,11 @@
     <ExtraParams>--cap-add=NET_ADMIN --cap-add=NET_RAW</ExtraParams>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/fail2ban.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/fail2ban-logo.png</Icon>
-    <Date>2023-06-01</Date>
+    <Date>2024-03-05</Date>
     <Changes>
+### 2024-03-05
+- Rebase to Alpine 3.19.
+
 ### 2023-06-01
 - Add optional VERBOSITY environment variable, allowing users to set the container log verbosity.
 
@@ -40,7 +43,7 @@
 - Initial Release.
 
     </Changes>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /var/log" Target="/var/log" Default="" Mode="ro" Description="Host logs. Mounted as Read Only." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /remotelogs/airsonic" Target="/remotelogs/airsonic" Default="" Mode="ro" Description="Optional path to airsonic log folder. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="Path: /remotelogs/apache2" Target="/remotelogs/apache2" Default="" Mode="ro" Description="Optional path to apache2 log folder. Mounted as Read Only." Type="Path" Display="always" Required="false" Mask="false"/>
