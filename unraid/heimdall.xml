@@ -33,8 +33,11 @@ Why not use it as your browser start page? It even has the ability to include a 
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/heimdall.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/heimdall-logo.png</Icon>
-    <Date>2024-03-06</Date>
+    <Date>2024-03-07</Date>
     <Changes>
+### 2024-03-07
+- Enable the opcache and disable file revalidation.
+
 ### 2024-03-06
 - Existing users should update: site-confs/default.conf - Cleanup default site conf.
 
