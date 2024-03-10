@@ -19,10 +19,13 @@
     <WebUI>http://[IP]:[PORT:5000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/changedetection.io.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2024-03-08</Date>
+    <Date>2024-03-09</Date>
     <Changes>
+### 2024-03-09
+- Build Playwright from source because Microsoft&#39;s build and packaging process is awful.
+
 ### 2024-03-08
-- Build Playwright from source, add libjpeg.
+- Build Playwright-python from source, add libjpeg.
 
 ### 2023-12-23
 - Rebase to Alpine 3.19.
@@ -49,6 +52,7 @@
     <Config Name="WebUI" Target="5000" Default="5000" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="BASE_URL" Target="BASE_URL" Default="" Description="Specify the full URL (including protocol) when running behind a reverse proxy" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PLAYWRIGHT_DRIVER_URL" Target="PLAYWRIGHT_DRIVER_URL" Default="" Description="Specify the full URL to your chrome driver instance. See the wiki(https://github.com/dgtlmoon/changedetection.io/wiki/Playwright-content-fetcher) for details." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
