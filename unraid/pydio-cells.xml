@@ -20,8 +20,11 @@
     <WebUI>https://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/pydio-cells.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pydio-cells-icon.png</Icon>
-    <Date>2023-10-11</Date>
+    <Date>2024-03-14</Date>
     <Changes>
+### 2024-03-14
+- Rebasing to alpine 3.19. Grpc port defaults to 8080.
+
 ### 2023-10-11
 - Rebasing to alpine 3.18. Build on alpine edge with Go 1.21.
 
@@ -57,7 +60,6 @@
 
     </Changes>
     <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="Http port" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Port: 33060" Target="33060" Default="33060" Mode="tcp" Description="gRPC port (required for CellsSync)." Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="All the config files reside here." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="EXTERNALURL" Target="EXTERNALURL" Default="yourdomain.url" Description="The external url you would like to use to access Pydio Cells (Can be https://domain.url or https://IP:PORT)." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="SERVER_IP" Target="SERVER_IP" Default="0.0.0.0" Description="Enter the LAN IP of the docker server. Required for local access by IP, added to self signed cert as SAN (not required if accessing only through reverse proxy)." Type="Variable" Display="always" Required="false" Mask="false"/>
