@@ -21,8 +21,11 @@
     <WebUI>http://[IP]:[PORT:4040]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/booksonic-air.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/booksonic-air-logo.png</Icon>
-    <Date>2023-07-10</Date>
+    <Date>2024-03-20</Date>
     <Changes>
+### 2024-03-20
+- Rebase to Alpine 3.19.
+
 ### 2023-07-10
 - Rebase to Alpine 3.18.
 
