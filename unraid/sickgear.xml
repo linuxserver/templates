@@ -21,8 +21,11 @@ For more information on SickGear visit their website and check it out: https://g
     <WebUI>http://[IP]:[PORT:8081]/home/view-changes</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sickgear.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sickgear-logo.png</Icon>
-    <Date>2023-10-08</Date>
+    <Date>2024-03-20</Date>
     <Changes>
+### 2024-03-20
+- Rebase to Alpine 3.19.
+
 ### 2023-10-08
 - Install unrar from linuxserver repo(https://github.com/linuxserver/docker-unrar).
 
@@ -76,7 +79,7 @@ For more information on SickGear visit their website and check it out: https://g
 
     </Changes>
     <Config Name="WebUI" Target="8081" Default="8081" Mode="tcp" Description="will map the container&#39;s port 8081 to port 8081 on the host" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="this will store any uploaded data on the docker host" Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /tv" Target="/tv" Default="" Mode="rw" Description="where you store your tv shows" Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="your downloads folder for post processing (must not be download in progress)" Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
