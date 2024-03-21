@@ -22,6 +22,9 @@
     <Date>2023-08-26</Date>
     <Changes>
 ### 2023-08-26
+- Rebase to Alpine 3.19. Remove deprecated `AUTOJOIN_ENABLED` and `AUTOJOIN_ROOM` options.
+
+### 2023-08-26
 - Rebase to Alpine 3.18.
 
 ### 2023-07-04
@@ -57,8 +60,6 @@
     </Changes>
     <Config Name="WebUI" Target="8088" Default="8088" Mode="tcp" Description="Web app and server port" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="AUTH_LIST" Target="AUTH_LIST" Default="plexuser1,plexuser2,email1,machineid1" Description="If set, only the users defined here and the users of the plex servers defined here will be able to access the server. Use e-mails, plex usernames and/or plex server machine ids, comma separated, no spaces." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="AUTOJOIN_ENABLED" Target="AUTOJOIN_ENABLED" Default="false" Description="DEPRECATED - (Still works but will be removed in the future in favor of the built-in var `autojoin__room`) - Set to `true` to let users autojoin the server and a room (specified by the `AUTOJOIN_ROOM` var)." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="AUTOJOIN_ROOM" Target="AUTOJOIN_ROOM" Default="roomname" Description="DEPRECATED - (Still works but will be removed in the future in favor of the built-in var `autojoin__room`) - Set the room name for auto joining (requires `AUTOJOIN_ENABLED` set to `true`)." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
