@@ -21,8 +21,11 @@ Multiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV D
     <WebUI>http://[IP]:[PORT:9981]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/tvheadend.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/tvheadend-logo.png</Icon>
-    <Date>2023-10-16</Date>
+    <Date>2024-03-20</Date>
     <Changes>
+### 2024-03-20
+- Rebase to Alpine 3.19.
+
 ### 2023-10-16
 - Add mesa-va-gallium package for AMD transcoding.
 
