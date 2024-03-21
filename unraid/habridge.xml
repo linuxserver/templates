@@ -25,8 +25,11 @@ For more information about how to use this software have a look at their Wiki ht
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/habridge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/habridge-logo.png</Icon>
-    <Date>2023-08-25</Date>
+    <Date>2024-03-20</Date>
     <Changes>
+### 2024-03-20
+- Rebase to Alpine 3.19, bump JRE to 17.
+
 ### 2023-08-25
 - Rebase to Alpine 3.18.
 
@@ -70,7 +73,7 @@ For more information about how to use this software have a look at their Wiki ht
     <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 50000" Target="50000" Default="50000" Mode="tcp" Description="HABridge communication port." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where HABridge stores config files and data." Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="SEC_KEY" Target="SEC_KEY" Default="Your Key To Encrypt Security Data" Description="Key used to secure communication." Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="SEC_KEY" Target="SEC_KEY" Default="" Description="Key used to secure communication." Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
