@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]/smokeping/smokeping.cgi</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/smokeping.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/smokeping-logo.png</Icon>
-    <Date>2023-12-23</Date>
+    <Date>2024-03-22</Date>
     <Changes>
+### 2024-03-22
+- Adding ability to run as a slave.
+
 ### 2023-12-23
 - Rebase to Alpine 3.19.
 
@@ -130,6 +133,9 @@
     <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="Allows HTTP access to the internal webserver." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="Storage location for db and application data (graphs etc)" Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="MASTER_URL" Target="MASTER_URL" Default="http://master-host-ip:80/smokeping/" Description="Specify the master url to connect to. Used when in slave mode." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="SHARED_SECRET" Target="SHARED_SECRET" Default="password" Description="Specify the master shared secret for this host. Used when in slave mode." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="CACHE_DIR" Target="CACHE_DIR" Default="/tmp" Description="Specify the cache directory for this host. Used when in slave mode." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
