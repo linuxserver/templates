@@ -31,8 +31,11 @@ Where are your photos and documents? With Nextcloud you pick a server of your ch
     <WebUI>https://[IP]:[PORT:443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nextcloud.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nextcloud-logo.png</Icon>
-    <Date>2024-03-22</Date>
+    <Date>2024-04-02</Date>
     <Changes>
+### 2024-04-02
+- Existing users should update: site-confs/default.conf - Add support for the Client Push (notify_push) plugin and the new mod(https://github.com/linuxserver/docker-mods/tree/nextcloud-notify-push).
+
 ### 2024-03-22
 - Add imagemagick-svg module.
 
