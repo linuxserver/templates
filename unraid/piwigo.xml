@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/piwigo.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/piwigo-logo.png</Icon>
-    <Date>2024-03-02</Date>
+    <Date>2024-04-07</Date>
     <Changes>
+### 2024-04-07
+- Increase php workers to fix Android uploading in bulk
+
 ### 2024-03-02
 - Fix HEIC file format support.
 
