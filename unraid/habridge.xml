@@ -25,8 +25,11 @@ For more information about how to use this software have a look at their Wiki ht
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/habridge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/habridge-logo.png</Icon>
-    <Date>2024-03-20</Date>
+    <Date>2024-04-10</Date>
     <Changes>
+### 2024-04-10
+- Revert JRE to 8 due to incomplete upstream support.
+
 ### 2024-03-20
 - Rebase to Alpine 3.19, bump JRE to 17.
 
