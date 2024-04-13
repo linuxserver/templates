@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]/smokeping/smokeping.cgi</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/smokeping.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/smokeping-logo.png</Icon>
-    <Date>2024-03-22</Date>
+    <Date>2024-04-12</Date>
     <Changes>
+### 2024-04-12
+- Added perl InfluxDB HTTP module for InfluxDB HTTP support.
+
 ### 2024-03-22
 - Adding ability to run as a slave.
 
