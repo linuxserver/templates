@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/speedtest-tracker.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/speedtest-tracker-logo.png</Icon>
-    <Date>2024-02-10</Date>
+    <Date>2024-04-16</Date>
     <Changes>
+### 2024-04-16
+- Rebase to alpine 3.19, upgrade to php 8.3.
+
 ### 2024-02-10
 - Initial Release.
 
