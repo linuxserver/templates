@@ -197,8 +197,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/webtop.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png</Icon>
-    <Date>2024-04-14</Date>
+    <Date>2024-04-16</Date>
     <Changes>
+### 2024-04-16
+- Add docs on PRoot Apps.
+
 ### 2024-04-14
 - Rebase Fedora to 40.
 
