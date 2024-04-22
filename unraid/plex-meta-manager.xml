@@ -30,12 +30,15 @@
         <ReadMe>https://github.com/linuxserver/docker-plex-meta-manager/tree/nightly#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-plex-meta-manager/tree/nightly#application-setup</GitHub>
     </Branch>
-    <Project>https://github.com/meisnate12/Plex-Meta-Manager</Project>
-    <Overview>Plex-meta-manager(https://github.com/meisnate12/Plex-Meta-Manager) is a Python 3 script that can be continuously run using YAML configuration files to update on a schedule the metadata of the movies, shows, and collections in your libraries as well as automatically build collections based on various methods all detailed in the wiki.</Overview>
+    <Project>https://github.com/Kometa-Team/Kometa</Project>
+    <Overview>Plex-meta-manager(https://github.com/Kometa-Team/Kometa) is a Python 3 script that can be continuously run using YAML configuration files to update on a schedule the metadata of the movies, shows, and collections in your libraries as well as automatically build collections based on various methods all detailed in the wiki.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/plex-meta-manager.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2023-12-23</Date>
+    <Date>2024-04-22</Date>
     <Changes>
+### 2024-04-22
+- Update backend to reflect upstream repo rename.
+
 ### 2023-12-23
 - Rebase to Alpine 3.19.
 
