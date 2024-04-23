@@ -19,8 +19,11 @@
     <ExtraParams>--hostname=webgrabplus --mac-address=00:00:00:00:00:00</ExtraParams>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/webgrabplus.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webgrabplus-logo.png</Icon>
-    <Date>2023-12-23</Date>
+    <Date>2024-04-23</Date>
     <Changes>
+### 2024-04-23
+- Bump dotnet framework to 8.x.
+
 ### 2023-12-23
 - Rebase to Alpine 3.19.
 
