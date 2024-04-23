@@ -12,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-plex-meta-manager/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/linuxserver/docker-plex-meta-manager#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-plex-meta-manager#readme</ReadMe>
     <Branch>
@@ -36,6 +37,9 @@
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
     <Date>2024-04-22</Date>
     <Changes>
+### 2024-04-22
+- Deprecate.
+
 ### 2024-04-22
 - Update backend to reflect upstream repo rename.
 
