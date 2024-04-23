@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-kometa/blob/main/readme-vars.yml -->
+<Container version="2">
+    <Name>kometa</Name>
+    <Repository>lscr.io/linuxserver/kometa</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/kometa</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-kometa/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-kometa#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-kometa#readme</ReadMe>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Stable releases.</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>develop</Tag>
+        <TagDescription>Latest commits from the develop branch</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-kometa/tree/develop#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-kometa/tree/develop#application-setup</GitHub>
+    </Branch>
+    <Branch>
+        <Tag>nightly</Tag>
+        <TagDescription>Latest commits from the nightly branch</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-kometa/tree/nightly#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-kometa/tree/nightly#application-setup</GitHub>
+    </Branch>
+    <Project>https://github.com/Kometa-Team/Kometa</Project>
+    <Overview>Kometa(https://github.com/Kometa-Team/Kometa) is a powerful tool designed to give you complete control over your media libraries. With Kometa, you can take your customization to the next level, with granular control over metadata, collections, overlays, and much more.</Overview>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/kometa.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kometa-logo.png</Icon>
+    <Date>2024-04-22</Date>
+    <Changes>
+### 2024-04-22
+- Initial Release.
+
+    </Changes>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="KOMETA_CONFIG" Target="KOMETA_CONFIG" Default="/config/config.yml" Description="Specify a custom config file to use." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="KOMETA_TIME" Target="KOMETA_TIME" Default="03:00" Description="Comma-separated list of times to update each day. Format: `HH:MM`." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="KOMETA_RUN" Target="KOMETA_RUN" Default="False" Description="Set to `True` to run without the scheduler." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="KOMETA_TEST" Target="KOMETA_TEST" Default="False" Description="Set to `True` to run in debug mode with only collections that have `test: true`." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="KOMETA_NO_MISSING" Target="KOMETA_NO_MISSING" Default="False" Description="Set to `True` to run without any of the missing movie/show functions." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
