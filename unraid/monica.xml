@@ -18,8 +18,11 @@
     <Overview>Monica(https://github.com/monicahq/monica) is an open source personal relationship management system, that lets you document your life.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/monica.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/monica-logo.png</Icon>
-    <Date>2024-01-17</Date>
+    <Date>2024-05-02</Date>
     <Changes>
+### 2024-05-02
+- Rebase to Alpine 3.19 and PHP 8.3.
+
 ### 2024-01-17
 - Initial Release.
 
