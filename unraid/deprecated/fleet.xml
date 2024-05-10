@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-fleet/blob/master/readme-vars.yml -->
+<Container version="2">
+    <Name>fleet</Name>
+    <Repository>lscr.io/linuxserver/fleet</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/fleet</Registry>
+    <DonateText>Donations</DonateText>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-fleet/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <Deprecated>true</Deprecated>
+    <GitHub>https://github.com/linuxserver/docker-fleet#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-fleet#readme</ReadMe>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/fleet.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+</Container>
