@@ -12,7 +12,6 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-nzbget/issues/new/choose</Support>
     <Shell>bash</Shell>
-    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/linuxserver/docker-nzbget#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-nzbget#readme</ReadMe>
     <Branch>
@@ -25,115 +24,19 @@
         <ReadMe>https://github.com/linuxserver/docker-nzbget/tree/testing#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-nzbget/tree/testing#application-setup</GitHub>
     </Branch>
-    <Project>http://nzbget.net/</Project>
-    <Overview>Nzbget(http://nzbget.net/) is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources.</Overview>
+    <Project>http://nzbget.com/</Project>
+    <Overview>Nzbget(http://nzbget.com/) is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources.</Overview>
     <WebUI>http://[IP]:[PORT:6789]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nzbget.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nzbget-logo.png</Icon>
-    <Date>2022-12-31</Date>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Date>2024-05-09</Date>
     <Changes>
-### 2022-12-31
-- Deprecate image.  Please consider switching to SABnzbd https://github.com/linuxserver/docker-sabnzbd
-
-### 2022-11-27
-- Advanced notice: This image will be deprecated on 2022-12-31. Please consider switching to SABnzbd https://github.com/linuxserver/docker-sabnzbd
-
-### 2022-11-13
-- Rebase master to 3.16, migrate to s6v3.
-
-### 2022-08-12
-- Bump unrar to 6.1.7.
-
-### 2022-02-22
-- Rebase to alpine 3.15, add six and python 7zip tools, allow env variables for credentials.
-
-### 2021-07-04
-- Rebase to alpine 3.14.
-
-### 2021-05-28
-- Add linuxserver wheel index.
-
-### 2021-01-23
-- Rebasing to alpine 3.13.
-
-### 2020-10-26
-- Fix python dependencies.
-
-### 2020-08-24
-- Fix ignored umask environment variable.
-
-### 2020-06-08
-- Symlink python3 bin to python.
-
-### 2020-06-01
-- Rebasing to alpine 3.12. Removing python2.
-
-### 2020-05-13
-- Add rarfile python package (for DeepUnrar).
-
-### 2020-01-01
-- Add python3 alongside python2 during transition.
-
-### 2019-12-19
-- Rebasing to alpine 3.11.
-
-### 2019-06-28
-- Rebasing to alpine 3.10.
-
-### 2019-06-13
-- Add apprise, chardet and pynzbget packages.
-
-### 2019-03-23
-- Switching to new Base images, shift to arm32v7 tag.
-
-### 2019-02-25
-- Rebasing to alpine 3.9.
-
-### 2019-01-20
-- Add pipeline logic and multi arch, build from source.
-
-### 2018-08-21
-- Rebase to alpine 3.8.
-
-### 2018-02-20
-- Add note about supplemental mount point for intermediate unpacking.
-
-### 2017-12-13
-- Rebase to alpine 3.7.
-
-### 2017-09-02
-- Place app in subfolder rather than /app.
-
-### 2017-07-12
-- Add inspect commands to README, move to jenkins build and push.
-
-### 2017-05-28
-- Rebase to alpine 3.6.
-
-### 2017-04-20
-- Add testing branch.
-
-### 2017-02-06
-- Rebase to alpine 3.5.
-
-### 2016-09-30
-- Fix umask.
-
-### 2016-09-09
-- Add layer badges to README.
-
-### 2016-08-27
-- Add badges to README, perms fix on /app to allow updates.
-
-### 2016-08-19
-- Rebase to alpine linux.
-
-### 2015-08-18
-- Now useing latest version of unrar beta and implements the universal installer method.
+### 2024-05-09
+- Revive image based on the fork from https://github.com/nzbgetcom/nzbget
 
     </Changes>
     <Config Name="WebUI" Target="6789" Default="6789" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="NZBGet App data." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Location of downloads on disk." Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="NZBGET_USER" Target="NZBGET_USER" Default="nzbget" Description="Specify the user for web authentication." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="NZBGET_PASS" Target="NZBGET_PASS" Default="tegbzn6789" Description="Specify the password for web authentication." Type="Variable" Display="always" Required="false" Mask="true"/>
