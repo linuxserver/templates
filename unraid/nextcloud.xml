@@ -31,8 +31,11 @@ Where are your photos and documents? With Nextcloud you pick a server of your ch
     <WebUI>https://[IP]:[PORT:443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nextcloud.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nextcloud-logo.png</Icon>
-    <Date>2024-04-10</Date>
+    <Date>2024-05-19</Date>
     <Changes>
+### 2024-05-19
+- Added util-linux package required for taskset.
+
 ### 2024-04-10
 - Added imagemagick-pdf.
 
