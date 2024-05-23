@@ -20,8 +20,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/firefox.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/firefox-logo.png</Icon>
-    <Date>2024-02-13</Date>
+    <Date>2024-05-23</Date>
     <Changes>
+### 2024-05-23
+- Rebase to Alpine 3.20.
+
 ### 2024-02-13
 - Add ability to pass CLI args to Firefox.
 
