@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/keepassxc.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/keepassxc-logo.png</Icon>
-    <Date>2024-04-10</Date>
+    <Date>2024-05-23</Date>
     <Changes>
+### 2024-05-23
+- Rebase to Alpine 3.20.
+
 ### 2024-04-10
 - Initial release.
 
