@@ -200,7 +200,7 @@
     <Date>2024-05-23</Date>
     <Changes>
 ### 2024-05-23
-- Rebase Alpine to 3.20.
+- Rebase Alpine to 3.20, document Nvidia support.
 
 ### 2024-04-22
 - Rebase Ubuntu to Noble.
