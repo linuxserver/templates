@@ -18,8 +18,11 @@
     <Overview>Your_spotify(https://github.com/Yooooomi/your_spotify) is a self-hosted application that tracks what you listen and offers you a dashboard to explore statistics about it! It&#39;s composed of a web server which polls the Spotify API every now and then and a web application on which you can explore your statistics.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/your_spotify.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/your_spotify-logo.png</Icon>
-    <Date>2024-03-02</Date>
+    <Date>2024-05-24</Date>
     <Changes>
+### 2024-05-24
+- Rebase to Alpine 3.20.
+
 ### 2024-03-02
 - Updates for changes in 1.8.0. Initial DB migration may take several minutes.
 
