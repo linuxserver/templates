@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/qbittorrent.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/qbittorrent-logo.png</Icon>
-    <Date>2024-02-14</Date>
+    <Date>2024-05-25</Date>
     <Changes>
+### 2024-05-25
+- Remove qbittorrent-cli as it still requires openssl 1.1 which is EOL.
+
 ### 2024-02-14
 - Only set/override torrenting port if the optional env var is set.
 
