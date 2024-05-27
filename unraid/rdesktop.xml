@@ -160,8 +160,11 @@
     <Overview>Rdesktop(http://xrdp.org/) - Containers containing full desktop environments in many popular flavors for Alpine, Ubuntu, Arch, and Fedora accessible via RDP.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/rdesktop.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/rdesktop-logo.png</Icon>
-    <Date>2024-01-17</Date>
+    <Date>2024-05-27</Date>
     <Changes>
+### 2024-05-27
+- Rebase to Alpine 3.20 and Fedora 40.
+
 ### 2024-01-17
 - Sync webtop logic changes rebase to Alpine 3.19 and Fedora 39.
 
@@ -178,10 +181,10 @@
 - Organize tags differently to run Ubuntu at latest LTS, make Alpine latest, add docs about GPU accel.
 
 ### 2021-05-05
-- Reduce default packages to their flavor specific basics.
+- Reduce default packages to their flavour specific basics.
 
 ### 2021-04-05
-- Add Alpine flavor.
+- Add Alpine flavour.
 
 ### 2020-04-06
 - Start PulseAudio in images to support audio
