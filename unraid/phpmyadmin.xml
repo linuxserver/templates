@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/phpmyadmin.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/phpmyadmin-logo.png</Icon>
-    <Date>2024-05-24</Date>
+    <Date>2024-05-27</Date>
     <Changes>
+### 2024-05-27
+- Existing users should update their nginx confs to avoid http2 deprecation warnings.
+
 ### 2024-05-24
 - Rebase to Alpine 3.20.
 
