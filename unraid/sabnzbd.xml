@@ -35,8 +35,11 @@
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sabnzbd.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sabnzbd-logo.png</Icon>
-    <Date>2023-12-23</Date>
+    <Date>2024-05-31</Date>
     <Changes>
+### 2024-05-31
+- Rebase Alpine 3.20. Remove nzbnotify as apprise is now included with SABnzbd.
+
 ### 2023-12-23
 - Rebase to Alpine 3.19.
 
