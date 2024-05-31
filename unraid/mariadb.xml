@@ -18,8 +18,11 @@
     <Overview>Mariadb(https://mariadb.org/) is one of the most popular database servers. Made by the original developers of MySQL.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mariadb.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mariadb-logo.png</Icon>
-    <Date>2023-12-23</Date>
+    <Date>2024-05-31</Date>
     <Changes>
+### 2024-05-31
+- Rebase to Alpine 3.20.
+
 ### 2023-12-23
 - Rebase to Alpine 3.19.
 
