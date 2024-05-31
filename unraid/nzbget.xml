@@ -29,10 +29,13 @@
     <WebUI>http://[IP]:[PORT:6789]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nzbget.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nzbget-logo.png</Icon>
-    <Date>2024-05-09</Date>
+    <Date>2024-05-31</Date>
     <Changes>
+### 2024-05-31
+- Rebase to Alpine 3.20.
+
 ### 2024-05-09
-- Revive image based on the fork from https://github.com/nzbgetcom/nzbget
+- Revive image based on the fork from https://github.com/nzbgetcom/nzbget.
 
     </Changes>
     <Config Name="WebUI" Target="6789" Default="6789" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
