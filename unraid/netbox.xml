@@ -18,8 +18,11 @@
     <Overview>Netbox(https://github.com/netbox-community/netbox) is an IP address management (IPAM) and data center infrastructure management (DCIM) tool. Initially conceived by the network engineering team at DigitalOcean, NetBox was developed specifically to address the needs of network and infrastructure engineers. It is intended to function as a domain-specific source of truth for network operations.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/netbox.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/netbox-logo.png</Icon>
-    <Date>2023-12-23</Date>
+    <Date>2024-06-01</Date>
     <Changes>
+### 2024-06-01
+- Rebase to Alpine 3.20.
+
 ### 2023-12-23
 - Rebase to Alpine 3.19.
 
@@ -69,7 +72,7 @@
     <Config Name="DB_USER" Target="DB_USER" Default="" Description="Database user" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="" Description="Database password" Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="DB_HOST" Target="DB_HOST" Default="" Description="Database host (default: postgres)" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="DB_PORT" Target="DB_PORT" Default="" Description="Database port (defaul: 5432)" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="DB_PORT" Target="DB_PORT" Default="" Description="Database port (default: 5432)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="REDIS_HOST" Target="REDIS_HOST" Default="" Description="Redis host (default: redis)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="REDIS_PORT" Target="REDIS_PORT" Default="" Description="Redis port number (default: 6379)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="REDIS_PASSWORD" Target="REDIS_PASSWORD" Default="" Description="Redis password (default: none)" Type="Variable" Display="always" Required="true" Mask="true"/>
