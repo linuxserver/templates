@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/speedtest-tracker.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/speedtest-tracker-logo.png</Icon>
-    <Date>2024-05-27</Date>
+    <Date>2024-06-07</Date>
     <Changes>
+### 2024-06-07
+- Cache Filament components and added APP_KEY as a required param.
+
 ### 2024-05-27
 - Existing users should update their nginx confs to avoid http2 deprecation warnings.
 
@@ -36,13 +39,17 @@
     </Changes>
     <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="Web UI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains speedtest-tracker config and database, if using sqlite." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="APP_KEY" Target="APP_KEY" Default="" Description="App key used for encrypting stored data. You can generate a key at https://speedtest-tracker.dev(https://speedtest-tracker.dev)" Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="DB_CONNECTION" Target="DB_CONNECTION" Default="sqlite" Description="Set the database type to use. `sqlite`, `pgsql`, or `mysql`" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="APP_KEY" Target="APP_KEY" Default="" Description="App key used for encrypting stored data. Generate with `docker exec speedtest-tracker php /app/www/artisan key:generate --show`" Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="SPEEDTEST_SCHEDULE" Target="SPEEDTEST_SCHEDULE" Default="" Description="Set the test schedule in cron format. e.g. `0 */6 * * *`" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="SPEEDTEST_SERVERS" Target="SPEEDTEST_SERVERS" Default="" Description="A comma-separated list of server IDs to test against. Run `docker exec speedtest-tracker php /app/www/artisan app:ookla-list-servers` to get a list of nearby servers." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_HOST" Target="DB_HOST" Default="" Description="Database hostname (postgres/mysql)." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="DB_PORT" Target="DB_PORT" Default="" Description="Database port (postgres/mysql)." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="DB_DATABASE" Target="DB_DATABASE" Default="" Description="Database name (postgres/mysql)." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="DB_USERNAME" Target="DB_USERNAME" Default="" Description="Database username (postgres/mysql)." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="" Description="Database password (postgres/mysql)." Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="DISPLAY_TIMEZONE" Target="DISPLAY_TIMEZONE" Default="Etc/UTC" Description="Timezone for the UI." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PRUNE_RESULTS_OLDER_THAN" Target="PRUNE_RESULTS_OLDER_THAN" Default="0" Description="Days to keep test results." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
