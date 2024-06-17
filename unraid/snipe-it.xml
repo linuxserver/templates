@@ -16,10 +16,14 @@
     <ReadMe>https://github.com/linuxserver/docker-snipe-it#readme</ReadMe>
     <Project>https://github.com/snipe/snipe-it</Project>
     <Overview>Snipe-it(https://github.com/snipe/snipe-it) makes asset management easy. It was built by people solving real-world IT and asset management problems, and a solid UX has always been a top priority. Straightforward design and bulk actions mean getting things done faster.</Overview>
+    <WebUI>http://[IP]:[PORT:80]/setup</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/snipe-it.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/snipe-it-logo.png</Icon>
-    <Date>2024-03-06</Date>
+    <Date>2024-06-17</Date>
     <Changes>
+### 2024-06-17
+- Rebase to Alpine 3.20. Existing users should update their nginx confs to avoid http2 deprecation warnings.
+
 ### 2024-03-06
 - Existing users should update: site-confs/default.conf - Cleanup default site conf.
 
@@ -89,22 +93,24 @@
     </Changes>
     <Config Name="WebUI" Target="80" Default="8080" Mode="tcp" Description="Snipe-IT Web UI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains your config files and data storage for Snipe-IT" Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="APP_KEY" Target="APP_KEY" Default="" Description="App key used for encrypting stored data. Generate with `docker exec snipe-it php /app/www/artisan key:generate --show`." Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="APP_URL" Target="APP_URL" Default="http://localhost:8080" Description="Hostname or IP and port if applicable, be sure to define https/http" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="MYSQL_PORT_3306_TCP_ADDR" Target="MYSQL_PORT_3306_TCP_ADDR" Default="" Description="Mysql hostname or IP to use" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="MYSQL_PORT_3306_TCP_PORT" Target="MYSQL_PORT_3306_TCP_PORT" Default="" Description="Mysql port to use" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="MYSQL_DATABASE" Target="MYSQL_DATABASE" Default="" Description="Mysql database to use" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="MYSQL_USER" Target="MYSQL_USER" Default="" Description="Mysql user to use" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="MYSQL_PASSWORD" Target="MYSQL_PASSWORD" Default="" Description="Mysql password to use" Type="Variable" Display="always" Required="true" Mask="true"/>
-    <Config Name="APP_ENV" Target="APP_ENV" Default="production" Description="Default is `production` but can use `testing` or `develop`." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="APP_DEBUG" Target="APP_DEBUG" Default="false" Description="Set to `true` to see debugging output in the web UI." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="APP_ENV" Target="APP_ENV" Default="production" Description="Default is `production` but can use `testing` or `develop`." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="APP_FORCE_TLS" Target="APP_FORCE_TLS" Default="false" Description="Set to `true` if running behind a reverse proxy" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="APP_LOCALE" Target="APP_LOCALE" Default="" Description="Default is `en`. Set to a language from this list(https://snipe-it.readme.io/docs/configuration#section-setting-a-language)." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="MAIL_PORT_587_TCP_ADDR" Target="MAIL_PORT_587_TCP_ADDR" Default="US/Pacific" Description="SMTP mail server ip or hostname." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="MAIL_PORT_587_TCP_PORT" Target="MAIL_PORT_587_TCP_PORT" Default="US/Pacific" Description="SMTP mail server port." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="MAIL_ENV_FROM_ADDR" Target="MAIL_ENV_FROM_ADDR" Default="US/Pacific" Description="The email address mail should be replied to and listed when sent." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="MAIL_ENV_FROM_NAME" Target="MAIL_ENV_FROM_NAME" Default="US/Pacific" Description="The name listed on email sent from the default account on the system." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="MAIL_ENV_ENCRYPTION" Target="MAIL_ENV_ENCRYPTION" Default="US/Pacific" Description="Mail encryption to use e.g. `tls`." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="MAIL_ENV_USERNAME" Target="MAIL_ENV_USERNAME" Default="US/Pacific" Description="SMTP server login username." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="MAIL_ENV_PASSWORD" Target="MAIL_ENV_PASSWORD" Default="US/Pacific" Description="SMTP server login password." Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="MAIL_PORT_587_TCP_ADDR" Target="MAIL_PORT_587_TCP_ADDR" Default="" Description="SMTP mail server ip or hostname." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="MAIL_PORT_587_TCP_PORT" Target="MAIL_PORT_587_TCP_PORT" Default="" Description="SMTP mail server port." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="MAIL_ENV_FROM_ADDR" Target="MAIL_ENV_FROM_ADDR" Default="" Description="The email address mail should be replied to and listed when sent." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="MAIL_ENV_FROM_NAME" Target="MAIL_ENV_FROM_NAME" Default="" Description="The name listed on email sent from the default account on the system." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="MAIL_ENV_ENCRYPTION" Target="MAIL_ENV_ENCRYPTION" Default="" Description="Mail encryption to use e.g. `tls`." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="MAIL_ENV_USERNAME" Target="MAIL_ENV_USERNAME" Default="" Description="SMTP server login username." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="MAIL_ENV_PASSWORD" Target="MAIL_ENV_PASSWORD" Default="" Description="SMTP server login password." Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
