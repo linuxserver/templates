@@ -20,8 +20,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/obsidian.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/obsidian-logo.png</Icon>
-    <Date>2024-04-06</Date>
+    <Date>2024-06-18</Date>
     <Changes>
+### 2024-06-18
+- Fix application init for Kasm.
+
 ### 2024-04-06
 - Initial release.
 
