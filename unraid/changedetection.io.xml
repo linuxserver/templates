@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:5000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/changedetection.io.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2024-03-09</Date>
+    <Date>2024-05-31</Date>
     <Changes>
+### 2024-05-31
+- Rebase to Alpine 3.20.
+
 ### 2024-03-09
 - Build Playwright from source because Microsoft&#39;s build and packaging process is awful.
 
