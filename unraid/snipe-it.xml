@@ -103,7 +103,7 @@
     <Config Name="APP_DEBUG" Target="APP_DEBUG" Default="false" Description="Set to `true` to see debugging output in the web UI." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="APP_ENV" Target="APP_ENV" Default="production" Description="Default is `production` but can use `testing` or `develop`." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="APP_FORCE_TLS" Target="APP_FORCE_TLS" Default="false" Description="Set to `true` if running behind a reverse proxy" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="APP_LOCALE" Target="APP_LOCALE" Default="" Description="Default is `en`. Set to a language from this list(https://snipe-it.readme.io/docs/configuration#section-setting-a-language)." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="APP_LOCALE" Target="APP_LOCALE" Default="" Description="Default is `en-US`. Set to a language from this list(https://snipe-it.readme.io/docs/configuration#section-setting-a-language)." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="MAIL_PORT_587_TCP_ADDR" Target="MAIL_PORT_587_TCP_ADDR" Default="" Description="SMTP mail server ip or hostname." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="MAIL_PORT_587_TCP_PORT" Target="MAIL_PORT_587_TCP_PORT" Default="" Description="SMTP mail server port." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="MAIL_ENV_FROM_ADDR" Target="MAIL_ENV_FROM_ADDR" Default="" Description="The email address mail should be replied to and listed when sent." Type="Variable" Display="always" Required="false" Mask="false"/>
