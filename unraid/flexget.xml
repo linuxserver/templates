@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:5050]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/flexget.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2024-03-20</Date>
+    <Date>2024-06-19</Date>
     <Changes>
+### 2024-06-19
+- Rebase to Alpine 3.20.
+
 ### 2024-03-20
 - Rebase to Alpine 3.19.
 
