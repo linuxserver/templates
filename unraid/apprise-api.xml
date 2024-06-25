@@ -25,8 +25,11 @@ Apprise API was designed to easily fit into existing (and new) eco-systems that 
     <WebUI>http://[IP]:[PORT:8000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/apprise-api.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/apprise-api-logo.png</Icon>
-    <Date>2023-12-23</Date>
+    <Date>2024-06-24</Date>
     <Changes>
+### 2024-06-24
+- Rebase to Alpine 3.20.
+
 ### 2023-12-23
 - Rebase to Alpine 3.19.
 
