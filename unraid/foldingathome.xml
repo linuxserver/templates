@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:7396]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/foldingathome.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/foldingathome-logo.png</Icon>
-    <Date>2024-06-15</Date>
+    <Date>2024-06-25</Date>
     <Changes>
+### 2024-06-25
+- ***Breaking Changes*** - Please see the Application Setup section for more details. Restructure image for F@H v8.
+
 ### 2024-06-15
 - Rebase to Ubuntu Noble, add optional cli args.
 
@@ -40,10 +43,11 @@
 - Initial release.
 
     </Changes>
-    <Config Name="WebUI" Target="7396" Default="7396" Mode="tcp" Description="Folding@home web gui." Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Port: 36330" Target="36330" Default="36330" Mode="tcp" Description="Optional port for connecting remotely via FAHControl app (no password)." Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Port: 7396" Target="7396" Default="7396" Mode="tcp" Description="Folding@home web gui (redirects to https://app.foldingathome.org(https://app.foldingathome.org))." Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where Folding@home should store its database and config." Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="CLI_ARGS" Target="CLI_ARGS" Default="" Description="Optionally pass additional cli arguments to `FAHClient` on container start." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="ACCOUNT_TOKEN" Target="ACCOUNT_TOKEN" Default="" Description="Register for an account on `https://app.foldingathome.org` and retrieve account token in settings. Required on first start." Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="MACHINE_NAME" Target="MACHINE_NAME" Default="" Description="Assign a friendly name to this instance (no spaces). Required on first start." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="CLI_ARGS" Target="CLI_ARGS" Default="" Description="Optionally pass additional cli arguments to `fah-client` on container start." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
