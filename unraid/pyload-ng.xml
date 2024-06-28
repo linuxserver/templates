@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/pyload-ng.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2023-12-23</Date>
+    <Date>2024-06-27</Date>
     <Changes>
+### 2024-06-27
+- Rebase to Alpine 3.20.
+
 ### 2023-12-23
 - Rebase to Alpine 3.19.
 
