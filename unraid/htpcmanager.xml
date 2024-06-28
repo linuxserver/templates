@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8085]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/htpcmanager.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/htpcmanager-logo.png</Icon>
-    <Date>2024-01-08</Date>
+    <Date>2024-06-27</Date>
     <Changes>
+### 2024-06-27
+- Rebase to Alpine 3.20.
+
 ### 2024-01-08
 - Rebase to Alpine 3.19.
 
