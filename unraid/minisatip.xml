@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8875]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/minisatip.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/minisatip-logo.png</Icon>
-    <Date>2023-12-08</Date>
+    <Date>2024-06-30</Date>
     <Changes>
+### 2024-06-30
+- Rebase to Alpine 3.20.
+
 ### 2023-12-08
 - Rebase to Alpine 3.19, switch to building from releases rather than commits.
 
