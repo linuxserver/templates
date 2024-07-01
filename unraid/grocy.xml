@@ -23,8 +23,11 @@ For more information on grocy visit their website and check it out: https://groc
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/grocy.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/grocy-logo.png</Icon>
-    <Date>2024-03-29</Date>
+    <Date>2024-06-30</Date>
     <Changes>
+### 2024-06-30
+- Rebase to Alpine 3.20. Existing users should update their nginx confs to avoid http2 deprecation warnings.
+
 ### 2024-03-29
 - Add `clear_env = no` to `php-fpm` to pass on environment variables to workers threads
 
