@@ -31,8 +31,11 @@ This software is a fork of library and licensed under the GPL v3 License.</Overv
     <WebUI>http://[IP]:[PORT:8083]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/calibre-web.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/calibre-web-logo.png</Icon>
-    <Date>2023-10-17</Date>
+    <Date>2024-07-07</Date>
     <Changes>
+### 2024-07-07
+- Add new dep, libmagic1.
+
 ### 2023-10-17
 - Remove some packages that are required by the calibre mod but not the base container.
 
