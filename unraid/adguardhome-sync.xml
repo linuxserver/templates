@@ -14,10 +14,6 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-adguardhome-sync#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-adguardhome-sync#readme</ReadMe>
-    <Branch>
-        <Tag>latest</Tag>
-        <TagDescription>Stable releases from GitHub</TagDescription>
-    </Branch>
     <Project>https://github.com/bakito/adguardhome-sync/</Project>
     <Overview>Adguardhome-sync(https://github.com/bakito/adguardhome-sync/) is a tool to synchronize AdGuardHome config to replica instances.</Overview>
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
