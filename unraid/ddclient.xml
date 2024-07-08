@@ -21,6 +21,9 @@
     <Date>2024-07-08</Date>
     <Changes>
 ### 2024-07-08
+- Fix cache issue.
+
+### 2024-07-08
 - Don&#39;t copy config from `/config/ddclient.conf` to `/ddclient.conf` at runtime.
 
 ### 2024-06-27
