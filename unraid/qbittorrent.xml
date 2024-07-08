@@ -162,7 +162,7 @@
     <Config Name="Port: 6881" Target="6881" Default="6881" Mode="tcp" Description="tcp connection port" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 6881" Target="6881" Default="6881" Mode="udp" Description="udp connection port" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Location of downloads on disk." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Location of downloads on disk." Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="WEBUI_PORT" Target="WEBUI_PORT" Default="8080" Description="for changing the port of the web UI, see below for explanation" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="TORRENTING_PORT" Target="TORRENTING_PORT" Default="6881" Description="for changing the port of tcp/udp connection, see below for explanation" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
