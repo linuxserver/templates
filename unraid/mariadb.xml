@@ -72,13 +72,13 @@
 - Add pipeline logic and multi arch.
 
 ### 2018-09-10
-- Rebase to ubuntu bionic and use 10.3 mariadb repository.
+- Rebase to ubuntu bionic and use 10.3 MariaDB repository.
 
 ### 2017-12-09
 - Fix continuation lines.
 
 ### 2017-09-12
-- Gracefully shut down mariadb.
+- Gracefully shut down MariaDB.
 
 ### 2016-10-27
 - Implement linting suggestions on database init script.
@@ -87,7 +87,7 @@
 - Rebase to ubuntu xenial, add version labelling.
 
 ### 2016-03-09
-- Update to mariadb 10.1. Change to use custom.cnf over my.cnf in /config. Restructured init files to change config options on startup, rather than in the dockerfile.
+- Update to MariaDB 10.1. Change to use custom.cnf over my.cnf in /config. Restructured init files to change config options on startup, rather than in the dockerfile.
 
 ### 2016-01-26
 - Change user of mysqld_safe script to abc, better unclean shutdown handling on restart.
@@ -99,7 +99,7 @@
 - Initial Release.
 
     </Changes>
-    <Config Name="WebUI" Target="3306" Default="3306" Mode="tcp" Description="Mariadb listens on this port." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="WebUI" Target="3306" Default="3306" Mode="tcp" Description="MariaDB listens on this port." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="MYSQL_ROOT_PASSWORD" Target="MYSQL_ROOT_PASSWORD" Default="ROOT_ACCESS_PASSWORD" Description="Set this to root password for installation (minimum 4 characters and non-alphanumeric passwords must be properly escaped)." Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="MYSQL_DATABASE" Target="MYSQL_DATABASE" Default="USER_DB_NAME" Description="Specify the name of a database to be created on image startup." Type="Variable" Display="always" Required="false" Mask="false"/>
