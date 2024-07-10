@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:6501]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/znc.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/znc-logo.png</Icon>
-    <Date>2024-06-06</Date>
+    <Date>2024-06-10</Date>
     <Changes>
+### 2024-06-10
+- Migrate default config file to newer format.
+
 ### 2024-06-06
 - Rebase to Alpine 3.20.
 
