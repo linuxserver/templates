@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-kali-linux/blob/master/readme-vars.yml -->
+<Container version="2">
+    <Name>kali-linux</Name>
+    <Repository>lscr.io/linuxserver/kali-linux</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/kali-linux</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-kali-linux/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-kali-linux#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-kali-linux#readme</ReadMe>
+    <Project>https://github.com/linuxserver/docker-kali-linux</Project>
+    <Overview>Kali-linux(https://github.com/linuxserver/docker-kali-linux) - is an Advanced Penetration Testing Linux distribution used for Penetration Testing, Ethical Hacking and network security assessments. KALI LINUX ™ is a trademark of OffSec.</Overview>
+    <WebUI>http://[IP]:[PORT:3000]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/kali-linux.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Date>2024-07-18</Date>
+    <Changes>
+### 2024-07-18
+- Initial release.
+
+    </Changes>
+    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Web Desktop GUI" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 3001" Target="3001" Default="3001" Mode="tcp" Description="Web Desktop GUI HTTPS" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="abc users home directory" Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Path: /var/run/docker.sock" Target="/var/run/docker.sock" Default="" Mode="rw" Description="Docker Socket on the system, if you want to use Docker in the container" Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="SUBFOLDER" Target="SUBFOLDER" Default="/" Description="Specify a subfolder to use with reverse proxies, IE `/subfolder/`" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="TITLE" Target="TITLE" Default="Kali Linux" Description="String which will be used as page/tab title in the web browser." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="/dev/dri" Default="/dev/dri" Description="Add this for GL support (Linux hosts only)" Type="Device" Display="always" Required="false" Mask="false"/>
+</Container>
