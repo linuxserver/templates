@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/bambustudio.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bambustudio-logo.png</Icon>
-    <Date>2024-02-10</Date>
+    <Date>2024-07-29</Date>
     <Changes>
+### 2024-07-29
+- Add required fonts and environment variable for dark mode.
+
 ### 2024-02-10
 - Update Readme with new env vars.
 
@@ -34,6 +37,7 @@
     <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Bambu Studio desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 3001" Target="3001" Default="3001" Mode="tcp" Description="Bambu Studio desktop gui HTTPS." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Users home directory in the container, stores program settings and files." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="DARK_MODE" Target="DARK_MODE" Default="true" Description="Set this to true to enable dark mode for Bambu Studio." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
