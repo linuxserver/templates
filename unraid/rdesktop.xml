@@ -37,6 +37,12 @@
         <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/arch-xfce#application-setup</GitHub>
     </Branch>
     <Branch>
+        <Tag>debian-xfce</Tag>
+        <TagDescription>XFCE Debian</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/debian-xfce#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/debian-xfce#application-setup</GitHub>
+    </Branch>
+    <Branch>
         <Tag>alpine-kde</Tag>
         <TagDescription>KDE Alpine</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/alpine-kde#readme</ReadMe>
@@ -59,6 +65,12 @@
         <TagDescription>KDE Arch</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/arch-kde#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/arch-kde#application-setup</GitHub>
+    </Branch>
+    <Branch>
+        <Tag>debian-kde</Tag>
+        <TagDescription>KDE Debian</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/debian-kde#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/debian-kde#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>alpine-mate</Tag>
@@ -85,6 +97,12 @@
         <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/arch-mate#application-setup</GitHub>
     </Branch>
     <Branch>
+        <Tag>debian-mate</Tag>
+        <TagDescription>MATE Debian</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/debian-mate#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/debian-mate#application-setup</GitHub>
+    </Branch>
+    <Branch>
         <Tag>alpine-i3</Tag>
         <TagDescription>i3 Alpine</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/alpine-i3#readme</ReadMe>
@@ -107,6 +125,12 @@
         <TagDescription>i3 Arch</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/arch-i3#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/arch-i3#application-setup</GitHub>
+    </Branch>
+    <Branch>
+        <Tag>debian-i3</Tag>
+        <TagDescription>i3 Debian</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/debian-i3#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/debian-i3#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>alpine-openbox</Tag>
@@ -133,6 +157,12 @@
         <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/arch-openbox#application-setup</GitHub>
     </Branch>
     <Branch>
+        <Tag>debian-openbox</Tag>
+        <TagDescription>Openbox Debian</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/debian-openbox#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/debian-openbox#application-setup</GitHub>
+    </Branch>
+    <Branch>
         <Tag>alpine-icewm</Tag>
         <TagDescription>IceWM Alpine</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/alpine-icewm#readme</ReadMe>
@@ -156,12 +186,21 @@
         <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/arch-icewm#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/arch-icewm#application-setup</GitHub>
     </Branch>
+    <Branch>
+        <Tag>debian-icewm</Tag>
+        <TagDescription>IceWM Debian</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/debian-icewm#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/debian-icewm#application-setup</GitHub>
+    </Branch>
     <Project>http://xrdp.org/</Project>
     <Overview>Rdesktop(http://xrdp.org/) - Containers containing full desktop environments in many popular flavors for Alpine, Ubuntu, Arch, and Fedora accessible via RDP.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/rdesktop.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/rdesktop-logo.png</Icon>
-    <Date>2024-05-27</Date>
+    <Date>2024-08-06</Date>
     <Changes>
+### 2024-08-06
+- Refresh all images using new bases, add Debian, bump Ubuntu to Noble.
+
 ### 2024-05-27
 - Rebase to Alpine 3.20 and Fedora 40.
 
