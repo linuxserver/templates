@@ -24,6 +24,9 @@
 ### 2014-07-24
 - Rebase to Alpine 3.20. Remove deprecated Google Domains certbot plugin. Existing users should update their nginx confs to avoid http2 deprecation warnings.
 
+### 2024-07-01
+- Fall back to iptables-legacy if iptables doesn&#39;t work.
+
 ### 2024-03-23
 - Fix perms on the generated `priv-fullchain-bundle.pem`.
 
