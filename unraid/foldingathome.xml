@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:7396]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/foldingathome.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/foldingathome-logo.png</Icon>
-    <Date>2024-06-25</Date>
+    <Date>2024-08-10</Date>
     <Changes>
+### 2024-08-10
+- Add libexpat1 for Nvidia support.
+
 ### 2024-06-25
 - ***Breaking Changes*** - Please see the Application Setup section for more details. Restructure image for F@H v8.
 
