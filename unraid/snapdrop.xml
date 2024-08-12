@@ -14,8 +14,8 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-snapdrop#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-snapdrop#readme</ReadMe>
-    <Project>https://github.com/RobinLinus/snapdrop</Project>
-    <Overview>Snapdrop(https://github.com/RobinLinus/snapdrop) A local file sharing in your browser. Inspired by Apple&#39;s Airdrop.</Overview>
+    <Project>https://github.com/snapdrop/snapdrop</Project>
+    <Overview>Snapdrop(https://github.com/snapdrop/snapdrop) A local file sharing in your browser. Inspired by Apple&#39;s Airdrop.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/snapdrop.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/snapdrop-logo.png</Icon>
