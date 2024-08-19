@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/boinc.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/boinc-logo.png</Icon>
-    <Date>2024-02-10</Date>
+    <Date>2024-08-19</Date>
     <Changes>
+### 2024-08-19
+- Rebase to noble.
+
 ### 2024-02-10
 - Update Readme with new env vars and ingest proper PWA icon.
 
