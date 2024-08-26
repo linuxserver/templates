@@ -18,8 +18,11 @@
     <Overview>hiSHtory(https://github.com/ddworken/hishtory) is a better shell history. It stores your shell history in context (what directory you ran the command in, whether it succeeded or failed, how long it took, etc). This is all stored locally and end-to-end encrypted for syncing to to all your other computers.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/hishtory-server.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/hishtory-server-icon.png</Icon>
-    <Date>2024-05-24</Date>
+    <Date>2024-08-26</Date>
     <Changes>
+### 2024-08-26
+- Bump to go 1.23
+
 ### 2024-05-24
 - Rebase to Alpine 3.20.
 
