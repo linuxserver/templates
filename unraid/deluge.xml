@@ -14,6 +14,16 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-deluge#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-deluge#readme</ReadMe>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Stable Deluge releases</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>libtorrentv1</Tag>
+        <TagDescription>Stable Deluge releases using libtorrentv1</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-deluge/tree/libtorrentv1#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-deluge/tree/libtorrentv1#application-setup</GitHub>
+    </Branch>
     <Project>http://deluge-torrent.org/</Project>
     <Overview>Deluge(http://deluge-torrent.org/) is a lightweight, Free Software, cross-platform BitTorrent client.
 
@@ -24,8 +34,11 @@
     <WebUI>http://[IP]:[PORT:8112]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/deluge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/deluge-logo.png</Icon>
-    <Date>2023-12-26</Date>
+    <Date>2024-08-26</Date>
     <Changes>
+### 2024-08-26
+- Add libtorrentv1 tag.
+
 ### 2023-12-26
 - Replace source for GeoIP database.
 
