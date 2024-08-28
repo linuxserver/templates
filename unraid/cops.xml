@@ -50,8 +50,11 @@ If you want to use the OPDS feed don&#39;t forget to specify feed.php at the end
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/cops.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cops-logo.png</Icon>
-    <Date>2024-06-24</Date>
+    <Date>2024-08-28</Date>
     <Changes>
+### 2024-08-28
+- Add kepubify tool to update metadata for Kobo - see mikespub-org/seblucas-cops#77
+
 ### 2024-06-24
 - Rebase to Alpine 3.20. Existing users should update their nginx confs to avoid http2 deprecation warnings.
 
