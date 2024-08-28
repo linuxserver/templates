@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8337]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/beets.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/beets-logo.png</Icon>
-    <Date>2023-12-23</Date>
+    <Date>2024-08-28</Date>
     <Changes>
+### 2024-08-28
+- Rebase to Alpine 3.20, switch from Pillow to Imagemagick.
+
 ### 2023-12-23
 - Rebase to Alpine 3.19.
 
