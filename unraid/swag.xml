@@ -19,8 +19,11 @@
     <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/swag.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2014-07-24</Date>
+    <Date>2024-08-30</Date>
     <Changes>
+### 2024-08-30
+- Fix zerossl cert revocation.
+
 ### 2014-07-24
 - Rebase to Alpine 3.20. Remove deprecated Google Domains certbot plugin. Existing users should update their nginx confs to avoid http2 deprecation warnings.
 
