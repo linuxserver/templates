@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/diskover.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2024-03-06</Date>
+    <Date>2024-09-06</Date>
     <Changes>
+### 2024-09-06
+- Rebase to Alpine 3.20. Existing users should update their nginx confs to avoid http2 deprecation warnings.
+
 ### 2024-03-06
 - Existing users should update: site-confs/default.conf - Cleanup default site conf.
 
@@ -75,8 +78,6 @@
     <Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="Default mount point to crawl" Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="ES_HOST" Target="ES_HOST" Default="elasticsearch" Description="ElasticSearch host (optional)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="ES_PORT" Target="ES_PORT" Default="9200" Description="ElasticSearch port (optional)" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="ES_USER" Target="ES_USER" Default="elastic" Description="ElasticSearch username (optional)" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="ES_PASS" Target="ES_PASS" Default="changeme" Description="ElasticSearch password (optional)" Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
