@@ -14,16 +14,16 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-cops#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-cops#readme</ReadMe>
-    <Project>http://blog.slucas.fr/en/oss/calibre-opds-php-server</Project>
-    <Overview>Cops(http://blog.slucas.fr/en/oss/calibre-opds-php-server) by Sébastien Lucas, now maintained by MikesPub, stands for Calibre OPDS (and HTML) Php Server.
+    <Project>https://github.com/mikespub-org/seblucas-cops</Project>
+    <Overview>Cops(https://github.com/mikespub-org/seblucas-cops) by Sébastien Lucas, now maintained by MikesPub, stands for Calibre OPDS (and HTML) Php Server.
 
 COPS links to your Calibre library database and allows downloading and emailing of books directly from a web browser and provides a OPDS feed to connect to your devices.
 
 Changes in your Calibre library are reflected immediately in your COPS pages.
 
-See : COPS&#39;s home(http://blog.slucas.fr/en/oss/calibre-opds-php-server) for more details.
+See : COPS&#39;s home(https://github.com/mikespub-org/seblucas-cops) for more details.
 
-Don&#39;t forget to check the Wiki(https://github.com/seblucas/cops/wiki).
+Don&#39;t forget to check the Wiki(https://github.com/mikespub-org/seblucas-cops/wiki).
 
 ## Why? (taken from the author&#39;s site)
 
@@ -46,12 +46,15 @@ So COPS&#39;s main advantages are :
  * With Dropbox / owncloud it&#39;s very easy to have an up to date OPDS server.
  * It was fun to code.
 
-If you want to use the OPDS feed don&#39;t forget to specify feed.php at the end of your URL.</Overview>
+If you want to use the OPDS feed don&#39;t forget to specify /feed at the end of your URL.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/cops.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cops-logo.png</Icon>
-    <Date>2024-08-28</Date>
+    <Date>2024-09-09</Date>
     <Changes>
+### 2024-09-09
+- In COPS 3.x, the config_local.php is being moved over to config/local.php and this container will automatically migrate it. Existing users should verify: config_local.php and/or config/local.php - define $config&#39;cops_kepubify_path&#39; if they want to use it
+
 ### 2024-08-28
 - Add kepubify tool to update metadata for Kobo - see mikespub-org/seblucas-cops#77
 
