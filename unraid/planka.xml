@@ -18,7 +18,7 @@
     <Overview>Planka(https://github.com/plankanban/planka/) is an elegant open source project tracking tool.</Overview>
     <WebUI>http://[IP]:[PORT:1337]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/planka.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/planka-logo.png</Icon>
     <Date>2024-09-12</Date>
     <Changes>
 ### 2024-09-12
