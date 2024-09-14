@@ -50,8 +50,11 @@ If you want to use the OPDS feed don&#39;t forget to specify /feed at the end of
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/cops.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cops-logo.png</Icon>
-    <Date>2024-09-09</Date>
+    <Date>2024-09-14</Date>
     <Changes>
+### 2024-09-14
+- Ensure user config files have the right permissions.
+
 ### 2024-09-09
 - In COPS 3.x, the config_local.php is being moved over to config/local.php and this container will automatically migrate it. Existing users should verify: config_local.php and/or config/local.php - define $config&#39;cops_kepubify_path&#39; if they want to use it
 
