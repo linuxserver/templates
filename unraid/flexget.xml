@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:5050]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/flexget.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2024-08-17</Date>
+    <Date>2024-09-18</Date>
     <Changes>
+### 2024-09-18
+- Suppress creation of empty log file when WebUI password is set.
+
 ### 2024-08-17
 - Revert to Alpine 3.20 due to 1st party plugin incompatibility with Python 3.12.
 
