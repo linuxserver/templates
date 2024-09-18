@@ -18,8 +18,11 @@
     <Overview>Planka(https://github.com/plankanban/planka/) is an elegant open source project tracking tool.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/planka.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/planka-logo.png</Icon>
-    <Date>2024-09-12</Date>
+    <Date>2024-09-18</Date>
     <Changes>
+### 2024-09-18
+- Update default user docs.
+
 ### 2024-09-12
 - Initial Release.
 
@@ -28,6 +31,10 @@
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Local path for planka config files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="BASE_URL" Target="BASE_URL" Default="https://planka.example.com" Description="The URL you will use to access planka including protocol, and port if not 80/443." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="postgresql://user:password@planka-db:5432/planka" Description="Postgres database URL. Special characters must be url encoded(https://en.wikipedia.org/wiki/Percent-encoding)." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="DEFAULT_ADMIN_EMAIL" Target="DEFAULT_ADMIN_EMAIL" Default="demo@demo.demo" Description="Email address for default user." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="DEFAULT_ADMIN_USERNAME" Target="DEFAULT_ADMIN_USERNAME" Default="demo" Description="Username for default user." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="DEFAULT_ADMIN_PASSWORD" Target="DEFAULT_ADMIN_PASSWORD" Default="demo" Description="Password for default user." Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="DEFAULT_ADMIN_NAME" Target="DEFAULT_ADMIN_NAME" Default="Demo User" Description="Display name for default user." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="notasecretkey" Description="Session encryption key, recommended 32-64 character alphanumeric." Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="TRUST_PROXY" Target="TRUST_PROXY" Default="0" Description="Set to `1` to trust upstream proxies if reverse proxying." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
