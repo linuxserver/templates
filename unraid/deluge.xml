@@ -34,8 +34,11 @@
     <WebUI>http://[IP]:[PORT:8112]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/deluge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/deluge-logo.png</Icon>
-    <Date>2024-08-26</Date>
+    <Date>2024-09-19</Date>
     <Changes>
+### 2024-09-19
+- Prevent race condition related delay during container stop.
+
 ### 2024-08-26
 - Add libtorrentv1 tag.
 
