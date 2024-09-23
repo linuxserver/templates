@@ -18,8 +18,11 @@
     <Overview>syslog-ng(https://www.syslog-ng.com/products/open-source-log-management/) allows you to flexibly collect, parse, classify, rewrite and correlate logs from across your infrastructure and store or route them to log analysis tools.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/syslog-ng.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/syslog-ng-logo.png</Icon>
-    <Date>2024-05-24</Date>
+    <Date>2024-09-24</Date>
     <Changes>
+### 2024-09-24
+- Add opt to log to stdout.
+
 ### 2024-05-24
 - Rebase to Alpine 3.20.
 
@@ -53,6 +56,7 @@
     <Config Name="Port: 6514" Target="6514" Default="6514" Mode="tcp" Description="Syslog TLS" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Stores config and application files" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /var/log" Target="/var/log" Default="" Mode="rw" Description="Stores logs collected by the syslog-ng service" Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="LOG_TO_STDOUT" Target="LOG_TO_STDOUT" Default="" Description="If set to `true` container will log to stdout, otherwise will log to `/config/log/`." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
