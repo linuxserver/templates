@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-rawtherapee/blob/main/readme-vars.yml -->
+<Container version="2">
+    <Name>rawtherapee</Name>
+    <Repository>lscr.io/linuxserver/rawtherapee</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/rawtherapee</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-rawtherapee/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-rawtherapee#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-rawtherapee#readme</ReadMe>
+    <Project>https://rawtherapee.com/</Project>
+    <Overview>RawTherapee(https://rawtherapee.com/) is a free, cross-platform raw image processing program!</Overview>
+    <WebUI>http://[IP]:[PORT:3000]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/rawtherapee.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/rawtherapee-logo.png</Icon>
+    <Date>2024-09-24</Date>
+    <Changes>
+### 2024-09-24
+- Initial release.
+
+    </Changes>
+    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="RawTherapee desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 3001" Target="3001" Default="3001" Mode="tcp" Description="RawTherapee desktop gui HTTPS." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="User&#39;s home directory in the container, stores program settings and files." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
