@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8096]</WebUI>
     <TemplateURL>false</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/jellyfin-logo.png</Icon>
-    <Date>2024-08-13</Date>
+    <Date>2024-10-06</Date>
     <Changes>
+### 2024-10-06
+- Fix fontconfig cache path.
+
 ### 2024-08-13
 - Rebase to Ubuntu Noble.
 
