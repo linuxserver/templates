@@ -34,8 +34,11 @@
     <Overview>Mastodon(https://github.com/mastodon/mastodon/) is a free, open-source social network server based on ActivityPub where users can follow friends and discover new ones..</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mastodon.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mastodon-logo.png</Icon>
-    <Date>2023-09-21</Date>
+    <Date>2024-10-08</Date>
     <Changes>
+### 2024-10-08
+- Rebase to Alpine 3.20, enable Active Record Encryption(https://github.com/mastodon/mastodon/pull/29831/files). Existing users should update their nginx confs to avoid http2 deprecation warnings.
+
 ### 2023-09-21
 - Rebase to Alpine 3.18, migrate to s6v3.
 
@@ -65,8 +68,11 @@
     <Config Name="DB_USER" Target="DB_USER" Default="mastodon" Description="Postgres username" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_NAME" Target="DB_NAME" Default="mastodon" Description="Postgres db name" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_PASS" Target="DB_PASS" Default="mastodon" Description="Postgres password" Type="Variable" Display="always" Required="true" Mask="true"/>
-    <Config Name="DB_PORT" Target="DB_PORT" Default="5432" Description="Portgres port" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="DB_PORT" Target="DB_PORT" Default="5432" Description="Postgres port" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="ES_ENABLED" Target="ES_ENABLED" Default="false" Description="Enable or disable Elasticsearch (requires a separate ES instance)" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="ACTIVE_RECORD_ENCRYPTION_PRIMARY_KEY" Target="ACTIVE_RECORD_ENCRYPTION_PRIMARY_KEY" Default="" Description="Primary key for Active Record Encryption(https://github.com/mastodon/mastodon/pull/29831/files)." Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="ACTIVE_RECORD_ENCRYPTION_DETERMINISTIC_KEY" Target="ACTIVE_RECORD_ENCRYPTION_DETERMINISTIC_KEY" Default="" Description="Deterministic key for Active Record Encryption(https://github.com/mastodon/mastodon/pull/29831/files)." Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="ACTIVE_RECORD_ENCRYPTION_KEY_DERIVATION_SALT" Target="ACTIVE_RECORD_ENCRYPTION_KEY_DERIVATION_SALT" Default="" Description="Derivation salt for Active Record Encryption(https://github.com/mastodon/mastodon/pull/29831/files)." Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="SECRET_KEY_BASE" Target="SECRET_KEY_BASE" Default="" Description="Browser session secret. Changing it will break all active browser sessions." Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="OTP_SECRET" Target="OTP_SECRET" Default="" Description="MFA secret. Changing it after initial setup will break two-factor authentication." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="VAPID_PRIVATE_KEY" Target="VAPID_PRIVATE_KEY" Default="" Description="Push notification private key. Changing it after initial setup will break push notifications." Type="Variable" Display="always" Required="true" Mask="true"/>
