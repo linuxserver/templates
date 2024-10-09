@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/spotube.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/spotube-logo.png</Icon>
-    <Date>2024-04-26</Date>
+    <Date>2024-10-09</Date>
     <Changes>
+### 2024-10-09
+- Add aarch64 support.
+
 ### 2024-04-26
 - Initial release.
 
