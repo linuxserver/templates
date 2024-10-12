@@ -20,8 +20,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/librewolf.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/librewolf-logo.png</Icon>
-    <Date>2024-04-09</Date>
+    <Date>2024-10-12</Date>
     <Changes>
+### 2024-10-12
+- Publish aarch64 image. Switch to new upstream repo.
+
 ### 2024-04-09
 - Initial release.
 
