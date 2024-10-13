@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8123]</WebUI>
     <TemplateURL>false</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/homeassistant-logo.png</Icon>
-    <Date>2024-10-07</Date>
+    <Date>2024-10-12</Date>
     <Changes>
+### 2024-10-12
+- Allow uv to modify system python packages.
+
 ### 2024-10-07
 - Switch to `uv` instead of `pip`.
 
