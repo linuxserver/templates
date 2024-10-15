@@ -120,7 +120,7 @@
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Jellyfin data storage location. *This can grow very large, 50gb+ is likely for a large collection.*" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /data/tvshows" Target="/data/tvshows" Default="" Mode="rw" Description="Media goes here. Add as many as needed e.g. `/data/movies`, `/data/tv`, etc." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /data/movies" Target="/data/movies" Default="" Mode="rw" Description="Media goes here. Add as many as needed e.g. `/data/movies`, `/data/tv`, etc." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="JELLYFIN_PublishedServerUrl" Target="JELLYFIN_PublishedServerUrl" Default="192.168.0.5" Description="Set the autodiscovery response domain or IP address." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="JELLYFIN_PublishedServerUrl" Target="JELLYFIN_PublishedServerUrl" Default="http://192.168.0.5" Description="Set the autodiscovery response domain or IP address, include http(s)://." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
