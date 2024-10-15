@@ -19,8 +19,11 @@
     <ExtraParams>--cap-add=NET_ADMIN --cap-add=NET_RAW</ExtraParams>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/fail2ban.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/fail2ban-logo.png</Icon>
-    <Date>2024-03-05</Date>
+    <Date>2024-10-12</Date>
     <Changes>
+### 2024-10-12
+- Rebase to Alpine 3.20.
+
 ### 2024-03-05
 - Rebase to Alpine 3.19.
 
