@@ -20,8 +20,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/altus.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/altus-logo.png</Icon>
-    <Date>2024-01-29</Date>
+    <Date>2024-10-19</Date>
     <Changes>
+### 2024-10-19
+- Switch to multi-arch.
+
 ### 2024-01-29
 - Structural changes for v5.
 
