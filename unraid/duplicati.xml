@@ -25,14 +25,17 @@
         <GitHub>https://github.com/linuxserver/docker-duplicati/tree/development#application-setup</GitHub>
     </Branch>
     <Project>https://www.duplicati.com/</Project>
-    <Overview>Duplicati(https://www.duplicati.com/) works with standard protocols like FTP, SSH, WebDAV as well as popular services like Microsoft OneDrive, Amazon Cloud Drive and S3, Google Drive, box.com, Mega, hubiC and many others.</Overview>
-    <WebUI>http://[IP]:[PORT:8200]</WebUI>
+    <Overview>Duplicati(https://www.duplicati.com/) is a backup client that securely stores encrypted, incremental, compressed backups on local storage, cloud storage services and remote file servers. It works with standard protocols like FTP, SSH, WebDAV as well as popular services like Microsoft OneDrive, Amazon S3, Google Drive, box.com, Mega, B2, and many others.</Overview>
+    <WebUI>http://[IP]:[PORT:8200]/login.html</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/duplicati.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/duplicati-logo.png</Icon>
-    <Date>2023-02-15</Date>
+    <Date>2024-11-29</Date>
     <Changes>
+### 2024-11-29
+- Rebase to Noble, add support for settings DB encryption.
+
 ### 2023-02-15
-- Deprecate armhf.
+- Rebase to Jammy.
 
 ### 2022-08-03
 - Deprecate armhf.
@@ -75,7 +78,9 @@
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /backups" Target="/backups" Default="" Mode="rw" Description="Path to store local backups." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /source" Target="/source" Default="" Mode="rw" Description="Path to source for files to backup." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="SETTINGS_ENCRYPTION_KEY" Target="SETTINGS_ENCRYPTION_KEY" Default="" Description="Encryption key for settings database. Minimum 8 characters, alphanumeric." Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="CLI_ARGS" Target="CLI_ARGS" Default="" Description="Optionally specify any CLI variables(https://duplicati.readthedocs.io/en/latest/07-other-command-line-utilities/) you want to launch the app with" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="DUPLICATI__WEBSERVICE_PASSWORD" Target="DUPLICATI__WEBSERVICE_PASSWORD" Default="" Description="Password for the webui. If left unset will default to `changeme` and can be changed from the webui settings." Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
