@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/lychee.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/lychee-logo.png</Icon>
-    <Date>2024-05-27</Date>
+    <Date>2024-12-03</Date>
     <Changes>
+### 2024-12-03
+- Verify build artifacts with cosign.
+
 ### 2024-05-27
 - Rebase to Alpine 3.20. Existing users should update their nginx confs to avoid http2 deprecation warnings.
 
