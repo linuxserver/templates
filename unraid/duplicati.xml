@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8200]/login.html</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/duplicati.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/duplicati-logo.png</Icon>
-    <Date>2024-11-29</Date>
+    <Date>2024-12-03</Date>
     <Changes>
+### 2024-12-03
+- Add mscorefonts for captcha support.
+
 ### 2024-11-29
 - Rebase to Noble, add support for settings DB encryption.
 
