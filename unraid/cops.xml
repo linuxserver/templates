@@ -50,8 +50,11 @@ If you want to use the OPDS feed don&#39;t forget to specify /feed at the end of
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/cops.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cops-logo.png</Icon>
-    <Date>2024-09-24</Date>
+    <Date>2024-12-16</Date>
     <Changes>
+### 2024-12-16
+- Rebase to Alpine 3.21.
+
 ### 2024-09-24
 - Existing users should verify: site-confs/default.conf - Update rewriting rules default site conf.
 
