@@ -22,8 +22,11 @@ Powered by SQL and including a Markdown editor for those who prefer it, BookStac
 For more information on BookStack visit their website and check it out: https://www.bookstackapp.com</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/bookstack.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bookstack-logo.png</Icon>
-    <Date>2024-10-11</Date>
+    <Date>2024-12-17</Date>
     <Changes>
+### 2024-12-17
+- Rebase to Alpine 3.21.
+
 ### 2024-10-11
 - Default to environment config over .env file config.
 
