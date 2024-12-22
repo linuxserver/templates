@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:9000]/test</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/ldap-auth.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ldap-auth-logo.png</Icon>
-    <Date>2024-06-30</Date>
+    <Date>2024-12-22</Date>
     <Changes>
+### 2024-12-22
+- Rebase to Alpine 3.21. Add support for read-only and non-root.
+
 ### 2024-06-30
 - Rebase to Alpine 3.20.
 
