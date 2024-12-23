@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:4040]/login</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/airsonic-advanced.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/airsonic-advanced-logo.png</Icon>
-    <Date>2024-05-24</Date>
+    <Date>2024-12-21</Date>
     <Changes>
+### 2024-12-21
+- Rebase to Alpine 3.21. Switch upstream to track https://github.com/kagemomiji/airsonic-advanced.
+
 ### 2024-05-24
 - Rebase to Alpine 3.20.
 
