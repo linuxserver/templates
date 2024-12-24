@@ -12,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-booksonic-air/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/linuxserver/docker-booksonic-air#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-booksonic-air#readme</ReadMe>
     <Project>http://booksonic.org</Project>
@@ -21,8 +22,11 @@
     <WebUI>http://[IP]:[PORT:4040]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/booksonic-air.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/booksonic-air-logo.png</Icon>
-    <Date>2024-05-31</Date>
+    <Date>2024-12-24</Date>
     <Changes>
+### 2024-12-24
+- Deprecate.
+
 ### 2024-05-31
 - Rebase to Alpine 3.20.
 
