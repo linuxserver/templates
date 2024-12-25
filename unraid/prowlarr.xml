@@ -35,8 +35,11 @@
     <WebUI>http://[IP]:[PORT:9696]/system/status</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/prowlarr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/prowlarr-logo.png</Icon>
-    <Date>2024-05-31</Date>
+    <Date>2024-12-23</Date>
     <Changes>
+### 2024-12-23
+- Rebase Alpine 3.21.
+
 ### 2024-05-31
 - Rebase Alpine 3.20.
 
