@@ -12,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-quassel-web/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/linuxserver/docker-quassel-web#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-quassel-web#readme</ReadMe>
     <Project>https://github.com/magne4000/quassel-webserver</Project>
@@ -19,8 +20,11 @@
     <WebUI>https://[IP]:[PORT:64443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/quassel-web.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/quassel-web-logo.png</Icon>
-    <Date>2024-05-25</Date>
+    <Date>2024-12-26</Date>
     <Changes>
+### 2024-12-26
+- Deprecate.
+
 ### 2024-05-25
 - Rebase to Alpine 3.20.
 
