@@ -20,7 +20,7 @@
     </Branch>
     <Branch>
         <Tag>gpu</Tag>
-        <TagDescription>Releases with Nvidia GPU support</TagDescription>
+        <TagDescription>Releases with Nvidia GPU support (amd64 only)</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-faster-whisper/tree/gpu#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-faster-whisper/tree/gpu#application-setup</GitHub>
     </Branch>
@@ -28,8 +28,11 @@
     <Overview>Faster-whisper(https://github.com/SYSTRAN/faster-whisper) is a reimplementation of OpenAI&#39;s Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This container provides a Wyoming protocol server for faster-whisper.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/faster-whisper.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2024-12-05</Date>
+    <Date>2024-12-30</Date>
     <Changes>
+### 2024-12-30
+- Add arm64 support for non-GPU builds.
+
 ### 2024-12-05
 - Build from Github releases rather than Pypi.
 
@@ -48,7 +51,7 @@
     </Changes>
     <Config Name="WebUI" Target="10300" Default="10300" Mode="tcp" Description="Wyoming connection port." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Local path for Whisper config files." Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="WHISPER_MODEL" Target="WHISPER_MODEL" Default="tiny-int8|tiny|base-int8|base|small-int8|small|medium-int8" Description="Whisper model that will be used for transcription. From `tiny`, `base`, `small` and `medium`, all with `-int8` compressed variants" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="WHISPER_MODEL" Target="WHISPER_MODEL" Default="tiny-int8" Description="Whisper model that will be used for transcription. From here(https://github.com/SYSTRAN/faster-whisper/blob/master/faster_whisper/utils.py#L12-L31), all with `-int8` compressed variants" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="WHISPER_BEAM" Target="WHISPER_BEAM" Default="1" Description="Number of candidates to consider simultaneously during transcription." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="WHISPER_LANG" Target="WHISPER_LANG" Default="en" Description="Language that you will speak to the add-on." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
