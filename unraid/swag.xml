@@ -19,8 +19,11 @@
     <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/swag.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2024-10-21</Date>
+    <Date>2024-12-17</Date>
     <Changes>
+### 2024-12-17
+- Rebase to Alpine 3.21.
+
 ### 2024-10-21
 - Fix naming issue with Dynu plugin. If you are using Dynu, please make sure your credentials are set in /config/dns-conf/dynu.ini and your DNSPLUGIN variable is set to dynu (not dynudns).
 
@@ -299,6 +302,7 @@
     <Config Name="ONLY_SUBDOMAINS" Target="ONLY_SUBDOMAINS" Default="false" Description="If you wish to get certs only for certain subdomains, but not the main domain (main domain may be hosted on another machine and cannot be validated), set this to `true`" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="EXTRA_DOMAINS" Target="EXTRA_DOMAINS" Default="" Description="Additional fully qualified domain names (comma separated, no spaces) ie. `example.net,subdomain.example.net,*.example.org`" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="STAGING" Target="STAGING" Default="false" Description="Set to `true` to retrieve certs in staging mode. Rate limits will be much higher, but the resulting cert will not pass the browser&#39;s security test. Only to be used for testing purposes." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="DISABLE_F2B" Target="DISABLE_F2B" Default="" Description="Set to `true` to disable the Fail2ban service in the container, if you&#39;re already running it elsewhere or using a different IPS." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
