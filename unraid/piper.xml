@@ -14,25 +14,12 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-piper#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-piper#readme</ReadMe>
-    <Branch>
-        <Tag>latest</Tag>
-        <TagDescription>Stable releases</TagDescription>
-    </Branch>
-    <Branch>
-        <Tag>gpu</Tag>
-        <TagDescription>Releases with Nvidia GPU support (amd64 only)</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-piper/tree/gpu#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-piper/tree/gpu#application-setup</GitHub>
-    </Branch>
     <Project>https://github.com/rhasspy/piper/</Project>
     <Overview>Piper(https://github.com/rhasspy/piper/) is a fast, local neural text to speech system that sounds great and is optimized for the Raspberry Pi 4. This container provides a Wyoming protocol server for Piper.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/piper.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/piper-logo.png</Icon>
-    <Date>2024-11-26</Date>
+    <Date>2024-07-18</Date>
     <Changes>
-### 2024-11-26
-- Add GPU branch.
-
 ### 2024-07-18
 - Rebase to Ubuntu Noble.
 
