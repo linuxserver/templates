@@ -37,8 +37,11 @@ Where are your photos and documents? With Nextcloud you pick a server of your ch
     <WebUI>https://[IP]:[PORT:443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nextcloud.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nextcloud-logo.png</Icon>
-    <Date>2024-07-09</Date>
+    <Date>2025-01-09</Date>
     <Changes>
+### 2025-01-09
+- Fix uploading large files. Existing users should update their nginx confs.
+
 ### 2024-07-09
 - Add `previous` tag for n-1 releases.
 
