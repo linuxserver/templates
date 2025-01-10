@@ -197,8 +197,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/webtop.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png</Icon>
-    <Date>2024-12-06</Date>
+    <Date>2025-01-10</Date>
     <Changes>
+### 2025-01-10
+- Rebase Fedora to 41.
+
 ### 2024-12-06
 - Rebase Alpine to 3.21.
 
