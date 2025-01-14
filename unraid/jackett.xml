@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:9117]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/jackett.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/jackett-logo.png</Icon>
-    <Date>2024-05-31</Date>
+    <Date>2025-01-12</Date>
     <Changes>
+### 2025-01-12
+- Rebase to Alpine 3.21.
+
 ### 2024-05-31
 - Rebase to Alpine 3.20.
 
@@ -94,7 +97,7 @@
     <Config Name="WebUI" Target="9117" Default="9117" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where Jackett should store its config file." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Path to torrent blackhole." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="AUTO_UPDATE" Target="AUTO_UPDATE" Default="true" Description="Allow Jackett to update inside of the container (currently recommended by Jackett and enabled by default)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="AUTO_UPDATE" Target="AUTO_UPDATE" Default="true" Description="Allow Jackett to update inside of the container." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="RUN_OPTS" Target="RUN_OPTS" Default="" Description="Optionally specify additional arguments to be passed." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
