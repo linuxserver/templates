@@ -167,8 +167,8 @@
     <Config Name="Port: 51413" Target="51413" Default="51413" Mode="tcp" Description="Torrent Port TCP" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 51413" Target="51413" Default="51413" Mode="udp" Description="Torrent Port UDP" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where transmission should store config files and logs." Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Local path for downloads." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="Path: /watch" Target="/watch" Default="" Mode="rw" Description="Watch folder for torrent files." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Local path for downloads." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Path: /watch" Target="/watch" Default="" Mode="rw" Description="Watch folder for torrent files." Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="TRANSMISSION_WEB_HOME" Target="TRANSMISSION_WEB_HOME" Default="" Description="Specify the path to an alternative UI folder." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="USER" Target="USER" Default="" Description="Specify an optional username for the interface" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PASS" Target="PASS" Default="" Description="Specify an optional password for the interface" Type="Variable" Display="always" Required="false" Mask="true"/>
