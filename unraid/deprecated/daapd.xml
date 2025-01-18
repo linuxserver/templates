@@ -12,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-daapd/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/linuxserver/docker-daapd#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-daapd#readme</ReadMe>
     <Project>https://owntone.github.io/owntone-server/</Project>
@@ -19,8 +20,11 @@
     <WebUI>http://[IP]:[PORT:3689]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/daapd.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/daapd-icon.png</Icon>
-    <Date>2024-08-27</Date>
+    <Date>2025-01-17</Date>
     <Changes>
+### 2025-01-17
+- Deprecate.
+
 ### 2024-08-27
 - Rebase to Alpine 3.20.
 
