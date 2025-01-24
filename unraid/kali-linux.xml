@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/kali-linux.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2024-07-18</Date>
+    <Date>2025-01-24</Date>
     <Changes>
+### 2025-01-24
+- Fix SVG icons not rendering.
+
 ### 2024-07-18
 - Initial release.
 
