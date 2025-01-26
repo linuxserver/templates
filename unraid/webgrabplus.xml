@@ -14,13 +14,16 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-webgrabplus#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-webgrabplus#readme</ReadMe>
-    <Project>http://www.webgrabplus.com</Project>
-    <Overview>Webgrabplus(http://www.webgrabplus.com) is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.</Overview>
+    <Project>https://www.webgrabplus.com</Project>
+    <Overview>Webgrabplus(https://www.webgrabplus.com) is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.</Overview>
     <ExtraParams>--hostname=webgrabplus --mac-address=00:00:00:00:00:00</ExtraParams>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/webgrabplus.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webgrabplus-logo.png</Icon>
     <Date>2024-06-25</Date>
     <Changes>
+### 2024-06-25
+- Rebase to Alpine 3.21.
+
 ### 2024-06-25
 - Rebase to Alpine 3.20.
 
