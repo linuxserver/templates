@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8337]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/beets.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/beets-logo.png</Icon>
-    <Date>2024-10-01</Date>
+    <Date>2025-01-27</Date>
     <Changes>
+### 2025-01-27
+- Rebase to Alpine 3.21.
+
 ### 2024-10-01
 - Add packages required for Discogs plugin.
 
