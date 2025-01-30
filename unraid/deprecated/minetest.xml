@@ -12,14 +12,18 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-minetest/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/linuxserver/docker-minetest#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-minetest#readme</ReadMe>
     <Project>http://www.minetest.net/</Project>
     <Overview>Minetest(http://www.minetest.net/) (server) is a near-infinite-world block sandbox game and a game engine, inspired by InfiniMiner, Minecraft, and the like.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/minetest.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/minetest-logo.png</Icon>
-    <Date>2024-11-25</Date>
+    <Date>2025-01-30</Date>
     <Changes>
+### 2025-01-30
+- Deprecate due to project renaming to luanti(https://github.com/linuxserver/docker-luanti).
+
 ### 2024-11-25
 - Add Prometheus metrics support.
 
