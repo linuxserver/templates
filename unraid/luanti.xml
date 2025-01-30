@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-luanti/blob/main/readme-vars.yml -->
+<Container version="2">
+    <Name>luanti</Name>
+    <Repository>lscr.io/linuxserver/luanti</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/luanti</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-luanti/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-luanti#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-luanti#readme</ReadMe>
+    <Project>https://www.luanti.org/</Project>
+    <Overview>Luanti(https://www.luanti.org/) (formerly Minetest) is an open source voxel game-creation platform with easy modding and game creation</Overview>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/luanti.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Date>2025-01-30</Date>
+    <Changes>
+### 2025-01-30
+- Initial Release.
+
+    </Changes>
+    <Config Name="WebUI" Target="30000" Default="30000" Mode="udp" Description="Port Luanti listens on (UDP)." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /config/.minetest" Target="/config/.minetest" Default="" Mode="rw" Description="Where luanti stores config files and maps etc." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="CLI_ARGS" Target="CLI_ARGS" Default="--gameid devtest" Description="Optionally specify any CLI variables(https://wiki.luanti.net/Command_line) you want to launch the app with" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
