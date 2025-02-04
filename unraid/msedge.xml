@@ -20,8 +20,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/msedge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2024-04-25</Date>
+    <Date>2025-02-04</Date>
     <Changes>
+### 2025-02-04
+- Clean up Singletons if container is shut down while windows are open.
+
 ### 2024-04-25
 - Initial release.
 
