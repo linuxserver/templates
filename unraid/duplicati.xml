@@ -16,11 +16,11 @@
     <ReadMe>https://github.com/linuxserver/docker-duplicati#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
-        <TagDescription>Beta releases of Duplicati</TagDescription>
+        <TagDescription>Stable releases of Duplicati</TagDescription>
     </Branch>
     <Branch>
         <Tag>development</Tag>
-        <TagDescription>Canary releases of Duplicati</TagDescription>
+        <TagDescription>Beta releases of Duplicati</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-duplicati/tree/development#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-duplicati/tree/development#application-setup</GitHub>
     </Branch>
@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8200]/login.html</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/duplicati.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/duplicati-logo.png</Icon>
-    <Date>2025-01-28</Date>
+    <Date>2025-01-31</Date>
     <Changes>
+### 2025-01-31
+- Make `latest` stable releases, move beta releases to `development`.
+
 ### 2025-01-28
 - Add xz-utils.
 
