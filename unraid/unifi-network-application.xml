@@ -18,8 +18,11 @@
     <Overview>The Unifi-network-application(https://ui.com/) software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/unifi-network-application.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-network-application-icon.png</Icon>
-    <Date>2024-08-11</Date>
+    <Date>2025-02-12</Date>
     <Changes>
+### 2025-02-12
+- Bump JRE to 21.
+
 ### 2024-08-11
 - **Important**: The mongodb init instructions have been updated to enable auth (RBAC(https://www.mongodb.com/docs/manual/core/authorization/#role-based-access-control)). We have been notified that if RBAC is not enabled, the official mongodb container allows remote access to the db contents over port 27017 without credentials. If you set up the mongodb container with the old instructions we provided, you should not map or expose port 27017. If you would like to enable auth, the easiest way is to create new instances of both unifi and mongodb with the new instructions and restore unifi from a backup.
 
