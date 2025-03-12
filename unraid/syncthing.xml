@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8384]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/syncthing.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/syncthing-logo.png</Icon>
-    <Date>2024-06-06</Date>
+    <Date>2024-03-12</Date>
     <Changes>
+### 2024-03-12
+- Rebase to Alpine 3.21.
+
 ### 2024-06-06
 - Rebase to Alpine 3.20.
 
