@@ -21,8 +21,11 @@ HedgeDoc is a real-time, multi-platform collaborative markdown note editor.  Thi
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/hedgedoc.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/hedgedoc-logo.png</Icon>
-    <Date>2024-06-21</Date>
+    <Date>2025-02-24</Date>
     <Changes>
+### 2025-02-24
+- Add missing icu-data-full to fix bug with TextDecoder and image uploads.
+
 ### 2024-06-21
 - Allow using `CMD_DB_DIALECT` to set up the `CMD_DB_URL`.
 
