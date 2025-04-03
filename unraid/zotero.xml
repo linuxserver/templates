@@ -20,8 +20,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/zotero.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/zotero-icon.png</Icon>
-    <Date>2024-02-10</Date>
+    <Date>2025-04-03</Date>
     <Changes>
+### 2025-04-03
+- Update chromium launch options to improve performance.
+
 ### 2024-02-10
 - Update Readme with new env vars and ingest proper PWA icon.
 
