@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/digikam.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/digikam-logo.png</Icon>
-    <Date>2024-11-25</Date>
+    <Date>2025-04-03</Date>
     <Changes>
+### 2025-04-03
+- Update chromium launch options to improve performance.
+
 ### 2024-11-25
 - Rebase to Debian using official appimage, drop aarch64 support.
 
