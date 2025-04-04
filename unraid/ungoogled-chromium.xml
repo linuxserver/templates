@@ -20,8 +20,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/ungoogled-chromium.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ungoogled-chromium-logo.png</Icon>
-    <Date>2024-07-25</Date>
+    <Date>2025-04-03</Date>
     <Changes>
+### 2025-04-03
+- Update chromium launch options to improve performance.
+
 ### 2024-07-25
 - Initial release.
 
