@@ -25,7 +25,7 @@
         <GitHub>https://github.com/linuxserver/docker-nzbhydra2/tree/dev#application-setup</GitHub>
     </Branch>
     <Project>https://github.com/theotherp/nzbhydra2</Project>
-    <Overview>Nzbhydra2(https://github.com/theotherp/nzbhydra2) is a meta search application for NZB indexers, the &#34;spiritual successor&#34; to NZBmegasearcH, and an evolution of the original application NZBHydra(https://github.com/theotherp/nzbhydra).
+    <Overview>Nzbhydra2(https://github.com/theotherp/nzbhydra2) is a meta search application for NZB indexers, the spiritual successor to NZBmegasearcH, and an evolution of the original application NZBHydra(https://github.com/theotherp/nzbhydra).
 
 It provides easy access to a number of raw and newznab based indexers.</Overview>
     <WebUI>http://[IP]:[PORT:5076]/system/about</WebUI>
