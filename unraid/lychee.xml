@@ -15,7 +15,7 @@
     <GitHub>https://github.com/linuxserver/docker-lychee#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-lychee#readme</ReadMe>
     <Project>https://lycheeorg.github.io/</Project>
-    <Overview>Lychee(https://lycheeorg.github.io/) is a free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.&#34;</Overview>
+    <Overview>Lychee(https://lycheeorg.github.io/) is a free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/lychee.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/lychee-logo.png</Icon>
