@@ -15,7 +15,7 @@
     <GitHub>https://github.com/linuxserver/docker-rsnapshot#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-rsnapshot#readme</ReadMe>
     <Project>http://www.rsnapshot.org/</Project>
-    <Overview>Rsnapshot(http://www.rsnapshot.org/) is a filesystem snapshot utility based on rsync. rsnapshot makes it easy to make periodic snapshots of local machines, and remote machines over ssh. The code makes extensive use of hard links whenever possible, to greatly reduce the disk space required.&#34;</Overview>
+    <Overview>Rsnapshot(http://www.rsnapshot.org/) is a filesystem snapshot utility based on rsync. rsnapshot makes it easy to make periodic snapshots of local machines, and remote machines over ssh. The code makes extensive use of hard links whenever possible, to greatly reduce the disk space required.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/rsnapshot.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/rsnapshot-icon.png</Icon>
     <Date>2025-02-01</Date>
