@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8875]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/minisatip.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/minisatip-logo.png</Icon>
-    <Date>2024-06-30</Date>
+    <Date>2025-05-21</Date>
     <Changes>
+### 2025-05-21
+- Rebase to Ubuntu Noble as the new upstream version requires glibc.
+
 ### 2024-06-30
 - Rebase to Alpine 3.20.
 
