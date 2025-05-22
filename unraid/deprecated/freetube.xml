@@ -12,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-freetube/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/linuxserver/docker-freetube#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-freetube#readme</ReadMe>
     <Project>https://freetubeapp.io/</Project>
