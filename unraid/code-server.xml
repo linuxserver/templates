@@ -25,8 +25,11 @@
     <WebUI>http://[IP]:[PORT:8443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/code-server.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/code-server-logo.png</Icon>
-    <Date>2024-10-13</Date>
+    <Date>2025-06-03</Date>
     <Changes>
+### 2025-06-03
+- Allow setting PWA name using env var `PWA_APPNAME`.
+
 ### 2024-10-13
 - Only chown config folder when change to ownership or new install is detected.
 
@@ -117,6 +120,7 @@
     <Config Name="SUDO_PASSWORD_HASH" Target="SUDO_PASSWORD_HASH" Default="" Description="Optionally set sudo password via hash (takes priority over `SUDO_PASSWORD` var). Format is `$type$salt$hashed`." Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="PROXY_DOMAIN" Target="PROXY_DOMAIN" Default="code-server.my.domain" Description="If this optional variable is set, this domain will be proxied for subdomain proxying. See Documentation(https://github.com/coder/code-server/blob/main/docs/guide.md#using-a-subdomain)" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="DEFAULT_WORKSPACE" Target="DEFAULT_WORKSPACE" Default="/config/workspace" Description="If this optional variable is set, code-server will open this directory by default" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PWA_APPNAME" Target="PWA_APPNAME" Default="code-server" Description="If this optional variable is set, the PWA app will the specified name." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
