@@ -58,6 +58,7 @@ JSON API, invoicing, data exports, multi-timer and punch-in punch-out mode, tagg
     <Config Name="Port: 443" Target="443" Default="443" Mode="tcp" Description="https gui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="mysql://your_db_user:your_db_pass@your_db_host:3306/your_db_name?charset=your_db_charsetandserverVersion=your_db_version" Description="Configure your database connection, see Application Setup instructions." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="TRUSTED_PROXIES" Target="TRUSTED_PROXIES" Default="127.0.0.1/32" Description="If behind a reverse proxy set this to its IP or network CIDR so that Kimai trusts its headers." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
