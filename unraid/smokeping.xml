@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]/smokeping/smokeping.cgi</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/smokeping.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/smokeping-logo.png</Icon>
-    <Date>2025-06-03</Date>
+    <Date>2025-06-05</Date>
     <Changes>
+### 2025-06-05
+- Update TCPPing to 2.7 to fix traceroute incompatibility.
+
 ### 2025-06-03
 - Rebase to Alpine 3.22. Update TCPPing. Add curl probe.
 
