@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-brave/blob/master/readme-vars.yml -->
+<Container version="2">
+    <Name>brave</Name>
+    <Repository>lscr.io/linuxserver/brave</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/brave</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-brave/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-brave#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-brave#readme</ReadMe>
+    <Project>https://brave.com/</Project>
+    <Overview>The Brave browser(https://brave.com/) is a fast, private and secure web browser for PC, Mac and mobile.</Overview>
+    <ExtraParams>--shm-size=1gb</ExtraParams>
+    <WebUI>https://[IP]:[PORT:3001]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/brave.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/brave-logo.png</Icon>
+    <Date>2025-06-06</Date>
+    <Changes>
+### 2025-06-06
+- Initial Version.
+
+    </Changes>
+    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Brave desktop gui HTTP must be proxied." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 3001" Target="3001" Default="3001" Mode="tcp" Description="Brave desktop gui HTTPS." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Users home directory in the container, stores local files and settings" Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
