@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/pyload-ng.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2024-07-20</Date>
+    <Date>2025-06-09</Date>
     <Changes>
+### 2025-06-09
+- Rebase to Alpine 3.22.
+
 ### 2024-07-20
 - Revert to Alpine 3.19 due to inconsistent upstream addon support for Python 3.12.
 
