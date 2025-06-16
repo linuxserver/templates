@@ -12,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-netbootxyz/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/linuxserver/docker-netbootxyz#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-netbootxyz#readme</ReadMe>
     <Branch>
@@ -29,8 +30,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/netbootxyz.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/netbootxyz-logo.png</Icon>
-    <Date>2024-06-30</Date>
+    <Date>2025-05-17</Date>
     <Changes>
+### 2025-05-17
+- Deprecate
+
 ### 2024-06-30
 - Rebase to Alpine 3.20.
 
