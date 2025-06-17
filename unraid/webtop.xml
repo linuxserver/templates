@@ -43,12 +43,6 @@
         <GitHub>https://github.com/linuxserver/docker-webtop/tree/debian-xfce#application-setup</GitHub>
     </Branch>
     <Branch>
-        <Tag>alpine-kde</Tag>
-        <TagDescription>KDE Alpine</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/alpine-kde#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-webtop/tree/alpine-kde#application-setup</GitHub>
-    </Branch>
-    <Branch>
         <Tag>ubuntu-kde</Tag>
         <TagDescription>KDE Ubuntu</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-webtop/tree/ubuntu-kde#readme</ReadMe>
@@ -132,73 +126,16 @@
         <ReadMe>https://github.com/linuxserver/docker-webtop/tree/debian-i3#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-webtop/tree/debian-i3#application-setup</GitHub>
     </Branch>
-    <Branch>
-        <Tag>alpine-openbox</Tag>
-        <TagDescription>Openbox Alpine</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/alpine-openbox#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-webtop/tree/alpine-openbox#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>ubuntu-openbox</Tag>
-        <TagDescription>Openbox Ubuntu</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/ubuntu-openbox#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-webtop/tree/ubuntu-openbox#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>fedora-openbox</Tag>
-        <TagDescription>Openbox Fedora</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/fedora-openbox#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-webtop/tree/fedora-openbox#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>arch-openbox</Tag>
-        <TagDescription>Openbox Arch</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/arch-openbox#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-webtop/tree/arch-openbox#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>debian-openbox</Tag>
-        <TagDescription>Openbox Debian</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/debian-openbox#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-webtop/tree/debian-openbox#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>alpine-icewm</Tag>
-        <TagDescription>IceWM Alpine</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/alpine-icewm#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-webtop/tree/alpine-icewm#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>ubuntu-icewm</Tag>
-        <TagDescription>IceWM Ubuntu</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/ubuntu-icewm#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-webtop/tree/ubuntu-icewm#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>fedora-icewm</Tag>
-        <TagDescription>IceWM Fedora</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/fedora-icewm#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-webtop/tree/fedora-icewm#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>arch-icewm</Tag>
-        <TagDescription>IceWM Arch</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/arch-icewm#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-webtop/tree/arch-icewm#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>debian-icewm</Tag>
-        <TagDescription>IceWM Debian</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/debian-icewm#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-webtop/tree/debian-icewm#application-setup</GitHub>
-    </Branch>
     <Project>https://github.com/linuxserver/docker-webtop</Project>
     <Overview>Webtop(https://github.com/linuxserver/docker-webtop) - Alpine, Ubuntu, Fedora, and Arch based containers containing full desktop environments in officially supported flavors accessible via any modern web browser.</Overview>
-    <WebUI>http://[IP]:[PORT:3000]</WebUI>
+    <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/webtop.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png</Icon>
-    <Date>2025-01-10</Date>
+    <Date>2025-06-17</Date>
     <Changes>
+### 2025-06-17
+- Rebase all images to Selkies, drop openbox and icewm, bump Alpine to 3.22, bump Fedora to 42.
+
 ### 2025-01-10
 - Rebase Fedora to 41.
 
@@ -260,7 +197,7 @@
 - Initial release.
 
     </Changes>
-    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Web Desktop GUI" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Web Desktop GUI HTTP, must be proxied" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 3001" Target="3001" Default="3001" Mode="tcp" Description="Web Desktop GUI HTTPS" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="abc users home directory" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /var/run/docker.sock" Target="/var/run/docker.sock" Default="" Mode="rw" Description="Docker Socket on the system, if you want to use Docker in the container" Type="Path" Display="always" Required="false" Mask="false"/>
@@ -269,5 +206,4 @@
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-    <Config Name="/dev/dri" Default="/dev/dri" Description="Add this for GL support (Linux hosts only)" Type="Device" Display="always" Required="false" Mask="false"/>
 </Container>
