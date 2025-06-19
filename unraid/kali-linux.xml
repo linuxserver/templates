@@ -16,11 +16,14 @@
     <ReadMe>https://github.com/linuxserver/docker-kali-linux#readme</ReadMe>
     <Project>https://github.com/linuxserver/docker-kali-linux</Project>
     <Overview>Kali-linux(https://github.com/linuxserver/docker-kali-linux) - is an Advanced Penetration Testing Linux distribution used for Penetration Testing, Ethical Hacking and network security assessments. KALI LINUX ™ is a trademark of OffSec.</Overview>
-    <WebUI>http://[IP]:[PORT:3000]</WebUI>
+    <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/kali-linux.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2025-01-24</Date>
+    <Date>2025-06-19</Date>
     <Changes>
+### 2025-06-19
+- Rebase to Selkies baseimage.
+
 ### 2025-01-24
 - Fix SVG icons not rendering.
 
@@ -37,5 +40,4 @@
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-    <Config Name="/dev/dri" Default="/dev/dri" Description="Add this for GL support (Linux hosts only)" Type="Device" Display="always" Required="false" Mask="false"/>
 </Container>
