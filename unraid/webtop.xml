@@ -15,6 +15,10 @@
     <GitHub>https://github.com/linuxserver/docker-webtop#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-webtop#readme</ReadMe>
     <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>XFCE Alpine</TagDescription>
+    </Branch>
+    <Branch>
         <Tag>alpine-i3</Tag>
         <TagDescription>i3 Alpine</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-webtop/tree/alpine-i3#readme</ReadMe>
@@ -115,10 +119,6 @@
         <TagDescription>XFCE Fedora</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-webtop/tree/fedora-xfce#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-webtop/tree/fedora-xfce#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>latest</Tag>
-        <TagDescription>XFCE Alpine</TagDescription>
     </Branch>
     <Branch>
         <Tag>ubuntu-i3</Tag>
