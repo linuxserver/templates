@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-duckstation/blob/master/readme-vars.yml -->
+<Container version="2">
+    <Name>duckstation</Name>
+    <Repository>lscr.io/linuxserver/duckstation</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/duckstation</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-duckstation/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-duckstation#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-duckstation#readme</ReadMe>
+    <Project>https://duckstation.org/</Project>
+    <Overview>DuckStation(https://duckstation.org/) is a PS1 Emulator aiming for the best accuracy and game support.</Overview>
+    <ExtraParams>--shm-size=1gb</ExtraParams>
+    <WebUI>https://[IP]:[PORT:3001]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/duckstation.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/duckstation-logo.png</Icon>
+    <Date>2025-06-19</Date>
+    <Changes>
+### 2025-06-19
+- Initial release.
+
+    </Changes>
+    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="HTTP DuckStation desktop gui must be proxied." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 3001" Target="3001" Default="3001" Mode="tcp" Description="HTTPS DuckStation desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Users home directory in the container, stores local files and settings" Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
