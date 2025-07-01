@@ -14,14 +14,27 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-firefox#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-firefox#readme</ReadMe>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Latest releases using the selkies base</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>kasm</Tag>
+        <TagDescription>Latest releases using the kasmvnc base</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-firefox/tree/kasm#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-firefox/tree/kasm#application-setup</GitHub>
+    </Branch>
     <Project>https://www.mozilla.org/en-US/firefox/</Project>
     <Overview>Firefox(https://www.mozilla.org/en-US/firefox/) Browser, also known as Mozilla Firefox or simply Firefox, is a free and open-source web browser developed by the Mozilla Foundation and its subsidiary, the Mozilla Corporation. Firefox uses the Gecko layout engine to render web pages, which implements current and anticipated web standards.</Overview>
     <ExtraParams>--shm-size=1gb</ExtraParams>
     <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/firefox.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/firefox-logo.png</Icon>
-    <Date>2025-06-23</Date>
+    <Date>2025-07-01</Date>
     <Changes>
+### 2025-07-01
+- Add Kasm branch.
+
 ### 2025-06-23
 - Rebase to Selkies.
 
