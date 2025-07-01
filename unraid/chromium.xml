@@ -14,14 +14,27 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-chromium#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-chromium#readme</ReadMe>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Latest releases using the selkies base</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>kasm</Tag>
+        <TagDescription>Latest releases using the kasmvnc base</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-chromium/tree/kasm#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-chromium/tree/kasm#application-setup</GitHub>
+    </Branch>
     <Project>https://www.chromium.org/chromium-projects/</Project>
     <Overview>Chromium(https://www.chromium.org/chromium-projects/) is an open-source browser project that aims to build a safer, faster, and more stable way for all users to experience the web.</Overview>
     <ExtraParams>--shm-size=1gb</ExtraParams>
     <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/chromium.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/chromium-logo.png</Icon>
-    <Date>2025-06-24</Date>
+    <Date>2025-07-01</Date>
     <Changes>
+### 2025-07-01
+- Add Kasm branch.
+
 ### 2025-06-24
 - Rebase to Selkies.
 
