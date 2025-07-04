@@ -24,9 +24,9 @@ JSON API, invoicing, data exports, multi-timer and punch-in punch-out mode, tagg
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kimai-logo.png</Icon>
     <Requires>
         A MySQL or MariaDB database is required.
-                This container requires an external application to be run separately.
+        This container requires an external application to be run separately.
         We recommend using our [MariaDB](https://github.com/linuxserver/docker-mariadb) container from community applications.
-            </Requires>
+    </Requires>
     <Date>2025-04-06</Date>
     <Changes>
 ### 2025-04-06
