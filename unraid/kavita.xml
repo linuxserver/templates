@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:5000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/kavita.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kavita-logo.png</Icon>
-    <Date>2024-07-10</Date>
+    <Date>2025-07-05</Date>
     <Changes>
+### 2025-07-05
+- Update init for version 0.8.7 compatibility.
+
 ### 2024-07-10
 - Rebase to Ubuntu Noble.
 
