@@ -19,10 +19,13 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/pairdrop.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2024-12-21</Date>
+    <Date>2025-07-05</Date>
     <Changes>
+### 2025-07-05
+- Rebase to Alpine 3.22.
+
 ### 2024-12-21
-- Rebase to Alpine 3.20.
+- Rebase to Alpine 3.21.
 
 ### 2024-05-31
 - Rebase to Alpine 3.20.
