@@ -17,13 +17,20 @@
     <Project>https://www.opera.com/</Project>
     <Overview>Opera(https://www.opera.com/) is a multi-platform web browser developed by its namesake company Opera. The browser is based on Chromium, but distinguishes itself from other Chromium-based browsers (Chrome, Edge, etc.) through its user interface and other features.</Overview>
     <ExtraParams>--shm-size=1gb</ExtraParams>
-    <WebUI>http://[IP]:[PORT:3000]</WebUI>
+    <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/opera.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/opera-icon.png</Icon>
-    <Date>2025-03-12</Date>
+    <Requires>
+        This image is unprotected by default __**do not**__ expose it to the internet.
+        Please read https://github.com/linuxserver/docker-opera#security for more information.
+    </Requires>
+    <Date>2025-07-03</Date>
     <Changes>
+### 2025-07-03
+- Rebase to Selkies HTTPS is now required.
+
 ### 2025-03-12
-- Clear singletons one launch to properly support persistance.
+- Clear singletons on launch to properly support persistance.
 
 ### 2024-02-13
 - Remove manual codecs ingestion.
