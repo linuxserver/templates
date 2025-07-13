@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nginx.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nginx-logo.png</Icon>
-    <Date>2025-06-16</Date>
+    <Date>2025-07-13</Date>
     <Changes>
+### 2025-07-13
+- Fixed auto-reload functionality.
+
 ### 2025-06-16
 - Rebase to Alpine 3.22 with PHP 8.4. Add Auto Reload(https://github.com/linuxserver/docker-mods/tree/swag-auto-reload) functionality. Drop PHP bindings for mcrypt as it is no longer maintained.
 
