@@ -17,11 +17,18 @@
     <Project>https://www.microsoft.com/edge</Project>
     <Overview>Microsoft Edge(https://www.microsoft.com/edge) is a cross-platform web browser developed by Microsoft and based on Chromium.</Overview>
     <ExtraParams>--shm-size=1gb</ExtraParams>
-    <WebUI>http://[IP]:[PORT:3000]</WebUI>
+    <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/msedge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2025-02-04</Date>
+    <Requires>
+        This image is unprotected by default __**do not**__ expose it to the internet.
+        Please read https://github.com/linuxserver/docker-msedge#security for more information.
+    </Requires>
+    <Date>2025-07-12</Date>
     <Changes>
+### 2025-07-12
+- Rebase to Selkies, HTTPS IS NOW REQUIRED.
+
 ### 2025-02-04
 - Clean up Singletons if container is shut down while windows are open.
 
@@ -29,7 +36,7 @@
 - Initial release.
 
     </Changes>
-    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Edge desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="HTTP Edge desktop gui, needs to be proxied." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 3001" Target="3001" Default="3001" Mode="tcp" Description="HTTPS Edge desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Users home directory in the container, stores local files and settings" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="EDGE_CLI" Target="EDGE_CLI" Default="https://www.linuxserver.io/" Description="Specify one or multiple Chromium CLI flags, this string will be passed to the application in full." Type="Variable" Display="always" Required="false" Mask="false"/>
