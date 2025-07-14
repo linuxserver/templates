@@ -17,11 +17,18 @@
     <Project>https://github.com/ungoogled-software/ungoogled-chromium</Project>
     <Overview>Ungoogled Chromium(https://github.com/ungoogled-software/ungoogled-chromium) is Google Chromium, sans dependency on Google web services.</Overview>
     <ExtraParams>--shm-size=1gb</ExtraParams>
-    <WebUI>http://[IP]:[PORT:3000]</WebUI>
+    <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/ungoogled-chromium.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ungoogled-chromium-logo.png</Icon>
-    <Date>2025-04-03</Date>
+    <Requires>
+        This image is unprotected by default __**do not**__ expose it to the internet.
+        Please read https://github.com/linuxserver/docker-ungoogled-chromium#security for more information.
+    </Requires>
+    <Date>2025-07-12</Date>
     <Changes>
+### 2025-07-12
+- Rebase to Selkies, HTTPS IS NOW REQUIRED.
+
 ### 2025-04-03
 - Update chromium launch options to improve performance.
 
@@ -29,7 +36,7 @@
 - Initial release.
 
     </Changes>
-    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Ungoogled Chromium desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="HTTP Ungoogled Chromium desktop gui, must be proxied." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 3001" Target="3001" Default="3001" Mode="tcp" Description="HTTPS Ungoogled Chromium desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Users home directory in the container, stores local files and settings" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="CHROME_CLI" Target="CHROME_CLI" Default="https://www.linuxserver.io/" Description="Specify one or multiple Chromium CLI flags, this string will be passed to the application in full." Type="Variable" Display="always" Required="false" Mask="false"/>
