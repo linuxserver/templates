@@ -40,7 +40,7 @@
 - Add Kasm branch.
 
 ### 2025-06-23
-- Rebase to Selkies.
+- Rebase to Selkies, HTTPS is now required.
 
 ### 2024-09-25
 - Rebase to Ubuntu Noble.
@@ -76,7 +76,7 @@
 - Initial release.
 
     </Changes>
-    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Firefox desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Firefox desktop gui HTTP, must be proxied." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 3001" Target="3001" Default="3001" Mode="tcp" Description="Firefox desktop gui HTTPS." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Users home directory in the container, stores local files and settings" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="FIREFOX_CLI" Target="FIREFOX_CLI" Default="https://www.linuxserver.io/" Description="Specify one or multiple Firefox CLI flags, this string will be passed to the application in full." Type="Variable" Display="always" Required="false" Mask="false"/>
