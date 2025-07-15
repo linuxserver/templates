@@ -14,6 +14,16 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-sickgear#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-sickgear#readme</ReadMe>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Stable SickGear releases</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>develop</Tag>
+        <TagDescription>SickGear develop branch commits</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-sickgear/tree/develop#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-sickgear/tree/develop#application-setup</GitHub>
+    </Branch>
     <Project>https://github.com/sickgear/sickgear</Project>
     <Overview>SickGear(https://github.com/sickgear/sickgear) provides management of TV shows and/or Anime, it detects new episodes, links downloader apps, and more..
 
@@ -21,8 +31,11 @@ For more information on SickGear visit their website and check it out: https://g
     <WebUI>http://[IP]:[PORT:8081]/home/view-changes</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sickgear.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sickgear-logo.png</Icon>
-    <Date>2024-06-25</Date>
+    <Date>2025-07-09</Date>
     <Changes>
+### 2025-07-09
+- Rebase to Alpine 3.22.
+
 ### 2024-06-25
 - Rebase to Alpine 3.20.
 
