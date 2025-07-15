@@ -18,8 +18,11 @@
     <Overview>Ddclient(https://github.com/ddclient/ddclient) is a Perl client used to update dynamic DNS entries for accounts on Dynamic DNS Network Service Provider. It was originally written by Paul Burry and is now mostly by wimpunk. It has the capability to update more than just dyndns and it can fetch your WAN-ipaddress in a few different ways.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/ddclient.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ddclient-logo.png</Icon>
-    <Date>2024-07-08</Date>
+    <Date>2025-07-10</Date>
     <Changes>
+### 2025-07-10
+- Rebase to Alpine 3.22.
+
 ### 2024-07-08
 - Fix cache issue.
 
