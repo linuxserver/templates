@@ -24,8 +24,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-pcsx2#security for more information.
     </Requires>
-    <Date>2025-06-26</Date>
+    <Date>2025-07-15</Date>
     <Changes>
+### 2025-07-15
+- Switch to stable release for pcsx2.
+
 ### 2025-06-26
 - Initial release.
 
