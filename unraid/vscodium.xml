@@ -17,11 +17,18 @@
     <Project>https://vscodium.com/</Project>
     <Overview>VSCodium(https://vscodium.com/) is a community-driven, freely-licensed binary distribution of Microsoft’s editor VS Code.</Overview>
     <ExtraParams>--cap-add=IPC_LOCK --shm-size=1gb</ExtraParams>
-    <WebUI>http://[IP]:[PORT:3000]</WebUI>
+    <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/vscodium.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/vscodium-icon.png</Icon>
-    <Date>2024-02-10</Date>
+    <Requires>
+        This image is unprotected by default __**do not**__ expose it to the internet.
+        Please read https://github.com/linuxserver/docker-vscodium#security for more information.
+    </Requires>
+    <Date>2025-07-12</Date>
     <Changes>
+### 2025-07-12
+- Rebase to Selkies, HTTPS IS NOW REQUIRED.
+
 ### 2024-02-10
 - Update Readme with new env vars and ingest proper PWA icon.
 
