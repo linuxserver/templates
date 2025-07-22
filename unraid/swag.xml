@@ -300,7 +300,7 @@
     </Changes>
     <Config Name="WebUI" Target="443" Default="443" Mode="tcp" Description="HTTPS port" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 80" Target="80" Default="80" Mode="tcp" Description="HTTP port (required for HTTP validation and HTTP - HTTPS redirect)" Type="Port" Display="always" Required="false" Mask="false"/>
-    <Config Name="Port: 443" Target="443" Default="443/udp" Mode="udp" Description="QUIC (HTTP/3) port. Must be enabled in the default and proxy confs." Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Port: 443" Target="443" Default="443" Mode="udp" Description="QUIC (HTTP/3) port. Must be enabled in the default and proxy confs." Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="URL" Target="URL" Default="example.com" Description="Top url you have control over (e.g. `example.com` if you own it, or `customsubdomain.example.com` if dynamic dns)." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="VALIDATION" Target="VALIDATION" Default="http|dns" Description="Certbot validation method to use, options are `http` or `dns` (`dns` method also requires `DNSPLUGIN` variable set)." Type="Variable" Display="always" Required="true" Mask="false"/>
