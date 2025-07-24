@@ -16,11 +16,18 @@
     <ReadMe>https://github.com/linuxserver/docker-doublecommander#readme</ReadMe>
     <Project>https://doublecmd.sourceforge.io/</Project>
     <Overview>Double Commander(https://doublecmd.sourceforge.io/) is a free cross platform open source file manager with two panels side by side. It is inspired by Total Commander and features some new ideas.</Overview>
-    <WebUI>http://[IP]:[PORT:3000]</WebUI>
+    <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/doublecommander.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/doublecommander-logo.png</Icon>
-    <Date>2024-07-05</Date>
+    <Requires>
+        This image is unprotected by default __**do not**__ expose it to the internet.
+        Please read https://github.com/linuxserver/docker-doublecommander#security for more information.
+    </Requires>
+    <Date>2025-07-12</Date>
     <Changes>
+### 2025-07-12
+- Rebase to Selkies, HTTPS IS NOW REQUIRED.
+
 ### 2024-07-05
 - Add rar, 7zip, ace, and arj archive support.
 
@@ -46,7 +53,7 @@
 - Initial release.
 
     </Changes>
-    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Double Commander desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Double Commander desktop gui HTTP, must be proxied." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 3001" Target="3001" Default="3001" Mode="tcp" Description="Double Commander desktop gui HTTPS." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Users home directory in the container, stores program settings." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="Host data directories, mount as many as needed." Type="Path" Display="always" Required="true" Mask="false"/>
