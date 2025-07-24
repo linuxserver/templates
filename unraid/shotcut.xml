@@ -16,16 +16,23 @@
     <ReadMe>https://github.com/linuxserver/docker-shotcut#readme</ReadMe>
     <Project>https://www.shotcut.org/</Project>
     <Overview>Shotcut(https://www.shotcut.org/) is a free, open source, cross-platform video editor.</Overview>
-    <WebUI>http://[IP]:[PORT:3000]</WebUI>
+    <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/shotcut.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/shotcut-logo.png</Icon>
-    <Date>2024-01-31</Date>
+    <Requires>
+        This image is unprotected by default __**do not**__ expose it to the internet.
+        Please read https://github.com/linuxserver/docker-shotcut#security for more information.
+    </Requires>
+    <Date>2025-07-12</Date>
     <Changes>
+### 2025-07-12
+- Rebase to Selkies, HTTPS IS NOW REQUIRED.
+
 ### 2024-01-31
 - Initial release.
 
     </Changes>
-    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Shotcut desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Shotcut desktop gui HTTP, must be proxied." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 3001" Target="3001" Default="3001" Mode="tcp" Description="Shotcut desktop gui HTTPS." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where Shotcut should store its config." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
