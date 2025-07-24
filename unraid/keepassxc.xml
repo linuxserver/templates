@@ -16,11 +16,18 @@
     <ReadMe>https://github.com/linuxserver/docker-keepassxc#readme</ReadMe>
     <Project>https://keepassxc.org/</Project>
     <Overview>KeePassXC(https://keepassxc.org/) is a free and open-source password manager. It started as a community fork of KeePassX (itself a cross-platform port of KeePass).</Overview>
-    <WebUI>http://[IP]:[PORT:3000]</WebUI>
+    <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/keepassxc.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/keepassxc-logo.png</Icon>
-    <Date>2024-12-06</Date>
+    <Requires>
+        This image is unprotected by default __**do not**__ expose it to the internet.
+        Please read https://github.com/linuxserver/docker-keepassxc#security for more information.
+    </Requires>
+    <Date>2025-07-12</Date>
     <Changes>
+### 2025-07-12
+- Rebase to Selkies and Alpine 3.22, HTTPS IS NOW REQUIRED.
+
 ### 2024-12-06
 - Rebase to Alpine 3.21.
 
@@ -31,7 +38,7 @@
 - Initial release.
 
     </Changes>
-    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="KeePassXC desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="KeePassXC desktop gui HTTP, must be proxied." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 3001" Target="3001" Default="3001" Mode="tcp" Description="KeePassXC desktop gui HTTPS." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Users home directory in the container, stores local files and settings" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
