@@ -16,11 +16,18 @@
     <ReadMe>https://github.com/linuxserver/docker-digikam#readme</ReadMe>
     <Project>https://www.digikam.org/</Project>
     <Overview>digiKam(https://www.digikam.org/): Professional Photo Management with the Power of Open Source</Overview>
-    <WebUI>http://[IP]:[PORT:3000]</WebUI>
+    <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/digikam.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/digikam-logo.png</Icon>
-    <Date>2025-04-03</Date>
+    <Requires>
+        This image is unprotected by default __**do not**__ expose it to the internet.
+        Please read https://github.com/linuxserver/docker-digikam#security for more information.
+    </Requires>
+    <Date>2025-07-12</Date>
     <Changes>
+### 2025-07-12
+- Rebase to Selkies, HTTPS IS NOW REQUIRED.
+
 ### 2025-04-03
 - Update chromium launch options to improve performance.
 
@@ -64,7 +71,7 @@
 - Initial release.
 
     </Changes>
-    <Config Name="Port: 3000" Target="3000" Default="3000" Mode="tcp" Description="digiKam desktop gui" Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Port: 3000" Target="3000" Default="3000" Mode="tcp" Description="digiKam desktop gui HTTP, must be proxied" Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Port: 3001" Target="3001" Default="3001" Mode="tcp" Description="digiKam desktop gui HTTPS" Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Users home directory in the container, stores database." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="SUBFOLDER" Target="SUBFOLDER" Default="/" Description="Specify a subfolder to use with reverse proxies, IE `/subfolder/`" Type="Variable" Display="always" Required="false" Mask="false"/>
