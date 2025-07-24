@@ -16,16 +16,23 @@
     <ReadMe>https://github.com/linuxserver/docker-rustdesk#readme</ReadMe>
     <Project>https://rustdesk.com/</Project>
     <Overview>RustDesk(https://rustdesk.com/) is a full-featured open source remote control alternative for self-hosting and security with minimal configuration.</Overview>
-    <WebUI>http://[IP]:[PORT:3000]</WebUI>
+    <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/rustdesk.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/rustdesk-logo.png</Icon>
-    <Date>2024-07-25</Date>
+    <Requires>
+        This image is unprotected by default __**do not**__ expose it to the internet.
+        Please read https://github.com/linuxserver/docker-rustdesk#security for more information.
+    </Requires>
+    <Date>2025-07-12</Date>
     <Changes>
+### 2025-07-12
+- Rebase to Selkies, HTTPS IS NOW REQUIRED.
+
 ### 2024-07-25
 - Initial release.
 
     </Changes>
-    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="RustDesk desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="HTTP RustDesk desktop gui, must be proxied." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 3001" Target="3001" Default="3001" Mode="tcp" Description="HTTPS Rustdesk desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Users home directory in the container, stores local files and settings" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
