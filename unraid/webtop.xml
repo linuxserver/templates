@@ -153,8 +153,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-webtop#security for more information.
     </Requires>
-    <Date>2025-06-17</Date>
+    <Date>2025-07-24</Date>
     <Changes>
+### 2025-07-24
+- Rebase Debian images to Trixie.
+
 ### 2025-06-17
 - Rebase all images to Selkies, drop openbox and icewm, bump Alpine to 3.22, bump Fedora to 42.
 
