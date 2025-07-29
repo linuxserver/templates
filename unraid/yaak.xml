@@ -16,16 +16,23 @@
     <ReadMe>https://github.com/linuxserver/docker-yaak#readme</ReadMe>
     <Project>https://yaak.app/</Project>
     <Overview>Yaak(https://yaak.app/) is a desktop API client for organizing and executing REST, GraphQL, and gRPC requests. It&#39;s built using Tauri(https://tauri.app/), Rust(https://www.rust-lang.org/), and ReactJS(https://react.dev/).</Overview>
-    <WebUI>http://[IP]:[PORT:3000]</WebUI>
+    <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/yaak.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/yaak-logo.png</Icon>
-    <Date>2024-09-12</Date>
+    <Requires>
+        This image is unprotected by default __**do not**__ expose it to the internet.
+        Please read https://github.com/linuxserver/docker-yaak#security for more information.
+    </Requires>
+    <Date>2025-07-29</Date>
     <Changes>
+### 2025-07-29
+- Rebase to selkies. Breaking Change: HTTPS is now required. Either use a reverse proxy with SSL cert or direct connect to port 8181 with HTTPS.
+
 ### 2024-09-12
 - Initial release.
 
     </Changes>
-    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Yaak desktop gui." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Yaak desktop gui (for reverse proxy only)." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 3001" Target="3001" Default="3001" Mode="tcp" Description="Yaak desktop gui HTTPS." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Where yaak should store its config and data." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
