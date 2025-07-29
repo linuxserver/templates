@@ -20,10 +20,13 @@
     <WebUI>https://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/pydio-cells.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pydio-cells-icon.png</Icon>
-    <Date>2024-06-27</Date>
+    <Date>2025-07-27</Date>
     <Changes>
+### 2025-07-27
+- Rebasing to Alpine 3.22.
+
 ### 2024-06-27
-- Rebasing to Alpine 3.20..
+- Rebasing to Alpine 3.20.
 
 ### 2024-03-14
 - Rebasing to alpine 3.19. Grpc port defaults to 8080.
