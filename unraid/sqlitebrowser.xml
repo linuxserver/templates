@@ -23,8 +23,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-sqlitebrowser#security for more information.
     </Requires>
-    <Date>2025-07-12</Date>
+    <Date>2025-07-30</Date>
     <Changes>
+### 2025-07-30
+- Install Qt SVG for icon support.
+
 ### 2025-07-12
 - Rebase to Selkies and Alpine 3.22, HTTPS IS NOW REQUIRED.
 
