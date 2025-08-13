@@ -25,8 +25,11 @@
     <WebUI>http://[IP]:[PORT:8443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/code-server.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/code-server-logo.png</Icon>
-    <Date>2025-06-03</Date>
+    <Date>2025-08-10</Date>
     <Changes>
+### 2025-08-10
+- Let server listen on both ipv4 and ipv6.
+
 ### 2025-06-03
 - Allow setting PWA name using env var `PWA_APPNAME`.
 
