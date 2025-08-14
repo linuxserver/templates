@@ -18,8 +18,11 @@
     <Overview>Piper(https://github.com/rhasspy/piper/) is a fast, local neural text to speech system that sounds great and is optimized for the Raspberry Pi 4. This container provides a Wyoming protocol server for Piper.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/piper.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/piper-logo.png</Icon>
-    <Date>2024-07-18</Date>
+    <Date>2025-08-10</Date>
     <Changes>
+### 2025-08-10
+- Add streaming support.
+
 ### 2024-07-18
 - Rebase to Ubuntu Noble.
 
@@ -35,6 +38,7 @@
     <Config Name="PIPER_NOISEW" Target="PIPER_NOISEW" Default="0.333" Description="Controls the variability of speaking cadence. Values above 1 produce extreme stutters and pauses." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PIPER_SPEAKER" Target="PIPER_SPEAKER" Default="0" Description="Speaker number to use if the voice supports multiple speakers." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PIPER_PROCS" Target="PIPER_PROCS" Default="1" Description="Number of Piper processes to run simultaneously." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="STREAMING" Target="STREAMING" Default="" Description="Setting to `true`, or any other value, will enable support for streaming audio on sentence boundaries." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
