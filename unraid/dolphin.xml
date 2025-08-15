@@ -23,8 +23,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-dolphin#security for more information.
     </Requires>
-    <Date>2025-06-18</Date>
+    <Date>2025-08-15</Date>
     <Changes>
+### 2025-08-15
+- Rebase to Debian Trixie for updated Dolphin, update controller mapping.
+
 ### 2025-06-18
 - Initial Version.
 
