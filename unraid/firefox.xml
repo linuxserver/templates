@@ -34,8 +34,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-firefox#security for more information.
     </Requires>
-    <Date>2025-07-01</Date>
+    <Date>2025-08-16</Date>
     <Changes>
+### 2025-08-16
+- Add proper cleanup logic for builds.
+
 ### 2025-07-01
 - Add Kasm branch.
 
