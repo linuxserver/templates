@@ -23,8 +23,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-mediaelch#security for more information.
     </Requires>
-    <Date>2025-07-12</Date>
+    <Date>2025-08-14</Date>
     <Changes>
+### 2025-08-14
+- Rebase to noble, ingest latest stable version, install qt deps.
+
 ### 2025-07-12
 - Rebase to Selkies, HTTPS IS NOW REQUIRED.
 
