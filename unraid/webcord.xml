@@ -24,10 +24,13 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-webcord#security for more information.
     </Requires>
-    <Date>2025-07-12</Date>
+    <Date>2025-08-10</Date>
     <Changes>
+### 2025-08-10
+- Rebase to Debian Trixie.
+
 ### 2025-07-12
-- Rebase to Selkies, HTTPS IS NOW REQUIRED.
+- Switch to Selkies base image, HTTPS IS NOW REQUIRED.
 
 ### 2025-04-03
 - Update chromium launch options to improve performance.
