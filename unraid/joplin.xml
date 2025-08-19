@@ -16,6 +16,7 @@
     <ReadMe>https://github.com/linuxserver/docker-joplin#readme</ReadMe>
     <Project>https://joplinapp.org/</Project>
     <Overview>Joplin(https://joplinapp.org/) is a free, open source note taking and to-do application, which can handle a large number of notes organised into notebooks.</Overview>
+    <ExtraParams>--shm-size=1gb</ExtraParams>
     <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/joplin.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/joplin-logo.png</Icon>
