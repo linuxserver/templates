@@ -23,8 +23,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-bambustudio#security for more information.
     </Requires>
-    <Date>2025-08-14</Date>
+    <Date>2025-08-31</Date>
     <Changes>
+### 2025-08-31
+- Update AppImage ingestion.
+
 ### 2025-08-14
 - Rebase to Ubuntu Noble to ingest approved appimage.
 
