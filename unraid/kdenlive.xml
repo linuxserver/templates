@@ -23,8 +23,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-kdenlive#security for more information.
     </Requires>
-    <Date>2025-08-06</Date>
+    <Date>2025-09-22</Date>
     <Changes>
+### 2025-09-22
+- Rebase to Arch latest Appimage no longer working on Deb distros. Build for arm64 again.
+
 ### 2025-08-06
 - Fix cpu bug, disable gamepad by default.
 
