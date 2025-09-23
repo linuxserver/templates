@@ -16,6 +16,7 @@
     <ReadMe>https://github.com/linuxserver/docker-krita#readme</ReadMe>
     <Project>https://krita.org/en/</Project>
     <Overview>Krita(https://krita.org/en/) is a professional FREE and open source painting program. It is made by artists that want to see affordable art tools for everyone.</Overview>
+    <ExtraParams>--shm-size=1gb</ExtraParams>
     <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/krita.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/krita-logo.png</Icon>
@@ -23,8 +24,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-krita#security for more information.
     </Requires>
-    <Date>2025-07-12</Date>
+    <Date>2025-09-22</Date>
     <Changes>
+### 2025-09-22
+- Rebase to Debian Trixie.
+
 ### 2025-07-12
 - Rebase to Selkies and Debian, use AppImage, HTTPS IS NOW REQUIRED. Remove arm64 support.
 
