@@ -16,6 +16,7 @@
     <ReadMe>https://github.com/linuxserver/docker-qdirstat#readme</ReadMe>
     <Project>https://github.com/shundhammer/qdirstat</Project>
     <Overview>QDirStat(https://github.com/shundhammer/qdirstat) Qt-based directory statistics: KDirStat without any KDE -- from the author of the original KDirStat.</Overview>
+    <ExtraParams>--shm-size=1gb</ExtraParams>
     <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/qdirstat.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/qdirstat-logo.png</Icon>
