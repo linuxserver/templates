@@ -16,6 +16,7 @@
     <ReadMe>https://github.com/linuxserver/docker-gitqlient#readme</ReadMe>
     <Project>https://github.com/francescmm/GitQlient</Project>
     <Overview>GitQlient(https://github.com/francescmm/GitQlient) is a multi-platform Git client originally forked from QGit. Nowadays it goes beyond of just a fork and adds a lot of new functionality.</Overview>
+    <ExtraParams>--shm-size=1gb</ExtraParams>
     <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/gitqlient.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/gitqlient-icon.png</Icon>
