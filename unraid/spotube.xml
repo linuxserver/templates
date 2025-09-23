@@ -16,6 +16,7 @@
     <ReadMe>https://github.com/linuxserver/docker-spotube#readme</ReadMe>
     <Project>https://spotube.krtirtho.dev/</Project>
     <Overview>Spotube(https://spotube.krtirtho.dev/) is an open source, cross-platform Spotify client compatible across multiple platforms utilizing Spotify&#39;s data API and YouTube, Piped.video or JioSaavn as an audio source, eliminating the need for Spotify Premium</Overview>
+    <ExtraParams>--shm-size=1gb</ExtraParams>
     <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/spotube.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/spotube-logo.png</Icon>
@@ -23,8 +24,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-spotube#security for more information.
     </Requires>
-    <Date>2025-07-12</Date>
+    <Date>2025-09-22</Date>
     <Changes>
+### 2025-09-22
+- Rebase to Debian Trixie.
+
 ### 2025-07-12
 - Rebase to Selkies, HTTPS IS NOW REQUIRED.
 
