@@ -16,6 +16,7 @@
     <ReadMe>https://github.com/linuxserver/docker-audacity#readme</ReadMe>
     <Project>https://www.audacityteam.org/</Project>
     <Overview>Audacity(https://www.audacityteam.org/) is an easy-to-use, multi-track audio editor and recorder. Developed by a group of volunteers as open source.</Overview>
+    <ExtraParams>--shm-size=1gb</ExtraParams>
     <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/audacity.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/audacity-logo.png</Icon>
