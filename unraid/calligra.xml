@@ -16,6 +16,7 @@
     <ReadMe>https://github.com/linuxserver/docker-calligra#readme</ReadMe>
     <Project>https://calligra.org/</Project>
     <Overview>Calligra(https://calligra.org/) is an office and graphic art suite by KDE. It is available for desktop PCs, tablet computers, and smartphones. It contains applications for word processing, spreadsheets, presentation, vector graphics, and editing databases.</Overview>
+    <ExtraParams>--shm-size=1gb</ExtraParams>
     <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/calligra.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/calligra-logo.png</Icon>
@@ -23,8 +24,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-calligra#security for more information.
     </Requires>
-    <Date>2025-07-12</Date>
+    <Date>2025-09-22</Date>
     <Changes>
+### 2025-09-22
+- Rebase to Debian Trixie.
+
 ### 2025-07-12
 - Rebase to Selkies, HTTPS IS NOW REQUIRED.
 
