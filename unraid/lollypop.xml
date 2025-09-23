@@ -16,6 +16,7 @@
     <ReadMe>https://github.com/linuxserver/docker-lollypop#readme</ReadMe>
     <Project>https://wiki.gnome.org/Apps/Lollypop</Project>
     <Overview>Lollypop(https://wiki.gnome.org/Apps/Lollypop) is a lightweight modern music player designed to work excellently on the GNOME desktop environment.</Overview>
+    <ExtraParams>--shm-size=1gb</ExtraParams>
     <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/lollypop.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/lollypop-icon.png</Icon>
