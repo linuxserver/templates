@@ -16,6 +16,7 @@
     <ReadMe>https://github.com/linuxserver/docker-rawtherapee#readme</ReadMe>
     <Project>https://rawtherapee.com/</Project>
     <Overview>RawTherapee(https://rawtherapee.com/) is a free, cross-platform raw image processing program!</Overview>
+    <ExtraParams>--shm-size=1gb</ExtraParams>
     <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/rawtherapee.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/rawtherapee-logo.png</Icon>
@@ -23,8 +24,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-rawtherapee#security for more information.
     </Requires>
-    <Date>2025-07-29</Date>
+    <Date>2025-09-22</Date>
     <Changes>
+### 2025-09-22
+- Rebase to Debian Trixie.
+
 ### 2025-07-29
 - Rebase to selkies. Breaking Change: HTTPS is now required. Either use a reverse proxy with SSL cert or direct connect to port 8181 with HTTPS.
 
