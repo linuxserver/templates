@@ -16,6 +16,7 @@
     <ReadMe>https://github.com/linuxserver/docker-cura#readme</ReadMe>
     <Project>https://ultimaker.com/software/ultimaker-cura/</Project>
     <Overview>UltiMaker Cura(https://ultimaker.com/software/ultimaker-cura/) is free, easy-to-use 3D printing software trusted by millions of users. Fine-tune your 3D model with 400+ settings for the best slicing and printing results.</Overview>
+    <ExtraParams>--shm-size=1gb</ExtraParams>
     <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/cura.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cura-logo.png</Icon>
