@@ -16,6 +16,7 @@
     <ReadMe>https://github.com/linuxserver/docker-dolphin#readme</ReadMe>
     <Project>https://dolphin-emu.org/</Project>
     <Overview>Dolphin Emulator(https://dolphin-emu.org/) lets you play GameCube and Wii games with various graphical enhancements and other features are available to improve your game experience.</Overview>
+    <ExtraParams>--shm-size=1gb</ExtraParams>
     <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/dolphin.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/dolphin-logo.png</Icon>
