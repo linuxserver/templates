@@ -24,8 +24,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-ungoogled-chromium#security for more information.
     </Requires>
-    <Date>2025-07-12</Date>
+    <Date>2025-09-22</Date>
     <Changes>
+### 2025-09-22
+- Rebase to Debian Trixie.
+
 ### 2025-07-12
 - Rebase to Selkies, HTTPS IS NOW REQUIRED.
 
