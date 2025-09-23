@@ -16,6 +16,7 @@
     <ReadMe>https://github.com/linuxserver/docker-keepassxc#readme</ReadMe>
     <Project>https://keepassxc.org/</Project>
     <Overview>KeePassXC(https://keepassxc.org/) is a free and open-source password manager. It started as a community fork of KeePassX (itself a cross-platform port of KeePass).</Overview>
+    <ExtraParams>--shm-size=1gb</ExtraParams>
     <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/keepassxc.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/keepassxc-logo.png</Icon>
