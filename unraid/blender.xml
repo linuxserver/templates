@@ -16,6 +16,7 @@
     <ReadMe>https://github.com/linuxserver/docker-blender#readme</ReadMe>
     <Project>https://www.blender.org/</Project>
     <Overview>Blender(https://www.blender.org/) is a free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models, motion graphics, interactive 3D applications, virtual reality, and computer games. **This image does not support GPU rendering out of the box only accelerated workspace experience**</Overview>
+    <ExtraParams>--shm-size=1gb</ExtraParams>
     <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/blender.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/blender-logo.png</Icon>
@@ -50,7 +51,6 @@
     <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Blender desktop gui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 3001" Target="3001" Default="3001" Mode="tcp" Description="Blender desktop gui HTTPS" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Users home directory in the container, stores local files and settings" Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="SUBFOLDER" Target="SUBFOLDER" Default="/" Description="Specify a subfolder to use with reverse proxies, IE `/subfolder/`" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
