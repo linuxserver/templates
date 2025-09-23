@@ -16,6 +16,7 @@
     <ReadMe>https://github.com/linuxserver/docker-sqlitebrowser#readme</ReadMe>
     <Project>https://sqlitebrowser.org/</Project>
     <Overview>DB Browser for SQLite(https://sqlitebrowser.org/) is a high quality, visual, open source tool to create, design, and edit database files compatible with SQLite.</Overview>
+    <ExtraParams>--shm-size=1gb</ExtraParams>
     <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sqlitebrowser.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sqlitebrowser-logo.png</Icon>
