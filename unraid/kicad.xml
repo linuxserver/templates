@@ -16,6 +16,7 @@
     <ReadMe>https://github.com/linuxserver/docker-kicad#readme</ReadMe>
     <Project>https://www.kicad.org/</Project>
     <Overview>KiCad(https://www.kicad.org/) - A Cross Platform and Open Source Electronics Design Automation Suite.</Overview>
+    <ExtraParams>--shm-size=1gb</ExtraParams>
     <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/kicad.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kicad-logo.png</Icon>
