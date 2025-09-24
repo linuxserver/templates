@@ -16,6 +16,7 @@
     <ReadMe>https://github.com/linuxserver/docker-openshot#readme</ReadMe>
     <Project>https://openshot.org/</Project>
     <Overview>OpenShot(https://openshot.org/) Video Editor is an award-winning free and open-source video editor for Linux, Mac, and Windows, and is dedicated to delivering high quality video editing and animation solutions to the world.</Overview>
+    <ExtraParams>--shm-size=1gb</ExtraParams>
     <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/openshot.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/openshot-logo.png</Icon>
@@ -23,8 +24,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-openshot#security for more information.
     </Requires>
-    <Date>2025-07-29</Date>
+    <Date>2025-09-22</Date>
     <Changes>
+### 2025-09-22
+- Rebase to Debian Trixie.
+
 ### 2025-07-29
 - Rebase to selkies. Breaking Change: HTTPS is now required. Either use a reverse proxy (like SWAG) with SSL cert or direct connect to port 3001 with HTTPS.
 
