@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
-<!-- GENERATED FROM https://github.com/linuxserver/docker-rdesktop/blob/master/readme-vars.yml -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-rdesktop/blob/ubuntu-xfce/readme-vars.yml -->
 <Container version="2">
     <Name>rdesktop</Name>
     <Repository>lscr.io/linuxserver/rdesktop</Repository>
@@ -15,38 +15,10 @@
     <GitHub>https://github.com/linuxserver/docker-rdesktop#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-rdesktop#readme</ReadMe>
     <Branch>
-        <Tag>latest</Tag>
-        <TagDescription>XFCE Alpine</TagDescription>
-    </Branch>
-    <Branch>
         <Tag>ubuntu-xfce</Tag>
         <TagDescription>XFCE Ubuntu</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/ubuntu-xfce#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/ubuntu-xfce#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>fedora-xfce</Tag>
-        <TagDescription>XFCE Fedora</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/fedora-xfce#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/fedora-xfce#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>arch-xfce</Tag>
-        <TagDescription>XFCE Arch</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/arch-xfce#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/arch-xfce#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>debian-xfce</Tag>
-        <TagDescription>XFCE Debian</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/debian-xfce#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/debian-xfce#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>alpine-kde</Tag>
-        <TagDescription>KDE Alpine</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/alpine-kde#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/alpine-kde#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>ubuntu-kde</Tag>
@@ -55,58 +27,10 @@
         <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/ubuntu-kde#application-setup</GitHub>
     </Branch>
     <Branch>
-        <Tag>fedora-kde</Tag>
-        <TagDescription>KDE Fedora</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/fedora-kde#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/fedora-kde#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>arch-kde</Tag>
-        <TagDescription>KDE Arch</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/arch-kde#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/arch-kde#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>debian-kde</Tag>
-        <TagDescription>KDE Debian</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/debian-kde#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/debian-kde#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>alpine-mate</Tag>
-        <TagDescription>MATE Alpine</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/alpine-mate#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/alpine-mate#application-setup</GitHub>
-    </Branch>
-    <Branch>
         <Tag>ubuntu-mate</Tag>
         <TagDescription>MATE Ubuntu</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/ubuntu-mate#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/ubuntu-mate#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>fedora-mate</Tag>
-        <TagDescription>MATE Fedora</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/fedora-mate#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/fedora-mate#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>arch-mate</Tag>
-        <TagDescription>MATE Arch</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/arch-mate#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/arch-mate#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>debian-mate</Tag>
-        <TagDescription>MATE Debian</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/debian-mate#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/debian-mate#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>alpine-i3</Tag>
-        <TagDescription>i3 Alpine</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/alpine-i3#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/alpine-i3#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>ubuntu-i3</Tag>
@@ -115,58 +39,10 @@
         <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/ubuntu-i3#application-setup</GitHub>
     </Branch>
     <Branch>
-        <Tag>fedora-i3</Tag>
-        <TagDescription>i3 Fedora</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/fedora-i3#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/fedora-i3#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>arch-i3</Tag>
-        <TagDescription>i3 Arch</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/arch-i3#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/arch-i3#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>debian-i3</Tag>
-        <TagDescription>i3 Debian</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/debian-i3#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/debian-i3#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>alpine-openbox</Tag>
-        <TagDescription>Openbox Alpine</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/alpine-openbox#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/alpine-openbox#application-setup</GitHub>
-    </Branch>
-    <Branch>
         <Tag>ubuntu-openbox</Tag>
         <TagDescription>Openbox Ubuntu</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/ubuntu-openbox#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/ubuntu-openbox#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>fedora-openbox</Tag>
-        <TagDescription>Openbox Fedora</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/fedora-openbox#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/fedora-openbox#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>arch-openbox</Tag>
-        <TagDescription>Openbox Arch</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/arch-openbox#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/arch-openbox#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>debian-openbox</Tag>
-        <TagDescription>Openbox Debian</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/debian-openbox#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/debian-openbox#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>alpine-icewm</Tag>
-        <TagDescription>IceWM Alpine</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/alpine-icewm#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/alpine-icewm#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>ubuntu-icewm</Tag>
@@ -174,30 +50,15 @@
         <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/ubuntu-icewm#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/ubuntu-icewm#application-setup</GitHub>
     </Branch>
-    <Branch>
-        <Tag>fedora-icewm</Tag>
-        <TagDescription>IceWM Fedora</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/fedora-icewm#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/fedora-icewm#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>arch-icewm</Tag>
-        <TagDescription>IceWM Arch</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/arch-icewm#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/arch-icewm#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>debian-icewm</Tag>
-        <TagDescription>IceWM Debian</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-rdesktop/tree/debian-icewm#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-rdesktop/tree/debian-icewm#application-setup</GitHub>
-    </Branch>
     <Project>http://xrdp.org/</Project>
-    <Overview>Rdesktop(http://xrdp.org/) - Containers containing full desktop environments in many popular flavors for Alpine, Ubuntu, Arch, and Fedora accessible via RDP.</Overview>
+    <Overview>Rdesktop(http://xrdp.org/) - Containers containing full desktop environments in many popular flavors for Ubuntu accessible via RDP.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/rdesktop.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/rdesktop-logo.png</Icon>
-    <Date>2024-08-06</Date>
+    <Date>2025-09-30</Date>
     <Changes>
+### 2025-09-30
+- Deprecate all non-Ubuntu versions.
+
 ### 2024-08-06
 - Refresh all images using new bases, add Debian, bump Ubuntu to Noble.
 
