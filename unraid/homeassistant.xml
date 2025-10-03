@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8123]</WebUI>
     <TemplateURL>false</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/homeassistant-logo.png</Icon>
-    <Date>2025-09-19</Date>
+    <Date>2025-10-02</Date>
     <Changes>
+### 2025-10-02
+- Rebase to alpine 3.22, rely on baseimage service for usb device permission fixing.
+
 ### 2025-09-19
 - Add the necessary capabilities in the container to allow the unprivileged user access to bluetooth stack.
 
