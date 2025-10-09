@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]/smokeping/smokeping.cgi</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/smokeping.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/smokeping-logo.png</Icon>
-    <Date>2025-06-05</Date>
+    <Date>2025-09-26</Date>
     <Changes>
+### 2025-09-26
+- Add IO::Socket::INET6 perl module to improve IPv6 abilities.
+
 ### 2025-06-05
 - Update TCPPing to 2.7 to fix traceroute incompatibility.
 
