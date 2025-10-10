@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3214]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/manyfold.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/manyfold-logo.png</Icon>
-    <Date>2025-07-27</Date>
+    <Date>2025-10-08</Date>
     <Changes>
+### 2025-10-08
+- Change key init to auto generate and persist.
+
 ### 2025-07-27
 - Rebase to Alpine 3.22.
 
@@ -36,7 +39,7 @@
     <Config Name="Path: /libraries" Target="/libraries" Default="" Mode="rw" Description="Location of your 3D model libraries." Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="" Description="Database connection URL. For sqlite use `sqlite3:/config/manyfold.sqlite3`. For postgres or mariadb use `scheme://username:password@hostname:port/db name` where `scheme` is `postgresql` or `mysql2`. Special characters in username/password must be URL encoded(https://en.wikipedia.org/wiki/Percent-encoding)." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="REDIS_URL" Target="REDIS_URL" Default="" Description="Redis/Valkey database URL in `redis://hostname:port/db number` format." Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="SECRET_KEY_BASE" Target="SECRET_KEY_BASE" Default="" Description="Browser session secret. Changing it will terminate all active browser sessions." Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="SECRET_KEY_BASE" Target="SECRET_KEY_BASE" Default="" Description="Browser session and database encryption key. If unset a random one will be generated on init, the database is locked to this key." Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
