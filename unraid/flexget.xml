@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:5050]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/flexget.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2024-09-18</Date>
+    <Date>2025-10-17</Date>
     <Changes>
+### 2025-10-17
+- Add pip to enable universal-package-install mod(https://github.com/linuxserver/docker-mods/tree/universal-package-install).
+
 ### 2024-09-18
 - Suppress creation of empty log file when WebUI password is set.
 
