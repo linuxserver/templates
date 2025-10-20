@@ -18,8 +18,11 @@
     <Overview>The Unifi-network-application(https://ui.com/) software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/unifi-network-application.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-network-application-icon.png</Icon>
-    <Date>2025-05-08</Date>
+    <Date>2025-10-20</Date>
     <Changes>
+### 2025-10-20
+- Switch to using FW API endpoint for version checks.
+
 ### 2025-05-08
 - Update sample `init-mongo.sh` for compatibility with 9.1.120 (only affects new installs).
 
