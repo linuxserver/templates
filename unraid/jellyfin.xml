@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8096]</WebUI>
     <TemplateURL>false</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/jellyfin-logo.png</Icon>
-    <Date>2024-10-06</Date>
+    <Date>2025-10-20</Date>
     <Changes>
+### 2025-10-20
+- Add libjemalloc as runtime dep.
+
 ### 2024-10-06
 - Fix fontconfig cache path.
 
