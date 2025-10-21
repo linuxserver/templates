@@ -34,8 +34,11 @@
     <Overview>Mastodon(https://github.com/mastodon/mastodon/) is a free, open-source social network server based on ActivityPub where users can follow friends and discover new ones..</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mastodon.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mastodon-logo.png</Icon>
-    <Date>2025-07-08</Date>
+    <Date>2025-10-20</Date>
     <Changes>
+### 2025-10-20
+- Add vips-heif.
+
 ### 2025-07-08
 - Rebase to Alpine 3.22.
 
