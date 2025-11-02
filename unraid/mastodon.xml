@@ -34,8 +34,11 @@
     <Overview>Mastodon(https://github.com/mastodon/mastodon/) is a free, open-source social network server based on ActivityPub where users can follow friends and discover new ones..</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mastodon.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mastodon-logo.png</Icon>
-    <Date>2025-10-20</Date>
+    <Date>2025-10-21</Date>
     <Changes>
+### 2025-10-21
+- Add prometheus exporter support.
+
 ### 2025-10-20
 - Add vips-heif.
 
@@ -69,6 +72,7 @@
     </Changes>
     <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="Port for web frontend" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 443" Target="443" Default="443" Mode="tcp" Description="Port for web frontend" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 9394" Target="9394" Default="9394" Mode="tcp" Description="Port for Prometheus metrics" Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="LOCAL_DOMAIN" Target="LOCAL_DOMAIN" Default="example.com" Description="This is the unique identifier of your server in the network. It cannot be safely changed later." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="REDIS_HOST" Target="REDIS_HOST" Default="redis" Description="Redis server hostname" Type="Variable" Display="always" Required="true" Mask="false"/>
@@ -107,6 +111,7 @@
     <Config Name="SIDEKIQ_THREADS" Target="SIDEKIQ_THREADS" Default="5" Description="The number of threads for sidekiq to use. See notes(https://docs.joinmastodon.org/admin/scaling/#sidekiq-threads)." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="DB_POOL" Target="DB_POOL" Default="5" Description="The size of the DB connection pool, must be *at least* the same as `SIDEKIQ_THREADS`. See notes(https://docs.joinmastodon.org/admin/scaling/#sidekiq-threads)." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="NO_CHOWN" Target="NO_CHOWN" Default="" Description="Set to `true` to skip chown of /config on init. *READ THE APPLICATION NOTES BEFORE SETTING THIS*." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="MASTODON_PROMETHEUS_EXPORTER_ENABLED" Target="MASTODON_PROMETHEUS_EXPORTER_ENABLED" Default="" Description="If set to `true`, Mastodon’s Ruby processes (web and Sidekiq) will enable the Prometheus instrumentation." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
