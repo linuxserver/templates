@@ -19,8 +19,11 @@
     <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/swag.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2025-07-18</Date>
+    <Date>2025-11-04</Date>
     <Changes>
+### 2025-11-04
+- Switch default Gandi credentials from API Key to Token, allow DNS propagation time for Azure DNS plugin.
+
 ### 2025-07-18
 - Rebase to Alpine 3.22 with PHP 8.4. Add QUIC support. Drop PHP bindings for mcrypt as it is no longer maintained.
 
