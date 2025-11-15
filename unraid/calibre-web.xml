@@ -31,8 +31,11 @@ This software is a fork of library and licensed under the GPL v3 License.</Overv
     <WebUI>http://[IP]:[PORT:8083]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/calibre-web.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/calibre-web-logo.png</Icon>
-    <Date>2025-01-07</Date>
+    <Date>2025-28-10</Date>
     <Changes>
+### 2025-28-10
+- Add libxfixes3 and libasound2t64 to support epub to pdf conversion; also set --no-sandbox for qtwebengine.
+
 ### 2025-01-07
 - Set kepubify path by default.
 
