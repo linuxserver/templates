@@ -12,14 +12,18 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-feed2toot/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/linuxserver/docker-feed2toot#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-feed2toot#readme</ReadMe>
     <Project>https://gitlab.com/chaica/feed2toot</Project>
     <Overview>Feed2toot(https://gitlab.com/chaica/feed2toot) automatically parses rss feeds, identifies new posts and posts them on the Mastodon social network.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/feed2toot.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2023-12-23</Date>
+    <Date>2025-11-10</Date>
     <Changes>
+### 2025-11-10
+- Deprecate.
+
 ### 2023-12-23
 - Rebase to Alpine 3.19.
 
