@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-sealskin/blob/master/readme-vars.yml -->
+<Container version="2">
+    <Name>sealskin</Name>
+    <Repository>lscr.io/linuxserver/sealskin</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/sealskin</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-sealskin/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-sealskin#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-sealskin#readme</ReadMe>
+    <Project>https://github.com/selkies-project/sealskin/</Project>
+    <Overview>Sealskin(https://github.com/selkies-project/sealskin/) is a self-hosted, client-server platform that enables users to run powerful, containerized desktop applications streamed directly to a web browser. It uses a browser extension to intercept user actions—such as clicking a link or downloading a file and redirects them to a secure, isolated application environment running on a remote server.</Overview>
+    <WebUI>http://[IP]:[PORT:8000]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sealskin.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
+    <Date>2025-10-31</Date>
+    <Changes>
+### 2025-10-31
+- Initial Release.
+
+    </Changes>
+    <Config Name="WebUI" Target="8000" Default="8000" Mode="tcp" Description="API communication port." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 8443" Target="8443" Default="8443" Mode="tcp" Description="App session port." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="All configuration files and metadata for the application." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Path: /storage" Target="/storage" Default="" Mode="rw" Description="All file storage for home directories and ephemeral mounts." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /var/run/docker.sock" Target="/var/run/docker.sock" Default="" Mode="rw" Description="Docker socket, required to spin up application containers." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
