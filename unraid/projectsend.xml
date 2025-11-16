@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]/install/make-config.php</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/projectsend.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/projectsend-logo.png</Icon>
-    <Date>2025-10-14</Date>
+    <Date>2025-11-16</Date>
     <Changes>
+### 2025-11-16
+- Add missing language files to default install.
+
 ### 2025-10-14
 - Rebase to 3.22.
 
