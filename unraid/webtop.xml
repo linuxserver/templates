@@ -154,8 +154,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-webtop#security for more information.
     </Requires>
-    <Date>2025-07-24</Date>
+    <Date>2025-11-17</Date>
     <Changes>
+### 2025-11-17
+- Rebase Fedora images to 43.
+
 ### 2025-07-24
 - Rebase Debian images to Trixie.
 
