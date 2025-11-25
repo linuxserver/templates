@@ -23,8 +23,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-orcaslicer#security for more information.
     </Requires>
-    <Date>2025-09-15</Date>
+    <Date>2025-11-25</Date>
     <Changes>
+### 2025-11-25
+- Update project repo name.
+
 ### 2025-09-15
 - Rebase to Ubuntu Noble and Selkies, HTTPS is now required.
 
