@@ -26,6 +26,7 @@
     </Branch>
     <Project>https://calibre-ebook.com/</Project>
     <Overview>Calibre(https://calibre-ebook.com/) is a powerful and easy to use e-book manager. Users say it&#39;s outstanding and a must-have. It&#39;ll allow you to do nearly everything and it takes things a step beyond normal e-book software. It&#39;s also completely free and open source and great for both casual users and computer experts.</Overview>
+    <ExtraParams>--shm-size=1gb</ExtraParams>
     <WebUI>https://[IP]:[PORT:8181]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/calibre.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/calibre-logo.png</Icon>
