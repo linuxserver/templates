@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-vlc/blob/master/readme-vars.yml -->
+<Container version="2">
+    <Name>vlc</Name>
+    <Repository>lscr.io/linuxserver/vlc</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/vlc</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-vlc/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-vlc#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-vlc#readme</ReadMe>
+    <Project>https://www.videolan.org/vlc/</Project>
+    <Overview>VLC Media Player(https://www.videolan.org/vlc/) is a free and open source cross-platform multimedia player and framework that delivers dependable performance across multiple devices.</Overview>
+    <ExtraParams>--shm-size=1gb</ExtraParams>
+    <WebUI>https://[IP]:[PORT:3001]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/vlc.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/vlc-logo.png</Icon>
+    <Requires>
+        This image is unprotected by default __**do not**__ expose it to the internet.
+        Please read https://github.com/linuxserver/docker-vlc#security for more information.
+    </Requires>
+    <Date>2025-12-01</Date>
+    <Changes>
+### 2025-12-01
+- Initial Version.
+
+    </Changes>
+    <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="VLC Media Player desktop gui HTTP must be proxied." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 3001" Target="3001" Default="3001" Mode="tcp" Description="VLC Media Player desktop gui HTTPS." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Users home directory in the container, stores local files and settings" Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="VLC_CLI" Target="VLC_CLI" Default="--no-qt-minimal-view" Description="Specify one or multiple VLC CLI flags, this string will be passed to the application in full." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
