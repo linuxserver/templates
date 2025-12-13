@@ -12,16 +12,19 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-steamos/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/linuxserver/docker-steamos#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-steamos#readme</ReadMe>
     <Project>https://www.steamdeck.com/</Project>
     <Overview>SteamOS(https://www.steamdeck.com/) is an Arch based Linux distribution made by Valve Software. This container is a vanilla Arch install with Steam repositories added for software support. **This container will only work with modern AMD/Intel GPUs on a real Linux Host**</Overview>
     <ExtraParams>--cap-add=NET_ADMIN --shm-size=1gb --security-opt seccomp=unconfined</ExtraParams>
-    <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/steamos.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/steamos-logo.png</Icon>
-    <Date>2024-05-23</Date>
+    <Date>2025-12-09</Date>
     <Changes>
+### 2025-12-09
+- Deprecate container, any future release will be for the Steam application not the underlying OS.
+
 ### 2024-05-23
 - Document how to get Nvidia to work.
 
