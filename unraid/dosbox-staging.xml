@@ -24,8 +24,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-dosbox-staging#security for more information.
     </Requires>
-    <Date>2025-08-30</Date>
+    <Date>2025-12-28</Date>
     <Changes>
+### 2025-12-28
+- Add Wayland init logic.
+
 ### 2025-08-30
 - Initial release.
 
