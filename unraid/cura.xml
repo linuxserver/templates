@@ -27,7 +27,7 @@
     <Date>2025-12-28</Date>
     <Changes>
 ### 2025-12-28
-- Add Wayland init logic, rebase to Trixie.
+- Add Wayland init logic, rebase to Noble.
 
 ### 2025-07-12
 - Rebase to Selkies, HTTPS IS NOW REQUIRED.
