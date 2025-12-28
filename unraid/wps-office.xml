@@ -24,8 +24,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-wps-office#security for more information.
     </Requires>
-    <Date>2025-07-10</Date>
+    <Date>2025-12-28</Date>
     <Changes>
+### 2025-12-28
+- Add Wayland init logic.
+
 ### 2025-07-10
 - Rebase to Selkies HTTPS IS NOW REQUIRED, merge chinese and english image.
 
