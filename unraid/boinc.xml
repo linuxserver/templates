@@ -24,8 +24,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-boinc#security for more information.
     </Requires>
-    <Date>2025-07-07</Date>
+    <Date>2025-12-28</Date>
     <Changes>
+### 2025-12-28
+- Add Wayland init logic.
+
 ### 2025-07-07
 - Rebase to selkies. Breaking change: HTTPS is now required. Use port 8181 with HTTPS for direct access. Reverse proxies can connect to 8080 over http as long as it&#39;s served over HTTPS to the user.
 
