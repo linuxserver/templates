@@ -23,8 +23,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-orcaslicer#security for more information.
     </Requires>
-    <Date>2025-11-25</Date>
+    <Date>2026-01-01</Date>
     <Changes>
+### 2026-01-01
+- Add wayland init.
+
 ### 2025-11-25
 - Update project repo name.
 
