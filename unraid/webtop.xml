@@ -25,6 +25,12 @@
         <GitHub>https://github.com/linuxserver/docker-webtop/tree/alpine-i3#application-setup</GitHub>
     </Branch>
     <Branch>
+        <Tag>alpine-kde</Tag>
+        <TagDescription>KDE Alpine *Wayland Only</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/alpine-kde#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-webtop/tree/alpine-kde#application-setup</GitHub>
+    </Branch>
+    <Branch>
         <Tag>alpine-mate</Tag>
         <TagDescription>MATE Alpine</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-webtop/tree/alpine-mate#readme</ReadMe>
