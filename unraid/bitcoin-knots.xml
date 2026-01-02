@@ -23,8 +23,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-bitcoin-knots#security for more information.
     </Requires>
-    <Date>2025-09-09</Date>
+    <Date>2026-01-02</Date>
     <Changes>
+### 2026-01-02
+- Add Wayland init logic.
+
 ### 2025-09-09
 - Initial release.
 
