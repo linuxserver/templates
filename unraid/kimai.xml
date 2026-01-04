@@ -27,8 +27,11 @@ JSON API, invoicing, data exports, multi-timer and punch-in punch-out mode, tagg
         This container requires an external application to be run separately.
         We recommend using our [MariaDB](https://github.com/linuxserver/docker-mariadb) container from community applications.
     </Requires>
-    <Date>2025-07-04</Date>
+    <Date>2025-12-28</Date>
     <Changes>
+### 2025-12-28
+- Rebase to Alpine 3.23.
+
 ### 2025-07-04
 - Rebase to Alpine 3.22.
 
