@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/phpmyadmin.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/phpmyadmin-logo.png</Icon>
-    <Date>2025-08-23</Date>
+    <Date>2025-12-28</Date>
     <Changes>
+### 2025-12-28
+- Rebase to Alpine 3.23.
+
 ### 2025-08-23
 - Add support for mTLS. Existing users will need to delete their config.inc.php and restart the container.
 
