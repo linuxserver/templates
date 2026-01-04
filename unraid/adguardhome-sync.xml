@@ -18,8 +18,11 @@
     <Overview>Adguardhome-sync(https://github.com/bakito/adguardhome-sync/) is a tool to synchronize AdGuardHome config to replica instances.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/adguardhome-sync.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2025-07-05</Date>
+    <Date>2025-12-28</Date>
     <Changes>
+### 2025-12-28
+- Rebase to Alpine 3.23.
+
 ### 2025-07-05
 - Rebase to Alpine 3.22.
 
