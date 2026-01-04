@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/healthchecks.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/healthchecks-logo.png</Icon>
-    <Date>2025-07-05</Date>
+    <Date>2025-12-28</Date>
     <Changes>
+### 2025-12-28
+- Rebase to Alpine 3.23.
+
 ### 2025-07-05
 - Rebase to Alpine 3.22.
 
@@ -118,6 +121,7 @@
     <Config Name="WebUI" Target="8000" Default="8000" Mode="tcp" Description="Healthchecks Web UI" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 2525" Target="2525" Default="2525" Mode="tcp" Description="Port for inbound SMTP pings" Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="" Description="A secret key used for cryptographic signing. Will generate a random value if one is not supplied and save it to `/config/local_settings.py`." Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="SITE_ROOT" Target="SITE_ROOT" Default="" Description="The site&#39;s top-level URL and the port it listens to if different than 80 or 443 (e.g., https://healthchecks.example.com:8000)." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="SITE_NAME" Target="SITE_NAME" Default="" Description="The site&#39;s name (e.g., &#34;Example Corp HealthChecks&#34;)." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="SUPERUSER_EMAIL" Target="SUPERUSER_EMAIL" Default="" Description="Superuser email." Type="Variable" Display="always" Required="true" Mask="false"/>
@@ -135,7 +139,6 @@
     <Config Name="INTEGRATIONS_ALLOW_PRIVATE_IPS" Target="INTEGRATIONS_ALLOW_PRIVATE_IPS" Default="" Description="Defaults to False. Set to True to allow integrations to connect to private IP addresses." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PING_EMAIL_DOMAIN" Target="PING_EMAIL_DOMAIN" Default="" Description="The domain to use for generating ping email addresses. Defaults to `localhost`." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="RP_ID" Target="RP_ID" Default="" Description="If using webauthn for 2FA set this to match your Healthchecks domain. Webauthn will only work over https." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="" Description="A secret key used for cryptographic signing. Will generate a random value if one is not supplied and save it to `/config/local_settings.py`." Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="SITE_LOGO_URL" Target="SITE_LOGO_URL" Default="" Description="Full URL to custom site logo." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
