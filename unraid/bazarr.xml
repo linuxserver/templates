@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:6767]/system/status</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/bazarr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bazarr-logo.png</Icon>
-    <Date>2025-07-05</Date>
+    <Date>2025-12-28</Date>
     <Changes>
+### 2025-12-28
+- Rebase to Alpine 3.23.
+
 ### 2025-07-05
 - Rebase to Alpine 3.22.
 
