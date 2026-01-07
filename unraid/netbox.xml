@@ -18,8 +18,11 @@
     <Overview>Netbox(https://github.com/netbox-community/netbox) is an IP address management (IPAM) and data center infrastructure management (DCIM) tool. Initially conceived by the network engineering team at DigitalOcean, NetBox was developed specifically to address the needs of network and infrastructure engineers. It is intended to function as a domain-specific source of truth for network operations.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/netbox.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/netbox-logo.png</Icon>
-    <Date>2024-08-26</Date>
+    <Date>2026-01-05</Date>
     <Changes>
+### 2026-01-05
+- Rebase to Alpine 3.23. Add CSRF_TRUSTED_ORIGINS env settings. Drop support for environments with explicitly disabled IPv6.
+
 ### 2024-08-26
 - Restructure init to allow for plugins as mods.
 
@@ -73,7 +76,7 @@
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="SUPERUSER_EMAIL" Target="SUPERUSER_EMAIL" Default="" Description="Email address for `admin` account" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="SUPERUSER_PASSWORD" Target="SUPERUSER_PASSWORD" Default="" Description="Password for `admin` account" Type="Variable" Display="always" Required="true" Mask="true"/>
-    <Config Name="ALLOWED_HOST" Target="ALLOWED_HOST" Default="" Description="The hostname you will use to access the app (i.e., netbox.example.com)" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="ALLOWED_HOST" Target="ALLOWED_HOST" Default="" Description="The hostname you will use to access the app (e.g., netbox.example.com)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_NAME" Target="DB_NAME" Default="" Description="Database name (default: netbox)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_USER" Target="DB_USER" Default="" Description="Database user" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="" Description="Database password" Type="Variable" Display="always" Required="true" Mask="true"/>
@@ -81,16 +84,18 @@
     <Config Name="DB_PORT" Target="DB_PORT" Default="" Description="Database port (default: 5432)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="REDIS_HOST" Target="REDIS_HOST" Default="" Description="Redis host (default: redis)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="REDIS_PORT" Target="REDIS_PORT" Default="" Description="Redis port number (default: 6379)" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="REDIS_USERNAME" Target="REDIS_USERNAME" Default="" Description="Redis username (default: none)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="REDIS_PASSWORD" Target="REDIS_PASSWORD" Default="" Description="Redis password (default: none)" Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="REDIS_DB_TASK" Target="REDIS_DB_TASK" Default="" Description="Redis database ID for tasks (default: 0)" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="REDIS_DB_CACHE" Target="REDIS_DB_CACHE" Default="" Description="Redis database ID for caching (default: 1)" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="BASE_PATH" Target="BASE_PATH" Default="" Description="The path you will use to access the app (i.e., /netbox, optional, default: none)" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="REMOTE_AUTH_ENABLED" Target="REMOTE_AUTH_ENABLED" Default="" Description="Enable remote authentication (optional, default: False)" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="REMOTE_AUTH_BACKEND" Target="REMOTE_AUTH_BACKEND" Default="" Description="Python path to the custom Django authentication backend to use for external user authentication (optional, default: netbox.authentication.RemoteUserBackend)" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="REMOTE_AUTH_HEADER" Target="REMOTE_AUTH_HEADER" Default="" Description="Name of the HTTP header which informs NetBox of the currently authenticated user. (optional, default: HTTP_REMOTE_USER)" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="REMOTE_AUTH_AUTO_CREATE_USER" Target="REMOTE_AUTH_AUTO_CREATE_USER" Default="" Description="If true, NetBox will automatically create local accounts for users authenticated via a remote service (optional, default: False)" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="REMOTE_AUTH_DEFAULT_GROUPS" Target="REMOTE_AUTH_DEFAULT_GROUPS" Default="" Description="The list of groups to assign a new user account when created using remote authentication (optional, default: )" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="REMOTE_AUTH_DEFAULT_PERMISSIONS" Target="REMOTE_AUTH_DEFAULT_PERMISSIONS" Default="" Description="A mapping of permissions to assign a new user account when created using remote authentication (optional, default: {})" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="BASE_PATH" Target="BASE_PATH" Default="" Description="The path you will use to access the app (i.e., /netbox, default: none)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="CSRF_TRUSTED_ORIGINS" Target="CSRF_TRUSTED_ORIGINS" Default="" Description="List of comma-separated, single quoted, trusted origins. Must include protocol, and port if applicable (default: )" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="REMOTE_AUTH_ENABLED" Target="REMOTE_AUTH_ENABLED" Default="" Description="Enable remote authentication (default: False)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="REMOTE_AUTH_BACKEND" Target="REMOTE_AUTH_BACKEND" Default="" Description="Python path to the custom Django authentication backend to use for external user authentication (default: netbox.authentication.RemoteUserBackend)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="REMOTE_AUTH_HEADER" Target="REMOTE_AUTH_HEADER" Default="" Description="Name of the HTTP header which informs NetBox of the currently authenticated user. (default: HTTP_REMOTE_USER)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="REMOTE_AUTH_AUTO_CREATE_USER" Target="REMOTE_AUTH_AUTO_CREATE_USER" Default="" Description="If true, NetBox will automatically create local accounts for users authenticated via a remote service (default: False)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="REMOTE_AUTH_DEFAULT_GROUPS" Target="REMOTE_AUTH_DEFAULT_GROUPS" Default="" Description="The list of groups to assign a new user account when created using remote authentication (default: )" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="REMOTE_AUTH_DEFAULT_PERMISSIONS" Target="REMOTE_AUTH_DEFAULT_PERMISSIONS" Default="" Description="A mapping of permissions to assign a new user account when created using remote authentication (default: {})" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
