@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8181]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/tautulli.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/tautulli-logo.png</Icon>
-    <Date>2026-01-04</Date>
+    <Date>2026-01-08</Date>
     <Changes>
+### 2026-01-08
+- Revert to Alpine 3.22 due to sqlite bug.
+
 ### 2026-01-04
 - Rebase to Alpine 3.23.
 
