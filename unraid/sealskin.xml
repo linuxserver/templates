@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sealskin.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2025-10-31</Date>
+    <Date>2026-01-08</Date>
     <Changes>
+### 2026-01-08
+- Improve permission fixing.
+
 ### 2025-10-31
 - Initial Release.
 
