@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/pyload-ng.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2025-09-01</Date>
+    <Date>2026-01-09</Date>
     <Changes>
+### 2026-01-09
+- Add gcompat for mini-racer.
+
 ### 2025-09-01
 - Add new dep, libatomic.
 
