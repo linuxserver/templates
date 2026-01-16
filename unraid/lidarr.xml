@@ -35,8 +35,11 @@
     <WebUI>http://[IP]:[PORT:8686]/system/status</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/lidarr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/lidarr-logo.png</Icon>
-    <Date>2025-07-05</Date>
+    <Date>2026-01-15</Date>
     <Changes>
+### 2026-01-15
+- Rebase to Alpine 3.23.
+
 ### 2025-07-05
 - Rebase to Alpine 3.22.
 
