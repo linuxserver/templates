@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sealskin.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2026-01-08</Date>
+    <Date>2026-01-17</Date>
     <Changes>
+### 2026-01-17
+- Update docs to remove network and port requirement, add link to Firefox add on.
+
 ### 2026-01-08
 - Improve permission fixing.
 
@@ -28,8 +31,8 @@
 - Initial Release.
 
     </Changes>
-    <Config Name="WebUI" Target="8000" Default="8000" Mode="tcp" Description="API communication port." Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Port: 8443" Target="8443" Default="8443" Mode="tcp" Description="App session port." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="WebUI" Target="8443" Default="8443" Mode="tcp" Description="HTTPS Sessions and API communication port." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: 8000" Target="8000" Default="8000" Mode="tcp" Description="HTTP Fallback API communication port." Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="All configuration files and metadata for the application." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /storage" Target="/storage" Default="" Mode="rw" Description="All file storage for home directories and ephemeral mounts." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /var/run/docker.sock" Target="/var/run/docker.sock" Default="" Mode="rw" Description="Docker socket, required to spin up application containers." Type="Path" Display="always" Required="true" Mask="false"/>
