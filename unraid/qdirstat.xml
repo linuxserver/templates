@@ -24,8 +24,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-qdirstat#security for more information.
     </Requires>
-    <Date>2025-12-28</Date>
+    <Date>2026-01-18</Date>
     <Changes>
+### 2026-01-18
+- Update build logic for Qt6 and version 2.0.
+
 ### 2025-12-28
 - Add Wayland init logic.
 
