@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/piwigo.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/piwigo-logo.png</Icon>
-    <Date>2025-08-05</Date>
+    <Date>2026-01-04</Date>
     <Changes>
+### 2026-01-04
+- Rebase to Alpine 3.22, always update default theme on startup.
+
 ### 2025-08-05
 - Revert to Alpine 3.21 due to incorrectly stated upstream support for PHP 8.4.
 
