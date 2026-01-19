@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3214]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/manyfold.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/manyfold-logo.png</Icon>
-    <Date>2025-10-08</Date>
+    <Date>2026-01-13</Date>
     <Changes>
+### 2026-01-13
+- Rebase to Alpine 3.23.
+
 ### 2025-10-08
 - Change key init to auto generate and persist.
 
