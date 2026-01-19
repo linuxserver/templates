@@ -27,6 +27,9 @@
     <Date>2025-12-20</Date>
     <Changes>
 ### 2025-12-20
+- Add libusb dep for appimage.
+
+### 2025-12-20
 - Add Wayland init logic.
 
 ### 2025-07-07
