@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sealskin.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2026-01-17</Date>
+    <Date>2026-01-19</Date>
     <Changes>
+### 2026-01-19
+- Fix init race condition.
+
 ### 2026-01-17
 - Update docs to remove network and port requirement, add link to Firefox add on.
 
@@ -36,7 +39,7 @@
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="All configuration files and metadata for the application." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /storage" Target="/storage" Default="" Mode="rw" Description="All file storage for home directories and ephemeral mounts." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /var/run/docker.sock" Target="/var/run/docker.sock" Default="" Mode="rw" Description="Docker socket, required to spin up application containers." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="HOST_URL" Target="HOST_URL" Default="IP|subdomain.doman.com" Description="On initial setup this will be used to fill in the default admin configuration file in the `/config` directory, if unset the string HOST_URL will need to be replaced." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="HOST_URL" Target="HOST_URL" Default="IP or subdomain.doman.com" Description="On initial setup this will be used to fill in the default admin configuration file in the `/config` directory, if unset the string HOST_URL will need to be replaced." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
