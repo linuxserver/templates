@@ -22,7 +22,10 @@
     <Date>2025-07-09</Date>
     <Changes>
 ### 2025-07-09
-- Rebase to Alpine 3.20.
+- Add php84-ldap as dependency.
+
+### 2025-07-09
+- Rebase to Alpine 3.22.
 
 ### 2024-12-03
 - Verify build artifacts with cosign.
