@@ -24,8 +24,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-steam#security for more information.
     </Requires>
-    <Date>2026-01-17</Date>
+    <Date>2026-02-04</Date>
     <Changes>
+### 2026-02-04
+- Add ProtonUp Qt for runtime management and umu-run for custom auto game launching.
+
 ### 2026-01-17
 - Document Nvidia support.
 
