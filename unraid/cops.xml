@@ -50,8 +50,11 @@ If you want to use the OPDS feed don&#39;t forget to specify /feed at the end of
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/cops.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cops-logo.png</Icon>
-    <Date>2025-10-10</Date>
+    <Date>2026-02-08</Date>
     <Changes>
+### 2026-02-08
+- Adding missing php-tokenizer package.
+
 ### 2025-10-10
 - Adding missing icu-data-full package.
 
