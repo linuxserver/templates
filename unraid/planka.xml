@@ -18,8 +18,11 @@
     <Overview>Planka(https://github.com/plankanban/planka/) is an elegant open source project tracking tool.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/planka.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/planka-logo.png</Icon>
-    <Date>2025-01-12</Date>
+    <Date>2026-02-13</Date>
     <Changes>
+### 2026-02-13
+- Rebase to Alpine 3.23. Updates for v2. Users should update `TRUST_PROXY` to use `true`/`false` instead of `1`/`0`.
+
 ### 2025-01-12
 - Rebase to Alpine 3.21.
 
@@ -39,7 +42,8 @@
     <Config Name="DEFAULT_ADMIN_PASSWORD" Target="DEFAULT_ADMIN_PASSWORD" Default="demo" Description="Password for default user." Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="DEFAULT_ADMIN_NAME" Target="DEFAULT_ADMIN_NAME" Default="Demo User" Description="Display name for default user." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="notasecretkey" Description="Session encryption key, recommended 32-64 character alphanumeric." Type="Variable" Display="always" Required="true" Mask="true"/>
-    <Config Name="TRUST_PROXY" Target="TRUST_PROXY" Default="0" Description="Set to `1` to trust upstream proxies if reverse proxying." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="TRUST_PROXY" Target="TRUST_PROXY" Default="false" Description="Set to `true` to trust upstream proxies if reverse proxying." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="DEFAULT_LANGUAGE" Target="DEFAULT_LANGUAGE" Default="en-US" Description="This sets the default language for sending notifications per user (if a user hasn&#39;t selected a language) and per board." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
