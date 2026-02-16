@@ -12,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-overseerr/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/linuxserver/docker-overseerr#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-overseerr#readme</ReadMe>
     <Branch>
@@ -31,6 +32,9 @@
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/overseerr-logo.png</Icon>
     <Date>2025-07-05</Date>
     <Changes>
+### 2025-07-05
+- Rebase to Alpine 3.22.
+
 ### 2025-07-05
 - Rebase to Alpine 3.22.
 
