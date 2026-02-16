@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:5000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/changedetection.io.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2025-07-05</Date>
+    <Date>2026-02-18</Date>
     <Changes>
+### 2026-02-18
+- Rebase to Alpine 3.23.
+
 ### 2025-07-05
 - Rebase to Alpine 3.22.
 
