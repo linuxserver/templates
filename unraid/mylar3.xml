@@ -16,17 +16,17 @@
     <ReadMe>https://github.com/linuxserver/docker-mylar3#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
-        <TagDescription>Stable Mylar3 releases</TagDescription>
+        <TagDescription>Commits to Mylar3 `python3-dev` branch</TagDescription>
     </Branch>
     <Branch>
         <Tag>nightly</Tag>
-        <TagDescription>Commits to Mylar3 `python3-dev` branch</TagDescription>
+        <TagDescription>Commits to Mylar3 `1000papercuts` branch (ubuntu)</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-mylar3/tree/nightly#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-mylar3/tree/nightly#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>unstable</Tag>
-        <TagDescription>Commits to Mylar3 `1000papercuts` branch</TagDescription>
+        <TagDescription>Commits to Mylar3 `1000papercuts` branch (alpine)</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-mylar3/tree/unstable#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-mylar3/tree/unstable#application-setup</GitHub>
     </Branch>
@@ -35,8 +35,11 @@
     <WebUI>http://[IP]:[PORT:8090]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mylar3.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mylar3-logo.png</Icon>
-    <Date>2026-02-05</Date>
+    <Date>2026-02-19</Date>
     <Changes>
+### 2026-02-19
+- Rebase `latest` tag based on commits to upstream `python3-dev` branch. `nightly` will build commits to upstream `1000papercuts` branch. `unstable` tag will also build commits to upstream `1000papercuts` branch, but on alpine 3.23 with python 3.12.
+
 ### 2026-02-05
 - Release `unstable` tag based on commits to upstream `1000papercuts` branch.
 
