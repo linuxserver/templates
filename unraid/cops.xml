@@ -50,8 +50,14 @@ If you want to use the OPDS feed don&#39;t forget to specify /feed at the end of
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/cops.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cops-logo.png</Icon>
-    <Date>2026-02-08</Date>
+    <Date>2026-06-10</Date>
     <Changes>
+### 2026-06-10
+- Existing users should verify: site-confs/default.conf and config/local.php - Update redirect location and use front controller.
+
+### 2026-02-08
+- Existing users should update: site-confs/default.conf - Deny access to all dotfiles.
+
 ### 2026-02-08
 - Adding missing php-tokenizer package.
 
