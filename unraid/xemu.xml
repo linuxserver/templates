@@ -27,6 +27,9 @@
     <Date>2025-12-20</Date>
     <Changes>
 ### 2025-12-20
+- Add libpipewire dep for appimage, pin to v0.8.133.
+
+### 2025-12-20
 - Add libusb dep for appimage.
 
 ### 2025-12-20
