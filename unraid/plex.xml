@@ -19,8 +19,14 @@
     <WebUI>http://[IP]:[PORT:32400]/web/index.html</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/plex.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/plex-logo.png</Icon>
-    <Date>2024-11-04</Date>
+    <Date>2026-03-15</Date>
     <Changes>
+### 2026-03-15
+- Allow TMPDIR to be changed to better support read-only containers
+
+### 2026-03-15
+- Fix initial claim setup on non-root containers
+
 ### 2024-11-04
 - Add Nvidia capability needed for h265
 
