@@ -20,7 +20,7 @@
     </Branch>
     <Branch>
         <Tag>alpine-i3</Tag>
-        <TagDescription>i3 Alpine</TagDescription>
+        <TagDescription>i3 Alpine *Wayland Support</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-webtop/tree/alpine-i3#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-webtop/tree/alpine-i3#application-setup</GitHub>
     </Branch>
@@ -38,13 +38,13 @@
     </Branch>
     <Branch>
         <Tag>arch-i3</Tag>
-        <TagDescription>i3 Arch</TagDescription>
+        <TagDescription>i3 Arch *Wayland Support</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-webtop/tree/arch-i3#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-webtop/tree/arch-i3#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>arch-kde</Tag>
-        <TagDescription>KDE Arch</TagDescription>
+        <TagDescription>KDE Arch *Wayland Support</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-webtop/tree/arch-kde#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-webtop/tree/arch-kde#application-setup</GitHub>
     </Branch>
@@ -62,7 +62,7 @@
     </Branch>
     <Branch>
         <Tag>debian-i3</Tag>
-        <TagDescription>i3 Debian</TagDescription>
+        <TagDescription>i3 Debian *Wayland Support</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-webtop/tree/debian-i3#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-webtop/tree/debian-i3#application-setup</GitHub>
     </Branch>
@@ -104,13 +104,13 @@
     </Branch>
     <Branch>
         <Tag>fedora-i3</Tag>
-        <TagDescription>i3 Fedora</TagDescription>
+        <TagDescription>i3 Fedora *Wayland Support</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-webtop/tree/fedora-i3#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-webtop/tree/fedora-i3#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>fedora-kde</Tag>
-        <TagDescription>KDE Fedora</TagDescription>
+        <TagDescription>KDE Fedora *Wayland Support</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-webtop/tree/fedora-kde#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-webtop/tree/fedora-kde#application-setup</GitHub>
     </Branch>
@@ -128,7 +128,7 @@
     </Branch>
     <Branch>
         <Tag>ubuntu-i3</Tag>
-        <TagDescription>i3 Ubuntu</TagDescription>
+        <TagDescription>i3 Ubuntu *Wayland Support</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-webtop/tree/ubuntu-i3#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-webtop/tree/ubuntu-i3#application-setup</GitHub>
     </Branch>
@@ -162,6 +162,9 @@
     </Requires>
     <Date>2025-12-27</Date>
     <Changes>
+### 2025-12-27
+- Update tags that support Wayland to pass ozone platform for chromium.
+
 ### 2025-12-27
 - Rebase Alpine images to 3.23.
 
