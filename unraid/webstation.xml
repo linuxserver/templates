@@ -24,8 +24,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-webstation#security for more information.
     </Requires>
-    <Date>2026-03-17</Date>
+    <Date>2026-03-28</Date>
     <Changes>
+### 2026-03-28
+- Swap UI to baked in selkies-desktop.
+
 ### 2026-03-17
 - Fix eden ingestion to use self hosted git.
 
