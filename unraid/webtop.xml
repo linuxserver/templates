@@ -160,9 +160,12 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-webtop#security for more information.
     </Requires>
-    <Date>2025-12-27</Date>
+    <Date>2026-03-26</Date>
     <Changes>
-### 2025-12-27
+### 2026-03-26
+- Rebase Fedora images to 44.
+
+### 2026-03-24
 - Update tags that support Wayland to pass ozone platform for chromium.
 
 ### 2025-12-27
