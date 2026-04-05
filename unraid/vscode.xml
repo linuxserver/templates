@@ -24,8 +24,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-vscode#security for more information.
     </Requires>
-    <Date>2026-03-20</Date>
+    <Date>2026-04-04</Date>
     <Changes>
+### 2026-04-04
+- Make Wayland default disable with PIXELFLUX_WAYLAND=false.
+
 ### 2026-03-20
 - Initial release.
 
