@@ -56,7 +56,7 @@
     </Branch>
     <Branch>
         <Tag>arch-xfce</Tag>
-        <TagDescription>XFCE Arch</TagDescription>
+        <TagDescription>XFCE Arch *Wayland Support</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-webtop/tree/arch-xfce#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-webtop/tree/arch-xfce#application-setup</GitHub>
     </Branch>
@@ -134,7 +134,7 @@
     </Branch>
     <Branch>
         <Tag>ubuntu-kde</Tag>
-        <TagDescription>KDE Ubuntu</TagDescription>
+        <TagDescription>KDE Ubuntu *Wayland Only</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-webtop/tree/ubuntu-kde#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-webtop/tree/ubuntu-kde#application-setup</GitHub>
     </Branch>
@@ -146,7 +146,7 @@
     </Branch>
     <Branch>
         <Tag>ubuntu-xfce</Tag>
-        <TagDescription>XFCE Ubuntu</TagDescription>
+        <TagDescription>XFCE Ubuntu *Wayland Support</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-webtop/tree/ubuntu-xfce#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-webtop/tree/ubuntu-xfce#application-setup</GitHub>
     </Branch>
@@ -160,8 +160,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-webtop#security for more information.
     </Requires>
-    <Date>2026-03-26</Date>
+    <Date>2026-04-07</Date>
     <Changes>
+### 2026-04-07
+- Rebase Ubuntu images to Resolute.
+
 ### 2026-03-26
 - Rebase Fedora images to 44.
 
