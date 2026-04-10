@@ -12,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-citron/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/linuxserver/docker-citron#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-citron#readme</ReadMe>
     <Project>https://citron-emu.org/</Project>
