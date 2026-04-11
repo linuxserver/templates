@@ -16,27 +16,24 @@
     <ReadMe>https://github.com/linuxserver/docker-mylar3#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
-        <TagDescription>Commits to Mylar3 `python3-dev` branch</TagDescription>
+        <TagDescription>Stable releases</TagDescription>
     </Branch>
     <Branch>
         <Tag>nightly</Tag>
-        <TagDescription>Commits to Mylar3 `1000papercuts` branch (ubuntu)</TagDescription>
+        <TagDescription>Commits to nightly branch</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-mylar3/tree/nightly#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-mylar3/tree/nightly#application-setup</GitHub>
     </Branch>
-    <Branch>
-        <Tag>unstable</Tag>
-        <TagDescription>Commits to Mylar3 `1000papercuts` branch (alpine)</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-mylar3/tree/unstable#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-mylar3/tree/unstable#application-setup</GitHub>
-    </Branch>
-    <Project>https://github.com/mylar3/mylar3</Project>
-    <Overview>Mylar3(https://github.com/mylar3/mylar3) is an automated Comic Book downloader (cbr/cbz) for use with NZB and torrents written in python. It supports SABnzbd, NZBGET, and many torrent clients in addition to DDL.</Overview>
+    <Project>https://github.com/MylarComics/mylar3</Project>
+    <Overview>Mylar3(https://github.com/MylarComics/mylar3) is an automated Comic Book downloader (cbr/cbz) for use with NZB and torrents written in python. It supports SABnzbd, NZBGET, and many torrent clients in addition to DDL.</Overview>
     <WebUI>http://[IP]:[PORT:8090]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mylar3.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mylar3-logo.png</Icon>
-    <Date>2026-02-19</Date>
+    <Date>2026-04-06</Date>
     <Changes>
+### 2026-04-06
+- Switch upstream to maintained fork at https://github.com/MylarComics/mylar3. Drop `unstable` tag.
+
 ### 2026-02-19
 - Rebase `latest` tag based on commits to upstream `python3-dev` branch. `nightly` will build commits to upstream `1000papercuts` branch. `unstable` tag will also build commits to upstream `1000papercuts` branch, but on alpine 3.23 with python 3.12.
 
