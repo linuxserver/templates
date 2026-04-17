@@ -12,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-rdesktop/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/linuxserver/docker-rdesktop#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-rdesktop#readme</ReadMe>
     <Branch>
