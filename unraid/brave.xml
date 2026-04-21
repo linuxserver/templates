@@ -14,6 +14,16 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-brave#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-brave#readme</ReadMe>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Stable Brave releases</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>origin</Tag>
+        <TagDescription>Brave Origin nightly releases</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-brave/tree/origin#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-brave/tree/origin#application-setup</GitHub>
+    </Branch>
     <Project>https://brave.com/</Project>
     <Overview>The Brave browser(https://brave.com/) is a fast, private and secure web browser for PC, Mac and mobile.</Overview>
     <ExtraParams>--shm-size=1gb</ExtraParams>
@@ -24,8 +34,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-brave#security for more information.
     </Requires>
-    <Date>2026-03-31</Date>
+    <Date>2026-04-20</Date>
     <Changes>
+### 2026-04-20
+- Added Brave Origin as origin tag.
+
 ### 2026-03-31
 - Make Wayland default disable with PIXELFLUX_WAYLAND=false.
 
