@@ -24,8 +24,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-bambustudio#security for more information.
     </Requires>
-    <Date>2026-04-11</Date>
+    <Date>2026-04-29</Date>
     <Changes>
+### 2026-04-29
+- Rebase to resolute.
+
 ### 2026-04-11
 - Ingest from pre-release, make Wayland default disable with PIXELFLUX_WAYLAND=false.
 
