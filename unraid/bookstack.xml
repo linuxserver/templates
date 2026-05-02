@@ -14,16 +14,19 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-bookstack#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-bookstack#readme</ReadMe>
-    <Project>https://github.com/BookStackApp/BookStack</Project>
-    <Overview>Bookstack(https://github.com/BookStackApp/BookStack) is a free and open source Wiki designed for creating beautiful documentation. Featuring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease.
+    <Project>https://codeberg.org/bookstack/bookstack</Project>
+    <Overview>Bookstack(https://codeberg.org/bookstack/bookstack) is a free and open source Wiki designed for creating beautiful documentation. Featuring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease.
 
 Powered by SQL and including a Markdown editor for those who prefer it, BookStack is geared towards making documentation more of a pleasure than a chore.
 
 For more information on BookStack visit their website and check it out: https://www.bookstackapp.com</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/bookstack.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bookstack-logo.png</Icon>
-    <Date>2025-12-28</Date>
+    <Date>2026-04-29</Date>
     <Changes>
+### 2026-04-29
+- Switch to pulling releases from Codeberg(https://codeberg.org/bookstack/bookstack).
+
 ### 2025-12-28
 - Rebase to Alpine 3.23.
 
