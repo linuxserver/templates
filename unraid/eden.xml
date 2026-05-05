@@ -24,8 +24,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-eden#security for more information.
     </Requires>
-    <Date>2026-03-17</Date>
+    <Date>2026-05-05</Date>
     <Changes>
+### 2026-05-05
+- Rebase to Debian Trixie, build Eden from source, remove arm64 tag.
+
 ### 2026-03-17
 - Ingest releases from self hosted git.
 
