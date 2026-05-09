@@ -24,8 +24,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-xemu#security for more information.
     </Requires>
-    <Date>2025-12-20</Date>
+    <Date>2026-05-09</Date>
     <Changes>
+### 2026-05-09
+- Rebase to resolute, Pin to current pre-release until next release is cut for audio support.
+
 ### 2025-12-20
 - Add libpipewire dep for appimage, pin to v0.8.133.
 
