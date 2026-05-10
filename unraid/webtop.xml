@@ -85,24 +85,6 @@
         <GitHub>https://github.com/linuxserver/docker-webtop/tree/debian-xfce#application-setup</GitHub>
     </Branch>
     <Branch>
-        <Tag>el-i3</Tag>
-        <TagDescription>i3 Enterprise Linux</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/el-i3#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-webtop/tree/el-i3#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>el-mate</Tag>
-        <TagDescription>MATE Enterprise Linux</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/el-mate#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-webtop/tree/el-mate#application-setup</GitHub>
-    </Branch>
-    <Branch>
-        <Tag>el-xfce</Tag>
-        <TagDescription>XFCE Enterprise Linux</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/el-xfce#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-webtop/tree/el-xfce#application-setup</GitHub>
-    </Branch>
-    <Branch>
         <Tag>fedora-i3</Tag>
         <TagDescription>i3 Fedora *Wayland Support</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-webtop/tree/fedora-i3#readme</ReadMe>
@@ -160,8 +142,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-webtop#security for more information.
     </Requires>
-    <Date>2026-04-07</Date>
+    <Date>2026-05-07</Date>
     <Changes>
+### 2026-05-07
+- Deprecate Enterprise Linux tags.
+
 ### 2026-04-07
 - Rebase Ubuntu images to Resolute.
 
