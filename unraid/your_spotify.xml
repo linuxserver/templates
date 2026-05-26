@@ -53,6 +53,7 @@
     <Config Name="APP_URL" Target="APP_URL" Default="http://localhost" Description="The protocol and hostname where the app will be accessed." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="SPOTIFY_PUBLIC" Target="SPOTIFY_PUBLIC" Default="" Description="Your Spotify application client ID." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="SPOTIFY_SECRET" Target="SPOTIFY_SECRET" Default="" Description="Your Spotify application secret." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="SPOTIFY_API_DELAY_MS" Target="SPOTIFY_API_DELAY_MS" Default="2000" Description="Minimum delay in milliseconds between each spotify request. Can help with hitting 429 when importing data." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="CORS" Target="CORS" Default="http://localhost:80,https://localhost:443" Description="Allowed CORS sources, set to `all` to allow any source." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="MONGO_ENDPOINT" Target="MONGO_ENDPOINT" Default="mongodb://mongo:27017/your_spotify" Description="Set mongodb endpoint address/port." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
