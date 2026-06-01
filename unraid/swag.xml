@@ -19,8 +19,11 @@
     <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/swag.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2026-01-23</Date>
+    <Date>2026-06-01</Date>
     <Changes>
+### 2026-06-01
+- Remove obsolete old cert check logic.
+
 ### 2026-01-23
 - Reorder init to fix proxy conf version checks.
 
