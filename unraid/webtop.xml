@@ -16,7 +16,7 @@
     <ReadMe>https://github.com/linuxserver/docker-webtop#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
-        <TagDescription>XFCE Alpine</TagDescription>
+        <TagDescription>XFCE Alpine *Wayland Support</TagDescription>
     </Branch>
     <Branch>
         <Tag>alpine-i3</Tag>
@@ -142,8 +142,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-webtop#security for more information.
     </Requires>
-    <Date>2026-05-07</Date>
+    <Date>2026-06-10</Date>
     <Changes>
+### 2026-06-10
+- Rebase Alpine images to 3.24.
+
 ### 2026-05-07
 - Deprecate Enterprise Linux tags.
 
