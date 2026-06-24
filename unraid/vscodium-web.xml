@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8000]/?tkn=lsio</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/vscodium-web.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2026-02-28</Date>
+    <Date>2026-06-24</Date>
     <Changes>
+### 2026-06-24
+- Temporarily disable RISCV build due to ci issues.
+
 ### 2026-02-28
 - Add RISCV build.
 
