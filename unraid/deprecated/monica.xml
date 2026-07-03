@@ -12,14 +12,18 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-monica/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/linuxserver/docker-monica#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-monica#readme</ReadMe>
     <Project>https://github.com/monicahq/monica</Project>
     <Overview>Monica(https://github.com/monicahq/monica) is an open source personal relationship management system, that lets you document your life.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/monica.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/monica-logo.png</Icon>
-    <Date>2024-12-21</Date>
+    <Date>2026-07-03</Date>
     <Changes>
+### 2026-07-03
+- Deprecate due to lack of upstream development.
+
 ### 2024-12-21
 - Rebase to Alpine 3.21.
 
