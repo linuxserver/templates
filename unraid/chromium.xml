@@ -14,16 +14,6 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/linuxserver/docker-chromium#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-chromium#readme</ReadMe>
-    <Branch>
-        <Tag>latest</Tag>
-        <TagDescription>Latest releases using the selkies base</TagDescription>
-    </Branch>
-    <Branch>
-        <Tag>kasm</Tag>
-        <TagDescription>Latest releases using the kasmvnc base</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-chromium/tree/kasm#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-chromium/tree/kasm#application-setup</GitHub>
-    </Branch>
     <Project>https://www.chromium.org/chromium-projects/</Project>
     <Overview>Chromium(https://www.chromium.org/chromium-projects/) is an open-source browser project that aims to build a safer, faster, and more stable way for all users to experience the web.</Overview>
     <ExtraParams>--shm-size=1gb</ExtraParams>
@@ -34,8 +24,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-chromium#security for more information.
     </Requires>
-    <Date>2026-03-31</Date>
+    <Date>2026-07-04</Date>
     <Changes>
+### 2026-07-04
+- Deprecate Kasm branch.
+
 ### 2026-03-31
 - Make Wayland default disable with PIXELFLUX_WAYLAND=false.
 
