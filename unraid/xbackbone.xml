@@ -19,8 +19,14 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/xbackbone.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/xbackbone-logo.png</Icon>
-    <Date>2024-05-27</Date>
+    <Date>2026-07-05</Date>
     <Changes>
+### 2026-07-05
+- Rebase to Alpine 3.24.
+
+### 2025-07-09
+- Rebase to Alpine 3.22.
+
 ### 2024-05-27
 - Rebase to Alpine 3.20. Existing users should update their nginx confs to avoid http2 deprecation warnings.
 
