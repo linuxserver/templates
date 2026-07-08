@@ -27,8 +27,11 @@ JSON API, invoicing, data exports, multi-timer and punch-in punch-out mode, tagg
         This container requires an external application to be run separately.
         We recommend using our [MariaDB](https://github.com/linuxserver/docker-mariadb) container from community applications.
     </Requires>
-    <Date>2025-12-28</Date>
+    <Date>2027-07-04</Date>
     <Changes>
+### 2027-07-04
+- Rebase to Alpine 3.24.
+
 ### 2025-12-28
 - Rebase to Alpine 3.23.
 
@@ -63,7 +66,9 @@ JSON API, invoicing, data exports, multi-timer and punch-in punch-out mode, tagg
     <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="http gui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: 443" Target="443" Default="443" Mode="tcp" Description="https gui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="APP_SECRET" Target="APP_SECRET" Default="" Description="Random string used for session encryption. Generate using e.g. `openssl rand -hex 32`." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="mysql://your_db_user:your_db_pass@your_db_host:3306/your_db_name?charset=your_db_charsetandserverVersion=your_db_version" Description="Configure your database connection, see Application Setup instructions." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="TRUSTED_HOSTS" Target="TRUSTED_HOSTS" Default="kimai.example.com" Description="Domain or IP you will be using to access Kimai. Can be a regex like `localhost|127.0.0.1|kimai.example.com`" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="TRUSTED_PROXIES" Target="TRUSTED_PROXIES" Default="127.0.0.1/32" Description="If behind a reverse proxy set this to its IP or network CIDR so that Kimai trusts its headers." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
