@@ -18,8 +18,11 @@
     <Overview>Planka(https://github.com/plankanban/planka/) is an elegant open source project tracking tool.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/planka.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/planka-logo.png</Icon>
-    <Date>2026-02-13</Date>
+    <Date>2026-07-05</Date>
     <Changes>
+### 2026-07-05
+- Rebase to Alpine 3.24.
+
 ### 2026-02-13
 - Rebase to Alpine 3.23. Updates for v2. Users should update `TRUST_PROXY` to use `true`/`false` instead of `1`/`0`.
 
