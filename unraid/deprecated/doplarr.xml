@@ -12,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-doplarr/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/linuxserver/docker-doplarr#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-doplarr#readme</ReadMe>
     <Project>https://github.com/kiranshila/Doplarr</Project>
