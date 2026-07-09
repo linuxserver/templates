@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-doplarr_rs/blob/main/readme-vars.yml -->
+<Container version="2">
+    <Name>doplarr_rs</Name>
+    <Repository>lscr.io/linuxserver/doplarr_rs</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/doplarr_rs</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-doplarr_rs/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-doplarr_rs#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-doplarr_rs#readme</ReadMe>
+    <Project>https://github.com/activexray/doplarr_rs</Project>
+    <Overview>Doplarr_rs(https://github.com/activexray/doplarr_rs) is a Discord bot for requesting media through *arr backends, written in Rust.</Overview>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/doplarr_rs.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/doplarr_rs-logo.png</Icon>
+    <Date>2026-06-22</Date>
+    <Changes>
+### 2026-06-22
+- Initial Release.
+
+    </Changes>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files" Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
