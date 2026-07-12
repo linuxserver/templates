@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mstream.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mstream-logo.png</Icon>
-    <Date>2026-04-24</Date>
+    <Date>2026-07-08</Date>
     <Changes>
+### 2026-07-08
+- Rebase to Alpine 3.24. Use the distro onnxruntime so the discovery/recommendation features work on musl.
+
 ### 2026-04-24
 - Make waveform data persistent.
 
