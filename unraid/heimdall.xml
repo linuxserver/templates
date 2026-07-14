@@ -33,8 +33,11 @@ Why not use it as your browser start page? It even has the ability to include a 
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/heimdall.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/heimdall-logo.png</Icon>
-    <Date>2025-07-20</Date>
+    <Date>2026-07-14</Date>
     <Changes>
+### 2026-07-14
+- Rebase to Alpine 3.24
+
 ### 2025-07-20
 - Rebase to Alpine 3.22, enable PHP environment passthrough.
 
