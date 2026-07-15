@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8088]/</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/synclounge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/synclounge-logo.png</Icon>
-    <Date>2024-12-19</Date>
+    <Date>2026-07-15</Date>
     <Changes>
+### 2026-07-15
+- Rebase to Alpine 3.24.
+
 ### 2024-12-19
 - Add support for read-only and non-root operation.
 
