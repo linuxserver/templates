@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:9000]/test</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/ldap-auth.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ldap-auth-logo.png</Icon>
-    <Date>2024-12-25</Date>
+    <Date>2026-07-17</Date>
     <Changes>
+### 2026-07-17
+- Rebase to Alpine 3.24.
+
 ### 2024-12-25
 - Add `legacy-cgi`. Fix fernet key storage.
 
