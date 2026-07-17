@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:8080]/pwndrop</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/pwndrop.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pwndrop-logo.png</Icon>
-    <Date>2024-06-04</Date>
+    <Date>2026-07-17</Date>
     <Changes>
+### 2026-07-17
+- Rebase to Alpine 3.24.
+
 ### 2024-06-04
 - Rebase to Alpine 3.20.
 
