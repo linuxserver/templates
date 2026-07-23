@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/dokuwiki.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/dokuwiki-logo.png</Icon>
-    <Date>2025-07-05</Date>
+    <Date>2026-07-14</Date>
     <Changes>
+### 2026-07-14
+- Rebase to Alpine 3.24, add php-tokenizer.
+
 ### 2025-07-05
 - Rebase to Alpine 3.22.
 
