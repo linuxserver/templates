@@ -29,13 +29,16 @@
     <WebUI>http://[IP]:[PORT:8096]</WebUI>
     <TemplateURL>false</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/jellyfin-logo.png</Icon>
-    <Date>2026-03-02</Date>
+    <Date>2026-07-14</Date>
     <Changes>
+### 2026-07-14
+- Rebase to Ubuntu Resolute.
+
 ### 2026-03-02
 - Add support for IPv6 OOTB.
 
 ### 2025-10-20
-- Add libjemalloc as runtime dep.
+- Add libjemalloc2 as runtime dep.
 
 ### 2024-10-06
 - Fix fontconfig cache path.
