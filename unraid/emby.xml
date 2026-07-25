@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8096]</WebUI>
     <TemplateURL>false</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/emby-logo.png</Icon>
-    <Date>2026-01-12</Date>
+    <Date>2026-07-14</Date>
     <Changes>
+### 2026-07-14
+- Rebase to Ubuntu Resolute.
+
 ### 2026-01-12
 - Set home to /config.
 
@@ -108,7 +111,6 @@
     <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
     <Config Name="/dev/dri" Default="/dev/dri" Description="Only needed if you want to use your Intel or AMD GPU for hardware accelerated video encoding (vaapi)." Type="Device" Display="always" Required="false" Mask="false"/>
-    <Config Name="/dev/vchiq" Default="/dev/vchiq" Description="Only needed if you want to use your Raspberry Pi OpenMax video encoding (Bellagio)." Type="Device" Display="always" Required="false" Mask="false"/>
     <Config Name="/dev/video10" Default="/dev/video10" Description="Only needed if you want to use your Raspberry Pi V4L2 video encoding." Type="Device" Display="always" Required="false" Mask="false"/>
     <Config Name="/dev/video11" Default="/dev/video11" Description="Only needed if you want to use your Raspberry Pi V4L2 video encoding." Type="Device" Display="always" Required="false" Mask="false"/>
     <Config Name="/dev/video12" Default="/dev/video12" Description="Only needed if you want to use your Raspberry Pi V4L2 video encoding." Type="Device" Display="always" Required="false" Mask="false"/>
