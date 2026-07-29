@@ -21,8 +21,11 @@ No Flash, No Java, No Websocket, No Bullshit.</Overview>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/librespeed.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/librespeed-logo.png</Icon>
-    <Date>2025-07-27</Date>
+    <Date>2026-07-29</Date>
     <Changes>
+### 2026-07-29
+- Rebase to Alpine 3.24. Enable new UI with additional settings files available in the config folder.
+
 ### 2025-07-27
 - Rebase to Alpine 3.22.
 
