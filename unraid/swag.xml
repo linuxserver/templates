@@ -19,8 +19,11 @@
     <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/swag.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2026-07-10</Date>
+    <Date>2026-07-19</Date>
     <Changes>
+### 2026-07-19
+- Rebase to Alpine 3.24 with PHP 8.5.
+
 ### 2026-07-10
 - Add support for Let&#39;s Encrypt cert profiles. Run certbot twice daily with a random delay.
 
