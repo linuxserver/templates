@@ -18,8 +18,11 @@
     <Overview>Piper(https://github.com/rhasspy/wyoming-piper) is a fast, local neural text to speech system that sounds great and is optimized for the Raspberry Pi 4. This container provides a Wyoming protocol server for Piper.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/piper.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/piper-logo.png</Icon>
-    <Date>2025-08-29</Date>
+    <Date>2026-07-14</Date>
     <Changes>
+### 2026-07-14
+- Rebase to Ubuntu Resolute.
+
 ### 2025-08-29
 - Add support for local only mode.
 
