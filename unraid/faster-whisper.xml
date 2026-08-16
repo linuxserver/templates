@@ -34,8 +34,11 @@
     <Overview>Faster-whisper(https://github.com/SYSTRAN/faster-whisper) is a reimplementation of OpenAI&#39;s Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This container provides a Wyoming protocol server for faster-whisper.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/faster-whisper.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2026-01-26</Date>
+    <Date>2026-08-16</Date>
     <Changes>
+### 2026-08-16
+- Rebase to Ubuntu Resolute.
+
 ### 2026-01-26
 - Default to `auto` for model and language if not set.
 
