@@ -24,8 +24,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-webstation#security for more information.
     </Requires>
-    <Date>2026-08-13</Date>
+    <Date>2026-08-21</Date>
     <Changes>
+### 2026-08-21
+- Add Xenia Edge emulator.
+
 ### 2026-08-13
 - Add Azahar emulator.
 
