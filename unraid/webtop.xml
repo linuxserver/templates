@@ -132,6 +132,12 @@
         <ReadMe>https://github.com/linuxserver/docker-webtop/tree/ubuntu-xfce#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-webtop/tree/ubuntu-xfce#application-setup</GitHub>
     </Branch>
+    <Branch>
+        <Tag>dev</Tag>
+        <TagDescription>KDE Ubuntu *Current Selkies Development Head</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/dev#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-webtop/tree/dev#application-setup</GitHub>
+    </Branch>
     <Project>https://github.com/linuxserver/docker-webtop</Project>
     <Overview>Webtop(https://github.com/linuxserver/docker-webtop) - Alpine, Ubuntu, Fedora, and Arch based containers containing full desktop environments in officially supported flavors accessible via any modern web browser.</Overview>
     <ExtraParams>--shm-size=1gb</ExtraParams>
