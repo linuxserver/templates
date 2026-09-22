@@ -25,10 +25,13 @@
     <WebUI>http://[IP]:[PORT:8443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/code-server.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/code-server-logo.png</Icon>
-    <Date>2026-05-17</Date>
+    <Date>2026-09-20</Date>
     <Changes>
+### 2026-09-20
+- Add fallback for legacy or misconfigured systems without IPv6 support.
+
 ### 2026-05-17
-- Let server listen on both ipv4 and ipv6 even when running container as root.
+- Fix container only listening on IPv6 when running non-root.
 
 ### 2025-08-10
 - Let server listen on both ipv4 and ipv6.
