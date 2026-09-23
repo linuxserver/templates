@@ -16,7 +16,7 @@
     <ReadMe>https://github.com/linuxserver/docker-steam#readme</ReadMe>
     <Project>https://store.steampowered.com/</Project>
     <Overview>Steam(https://store.steampowered.com/) is the ultimate destination for playing, discussing, and creating games.</Overview>
-    <ExtraParams>--shm-size=1gb --security-opt seccomp=unconfined</ExtraParams>
+    <ExtraParams>--shm-size=1gb</ExtraParams>
     <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/steam.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/steam-logo.png</Icon>
@@ -24,8 +24,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-steam#security for more information.
     </Requires>
-    <Date>2026-02-04</Date>
+    <Date>2026-09-12</Date>
     <Changes>
+### 2026-09-12
+- Make seccomp and apparmor unconfined optional with proot-bwrap.
+
 ### 2026-02-04
 - Add ProtonUp Qt for runtime management and umu-run for custom auto game launching.
 
