@@ -116,9 +116,15 @@
     </Branch>
     <Branch>
         <Tag>ubuntu-kde</Tag>
-        <TagDescription>KDE Ubuntu *Wayland Only</TagDescription>
+        <TagDescription>KDE Ubuntu *Wayland Support</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-webtop/tree/ubuntu-kde#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-webtop/tree/ubuntu-kde#application-setup</GitHub>
+    </Branch>
+    <Branch>
+        <Tag>ubuntu-lxqt</Tag>
+        <TagDescription>KDE LXQt *Wayland Support</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/ubuntu-lxqt#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-webtop/tree/ubuntu-lxqt#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>ubuntu-mate</Tag>
@@ -148,8 +154,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-webtop#security for more information.
     </Requires>
-    <Date>2026-06-10</Date>
+    <Date>2026-09-21</Date>
     <Changes>
+### 2026-09-21
+- Updates for Selkies v2, add x11 init for ubuntu-kde, show ubuntu-lxqt branch.
+
 ### 2026-06-10
 - Rebase Alpine images to 3.24.
 
