@@ -23,8 +23,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-scummvm#security for more information.
     </Requires>
-    <Date>2026-06-20</Date>
+    <Date>2026-09-22</Date>
     <Changes>
+### 2026-09-22
+- Update for Selkies v2, default to X11 for cursor.
+
 ### 2026-06-20
 - Rebase to Debian Trixie, make Wayland default disable with PIXELFLUX_WAYLAND=false.
 
