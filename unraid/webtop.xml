@@ -122,7 +122,7 @@
     </Branch>
     <Branch>
         <Tag>ubuntu-lxqt</Tag>
-        <TagDescription>KDE LXQt *Wayland Support</TagDescription>
+        <TagDescription>LXQt Ubuntu *Wayland Support</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-webtop/tree/ubuntu-lxqt#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-webtop/tree/ubuntu-lxqt#application-setup</GitHub>
     </Branch>
