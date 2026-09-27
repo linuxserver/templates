@@ -34,8 +34,11 @@
     <WebUI>http://[IP]:[PORT:8112]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/deluge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/deluge-logo.png</Icon>
-    <Date>2026-04-02</Date>
+    <Date>2026-09-27</Date>
     <Changes>
+### 2026-09-27
+- Pin libtorrent to 2.0.13 due to deprecated function. Fix cron for GeoIP updates.
+
 ### 2026-04-02
 - Install from pypi due to Alpine geoip package deprecation.
 
