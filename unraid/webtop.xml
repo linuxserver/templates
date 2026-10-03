@@ -154,8 +154,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-webtop#security for more information.
     </Requires>
-    <Date>2026-09-21</Date>
+    <Date>2026-10-02</Date>
     <Changes>
+### 2026-10-02
+- Quality of life upgrades for KDE, MATE, and Xfce. Install base packages for flavors initialize KDE sessions properly.
+
 ### 2026-09-21
 - Updates for Selkies v2, add x11 init for ubuntu-kde, show ubuntu-lxqt branch.
 
