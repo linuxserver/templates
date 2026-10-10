@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/linuxserver/docker-audiosilo/blob/main/readme-vars.yml -->
+<Container version="2">
+    <Name>audiosilo</Name>
+    <Repository>lscr.io/linuxserver/audiosilo</Repository>
+    <Registry>https://github.com/orgs/linuxserver/packages/container/package/audiosilo</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/linuxserver/docker-audiosilo/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/linuxserver/docker-audiosilo#application-setup</GitHub>
+    <ReadMe>https://github.com/linuxserver/docker-audiosilo#readme</ReadMe>
+    <Project>https://audiosilo.app</Project>
+    <Overview>AudioSilo(https://audiosilo.app) is a self-hosted audiobook server. Point it at your audiobook folders and listen from the built-in web player or the AudioSilo app for iOS, with listening progress synced across devices.</Overview>
+    <WebUI>https://[IP]:[PORT:8080]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/audiosilo.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/audiosilo-logo.png</Icon>
+    <Date>2026-10-09</Date>
+    <Changes>
+### 2026-10-09
+- Initial Release.
+
+    </Changes>
+    <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="Web player, admin console and the API the apps connect to." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Persistent config files, database, backups and TLS certificates." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Audiobooks" Target="/audiobooks" Default="" Mode="ro" Description="Audiobooks location, read-only (the server never writes to your books). Add it as a library in the admin console." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
