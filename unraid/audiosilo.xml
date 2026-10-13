@@ -15,7 +15,7 @@
     <GitHub>https://github.com/linuxserver/docker-audiosilo#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-audiosilo#readme</ReadMe>
     <Project>https://audiosilo.app</Project>
-    <Overview>AudioSilo(https://audiosilo.app) is a self-hosted audiobook server. Point it at your audiobook folders and listen from the built-in web player or the AudioSilo app for iOS, with listening progress synced across devices.</Overview>
+    <Overview>AudioSilo(https://audiosilo.app) is a self-hosted audiobook server. Point it at your audiobook folders and listen from the built-in web player or the AudioSilo apps for iOS and Android, with listening progress synced across devices.</Overview>
     <WebUI>https://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/audiosilo.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/audiosilo-logo.png</Icon>
