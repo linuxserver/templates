@@ -37,8 +37,11 @@ Where are your photos and documents? With Nextcloud you pick a server of your ch
     <WebUI>https://[IP]:[PORT:443]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/nextcloud.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nextcloud-logo.png</Icon>
-    <Date>2025-07-10</Date>
+    <Date>2026-10-14</Date>
     <Changes>
+### 2026-10-14
+- Rebase to Alpine 3.24 with php 8.5. Tweak opcache settings according to upstream docs. Import upstream release notes in Github releases.
+
 ### 2025-07-10
 - Rebase to Alpine 3.22.
 
