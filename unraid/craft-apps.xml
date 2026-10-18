@@ -15,7 +15,7 @@
     <GitHub>https://github.com/linuxserver/docker-craft-apps#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-craft-apps#readme</ReadMe>
     <Project>https://getartcraft.com/</Project>
-    <Overview>ArtCraft(https://getartcraft.com/) is a suite of open source creative applications written in Rust. This image bundles PhotoCraft (image editor), VectorCraft (vector illustration), FilmCraft (video editor), LightCraft (photo library and raw developer), PdfCraft (PDF workbench), EffectCraft (motion graphics and VFX compositor) and DesignCraft (page layout and publishing) in a single desktop.</Overview>
+    <Overview>ArtCraft(https://getartcraft.com/) is a suite of open source creative applications written in Rust. This image bundles PhotoCraft (image editor), VectorCraft (vector illustration), FilmCraft (video editor), LightCraft (photo library and raw developer), PdfCraft (PDF workbench), EffectCraft (motion graphics and VFX compositor), DesignCraft (page layout and publishing) and FigCraft (interface design and prototyping) in a single desktop.</Overview>
     <ExtraParams>--shm-size=1gb</ExtraParams>
     <WebUI>https://[IP]:[PORT:3001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/craft-apps.xml</TemplateURL>
@@ -24,8 +24,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-craft-apps#security for more information.
     </Requires>
-    <Date>2026-10-11</Date>
+    <Date>2026-10-18</Date>
     <Changes>
+### 2026-10-18
+- Add FigCraft.
+
 ### 2026-10-11
 - Initial release.
 
