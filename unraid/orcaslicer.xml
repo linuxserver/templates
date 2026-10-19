@@ -23,8 +23,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-orcaslicer#security for more information.
     </Requires>
-    <Date>2026-06-20</Date>
+    <Date>2026-10-18</Date>
     <Changes>
+### 2026-10-18
+- Force OrcaSlicer to use the X11 GDK backend to fix UI rendering issues under Wayland.
+
 ### 2026-06-20
 - Add aarch64 platform.
 
