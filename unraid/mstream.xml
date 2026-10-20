@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/mstream.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mstream-logo.png</Icon>
-    <Date>2026-07-08</Date>
+    <Date>2026-08-31</Date>
     <Changes>
+### 2026-08-31
+- Bake the p2p discovery sidecar into the image at build time (manifest-pinned, sha256-verified) so discovery works without runtime egress to GitHub.
+
 ### 2026-07-08
 - Rebase to Alpine 3.24. Use the distro onnxruntime so the discovery/recommendation features work on musl.
 
