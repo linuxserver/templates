@@ -29,8 +29,11 @@
     <WebUI>http://[IP]:[PORT:8989]/system/status</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/sonarr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sonarr-logo.png</Icon>
-    <Date>2026-10-12</Date>
+    <Date>2026-10-19</Date>
     <Changes>
+### 2026-10-19
+- Add krb5-libs for better postgresql support.
+
 ### 2026-10-12
 - Update `develop` branch to v5. New v5 installs will write initial credentials to container log.
 
