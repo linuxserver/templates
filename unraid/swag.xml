@@ -19,8 +19,11 @@
     <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/swag.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2026-09-09</Date>
+    <Date>2026-10-20</Date>
     <Changes>
+### 2026-10-20
+- Existing users should update:(https://github.com/linuxserver/docker-swag/blob/master/README.md#updating-configs) proxy.conf, authelia-server.conf, authentik-server.conf, tinyauth-server.conf - Update Nginx configuration to replace $http_host with $host$is_request_port$request_port for better compatibility.
+
 ### 2026-09-09
 - Use new X-Tinyauth-Location header in Tinyauth locations and remove duplicate auth module headers.
 
