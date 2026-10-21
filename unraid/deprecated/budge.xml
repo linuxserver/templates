@@ -12,6 +12,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/linuxserver/docker-budge/issues/new/choose</Support>
     <Shell>bash</Shell>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/linuxserver/docker-budge#application-setup</GitHub>
     <ReadMe>https://github.com/linuxserver/docker-budge#readme</ReadMe>
     <Project>https://github.com/linuxserver/budge</Project>
@@ -19,8 +20,11 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/budge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png</Icon>
-    <Date>2024-06-06</Date>
+    <Date>2026-10-21</Date>
     <Changes>
+### 2026-10-21
+- Deprecate.
+
 ### 2024-06-06
 - Rebase to Alpine 3.20. Existing users should update their nginx confs to avoid http2 deprecation warnings.
 
