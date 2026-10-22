@@ -44,7 +44,7 @@
     </Branch>
     <Branch>
         <Tag>arch-kde</Tag>
-        <TagDescription>KDE Arch *Wayland Support</TagDescription>
+        <TagDescription>KDE Arch *Wayland Only</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-webtop/tree/arch-kde#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-webtop/tree/arch-kde#application-setup</GitHub>
     </Branch>
