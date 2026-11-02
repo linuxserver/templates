@@ -24,8 +24,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-pelorus#security for more information.
     </Requires>
-    <Date>2026-07-19</Date>
+    <Date>2026-11-02</Date>
     <Changes>
+### 2026-11-02
+- Drop sudo requirement, improve CPU only rendering performance when no GPU is present.
+
 ### 2026-07-19
 - Initial release.
 
