@@ -23,8 +23,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-lm-studio#security for more information.
     </Requires>
-    <Date>2026-06-22</Date>
+    <Date>2026-11-02</Date>
     <Changes>
+### 2026-11-02
+- Update OpenCode to v2, replace opencode-lmstudio plugin with opencode-models-discovery, migrate stock configs.
+
 ### 2026-06-22
 - Initial release.
 
