@@ -19,8 +19,11 @@
     <WebUI>http://[IP]:[PORT:80]/install/make-config.php</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/projectsend.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/projectsend-logo.png</Icon>
-    <Date>2026-08-10</Date>
+    <Date>2026-10-22</Date>
     <Changes>
+### 2026-10-22
+- Rebase to Alpine 3.24.
+
 ### 2026-08-10
 - Switch to legacy repo until migration steps are figured out.
 
