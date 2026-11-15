@@ -16,7 +16,6 @@
     <ReadMe>https://github.com/linuxserver/docker-manyfold#readme</ReadMe>
     <Project>https://github.com/manyfold3d/manyfold/</Project>
     <Overview>Manyfold(https://github.com/manyfold3d/manyfold/)  is an open source, self-hosted web application for managing a collection of 3D models, particularly focused on 3D printing.</Overview>
-    <WebUI>http://[IP]:[PORT:3214]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/manyfold.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/manyfold-logo.png</Icon>
     <Date>2026-07-05</Date>
