@@ -16,7 +16,7 @@
     <ReadMe>https://github.com/linuxserver/docker-webtop#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
-        <TagDescription>XFCE Alpine *Wayland Support</TagDescription>
+        <TagDescription>Transition to alpine-xfce please!</TagDescription>
     </Branch>
     <Branch>
         <Tag>alpine-i3</Tag>
@@ -35,6 +35,12 @@
         <TagDescription>MATE Alpine</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-webtop/tree/alpine-mate#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-webtop/tree/alpine-mate#application-setup</GitHub>
+    </Branch>
+    <Branch>
+        <Tag>alpine-xfce</Tag>
+        <TagDescription>XFCE Alpine *Wayland Support</TagDescription>
+        <ReadMe>https://github.com/linuxserver/docker-webtop/tree/alpine-xfce#readme</ReadMe>
+        <GitHub>https://github.com/linuxserver/docker-webtop/tree/alpine-xfce#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>arch-i3</Tag>
@@ -154,8 +160,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-webtop#security for more information.
     </Requires>
-    <Date>2026-10-02</Date>
+    <Date>2026-11-16</Date>
     <Changes>
+### 2026-11-16
+- Announce transition of latest tag to alpine-xfce.
+
 ### 2026-10-02
 - Quality of life upgrades for KDE, MATE, and Xfce. Install base packages for flavors initialize KDE sessions properly.
 
