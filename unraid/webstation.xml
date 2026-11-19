@@ -24,8 +24,11 @@
         This image is unprotected by default __**do not**__ expose it to the internet.
         Please read https://github.com/linuxserver/docker-webstation#security for more information.
     </Requires>
-    <Date>2026-11-08</Date>
+    <Date>2026-11-19</Date>
     <Changes>
+### 2026-11-19
+- Install Cemu, Dolphin and Eden from upstream AppImages instead of building from source, refresh desktop icons.
+
 ### 2026-11-08
 - Add Lichii emulator.
 
