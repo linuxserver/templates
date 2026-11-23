@@ -146,7 +146,7 @@
     </Branch>
     <Branch>
         <Tag>dev</Tag>
-        <TagDescription>KDE Ubuntu *Current Selkies Development Head</TagDescription>
+        <TagDescription>Selkies Ubuntu *Current Selkies Development Head</TagDescription>
         <ReadMe>https://github.com/linuxserver/docker-webtop/tree/dev#readme</ReadMe>
         <GitHub>https://github.com/linuxserver/docker-webtop/tree/dev#application-setup</GitHub>
     </Branch>
